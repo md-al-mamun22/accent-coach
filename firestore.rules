@@ -2,9 +2,8 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() { return request.auth != null; }
-    function isAdmin() {
-      return signedIn() && request.auth.token.email == 'ahmedmdmamun18@gmail.com' && request.auth.token.email_verified == true;
-    }
+    // Admin = the site owner's Firebase account ID (no email in public code).
+    function isAdmin() { return signedIn() && request.auth.uid == '3LiywVvOSXQ1lkNIAfvMYHEdMDn1'; }
     function isInt(v, lo, hi) { return v is int && v >= lo && v <= hi; }
 
     // One private progress document per learner. Only the learner (and the admin) can read it.

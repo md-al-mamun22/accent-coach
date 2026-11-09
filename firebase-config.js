@@ -8,4 +8,4 @@ export const firebaseConfig = {
   messagingSenderId: "441560627579",
   appId: "1:441560627579:web:382cd79d0c06ebfdd365de"
 };
-export const ADMIN_EMAIL = "ahmedmdmamun18@gmail.com";
+export const ADMIN_UID = "3LiywVvOSXQ1lkNIAfvMYHEdMDn1";

@@ -1,10 +1,9 @@
 // Shared login + progress sync for Accent Coach (Firebase Auth + Firestore).
-import { firebaseConfig, ADMIN_EMAIL } from "./firebase-config.js?v=4";
+import { firebaseConfig, ADMIN_UID } from "./firebase-config.js?v=5";
 const V = "10.12.2", G = "https://www.gstatic.com/firebasejs/" + V + "/";
 let F = null, ready = null;
 
 export const enabled = !!firebaseConfig;
-export const adminEmail = ADMIN_EMAIL;
 
 export function init() {
   if (!enabled) return Promise.resolve(null);
@@ -29,7 +28,7 @@ export async function signIn() {
   catch (e) { if (e && /popup/.test(e.code || "")) { await f.A.signInWithRedirect(f.auth, p); return null; } throw e; }
 }
 export async function signOutUser() { const f = await init(); if (f) await f.A.signOut(f.auth); }
-export const isAdmin = u => !!u && u.email === ADMIN_EMAIL && u.emailVerified;
+export const isAdmin = u => !!u && u.uid === ADMIN_UID;
 
 // ---------- progress helpers ----------
 export const today = () => new Date().toLocaleDateString("en-CA");
