@@ -1,5 +1,5 @@
 // Shared login + progress sync for Accent Coach (Firebase Auth + Firestore).
-import { firebaseConfig, ADMIN_UID, APPCHECK_SITE_KEY } from "./firebase-config.js?v=7";
+import { firebaseConfig, ADMIN_UID, APPCHECK_SITE_KEY } from "./firebase-config.js?v=8";
 const V = "10.12.2", G = "https://www.gstatic.com/firebasejs/" + V + "/";
 let F = null, ready = null;
 
@@ -14,7 +14,7 @@ export function init() {
       if (APPCHECK_SITE_KEY) {
         try {
           const ac = await import(G + "firebase-app-check.js");
-          ac.initializeAppCheck(a, { provider: new ac.ReCaptchaV3Provider(APPCHECK_SITE_KEY), isTokenAutoRefreshEnabled: true });
+          ac.initializeAppCheck(a, { provider: new ac.ReCaptchaEnterpriseProvider(APPCHECK_SITE_KEY), isTokenAutoRefreshEnabled: true });
         } catch (e) { console.warn("App Check not started", e); }
       }
       F = { auth: auth.getAuth(a), db: fs.getFirestore(a), A: auth, S: fs };
