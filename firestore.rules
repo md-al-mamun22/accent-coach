@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function isAdmin() {
+      return signedIn() && request.auth.token.email == 'ahmedmdmamun18@gmail.com' && request.auth.token.email_verified == true;
+    }
+
+    // One private progress document per learner. Only the learner (and the admin) can read it.
+    match /users/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['name','email','photo','day','step','done','doneAt','streak','best','lastPractice','daysDone','showOnBoard','createdAt','updatedAt'])
+        && request.resource.data.day is int && request.resource.data.day >= 1 && request.resource.data.day <= 30
+        && request.resource.data.daysDone is int && request.resource.data.daysDone >= 0 && request.resource.data.daysDone <= 30;
+      allow delete: if signedIn() && request.auth.uid == uid;
+    }
+
+    // Public leaderboard: first name + numbers only. Learners can only write their own row.
+    match /board/{uid} {
+      allow read: if true;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['name','daysDone','streak','updatedAt'])
+        && request.resource.data.name is string && request.resource.data.name.size() <= 30
+        && request.resource.data.daysDone is int && request.resource.data.daysDone >= 0 && request.resource.data.daysDone <= 30
+        && request.resource.data.streak is int && request.resource.data.streak >= 0 && request.resource.data.streak <= 400;
+      allow delete: if signedIn() && request.auth.uid == uid;
+    }
+  }
+}

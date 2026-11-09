@@ -228,6 +228,12 @@ button.word.playing .play{transform:scale(1.08)}
 .js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
 .js .rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.wave.on i{animation:none;height:70%}}
+
+#navUser{display:flex;align-items:center}
+.nu{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:700 15px var(--body);border:1.5px solid var(--line);border-radius:12px;padding:6px 10px 6px 6px;background:var(--card);cursor:pointer;color:var(--ink);white-space:nowrap}
+.nu img,.nu .ini{width:28px;height:28px;border-radius:50%;object-fit:cover;display:grid;place-items:center;background:var(--lav);color:var(--lav-ink);font-weight:800}
+.nu.si{padding:10px 14px}
+@media(max-width:520px){#navUser{margin-left:auto}#navUser + .navcta + .burger{margin-left:0}.nu span{display:none}.nu.si{padding:9px 12px;font-size:14px}}
 </style>
 </head>
 <body>
@@ -235,11 +241,12 @@ button.word.playing .play{transform:scale(1.08)}
 <nav>
   <div class="container">
     <a class="logo" href="#top"><b></b>Accent Coach</a>
-    <div class="links"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">30-day plan</a><a href="#about">About</a><a href="#faq">FAQ</a></div>
+    <div class="links"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">30-day plan</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="leaderboard.html">Leaderboard</a></div>
+    <span id="navUser"></span>
     <a class="btn btn-dark navcta" href="app.html">Start practicing →</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
-  <div class="mmenu" id="mmenu"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">30-day plan</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="btn btn-lime" href="app.html">Start practicing →</a></div>
+  <div class="mmenu" id="mmenu"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">30-day plan</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="leaderboard.html">Leaderboard</a><a class="btn btn-lime" href="app.html">Start practicing →</a></div>
 </nav>
 
 <header class="hero" id="top">
@@ -364,22 +371,25 @@ button.word.playing .play{transform:scale(1.08)}
 <footer>
   <div class="container">
     <span>© 2026 Accent Coach · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span>
-    <div class="fl"><a href="app.html">Open the app</a><a href="#plan">30-day plan</a><a href="https://github.com/md-al-mamun22/accent-coach" target="_blank" rel="noopener">GitHub</a></div>
+    <div class="fl"><a href="app.html">Open the app</a><a href="#plan">30-day plan</a><a href="leaderboard.html">Leaderboard</a><a href="https://github.com/md-al-mamun22/accent-coach" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
 <script>
 (function(){
-  // ---- progress from the practice app ----
+  // ---- progress (local, then cloud when signed in) ----
+  window.ACprog=function(st){
+    var done=st&&st.done?st.done:{};var nDone=Object.keys(done).filter(function(k){return done[k]}).length;
+    if(st&&(nDone>0||st.day>1)){
+      var day=st.day||1;document.getElementById("heroCta").textContent="Continue Day "+day+" →";
+      var mp=document.getElementById("myprog");mp.hidden=false;
+      document.getElementById("mptxt").textContent=nDone+" of 30 days done";
+      setTimeout(function(){document.getElementById("mpbar").style.width=(nDone/30*100)+"%"},300);
+    }
+    document.querySelectorAll(".wkp").forEach(function(el){var a=+el.dataset.a,b=+el.dataset.b,c=0;for(var i=a;i<=b;i++)if(done[i])c++;
+      el.querySelector("span").textContent=c+" / "+(b-a+1)+" days done";var bar=el.querySelector("i");setTimeout(function(){bar.style.width=(c/(b-a+1)*100)+"%"},400)});
+  };
   var st=null;try{st=JSON.parse(localStorage.getItem("accent-coach")||"null")}catch(e){}
-  var done=st&&st.done?st.done:{};var nDone=Object.keys(done).filter(function(k){return done[k]}).length;
-  if(st&&(nDone>0||st.day>1)){
-    var day=st.day||1;var cta=document.getElementById("heroCta");cta.textContent="Continue Day "+day+" →";
-    var mp=document.getElementById("myprog");mp.hidden=false;
-    document.getElementById("mptxt").textContent=nDone+" of 30 days done";
-    setTimeout(function(){document.getElementById("mpbar").style.width=(nDone/30*100)+"%"},300);
-  }
-  document.querySelectorAll(".wkp").forEach(function(el){var a=+el.dataset.a,b=+el.dataset.b,c=0;for(var i=a;i<=b;i++)if(done[i])c++;
-    el.querySelector("span").textContent=c+" / "+(b-a+1)+" days done";var bar=el.querySelector("i");setTimeout(function(){bar.style.width=(c/(b-a+1)*100)+"%"},400)});
+  window.ACprog(st);
 
   // ---- playable demo (real clips from the app, in Mamun's cloned voice) ----
   var DRILLS=[
@@ -430,6 +440,18 @@ button.word.playing .play{transform:scale(1.08)}
     document.querySelectorAll("section[id]").forEach(function(s){so.observe(s)});
   }else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")})}
 })();
+</script>
+<script type="module">
+import * as C from "./cloud.js";
+if(C.enabled){
+  const nu=document.getElementById("navUser");
+  const esc=t=>String(t||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  C.onUser(async u=>{
+    if(!u){nu.innerHTML=`<button class="nu si" id="nsi">Sign in</button>`;document.getElementById("nsi").onclick=()=>C.signIn().then(x=>{if(x)location.href="app.html"}).catch(()=>{});return}
+    nu.innerHTML=`<a class="nu" href="app.html" title="Open my practice">${u.photoURL?`<img src="${esc(u.photoURL)}" alt="" referrerpolicy="no-referrer">`:`<b class="ini">${esc((u.displayName||"?")[0])}</b>`}<span>${esc((u.displayName||"My account").split(" ")[0])}</span></a>`;
+    try{const local=JSON.parse(localStorage.getItem("accent-coach")||"null");const cloud=await C.loadProgress(u);window.ACprog(C.merge(local,cloud))}catch(e){}
+  });
+}
 </script>
 </body>
 </html>

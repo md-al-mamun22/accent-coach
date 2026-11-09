@@ -1,0 +1,25 @@
+:root{--bg:#f3f2ee;--card:#fff;--ink:#16171a;--muted:#5d6068;--line:#e3e1da;--lime:#d6f25a;--lime-soft:#eef8c6;--lav:#e6e4ff;--lav-ink:#3b3591;--display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Figtree",system-ui,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121315;--card:#1c1e22;--ink:#f1f1ee;--muted:#a3a6ad;--line:#2d2f35;--lime-soft:#2a3314;--lav:#25234a;--lav-ink:#c9c5ff;color-scheme:dark}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:500 16px/1.55 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.02em;line-height:1.1}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+nav{border-bottom:1px solid var(--line);background:var(--bg)}
+nav .container{display:flex;align-items:center;gap:14px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font:800 20px var(--display);text-decoration:none;color:inherit;white-space:nowrap}
+.logo b{width:30px;height:30px;border-radius:9px;background:var(--ink);display:grid;place-items:center}
+.logo b::after{content:"";width:11px;height:11px;border-radius:50%;background:var(--lime)}
+.sp{margin-left:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:700 15px var(--body);border-radius:12px;padding:10px 16px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--ink)}
+.btn.pri{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.lime{background:var(--lime);color:#16171a;border-color:var(--lime)}
+main{padding:48px 0 80px}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px;justify-content:space-between;margin-bottom:28px}
+.head h1{font-size:clamp(32px,5vw,48px);font-weight:800}
+.head p{color:var(--muted);margin-top:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px}
+.msg{padding:40px 28px;text-align:center;color:var(--muted)}
+.msg h2{color:var(--ink);font-size:26px;margin-bottom:10px}
+.msg .btn{margin-top:18px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--lav-ink);outline-offset:2px}

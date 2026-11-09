@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leaderboard · Accent Coach</title>
+<meta name="description" content="Top learners on the free 30-day Accent Coach pronunciation plan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<style>
+.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
+.pd{padding:22px;text-align:center}
+.pd .md{font-size:34px}.pd b{display:block;font:800 22px var(--display);margin-top:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pd span{color:var(--muted);font-weight:600;font-size:14px}
+.pd.g1{background:var(--lime);border-color:var(--lime);color:#16171a}.pd.g1 span{color:#3d4a12}
+.list .row{display:grid;grid-template-columns:56px 1fr 110px 120px;align-items:center;padding:14px 22px;border-bottom:1px solid var(--line);gap:10px}
+.list .row:last-child{border-bottom:0}
+.list .hd{font:700 13px var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.rk{font:800 18px var(--display)}
+.nm{font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar{height:8px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:6px;max-width:220px}.bar i{display:block;height:100%;background:#9fbf1f}
+.me{background:var(--lime-soft)}
+@media(max-width:600px){.podium{grid-template-columns:1fr}.list .row{grid-template-columns:40px 1fr 70px 80px;padding:12px 14px;font-size:14px}}
+</style></head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><b></b>Accent Coach</a><a class="btn sp" href="app.html">Practice →</a></div></nav>
+<main><div class="container">
+  <div class="head"><div><h1>🏆 Leaderboard</h1><p>Learners ranked by days completed in the 30-day plan. First names only.</p></div><a class="btn lime" href="app.html">Join the challenge →</a></div>
+  <div id="out"><div class="card msg">Loading…</div></div>
+</div></main>
+<script type="module">
+import * as C from "./cloud.js";
+const out=document.getElementById("out");
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+if(!C.enabled){out.innerHTML=`<div class="card msg"><h2>Coming soon</h2>The leaderboard opens as soon as sign-in is switched on.<br><a class="btn pri" href="app.html">Start practicing →</a></div>`}
+else{
+  let me=null;C.onUser(u=>{me=u;load()});
+  async function load(){
+    try{const rows=await C.listBoard();
+      if(!rows.length){out.innerHTML=`<div class="card msg"><h2>Be the first on the board</h2>Sign in inside the app and finish Day 1 to appear here.<br><a class="btn pri" href="app.html">Start Day 1 →</a></div>`;return}
+      const md=["🥇","🥈","🥉"];
+      const pod=rows.slice(0,3).map((r,i)=>`<div class="card pd ${i===0?"g1":""}"><div class="md">${md[i]}</div><b>${esc(r.name)}</b><span>${r.daysDone}/30 days · 🔥 ${r.streak}</span></div>`).join("");
+      const list=rows.map((r,i)=>`<div class="row ${me&&me.uid===r.uid?"me":""}"><span class="rk">${i+1}</span><div><div class="nm">${esc(r.name)}${me&&me.uid===r.uid?" (you)":""}</div><div class="bar"><i style="width:${r.daysDone/30*100}%"></i></div></div><span>${r.daysDone}/30</span><span>🔥 ${r.streak} days</span></div>`).join("");
+      out.innerHTML=`<div class="podium">${pod}</div><div class="card list"><div class="row hd"><span>#</span><span>Learner</span><span>Days</span><span>Streak</span></div>${list}</div>`;
+    }catch(e){out.innerHTML=`<div class="card msg"><h2>Couldn't load the leaderboard</h2>Please refresh the page.</div>`}
+  }
+}
+</script>
+</body></html>

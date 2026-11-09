@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Admin · Accent Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<style>
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.kp{padding:20px 22px}.kp small{color:var(--muted);font-weight:700}.kp b{display:block;font:800 36px var(--display);margin-top:4px}
+.kp.hl{background:var(--lime);border-color:var(--lime);color:#16171a}.kp.hl small{color:#3d4a12}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:14px}
+.tools input,.tools select{font:600 15px var(--body);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;background:var(--card);color:var(--ink);min-width:0}
+.tools input{flex:1;min-width:200px}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:820px}
+th{text-align:left;font:700 12px var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:14px 16px;border-bottom:1px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+td{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:middle;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.u{display:flex;align-items:center;gap:10px}.u img,.u .av{width:36px;height:36px;border-radius:50%;object-fit:cover;flex:none;background:var(--lav);display:grid;place-items:center;font-weight:800;color:var(--lav-ink)}
+.u b{display:block}.u span{color:var(--muted);font-size:13px}
+.bar{height:8px;width:110px;border-radius:9px;background:var(--line);overflow:hidden;display:inline-block;vertical-align:middle;margin-right:8px}.bar i{display:block;height:100%;background:#9fbf1f}
+.tag{font:700 12px var(--body);border-radius:8px;padding:4px 8px;background:var(--line)}
+.tag.on{background:var(--lime);color:#16171a}.tag.w{background:var(--lav);color:var(--lav-ink)}
+@media(max-width:760px){.kpis{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><b></b>Accent Coach</a><span class="sp"></span><span id="who"></span></div></nav>
+<main><div class="container">
+  <div class="head"><div><h1>📊 Learner dashboard</h1><p>Private: only the admin account can see this data.</p></div><button class="btn" id="csv" hidden>Download CSV</button></div>
+  <div id="out"><div class="card msg">Loading…</div></div>
+</div></main>
+<script type="module">
+import * as C from "./cloud.js";
+const out=document.getElementById("out"),who=document.getElementById("who"),csvB=document.getElementById("csv");
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmtTs=t=>t&&t.toDate?t.toDate().toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}):"";
+if(!C.enabled){out.innerHTML=`<div class="card msg"><h2>Sign-in isn't switched on yet</h2>Add the Firebase config to firebase-config.js first.</div>`}
+else C.onUser(async u=>{
+  if(!u){who.innerHTML="";out.innerHTML=`<div class="card msg"><h2>Admin sign-in</h2>Sign in with the admin Google account to see learners.<br><button class="btn pri" id="si">Sign in with Google</button></div>`;document.getElementById("si").onclick=()=>C.signIn();return}
+  who.innerHTML=`<button class="btn" id="so">Sign out</button>`;document.getElementById("so").onclick=()=>C.signOutUser();
+  if(!C.isAdmin(u)){out.innerHTML=`<div class="card msg"><h2>Not authorized</h2>This page is only for the Accent Coach admin.<br><a class="btn pri" href="app.html">Go to practice →</a></div>`;return}
+  let rows;try{rows=await C.listUsers()}catch(e){out.innerHTML=`<div class="card msg"><h2>Couldn't load learners</h2>Check that the Firestore security rules are published.</div>`;return}
+  const t=C.today(),wk=new Date(Date.now()-6*864e5).toLocaleDateString("en-CA");
+  const act7=rows.filter(r=>r.lastPractice&&r.lastPractice>=wk).length,actT=rows.filter(r=>r.lastPractice===t).length;
+  const avg=rows.length?(rows.reduce((a,r)=>a+(r.daysDone||0),0)/rows.length).toFixed(1):"0";
+  let sortK="lastPractice",dir=-1,q="",filt="all";
+  out.innerHTML=`<div class="kpis"><div class="card kp hl"><small>Learners</small><b>${rows.length}</b></div><div class="card kp"><small>Practiced today</small><b>${actT}</b></div><div class="card kp"><small>Active last 7 days</small><b>${act7}</b></div><div class="card kp"><small>Avg. days done</small><b>${avg}</b></div></div>
+  <div class="tools"><input id="q" placeholder="Search name or email" aria-label="Search"><select id="f" aria-label="Filter"><option value="all">All learners</option><option value="today">Practiced today</option><option value="week">Active last 7 days</option><option value="idle">Inactive 7+ days</option><option value="fin">Finished 30 days</option></select></div>
+  <div class="card tbl"><table><thead><tr><th data-k="name">Learner</th><th data-k="day">Current day</th><th data-k="daysDone">Days done</th><th data-k="streak">Streak</th><th data-k="best">Best</th><th data-k="lastPractice">Last practice</th><th data-k="createdAt">Joined</th></tr></thead><tbody id="tb"></tbody></table></div>`;
+  const tb=document.getElementById("tb");
+  const val=(r,k)=>k==="createdAt"?(r.createdAt&&r.createdAt.seconds||0):(r[k]??"");
+  function list(){return rows.filter(r=>{const s=(r.name+" "+r.email).toLowerCase();if(q&&!s.includes(q))return false;
+      if(filt==="today")return r.lastPractice===t;if(filt==="week")return r.lastPractice>=wk;if(filt==="idle")return !r.lastPractice||r.lastPractice<wk;if(filt==="fin")return (r.daysDone||0)>=30;return true})
+    .sort((a,b)=>{const x=val(a,sortK),y=val(b,sortK);return (x>y?1:x<y?-1:0)*dir})}
+  function draw(){tb.innerHTML=list().map(r=>`<tr><td><div class="u">${r.photo?`<img src="${esc(r.photo)}" alt="" referrerpolicy="no-referrer">`:`<span class="av">${esc((r.name||"?")[0])}</span>`}<div><b>${esc(r.name)}</b><span>${esc(r.email)}</span></div></div></td>
+      <td>Day ${r.day||1}</td><td><span class="bar"><i style="width:${(r.daysDone||0)/30*100}%"></i></span>${r.daysDone||0}/30</td>
+      <td>${r.streak?`<span class="tag on">🔥 ${r.streak}</span>`:`<span class="tag">0</span>`}</td><td>${r.best||0}</td>
+      <td>${r.lastPractice?(r.lastPractice===t?`<span class="tag on">Today</span>`:esc(r.lastPractice)):`<span class="tag w">Not started</span>`}</td><td>${fmtTs(r.createdAt)}</td></tr>`).join("")||`<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:30px">No learners match.</td></tr>`}
+  document.getElementById("q").oninput=e=>{q=e.target.value.toLowerCase().trim();draw()};
+  document.getElementById("f").onchange=e=>{filt=e.target.value;draw()};
+  document.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=sortK===k?-dir:-1;sortK=k;draw()});
+  csvB.hidden=false;csvB.onclick=()=>{const h=["name","email","day","daysDone","streak","best","lastPractice"];
+    const c=[h.join(",")].concat(list().map(r=>h.map(k=>`"${String(r[k]??"").replace(/"/g,'""')}"`).join(","))).join("\n");
+    const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([c],{type:"text/csv"}));a.download="accent-coach-learners.csv";a.click()};
+  draw();
+});
+</script>
+</body></html>
