@@ -34,12 +34,13 @@ tr:last-child td{border-bottom:0}
   <div id="out"><div class="card msg">Loading…</div></div>
 </div></main>
 <script type="module">
-import * as C from "./cloud.js?v=12";
+import * as C from "./cloud.js?v=13";
 const out=document.getElementById("out"),who=document.getElementById("who"),csvB=document.getElementById("csv");
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmtTs=t=>t&&t.toDate?t.toDate().toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}):"";
 if(!C.enabled){out.innerHTML=`<div class="card msg"><h2>Sign-in isn't switched on yet</h2>Add the Firebase config to firebase-config.js first.</div>`}
 else C.onUser(async u=>{
+  if(u&&u.cached){out.innerHTML=`<div class="card msg">Checking sign-in…</div>`;return}
   if(!u){who.innerHTML="";out.innerHTML=`<div class="card msg"><h2>Admin sign-in</h2>Sign in with the admin Google account to see learners.<br><button class="btn pri" id="si">Sign in with Google</button></div>`;document.getElementById("si").onclick=()=>C.signIn();return}
   who.innerHTML=`<button class="btn" id="so">Sign out</button>`;document.getElementById("so").onclick=()=>C.signOutUser();
   if(!C.isAdmin(u)){out.innerHTML=`<div class="card msg"><h2>Not authorized</h2>This page is only for the Accent Coach admin.<br><a class="btn pri" href="app.html">Go to practice →</a></div>`;return}

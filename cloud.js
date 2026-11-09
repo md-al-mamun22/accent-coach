@@ -17,23 +17,40 @@ export function init() {
           ac.initializeAppCheck(a, { provider: new ac.ReCaptchaEnterpriseProvider(APPCHECK_SITE_KEY), isTokenAutoRefreshEnabled: true });
         } catch (e) { console.warn("App Check not started", e); }
       }
-      F = { auth: auth.getAuth(a), db: fs.getFirestore(a), A: auth, S: fs };
+      // Faster start: no hidden sign-in frame until someone actually clicks "Sign in".
+      const au = auth.initializeAuth(a, { persistence: [auth.indexedDBLocalPersistence, auth.browserLocalPersistence] });
+      F = { auth: au, db: fs.getFirestore(a), A: auth, S: fs };
+      try { if (sessionStorage.getItem("ac-redirect")) { sessionStorage.removeItem("ac-redirect"); auth.getRedirectResult(au, auth.browserPopupRedirectResolver).catch(() => {}); } } catch (e) {}
       return F;
     });
   return ready;
 }
 
+// Calls cb right away with the last signed-in user on this device (marked cached: true),
+// then again with the confirmed user once the sign-in check finishes.
+const CK = "ac-user";
 export async function onUser(cb) {
+  if (!enabled) { cb(null); return; }
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem(CK) || "null"); } catch (e) {}
+  if (cached && cached.uid) cb(Object.assign({ cached: true }, cached));
   const f = await init(); if (!f) { cb(null); return; }
-  f.A.onAuthStateChanged(f.auth, u => cb(u));
+  f.A.onAuthStateChanged(f.auth, u => {
+    try {
+      if (u) localStorage.setItem(CK, JSON.stringify({ uid: u.uid, displayName: u.displayName || "", photoURL: u.photoURL || "", email: u.email || "" }));
+      else localStorage.removeItem(CK);
+    } catch (e) {}
+    cb(u);
+  });
 }
 export async function signIn() {
   const f = await init(); if (!f) return null;
   const p = new f.A.GoogleAuthProvider(); p.setCustomParameters({ prompt: "select_account" });
-  try { return (await f.A.signInWithPopup(f.auth, p)).user; }
-  catch (e) { if (e && /popup/.test(e.code || "")) { await f.A.signInWithRedirect(f.auth, p); return null; } throw e; }
+  const R = f.A.browserPopupRedirectResolver;
+  try { return (await f.A.signInWithPopup(f.auth, p, R)).user; }
+  catch (e) { if (e && /popup-blocked|operation-not-supported/.test(e.code || "")) { try { sessionStorage.setItem("ac-redirect", "1"); } catch (x) {} await f.A.signInWithRedirect(f.auth, p, R); return null; } throw e; }
 }
-export async function signOutUser() { const f = await init(); if (f) await f.A.signOut(f.auth); }
+export async function signOutUser() { try { localStorage.removeItem(CK); } catch (e) {} const f = await init(); if (f) await f.A.signOut(f.auth); }
 export const isAdmin = u => !!u && u.uid === ADMIN_UID;
 
 // ---------- progress helpers ----------

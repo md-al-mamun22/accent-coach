@@ -443,14 +443,14 @@ button.word.playing .play{transform:scale(1.08)}
 })();
 </script>
 <script type="module">
-import * as C from "./cloud.js?v=12";
+import * as C from "./cloud.js?v=13";
 if(C.enabled){
   const nu=document.getElementById("navUser");
   const esc=t=>String(t||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   C.onUser(async u=>{
     if(!u){nu.innerHTML=`<button class="nu si" id="nsi">Sign in</button>`;document.getElementById("nsi").onclick=()=>C.signIn().then(x=>{if(x)location.href="app.html"}).catch(()=>{});return}
     nu.innerHTML=`<a class="nu" href="app.html" title="Open my practice">${u.photoURL?`<img src="${esc(u.photoURL)}" alt="" referrerpolicy="no-referrer">`:`<b class="ini">${esc((u.displayName||"?")[0])}</b>`}<span>${esc((u.displayName||"My account").split(" ")[0])}</span></a>`;
-    try{const local=JSON.parse(localStorage.getItem("accent-coach")||"null");const cloud=await C.loadProgress(u);window.ACprog(C.merge(local,cloud))}catch(e){}
+    if(u.cached)return;try{const local=JSON.parse(localStorage.getItem("accent-coach")||"null");const cloud=await C.loadProgress(u);window.ACprog(C.merge(local,cloud))}catch(e){}
   });
 }
 </script>

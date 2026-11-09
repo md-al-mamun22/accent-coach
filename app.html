@@ -359,7 +359,7 @@ document.addEventListener("click",e=>{
 render();
 </script>
 <script type="module">
-import * as C from "./cloud.js?v=12";
+import * as C from "./cloud.js?v=13";
 const box=document.getElementById("acct");
 if(C.enabled){
   box.hidden=false;let user=null,timer=null;
@@ -381,9 +381,9 @@ if(C.enabled){
     document.getElementById("ob").onchange=e=>{window.AC.apply(Object.assign({},window.AC.st,{showOnBoard:e.target.checked}));push()};
   }
   function fail(e){box.insertAdjacentHTML("beforeend",`<span class="sync">Sign-in didn't finish (${esc(e&&e.code||"error")}). Please try again.</span>`)}
-  async function push(){if(!user)return;status("Saving…");try{await C.saveProgress(user,window.AC.st);status("Progress synced")}catch(e){status("Couldn't sync, will retry on your next step")}}
-  window.addEventListener("ac-save",()=>{if(!user)return;clearTimeout(timer);timer=setTimeout(()=>{push().then(draw)},1200)});
-  C.onUser(async u=>{user=u;if(u){try{const cloud=await C.loadProgress(u);window.AC.apply(C.merge(window.AC.st,cloud));await C.saveProgress(u,window.AC.st)}catch(e){}}draw()});
+  async function push(){if(!user||user.cached)return;status("Saving…");try{await C.saveProgress(user,window.AC.st);status("Progress synced")}catch(e){status("Couldn't sync, will retry on your next step")}}
+  window.addEventListener("ac-save",()=>{if(!user||user.cached)return;clearTimeout(timer);timer=setTimeout(()=>{push().then(draw)},1200)});
+  C.onUser(async u=>{user=u;if(u&&!u.cached){try{const cloud=await C.loadProgress(u);window.AC.apply(C.merge(window.AC.st,cloud));await C.saveProgress(u,window.AC.st)}catch(e){}}draw();if(u&&u.cached)status("Connecting…")});
   draw();
 }
 </script>
