@@ -30,7 +30,7 @@
   <div id="out"><div class="card msg">Loading…</div></div>
 </div></main>
 <script type="module">
-import * as C from "./cloud.js?v=11";
+import * as C from "./cloud.js?v=12";
 const out=document.getElementById("out");
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 if(!C.enabled){out.innerHTML=`<div class="card msg"><h2>Coming soon</h2>The leaderboard opens as soon as sign-in is switched on.<br><a class="btn pri" href="app.html">Start practicing →</a></div>`}

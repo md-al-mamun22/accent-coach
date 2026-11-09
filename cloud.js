@@ -83,8 +83,18 @@ export async function listUsers() {
   const q = await S.getDocs(S.collection(f.db, "users"));
   return q.docs.map(d => Object.assign({ uid: d.id }, d.data()));
 }
+// Public reads use a separate app without sign-in, so they never wait for the login check.
+let PUB = null;
+async function pub() {
+  if (!enabled) return null;
+  if (!PUB) PUB = Promise.all([import(G + "firebase-app.js"), import(G + "firebase-firestore-lite.js")]).then(([app, fs]) => {
+    const a = app.initializeApp(firebaseConfig, "public");
+    return { db: fs.getFirestore(a), S: fs };
+  });
+  return PUB;
+}
 export async function listBoard() {
-  const f = await init(); if (!f) return [];
+  const f = await pub(); if (!f) return [];
   const S = f.S;
   const q = await S.getDocs(S.query(S.collection(f.db, "board"), S.orderBy("daysDone", "desc"), S.limit(100)));
   return q.docs.map(d => Object.assign({ uid: d.id }, d.data())).sort((a, b) => b.daysDone - a.daysDone || b.streak - a.streak);
