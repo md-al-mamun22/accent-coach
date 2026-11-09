@@ -30,20 +30,23 @@
   <div id="out"><div class="card msg">Loading…</div></div>
 </div></main>
 <script type="module">
-import * as C from "./cloud.js?v=10";
+import * as C from "./cloud.js?v=11";
 const out=document.getElementById("out");
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 if(!C.enabled){out.innerHTML=`<div class="card msg"><h2>Coming soon</h2>The leaderboard opens as soon as sign-in is switched on.<br><a class="btn pri" href="app.html">Start practicing →</a></div>`}
 else{
-  let me=null;C.onUser(u=>{me=u;load()});
+  let me=null,rows0=null;load();C.onUser(u=>{me=u;if(rows0)draw(rows0)});
   async function load(){
-    try{const rows=await C.listBoard();
+    try{const rows=await C.listBoard();rows0=rows;draw(rows)}catch(e){out.innerHTML=`<div class="card msg"><h2>Couldn't load the leaderboard</h2>Please refresh the page.</div>`}
+  }
+  function draw(rows){
+    {
       if(!rows.length){out.innerHTML=`<div class="card msg"><h2>Be the first on the board</h2>Sign in inside the app and finish Day 1 to appear here.<br><a class="btn pri" href="app.html">Start Day 1 →</a></div>`;return}
       const md=["🥇","🥈","🥉"];
       const pod=rows.slice(0,3).map((r,i)=>`<div class="card pd ${i===0?"g1":""}"><div class="md">${md[i]}</div><b>${esc(r.name)}</b><span>${r.daysDone}/30 days · 🔥 ${r.streak}</span></div>`).join("");
       const list=rows.map((r,i)=>`<div class="row ${me&&me.uid===r.uid?"me":""}"><span class="rk">${i+1}</span><div><div class="nm">${esc(r.name)}${me&&me.uid===r.uid?" (you)":""}</div><div class="bar"><i style="width:${r.daysDone/30*100}%"></i></div></div><span>${r.daysDone}/30</span><span>🔥 ${r.streak} days</span></div>`).join("");
       out.innerHTML=`<div class="podium">${pod}</div><div class="card list"><div class="row hd"><span>#</span><span>Learner</span><span>Days</span><span>Streak</span></div>${list}</div>`;
-    }catch(e){out.innerHTML=`<div class="card msg"><h2>Couldn't load the leaderboard</h2>Please refresh the page.</div>`}
+    }
   }
 }
 </script>

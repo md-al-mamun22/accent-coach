@@ -34,7 +34,7 @@ tr:last-child td{border-bottom:0}
   <div id="out"><div class="card msg">Loading…</div></div>
 </div></main>
 <script type="module">
-import * as C from "./cloud.js?v=10";
+import * as C from "./cloud.js?v=11";
 const out=document.getElementById("out"),who=document.getElementById("who"),csvB=document.getElementById("csv");
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmtTs=t=>t&&t.toDate?t.toDate().toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}):"";
