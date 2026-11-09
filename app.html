@@ -102,6 +102,28 @@ a{color:var(--lav-ink);font-weight:700}
 .rem input[type=time]{font:600 15px var(--body);border:1.5px solid var(--line);border-radius:10px;padding:7px 10px;background:var(--card);color:var(--ink)}
 .opt{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
 .sync{font-size:12px;color:var(--muted)}
+
+.sndcard{display:flex;flex-direction:column;gap:12px}
+.sndcard+.sndcard{margin-top:10px;padding-top:16px;border-top:1px solid var(--line)}
+.mouth{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:14px;--skin:#f4d6bf;--skin-d:#e6bea2}
+.msvg{position:relative}
+.msvg svg{width:100%;height:auto;display:block;border-radius:14px}
+.mind{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.ind{font:700 12px var(--body);border-radius:999px;padding:5px 10px;background:var(--card);border:1px solid var(--line);color:var(--muted);opacity:.45;transition:opacity .25s,background .25s}
+.ind.on{opacity:1;background:var(--lime-soft);color:var(--lime-ink);border-color:transparent}
+.ind.iv.on{animation:buzz .35s ease-in-out infinite alternate}
+@keyframes buzz{from{transform:translateX(-1px)}to{transform:translateX(1px)}}
+.mctl{display:flex;flex-direction:column;gap:10px;min-width:0}
+.mh{font:800 16px var(--display)}
+.mchips{display:flex;flex-wrap:wrap;gap:6px}
+.mchip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:700 14px var(--body);border-radius:10px;padding:7px 12px;cursor:pointer}
+.mchip:hover{border-color:var(--ink)}
+.mchip.on{background:var(--lime);border-color:var(--lime);color:#16171a}
+.mtip{font-size:14px;color:var(--muted);min-height:58px}
+.mtip b{display:block;color:var(--ink);font:800 18px var(--display)}
+.mcmp{align-self:flex-start;border:0;background:var(--ink);color:var(--bg);font:700 14px var(--body);border-radius:12px;padding:10px 14px;cursor:pointer}
+@media(max-width:560px){.mouth{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.ind.iv.on{animation:none}}
 </style>
 </head>
 <body>
@@ -121,6 +143,7 @@ a{color:var(--lav-ink);font-weight:700}
   <p class="small">▶ chaple tomar nijer clone voice (Mamun – Explainer) bajbe. Je shobdo-r pashe ▶ nei, oita Voice Pack Part 5–7-e ache, porer mashe jog hobe. Progress ei browser-e save thake; Google diye sign in korle shob device-e sync hobe.</p>
 </div>
 
+<script src="mouth.js?v=2"></script>
 <script>
 const S={
  vw:{n:"V / W",how:"<b>V:</b> upore-r dat nicher thot halka chhoy, gola kape (vvv).<br><b>W:</b> thot gol kore samne, dat thote lagbe na, tarpor khule jay.",bad:"V-ke \"bh\" bola (bhery), W-ke \"v\" bola (vebsite).",w:["very","value","video","voice","work","website","week","women","one"]},
@@ -277,7 +300,7 @@ function renderCard(){
 <p class="small">Aynay ba phone-er front camera-y mukh dekhe koro.</p>`}
   if(i===1){h+=`<h3>Ajker sound shekho</h3>`;
     if(!d.s.length)h+=`<p>Aj notun sound nei. Week 4-er rule mone rekho: dorkari shobde jor, choto shobde halka, shobdo jore jore bolo.</p>`;
-    h+=d.s.map(k=>{const s=S[k];return `<h3 style="font-size:19px">${s.n}</h3><div class="box how"><b>Kivabe bolbe</b><span>${s.how}</span></div><div class="box bad"><b>Amra sadharonoto ja vul kori</b><span>${s.bad}</span></div><div><span class="tag">Shono, tarpor 10 bar bolo</span><div class="words" style="margin-top:8px">${s.w.map(wbtn).join("")}</div></div>`}).join("")}
+    h+=d.s.map(k=>{const s=S[k];return `<div class="sndcard"><h3 style="font-size:19px">${s.n}</h3>${window.mouthHTML?window.mouthHTML(k):""}<div class="box how"><b>Kivabe bolbe</b><span>${s.how}</span></div><div class="box bad"><b>Amra sadharonoto ja vul kori</b><span>${s.bad}</span></div><div><span class="tag">Shono, tarpor 10 bar bolo</span><div class="words" style="margin-top:8px">${s.w.map(wbtn).join("")}</div></div></div>`}).join("")}
   if(i===2){h+=`<h3>Minimal pairs: kan thik koro</h3><p>Dui shobdo ekdom kachakachi, shudhu ajker sound-e alada. Prottek pair 5 bar: prothome shono, tarpor bolo. Duto alada shonacche kina kheyal koro.</p>`;
     h+=d.p.length?`<div style="display:flex;flex-direction:column;gap:10px">${d.p.map(p=>`<div class="pair">${wbtn(p[0])}<i>vs</i>${wbtn(p[1])}</div>`).join("")}</div>`:`<p>Aj pair nei. Script-e slash (/) diye pause-er jayga dag dao, tarpor chunk kore bolo.</p>`}
   if(i===3){h+=`<h3>Tongue twister</h3><p>Dhire 3 bar → normal 3 bar → druto 3 bar. Vul hole abar dhire. Druto-r cheye porishkar beshi dorkari.</p>`+d.t.map(t=>`<div class="tw"><p>${esc(t)}</p>${hasClip(t)?`<div class="row"><button class="btn sm" data-clip="${esc(t)}" data-rate="0.75">▶ Dhire</button><button class="btn sm" data-clip="${esc(t)}" data-rate="1">▶ Normal</button></div>`:""}</div>`).join("")+(d.t.some(t=>!hasClip(t))?`<p class="small">Twister-er clone audio ashbe Voice Pack Part 6–7 banale (porer mashe). Ekhon nije dhire pore bolo.</p>`:"")}
@@ -299,7 +322,7 @@ function renderCard(){
 <li><label><input type="checkbox" id="c2"> Ajker sound-er shobdo-gulo amar recording-e model-er moto shonay</label></li>
 <li><label><input type="checkbox" id="c3"> Je shobdo shobcheye alada lagche, notebook-e likhechi (kal oita-te focus)</label></li></ul>
 <p class="small">Proti Shukrobar recording-ta ei chat-e pathale ami speech recognition chaliye dekhbo kon shobdo machine dhorte parche na.</p>`}
-  $("card").innerHTML=h;
+  $("card").innerHTML=h;if(window.initMouths)window.initMouths($("card"));
 }
 function render(){renderWeeks();renderHead();renderSteps();renderCard()}
 
