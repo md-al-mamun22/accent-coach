@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<script>document.documentElement.classList.add("js")</script>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -173,6 +174,60 @@ footer a{text-decoration:none;font-weight:600}
 footer a:hover{color:var(--ink)}
 .fl{display:flex;gap:20px;flex-wrap:wrap}
 a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-offset:3px;border-radius:6px}
+
+/* ---- dynamic additions ---- */
+.mockwrap{position:relative;padding:38px 0}
+.mockwrap .float{position:absolute;z-index:3}
+.mockwrap .float.f2{top:0;right:-14px;left:auto;bottom:auto}
+.mockwrap .float.f1{bottom:0;left:-14px;top:auto;right:auto}
+@media(max-width:1100px){.mockwrap .float.f2{right:0}.mockwrap .float.f1{left:0}}
+.dstrip .chip{border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:700 14px var(--body);border-radius:10px;padding:7px 12px;cursor:pointer;transition:background .2s,border-color .2s}
+.dstrip .chip:hover{border-color:var(--ink)}
+.dstrip .chip.on{background:var(--lime);border-color:var(--lime);color:#16171a}
+button.word{width:100%;text-align:left;background:var(--card);color:var(--ink);font:inherit;cursor:pointer;transition:border-color .2s,transform .15s}
+button.word:hover{border-color:var(--ink);transform:translateY(-1px)}
+button.word.playing{border-color:#9fbf1f;background:var(--lime-soft)}
+.word .wt{min-width:0;flex:1}
+.word .wt span{display:block;color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.play{transition:transform .2s}
+button.word.playing .play{transform:scale(1.08)}
+.wave i{animation:none;height:22%;transition:height .2s}
+.wave.on i{animation:w 0.9s ease-in-out infinite}
+.next{cursor:pointer;transition:transform .15s}
+.next:hover{transform:translateY(-1px)}
+.mhead h3,.word b,.word em{transition:opacity .2s}
+.swap{opacity:0}
+.myprog{display:flex;align-items:center;gap:14px;margin-top:22px;max-width:440px}
+.myprog[hidden]{display:none}
+.mpb{flex:1;height:10px;border-radius:999px;background:var(--line);overflow:hidden}
+.mpb i{display:block;height:100%;width:0;background:#9fbf1f;border-radius:999px;transition:width 1s ease}
+.myprog span{font:700 14px var(--body);color:var(--muted);white-space:nowrap}
+.wkp{display:flex;align-items:center;gap:10px;margin-top:14px}
+.wkp span{font:700 13px var(--body);color:var(--muted);white-space:nowrap}
+.wk.hl .wkp span{color:#3d4a12}.wk.hl .mpb{background:rgba(0,0,0,.12)}.wk.hl .mpb i{background:#16171a}
+.wklink{margin-top:12px;display:inline-flex;align-self:flex-start;text-decoration:none;font:700 15px var(--body);border-bottom:2px solid currentColor;padding-bottom:1px}
+.wk{transition:transform .2s,box-shadow .2s}
+.wk:hover,.fc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(30,30,60,.10)}
+.fc{transition:transform .2s,box-shadow .2s}
+.js .rv.in.wk:hover,.js .rv.in.fc:hover{transform:translateY(-4px)}
+.js .rv.in{transition:opacity .7s ease,transform .3s ease,box-shadow .2s}
+@media(max-width:560px){.mockwrap{padding:0}}
+.links a.act{color:var(--ink)}
+.burger{display:none;width:44px;height:44px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;flex:none}
+.burger i{width:18px;height:2px;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mmenu{display:none;flex-direction:column;gap:4px;padding:10px 20px 20px;border-top:1px solid var(--line)}
+.mmenu a{text-decoration:none;font-weight:700;padding:12px 4px;border-bottom:1px solid var(--line)}
+.mmenu a.btn{justify-content:center;margin-top:10px;border:0}
+.mmenu.open{display:flex}
+@media(max-width:860px){.burger{display:flex}nav .container{gap:12px}nav .btn.navcta{margin-left:auto}}
+@media(max-width:520px){nav .btn.navcta{display:none}.burger{margin-left:auto}}
+@media(min-width:861px){.mmenu{display:none!important}}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}.wave.on i{animation:none;height:70%}}
 </style>
 </head>
 <body>
@@ -181,8 +236,10 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
   <div class="container">
     <a class="logo" href="#top"><b></b>Accent Coach</a>
     <div class="links"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">30-day plan</a><a href="#about">About</a><a href="#faq">FAQ</a></div>
-    <a class="btn btn-dark" href="app.html">Start practicing →</a>
+    <a class="btn btn-dark navcta" href="app.html">Start practicing →</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
+  <div class="mmenu" id="mmenu"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">30-day plan</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="btn btn-lime" href="app.html">Start practicing →</a></div>
 </nav>
 
 <header class="hero" id="top">
@@ -192,20 +249,27 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
       <h1>Speak English with a <mark>clearer accent</mark> in 30 days</h1>
       <p class="lead">A guided, day-by-day practice plan. Listen to a natural voice, shadow it, repeat it, and hear your own progress, in about 40 minutes a day.</p>
       <div class="cta-row">
-        <a class="btn btn-lime" href="app.html">Start Day 1, free →</a>
+        <a class="btn btn-lime" id="heroCta" href="app.html">Start Day 1, free →</a>
         <a class="btn btn-ghost" href="#plan">See the 30-day plan</a>
       </div>
+      <div class="myprog" id="myprog" hidden><div class="mpb"><i id="mpbar"></i></div><span id="mptxt"></span></div>
       <div class="trust"><span>No sign-up</span><span>Works on phone &amp; laptop</span><span>Progress saved automatically</span></div>
     </div>
-    <div class="mock" aria-hidden="true">
-      <div class="float f2"><b>✓</b>Day 3 complete</div>
-      <div class="mock-top"><b>Today's practice</b><span class="pill">Day 4 / 30</span></div>
-      <div class="dstrip"><i class="d">1</i><i class="d">2</i><i class="d">3</i><i class="on">4</i><i>5</i><i>6</i><i>7</i></div>
-      <div class="mhead"><small>Week 1 · Consonants · Step 3 of 6</small><h3>Minimal pairs: /v/ vs /w/</h3></div>
-      <div class="word"><span class="play">▶</span><div><b>very</b><span>Top teeth on lower lip</span></div><em>/v/</em></div>
-      <div class="word"><span class="play">▶</span><div><b>wary</b><span>Round your lips, no teeth</span></div><em>/w/</em></div>
-      <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      <button class="next" tabindex="-1">Next step →</button>
+    <div class="mockwrap">
+      <div class="float f2" id="fl2"><b>✓</b><span id="fl2t">Tap ▶ to hear it</span></div>
+      <div class="mock">
+        <div class="mock-top"><b>Try a quick drill</b><span class="pill" id="mpill">Drill 1 / 3</span></div>
+        <div class="dstrip" role="tablist" aria-label="Demo drills">
+          <button class="chip on" data-i="0" role="tab" aria-selected="true">v / w</button>
+          <button class="chip" data-i="1" role="tab" aria-selected="false">th / t</button>
+          <button class="chip" data-i="2" role="tab" aria-selected="false">ship / sheep</button>
+        </div>
+        <div class="mhead"><small id="mtag">Week 1 · Consonants · Minimal pairs</small><h3 id="mtitle">/v/ vs /w/</h3></div>
+        <button class="word" id="w0" data-k="0"><span class="play" aria-hidden="true">▶</span><span class="wt"><b id="w0b">very</b><span id="w0h">Top teeth on lower lip</span></span><em id="w0e">/v/</em></button>
+        <button class="word" id="w1" data-k="1"><span class="play" aria-hidden="true">▶</span><span class="wt"><b id="w1b">wary</b><span id="w1h">Round your lips, no teeth</span></span><em id="w1e">/w/</em></button>
+        <div class="wave" id="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button class="next" id="mnext">Next drill →</button>
+      </div>
       <div class="float f1"><b>🎧</b>Listen · Shadow · Repeat</div>
     </div>
   </div>
@@ -213,10 +277,10 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
 
 <div class="stats">
   <div class="container"><div class="grid">
-    <div><b>30</b><span>guided days</span></div>
-    <div><b>4</b><span>weekly focus areas</span></div>
-    <div><b>6</b><span>short steps a day</span></div>
-    <div><b>$0</b><span>free, forever</span></div>
+    <div class="rv"><b class="cnt" data-to="30">30</b><span>guided days</span></div>
+    <div class="rv"><b class="cnt" data-to="4">4</b><span>weekly focus areas</span></div>
+    <div class="rv"><b class="cnt" data-to="6">6</b><span>short steps a day</span></div>
+    <div class="rv"><b>$0</b><span>free, forever</span></div>
   </div></div>
 </div>
 
@@ -224,12 +288,12 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
   <div class="container">
     <div class="sec-head"><span class="eyebrow"><i></i>Features</span><h2>Everything you need to fix your pronunciation</h2><p>No theory overload. Every day tells you exactly what to practice, in what order, and for how long.</p></div>
     <div class="feat">
-      <div class="fc"><div class="ic">🎧</div><h3>A natural voice to copy</h3><p>Every word and line is played in a clear, natural voice, so you can hear the sound before you say it.</p></div>
-      <div class="fc"><div class="ic">👂</div><h3>Minimal pairs</h3><p>Train your ear on the sounds that are easy to mix up, like very / wary, ship / sheep, think / sink.</p></div>
-      <div class="fc dark"><div class="ic">👅</div><h3>Tongue twisters</h3><p>Short, fun drills that make your mouth move the right way until the sound feels automatic.</p></div>
-      <div class="fc"><div class="ic">🗣️</div><h3>Shadowing scripts</h3><p>Speak along with real sentences to build rhythm, stress and natural flow, not just single words.</p></div>
-      <div class="fc"><div class="ic">🎙️</div><h3>Record &amp; compare</h3><p>Record yourself on Day 1, Day 15 and Day 30, then listen to them side by side to hear how far you've come.</p></div>
-      <div class="fc"><div class="ic">📈</div><h3>Progress that remembers</h3><p>Your finished days are saved in your browser, so you can pick up exactly where you left off.</p></div>
+      <div class="rv fc"><div class="ic">🎧</div><h3>A natural voice to copy</h3><p>Every word and line is played in a clear, natural voice, so you can hear the sound before you say it.</p></div>
+      <div class="rv fc"><div class="ic">👂</div><h3>Minimal pairs</h3><p>Train your ear on the sounds that are easy to mix up, like very / wary, ship / sheep, think / sink.</p></div>
+      <div class="rv fc dark"><div class="ic">👅</div><h3>Tongue twisters</h3><p>Short, fun drills that make your mouth move the right way until the sound feels automatic.</p></div>
+      <div class="rv fc"><div class="ic">🗣️</div><h3>Shadowing scripts</h3><p>Speak along with real sentences to build rhythm, stress and natural flow, not just single words.</p></div>
+      <div class="rv fc"><div class="ic">🎙️</div><h3>Record &amp; compare</h3><p>Record yourself on Day 1, Day 15 and Day 30, then listen to them side by side to hear how far you've come.</p></div>
+      <div class="rv fc"><div class="ic">📈</div><h3>Progress that remembers</h3><p>Your finished days are saved in your browser, so you can pick up exactly where you left off.</p></div>
     </div>
   </div>
 </section>
@@ -238,12 +302,12 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
   <div class="container">
     <div class="sec-head"><span class="eyebrow"><i></i>Daily routine</span><h2>One clear routine, every day</h2><p>Open the app, press play and follow the six steps. The app moves you to the next step when you're ready.</p></div>
     <div class="steps">
-      <div class="st"><span class="n">1</span><span class="min">5 min</span><h3>Warm-up</h3><p>Loosen your mouth and voice.</p></div>
-      <div class="st"><span class="n">2</span><span class="min">5 min</span><h3>Sound</h3><p>Learn today's target sound.</p></div>
-      <div class="st"><span class="n">3</span><span class="min">5 min</span><h3>Pairs</h3><p>Hear and say the difference.</p></div>
-      <div class="st"><span class="n">4</span><span class="min">5 min</span><h3>Twister</h3><p>Drill it until it's easy.</p></div>
-      <div class="st"><span class="n">5</span><span class="min">15 min</span><h3>Script</h3><p>Shadow full sentences.</p></div>
-      <div class="st"><span class="n">6</span><span class="min">5 min</span><h3>Record + check</h3><p>Say it, record it, compare.</p></div>
+      <div class="rv st"><span class="n">1</span><span class="min">5 min</span><h3>Warm-up</h3><p>Loosen your mouth and voice.</p></div>
+      <div class="rv st"><span class="n">2</span><span class="min">5 min</span><h3>Sound</h3><p>Learn today's target sound.</p></div>
+      <div class="rv st"><span class="n">3</span><span class="min">5 min</span><h3>Pairs</h3><p>Hear and say the difference.</p></div>
+      <div class="rv st"><span class="n">4</span><span class="min">5 min</span><h3>Twister</h3><p>Drill it until it's easy.</p></div>
+      <div class="rv st"><span class="n">5</span><span class="min">15 min</span><h3>Script</h3><p>Shadow full sentences.</p></div>
+      <div class="rv st"><span class="n">6</span><span class="min">5 min</span><h3>Record + check</h3><p>Say it, record it, compare.</p></div>
     </div>
     <div class="total"><b>40 min</b>a day · one focused session · no guesswork</div>
   </div>
@@ -253,10 +317,10 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
   <div class="container">
     <div class="sec-head"><span class="eyebrow"><i></i>30-day plan</span><h2>Four weeks, from single sounds to full sentences</h2><p>Each week builds on the last, so by Day 30 you're speaking whole sentences with clearer sounds and better rhythm.</p></div>
     <div class="weeks">
-      <div class="wk"><small>Week 1 · Days 1–7</small><h3>Consonants</h3><p>The tricky consonant sounds that change meaning when they're wrong.</p><ul><li>v / w</li><li>f / p</li><li>th</li><li>z / s</li><li>sh / s</li></ul></div>
-      <div class="wk"><small>Week 2 · Days 8–14</small><h3>Vowels</h3><p>Short and long vowels, so "ship" and "sheep" finally sound different.</p><ul><li>ship / sheep</li><li>cat / bed</li><li>cup / car</li><li>diphthongs</li><li>schwa</li></ul></div>
-      <div class="wk"><small>Week 3 · Days 15–21</small><h3>Endings &amp; tricky sounds</h3><p>Finish every word clearly and fix the sounds that trip most learners.</p><ul><li>-ed</li><li>-s / -es</li><li>clusters</li><li>R / L</li><li>silent letters</li></ul></div>
-      <div class="wk hl"><small>Week 4 · Days 22–30</small><h3>Full sentences</h3><p>Stress, linking and intonation, so you sound natural, not word-by-word.</p><ul><li>word stress</li><li>sentence stress</li><li>linking</li><li>intonation</li><li>pauses</li></ul></div>
+      <div class="rv wk"><small>Week 1 · Days 1–7</small><h3>Consonants</h3><p>The tricky consonant sounds that change meaning when they're wrong.</p><ul><li>v / w</li><li>f / p</li><li>th</li><li>z / s</li><li>sh / s</li></ul><div class="rv wkp" data-a="1" data-b="7"><div class="mpb"><i></i></div><span>0 / 7 days done</span></div><a class="wklink" href="app.html#day=1">Start week 1 →</a></div>
+      <div class="rv wk"><small>Week 2 · Days 8–14</small><h3>Vowels</h3><p>Short and long vowels, so "ship" and "sheep" finally sound different.</p><ul><li>ship / sheep</li><li>cat / bed</li><li>cup / car</li><li>diphthongs</li><li>schwa</li></ul><div class="rv wkp" data-a="8" data-b="14"><div class="mpb"><i></i></div><span>0 / 7 days done</span></div><a class="wklink" href="app.html#day=8">Start week 2 →</a></div>
+      <div class="rv wk"><small>Week 3 · Days 15–21</small><h3>Endings &amp; tricky sounds</h3><p>Finish every word clearly and fix the sounds that trip most learners.</p><ul><li>-ed</li><li>-s / -es</li><li>clusters</li><li>R / L</li><li>silent letters</li></ul><div class="rv wkp" data-a="15" data-b="21"><div class="mpb"><i></i></div><span>0 / 7 days done</span></div><a class="wklink" href="app.html#day=15">Start week 3 →</a></div>
+      <div class="rv wk hl"><small>Week 4 · Days 22–30</small><h3>Full sentences</h3><p>Stress, linking and intonation, so you sound natural, not word-by-word.</p><ul><li>word stress</li><li>sentence stress</li><li>linking</li><li>intonation</li><li>pauses</li></ul><div class="rv wkp" data-a="22" data-b="30"><div class="mpb"><i></i></div><span>0 / 9 days done</span></div><a class="wklink" href="app.html#day=22">Start week 4 →</a></div>
     </div>
     <div class="milestones"><span>🎙️ Day 1: first recording</span><span>🎙️ Day 15: halfway check</span><span>🏁 Day 30: compare all three</span></div>
   </div>
@@ -280,11 +344,11 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
   <div class="container">
     <div class="sec-head"><span class="eyebrow"><i></i>FAQ</span><h2>Questions</h2></div>
     <div class="faq">
-      <details open><summary>Is it really free?</summary><p>Yes. There's no payment, no account and no ads. Just open the app and start.</p></details>
-      <details><summary>Do I need to sign up?</summary><p>No. Your progress is saved in your own browser on the device you use.</p></details>
-      <details><summary>Does it work on my phone?</summary><p>Yes. It works in any modern browser on phone, tablet or laptop. Use headphones for the best listening.</p></details>
-      <details><summary>How much time do I need each day?</summary><p>About 40 minutes, split into six short steps. If you miss a day, just continue where you left off.</p></details>
-      <details><summary>Will my progress be lost if I clear my browser?</summary><p>Clearing your browser data or switching devices resets your saved days. You can still jump to any day manually.</p></details>
+      <details class="rv" open><summary>Is it really free?</summary><p>Yes. There's no payment, no account and no ads. Just open the app and start.</p></details>
+      <details class="rv"><summary>Do I need to sign up?</summary><p>No. Your progress is saved in your own browser on the device you use.</p></details>
+      <details class="rv"><summary>Does it work on my phone?</summary><p>Yes. It works in any modern browser on phone, tablet or laptop. Use headphones for the best listening.</p></details>
+      <details class="rv"><summary>How much time do I need each day?</summary><p>About 40 minutes, split into six short steps. If you miss a day, just continue where you left off.</p></details>
+      <details class="rv"><summary>Will my progress be lost if I clear my browser?</summary><p>Clearing your browser data or switching devices resets your saved days. You can still jump to any day manually.</p></details>
     </div>
   </div>
 </section>
@@ -303,5 +367,69 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--lav-ink);outline-o
     <div class="fl"><a href="app.html">Open the app</a><a href="#plan">30-day plan</a><a href="https://github.com/md-al-mamun22/accent-coach" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
+<script>
+(function(){
+  // ---- progress from the practice app ----
+  var st=null;try{st=JSON.parse(localStorage.getItem("accent-coach")||"null")}catch(e){}
+  var done=st&&st.done?st.done:{};var nDone=Object.keys(done).filter(function(k){return done[k]}).length;
+  if(st&&(nDone>0||st.day>1)){
+    var day=st.day||1;var cta=document.getElementById("heroCta");cta.textContent="Continue Day "+day+" →";
+    var mp=document.getElementById("myprog");mp.hidden=false;
+    document.getElementById("mptxt").textContent=nDone+" of 30 days done";
+    setTimeout(function(){document.getElementById("mpbar").style.width=(nDone/30*100)+"%"},300);
+  }
+  document.querySelectorAll(".wkp").forEach(function(el){var a=+el.dataset.a,b=+el.dataset.b,c=0;for(var i=a;i<=b;i++)if(done[i])c++;
+    el.querySelector("span").textContent=c+" / "+(b-a+1)+" days done";var bar=el.querySelector("i");setTimeout(function(){bar.style.width=(c/(b-a+1)*100)+"%"},400)});
+
+  // ---- playable demo (real clips from the app, in Mamun's cloned voice) ----
+  var DRILLS=[
+    {tag:"Week 1 · Consonants · Minimal pairs",title:"/v/ vs /w/",w:[["very","Top teeth on lower lip","/v/",0,0.66],["wary","Round your lips, no teeth","/w/",93.13,93.8]]},
+    {tag:"Week 1 · Consonants · Minimal pairs",title:"/θ/ vs /t/",w:[["three","Tongue between your teeth","/θ/",14.84,15.48],["tree","Tongue behind top teeth","/t/",98.91,99.6]]},
+    {tag:"Week 2 · Vowels · Minimal pairs",title:"/ɪ/ vs /iː/",w:[["ship","Short and relaxed","/ɪ/",32.78,33.47],["sheep","Long, smile a little","/iː/",33.36,34.03]]}
+  ];
+  var cur=0,au=null,stopT=null,wave=document.getElementById("wave");
+  function audio(){if(!au){au=new Audio("audio/p1.mp3");au.preload="auto"}return au}
+  function stop(){if(au)au.pause();clearTimeout(stopT);wave.classList.remove("on");document.querySelectorAll("button.word").forEach(function(b){b.classList.remove("playing")})}
+  function play(k){var w=DRILLS[cur].w[k],a=audio();stop();var btn=document.getElementById("w"+k);
+    var go=function(){a.currentTime=w[3];var p=a.play();if(p&&p.catch)p.catch(function(){});btn.classList.add("playing");wave.classList.add("on");
+      stopT=setTimeout(stop,(w[4]-w[3])*1000+120)};
+    if(a.readyState>=1)go();else{a.addEventListener("loadedmetadata",go,{once:true});a.load()}
+    document.getElementById("fl2t").textContent="Now say “"+w[0]+"” out loud";}
+  function show(i){stop();cur=i;var d=DRILLS[i];
+    var els=["mtag","mtitle","w0b","w0h","w0e","w1b","w1h","w1e"].map(function(id){return document.getElementById(id)});
+    els.forEach(function(e){e.classList.add("swap")});
+    setTimeout(function(){
+      document.getElementById("mtag").textContent=d.tag;document.getElementById("mtitle").textContent=d.title;
+      [0,1].forEach(function(k){document.getElementById("w"+k+"b").textContent=d.w[k][0];document.getElementById("w"+k+"h").textContent=d.w[k][1];document.getElementById("w"+k+"e").textContent=d.w[k][2]});
+      els.forEach(function(e){e.classList.remove("swap")});},180);
+    document.querySelectorAll(".dstrip .chip").forEach(function(c,j){c.classList.toggle("on",j===i);c.setAttribute("aria-selected",j===i)});
+    document.getElementById("mpill").textContent="Drill "+(i+1)+" / 3";
+    document.getElementById("mnext").textContent=i<2?"Next drill →":"Start the full 30 days →";
+    document.getElementById("fl2t").textContent="Tap ▶ to hear it";}
+  document.querySelectorAll(".dstrip .chip").forEach(function(c){c.addEventListener("click",function(){show(+c.dataset.i)})});
+  document.querySelectorAll("button.word").forEach(function(b){b.addEventListener("click",function(){play(+b.dataset.k)})});
+  document.getElementById("mnext").addEventListener("click",function(){if(cur<2)show(cur+1);else location.href="app.html"});
+
+  // ---- mobile menu ----
+  var bg=document.getElementById("burger"),mm=document.getElementById("mmenu");
+  bg.addEventListener("click",function(){var o=mm.classList.toggle("open");bg.setAttribute("aria-expanded",o)});
+  mm.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){mm.classList.remove("open");bg.setAttribute("aria-expanded","false")})});
+
+  // ---- scroll reveal, count-up, active nav ----
+  var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function count(el){var to=+el.dataset.to,t0=null;if(reduce){el.textContent=to;return}
+    function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/900,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)}
+    el.textContent="0";requestAnimationFrame(step)}
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target;
+      var sib=Array.prototype.indexOf.call(el.parentNode.children,el);el.style.transitionDelay=Math.min(sib,5)*70+"ms";
+      el.classList.add("in");var c=el.querySelector(".cnt");if(c)count(c);io.unobserve(el)}})},{threshold:.12});
+    document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+    var links=document.querySelectorAll(".links a");
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("act",a.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});
+    document.querySelectorAll("section[id]").forEach(function(s){so.observe(s)});
+  }else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")})}
+})();
+</script>
 </body>
 </html>

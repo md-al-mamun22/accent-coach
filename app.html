@@ -188,6 +188,7 @@ const STEPS=[["Warm-up",5],["Sound",5],["Pairs",5],["Twister",5],["Script",15],[
 const $=id=>document.getElementById(id);
 let st={day:1,step:0,done:{}};
 try{const v=JSON.parse(localStorage.getItem("accent-coach")||"null");if(v)st=Object.assign(st,v)}catch(e){}
+try{const m=location.hash.match(/day=(\d+)/);if(m){const n=Math.min(30,Math.max(1,+m[1]));st.day=n;st.step=0;try{localStorage.setItem("accent-coach",JSON.stringify(st))}catch(e){}history.replaceState(null,"",location.pathname)}}catch(e){}
 const save=()=>{try{localStorage.setItem("accent-coach",JSON.stringify(st))}catch(e){}};
 
 // clone voice player (Mamun's ElevenLabs clone, cut by line)
