@@ -70,7 +70,7 @@ export async function saveProgress(u, st) {
   if (!ex.exists()) data.createdAt = S.serverTimestamp();
   await S.setDoc(ref, data, { merge: true });
   const bref = S.doc(f.db, "board", u.uid);
-  if (data.showOnBoard && daysDone > 0) await S.setDoc(bref, { name: (u.displayName || "Learner").split(" ")[0].slice(0, 30), daysDone, streak, updatedAt: S.serverTimestamp() });
+  if (data.showOnBoard && daysDone > 0) await S.setDoc(bref, { name: (u.displayName || "Learner").split(" ")[0] || "Learner", daysDone, streak, updatedAt: S.serverTimestamp() });
   else await S.deleteDoc(bref).catch(() => {});
 }
 export async function listUsers() {

@@ -64,7 +64,7 @@ else C.onUser(async u=>{
   document.getElementById("f").onchange=e=>{filt=e.target.value;draw()};
   document.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;dir=sortK===k?-dir:-1;sortK=k;draw()});
   csvB.hidden=false;csvB.onclick=()=>{const h=["name","email","day","daysDone","streak","best","lastPractice"];
-    const c=[h.join(",")].concat(list().map(r=>h.map(k=>`"${String(r[k]??"").replace(/"/g,'""')}"`).join(","))).join("\n");
+    const c=[h.join(",")].concat(list().map(r=>h.map(k=>{let v=String(r[k]??"");if(/^[=+\-@\t\r]/.test(v))v="'"+v;return `"${v.replace(/"/g,'""')}"`}).join(","))).join("\n");
     const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([c],{type:"text/csv"}));a.download="accent-coach-learners.csv";a.click()};
   draw();
 });

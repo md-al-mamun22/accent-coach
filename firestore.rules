@@ -5,26 +5,45 @@ service cloud.firestore {
     function isAdmin() {
       return signedIn() && request.auth.token.email == 'ahmedmdmamun18@gmail.com' && request.auth.token.email_verified == true;
     }
+    function isInt(v, lo, hi) { return v is int && v >= lo && v <= hi; }
 
     // One private progress document per learner. Only the learner (and the admin) can read it.
     match /users/{uid} {
+      function validUser(d) {
+        return d.keys().hasOnly(['name','email','photo','day','step','done','doneAt','streak','best','lastPractice','daysDone','showOnBoard','createdAt','updatedAt'])
+          && d.name is string && d.name.size() <= 100
+          && d.email == request.auth.token.email
+          && d.photo is string && d.photo.size() <= 500 && (d.photo == '' || d.photo.matches('^https://[a-z0-9.-]+[.]googleusercontent[.]com/.*$'))
+          && isInt(d.day, 1, 30) && isInt(d.step, 0, 5)
+          && d.done is map && d.done.size() <= 30
+          && d.doneAt is map && d.doneAt.size() <= 30
+          && isInt(d.daysDone, 0, 30) && d.daysDone <= d.done.size()
+          && isInt(d.streak, 0, 400) && isInt(d.best, 0, 400)
+          && d.lastPractice is string && d.lastPractice.size() <= 10
+          && d.showOnBoard is bool
+          && d.updatedAt == request.time;
+      }
       allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
-      allow create, update: if signedIn() && request.auth.uid == uid
-        && request.resource.data.keys().hasOnly(['name','email','photo','day','step','done','doneAt','streak','best','lastPractice','daysDone','showOnBoard','createdAt','updatedAt'])
-        && request.resource.data.day is int && request.resource.data.day >= 1 && request.resource.data.day <= 30
-        && request.resource.data.daysDone is int && request.resource.data.daysDone >= 0 && request.resource.data.daysDone <= 30;
+      allow create: if signedIn() && request.auth.uid == uid && validUser(request.resource.data) && request.resource.data.createdAt == request.time;
+      allow update: if signedIn() && request.auth.uid == uid && validUser(request.resource.data) && request.resource.data.createdAt == resource.data.createdAt;
       allow delete: if signedIn() && request.auth.uid == uid;
     }
 
-    // Public leaderboard: first name + numbers only. Learners can only write their own row.
+    // Public leaderboard: first name + numbers only. Each learner can only write their own row,
+    // the name must be their real Google first name, and the numbers must match their progress record.
     match /board/{uid} {
       allow read: if true;
       allow create, update: if signedIn() && request.auth.uid == uid
         && request.resource.data.keys().hasOnly(['name','daysDone','streak','updatedAt'])
-        && request.resource.data.name is string && request.resource.data.name.size() <= 30
-        && request.resource.data.daysDone is int && request.resource.data.daysDone >= 0 && request.resource.data.daysDone <= 30
-        && request.resource.data.streak is int && request.resource.data.streak >= 0 && request.resource.data.streak <= 400;
+        && request.resource.data.name is string && request.resource.data.name.size() <= 40
+        && (request.resource.data.name == request.auth.token.get('name', 'Learner').split(' ')[0] || request.resource.data.name == 'Learner')
+        && request.resource.data.daysDone == get(/databases/$(database)/documents/users/$(uid)).data.daysDone
+        && request.resource.data.streak == get(/databases/$(database)/documents/users/$(uid)).data.streak
+        && request.resource.data.updatedAt == request.time;
       allow delete: if signedIn() && request.auth.uid == uid;
     }
+
+    // Everything else is closed.
+    match /{document=**} { allow read, write: if false; }
   }
 }
