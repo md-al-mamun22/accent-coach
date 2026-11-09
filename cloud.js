@@ -8,7 +8,7 @@ export const enabled = !!firebaseConfig;
 export function init() {
   if (!enabled) return Promise.resolve(null);
   if (ready) return ready;
-  ready = Promise.all([import(G + "firebase-app.js"), import(G + "firebase-auth.js"), import(G + "firebase-firestore.js")])
+  ready = Promise.all([import(G + "firebase-app.js"), import(G + "firebase-auth.js"), import(G + "firebase-firestore-lite.js")])
     .then(async ([app, auth, fs]) => {
       const a = app.initializeApp(firebaseConfig);
       if (APPCHECK_SITE_KEY) {
