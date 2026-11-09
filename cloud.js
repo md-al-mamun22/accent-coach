@@ -1,5 +1,5 @@
 // Shared login + progress sync for Accent Coach (Firebase Auth + Firestore).
-import { firebaseConfig, ADMIN_UID, APPCHECK_SITE_KEY } from "./firebase-config.js?v=8";
+import { firebaseConfig, ADMIN_UID, APPCHECK_SITE_KEY } from "./firebase-config.js?v=9";
 const V = "10.12.2", G = "https://www.gstatic.com/firebasejs/" + V + "/";
 let F = null, ready = null;
 

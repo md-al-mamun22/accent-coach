@@ -10,4 +10,4 @@ export const firebaseConfig = {
 };
 export const ADMIN_UID = "3LiywVvOSXQ1lkNIAfvMYHEdMDn1";
 // Public reCAPTCHA Enterprise (Fraud Defense) site key for Firebase App Check (bot protection). Empty = off.
-export const APPCHECK_SITE_KEY = "6LehUBcuAAAAABHjKb4-1ArGvDCcOhh4BOTAKFZv";
+export const APPCHECK_SITE_KEY = ""; // Enterprise key 6LehUBcuAAAAABHjKb4-1ArGvDCcOhh4BOTAKFZv: switch on once it is active
