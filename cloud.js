@@ -125,9 +125,9 @@ export function reminderLinks(hhmm) {
   const s = `${d.getFullYear()}${p(d.getMonth() + 1)}${p(d.getDate())}T${p(h)}${p(m)}00`;
   const e2 = new Date(d.getTime() + 40 * 60000);
   const e = `${e2.getFullYear()}${p(e2.getMonth() + 1)}${p(e2.getDate())}T${p(e2.getHours())}${p(e2.getMinutes())}00`;
-  const url = "https://md-al-mamun22.github.io/accent-coach/app.html";
+  const url = "https://accent-coach.devmamun.com/app.html";
   const title = "Accent Coach: 40-minute practice", det = "Time for today's English practice: " + url;
-  const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Accent Coach//EN", "BEGIN:VEVENT", "UID:accent-coach-daily@md-al-mamun22.github.io",
+  const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Accent Coach//EN", "BEGIN:VEVENT", "UID:accent-coach-daily@accent-coach.devmamun.com",
     "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z", "DTSTART:" + s, "DTEND:" + e, "RRULE:FREQ=DAILY",
     "SUMMARY:" + title, "DESCRIPTION:" + det, "URL:" + url, "BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + title, "TRIGGER:PT0M", "END:VALARM", "END:VEVENT", "END:VCALENDAR"].join("\r\n");
   const icsUrl = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
