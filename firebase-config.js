@@ -9,3 +9,5 @@ export const firebaseConfig = {
   appId: "1:441560627579:web:382cd79d0c06ebfdd365de"
 };
 export const ADMIN_UID = "3LiywVvOSXQ1lkNIAfvMYHEdMDn1";
+// Public reCAPTCHA v3 site key for Firebase App Check (bot protection). Empty = off.
+export const APPCHECK_SITE_KEY = "";

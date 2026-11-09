@@ -143,43 +143,43 @@ a{color:var(--lav-ink);font-weight:700}
   <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font:700 14px var(--body);color:var(--muted);text-decoration:none"><img src="img/logo-icon.svg" alt="" width="26" height="26">← Accent Coach home</a>
   <div id="acct" class="acct" hidden></div>
   <div class="top">
-    <div><h1>Accent Coach</h1><p>Din select koro → 6 ta step ekta ekta kore → "Day shesh" chapo.</p></div>
-    <div class="prog" id="prog">0 / 30 din</div>
+    <div><h1>Accent Coach</h1><p>Pick a day → do the 6 steps one by one → press "Finish Day".</p></div>
+    <div class="prog" id="prog">0 / 30 days</div>
   </div>
   <div class="weeks" id="weeks"></div>
   <div class="head" id="head"></div>
   <div class="steps" id="steps"></div>
   <div class="card" id="card"></div>
-  <div class="nav"><button class="btn ghost" id="back">← Ager step</button><button class="btn main" id="next">Porer step →</button></div>
-  <p class="small">▶ chaple tomar nijer clone voice (Mamun – Explainer) bajbe. Je shobdo-r pashe ▶ nei, oita Voice Pack Part 5–7-e ache, porer mashe jog hobe. Progress ei browser-e save thake; Google diye sign in korle shob device-e sync hobe.</p>
+  <div class="nav"><button class="btn ghost" id="back">← Previous step</button><button class="btn main" id="next">Next step →</button></div>
+  <p class="small">Press ▶ to hear the model voice (an AI clone of Mamun's voice). Words without ▶ will get audio soon. Your progress is saved in this browser; sign in with Google to sync it across devices.</p>
 </div>
 
-<script src="mouth.js?v=3"></script>
+<script src="mouth.js?v=4"></script>
 <script>
 const S={
- vw:{n:"V / W",how:"<b>V:</b> upore-r dat nicher thot halka chhoy, gola kape (vvv).<br><b>W:</b> thot gol kore samne, dat thote lagbe na, tarpor khule jay.",bad:"V-ke \"bh\" bola (bhery), W-ke \"v\" bola (vebsite).",w:["very","value","video","voice","work","website","week","women","one"]},
- fp:{n:"F / P",how:"<b>F:</b> upore-r dat nicher thote, shudhu batash.<br><b>P:</b> dui thot bondho, tarpor joray batash chharo (phu).",bad:"F-ke \"ph\" bola (phree). P-te batash na deya.",w:["free","first","fix","coffee","people","page","price","help"]},
- th1:{n:"TH batash (θ)",how:"Jibh-er dogha dui dater majhe ber kore rakho, tarpor shudhu batash chharo. Gola kape na.",bad:"\"t\" ba Bangla \"থ\" bola (tank-er moto thank).",w:["think","thanks","three","thing","month","both"]},
- th2:{n:"TH kapuni (ð)",how:"Eki jaygay jibh, dater majhe. Kintu ebar gola kape (gola-y hat rakhle kapuni pabe).",bad:"\"d\" bola (dis, dat, dey).",w:["the","this","that","they","then","other","with"]},
- zs:{n:"Z / S, SH / S",how:"<b>Z:</b> S-er jaygay jibh, kintu gola kape, moumachhi-r zzz.<br><b>SH:</b> thot samne gol, jibh pichhone. <b>S:</b> thot chora, jibh samne.",bad:"Z-ke \"j\" bola (jero, bijness). S ar SH mishe jawa.",w:["zero","busy","business","easy","she","see","sure","sir"]},
- sc:{n:"S + consonant, T / D",how:"<b>S + consonant:</b> shuru theke sorasori \"s\", age kono vowel na.<br><b>T, D:</b> jibh-er dogha dater thik pichhone, Bangla \"ট/ড\"-er cheye samne o narom.",bad:"\"istart\", \"ischool\" bola. T/D khub shokto bola.",w:["start","school","small","speak","strong","time","today","did"]},
- ii:{n:"ɪ short / iː long",how:"<b>ɪ (ship):</b> thot halka chora, khub choto, dhila.<br><b>iː (sheep):</b> thot puro chora (hashi), lomba.",bad:"Duto-ke eki lomba \"ee\" bola, tai ship ar sheep eki shonay.",w:["ship","sheep","live","leave","fill","feel","sit","seat"]},
- ae:{n:"æ (cat) / e (bed)",how:"<b>æ:</b> mukh boro kore khula, choyal niche, \"a\" ar \"e\"-er majhe.<br><b>e:</b> mukh madhyam khola.",bad:"Cat-ke \"ket\" ba bad-ke \"bed\" bola.",w:["cat","bad","man","plan","answer","bed","men","help"]},
- ua:{n:"ʌ (cup) / ɑː (car)",how:"<b>ʌ:</b> mukh halka khola, dhila, choto \"a\".<br><b>ɑː:</b> mukh boro khola, pichhone theke lomba \"aa\".",bad:"Cup-ke \"cop\" bola (Bangla \"o\").",w:["cup","love","money","Monday","just","car","start","heart"]},
- uo:{n:"ʊ / uː, ɔː / oʊ",how:"<b>ʊ (book):</b> thot halka gol, choto. <b>uː (food):</b> puro gol, lomba.<br><b>oʊ (go):</b> \"o\" theke \"u\"-te jay, dui ongsho. <b>ɔː (call):</b> thot gol, mukh khola.",bad:"Book-ke lomba \"buuk\" bola. Go-ke ek ongsho \"gō\" bola.",w:["book","good","food","new","go","home","phone","call","talk"]},
- er:{n:"ɜː (bird) + schwa ə",how:"<b>ɜː:</b> mukh dhila, majhkhane, \"er\". Jibh ghurabe na.<br><b>ə (schwa):</b> shobcheye dhila choto \"uh\", stress chhara syllable-e.",bad:"Work-ke \"wark\" ba \"walk\" bola. Schwa-r jaygay puro vowel bola (a-bout na, ə-bout).",w:["work","first","person","learn","about","problem","today","calendar"]},
- dp:{n:"Diphthong: eɪ, aɪ, aʊ, ɔɪ",how:"Dui vowel-er majhe gliding: <b>eɪ</b> (day) e→i, <b>aɪ</b> (time) a→i, <b>aʊ</b> (now) a→u, <b>ɔɪ</b> (voice) o→i.",bad:"Day-ke \"de\", late-ke \"let\" bola (dwitiyo ongsho bad).",w:["day","make","late","time","right","now","out","choice","voice"]},
- ed:{n:"-ed: t / d / ɪd",how:"<b>t:</b> p, k, s, sh, ch, f-er por (worked). <b>d:</b> onno sound-er por (called). <b>ɪd:</b> t ba d-er por, alada syllable (wanted).",bad:"Shob jaygay \"-ed\" alada kore bola (work-ed), ba ekdom fele deya.",w:["worked","helped","fixed","called","moved","changed","wanted","needed","added"]},
- es:{n:"-s: s / z / ɪz",how:"<b>s:</b> p, t, k, f-er por (sites). <b>z:</b> onno sound-er por (calls). <b>ɪz:</b> s, z, sh, ch, j-er por, alada syllable (pages).",bad:"Shesh-er -s bad deya, ba shob jaygay \"s\" bola.",w:["sites","steps","calls","emails","reviews","pages","places","changes"]},
- cl:{n:"Cluster (majhe vowel na)",how:"Pashapashi consonant eksathe bolo, majhe kono \"i/e\" dhukabe na. Dhire bhenge bolo, tarpor jora lagao: tek-s-ts → texts.",bad:"\"tekis\", \"askedo\", \"monthis\" bola.",w:["texts","tests","asked","months","next steps","spreadsheet","instantly"]},
- rl:{n:"R, L, dark L",how:"<b>R:</b> jibh kothao chhoy na, peche gol, roll na.<br><b>L (shuru-te):</b> jibh dater pichhone. <b>Dark L (shesh-e):</b> jibh-er pichhon upore, \"ol\".",bad:"R roll kora (Bangla \"র\"). Shesh-er L khub patla bola.",w:["right","really","ready","light","lead","call","will","feel","people"]},
- ft:{n:"Flap T, NG",how:"<b>Flap T:</b> duto vowel-er majhe T halka \"d\"-er moto (water → wadder).<br><b>NG:</b> jibh-er pichhon upore, nak diye, shesh-e \"g\" bolo na.",bad:"Water-e joray \"t\". Sing-ke \"sing-ga\" bola.",w:["water","better","little","getting","sing","thing","working","morning"]},
- sl:{n:"Silent letter",how:"Ei letter-gulo lekha thake, kintu bola hoy na.",bad:"Lekha dekhe shob letter bola (Wed-nes-day).",w:["Wednesday","know","write","honest","hour","half","should","listen","design"]},
- ws:{n:"Word stress",how:"Ekta syllable joray, lomba, uchu sure; baki halka. Noun-e stress samne, verb-e pichhone (REcord / reCORD).",bad:"Shob syllable eki jore bola, ba bhul syllable-e jor.",w:["website","developer","automation","calendar","important","photograph","photography"]},
- sw:{n:"Sentence stress + weak form",how:"Dorkari shobde jor (noun, verb, adjective). Choto shobde (to, for, and, of, a, can) halka schwa: to → tə, for → fə.",bad:"Protiti shobde eki jor, robot-er moto shonay.",w:["I NEED to SEE you","want tə talk","thanks fə coming","bread ən butter"]},
- lk:{n:"Contraction + linking",how:"Kotha-y shob shomoy chhoto koro (I'm, it's, don't). Consonant-e shesh + vowel-e shuru hole jore dao: turn_it_off.",bad:"\"I am\", \"it is\" puro bola, ar protiti shobder pore thema.",w:["I'm","it's","don't","that's","turn it off","an hour","look at it","not at all"]},
- in:{n:"Intonation",how:"<b>Yes/No prosno:</b> shesh-e gola upore ↗.<br><b>Wh- prosno:</b> shesh-e niche ↘.<br><b>List:</b> prottek item-e ↗, shesh-e ↘.",bad:"Shob bakko eki sure, tai prosno ar statement alada bojha jay na.",w:["Are you free?","What do you do?","booking, reminders, and follow-ups"]},
- ch:{n:"Chunking + pause",how:"3–6 shobdo-r group-e bolo, tarpor choto pause. Script-e slash (/) diye pause-er jayga dag dao.",bad:"Ek nishshashe puro bakko, ba protiti shobder por pause.",w:["Every week, / I'll share / one tip / you can use."]}
+ vw:{n:"V / W",how:"<b>V:</b> top teeth lightly touch the lower lip, and your throat vibrates (vvv).<br><b>W:</b> round your lips and push them forward. Teeth don't touch the lips, then the lips open.",bad:"Saying V like \"bh\" (bhery), or W like \"v\" (vebsite).",w:["very","value","video","voice","work","website","week","women","one"]},
+ fp:{n:"F / P",how:"<b>F:</b> top teeth on the lower lip, air only.<br><b>P:</b> close both lips, then release them with a puff of air (phu).",bad:"Saying F like \"ph\" (phree). No puff of air on P.",w:["free","first","fix","coffee","people","page","price","help"]},
+ th1:{n:"TH, air only (θ)",how:"Put the tip of your tongue between your teeth, then let only air out. No throat vibration.",bad:"Saying \"t\" instead (tank instead of thank).",w:["think","thanks","three","thing","month","both"]},
+ th2:{n:"TH, voiced (ð)",how:"Same tongue position, between the teeth. This time your throat vibrates (put a hand on your throat to feel it).",bad:"Saying \"d\" instead (dis, dat, dey).",w:["the","this","that","they","then","other","with"]},
+ zs:{n:"Z / S, SH / S",how:"<b>Z:</b> tongue in the S position, but your throat vibrates, like a bee: zzz.<br><b>SH:</b> lips rounded forward, tongue further back. <b>S:</b> lips spread, tongue forward.",bad:"Saying Z like \"j\" (jero, bijness). Mixing up S and SH.",w:["zero","busy","business","easy","she","see","sure","sir"]},
+ sc:{n:"S + consonant, T / D",how:"<b>S + consonant:</b> start straight with \"s\", no vowel before it.<br><b>T, D:</b> tongue tip just behind the top teeth, softer and further forward than a hard \"T\".",bad:"Saying \"istart\", \"ischool\". Making T/D too hard.",w:["start","school","small","speak","strong","time","today","did"]},
+ ii:{n:"ɪ short / iː long",how:"<b>ɪ (ship):</b> lips slightly spread, very short and relaxed.<br><b>iː (sheep):</b> lips fully spread (smile), long.",bad:"Saying both as the same long \"ee\", so ship and sheep sound the same.",w:["ship","sheep","live","leave","fill","feel","sit","seat"]},
+ ae:{n:"æ (cat) / e (bed)",how:"<b>æ:</b> mouth wide open, jaw down, between \"a\" and \"e\".<br><b>e:</b> mouth half open.",bad:"Saying cat as \"ket\", or bad as \"bed\".",w:["cat","bad","man","plan","answer","bed","men","help"]},
+ ua:{n:"ʌ (cup) / ɑː (car)",how:"<b>ʌ:</b> mouth slightly open, relaxed, a short \"a\".<br><b>ɑː:</b> mouth wide open, a long \"aa\" from the back.",bad:"Saying cup like \"cop\".",w:["cup","love","money","Monday","just","car","start","heart"]},
+ uo:{n:"ʊ / uː, ɔː / oʊ",how:"<b>ʊ (book):</b> lips slightly rounded, short. <b>uː (food):</b> fully rounded, long.<br><b>oʊ (go):</b> moves from \"o\" to \"u\", two parts. <b>ɔː (call):</b> lips rounded, mouth open.",bad:"Saying book as a long \"buuk\". Saying go as one flat \"gō\".",w:["book","good","food","new","go","home","phone","call","talk"]},
+ er:{n:"ɜː (bird) + schwa ə",how:"<b>ɜː:</b> mouth relaxed, in the middle, \"er\". Don't curl the tongue.<br><b>ə (schwa):</b> the most relaxed, short \"uh\", in unstressed syllables.",bad:"Saying work as \"wark\" or \"walk\". Using a full vowel instead of schwa (a-bout, not ə-bout).",w:["work","first","person","learn","about","problem","today","calendar"]},
+ dp:{n:"Diphthong: eɪ, aɪ, aʊ, ɔɪ",how:"Glide between two vowels: <b>eɪ</b> (day) e→i, <b>aɪ</b> (time) a→i, <b>aʊ</b> (now) a→u, <b>ɔɪ</b> (voice) o→i.",bad:"Saying day as \"de\", late as \"let\" (dropping the second part).",w:["day","make","late","time","right","now","out","choice","voice"]},
+ ed:{n:"-ed: t / d / ɪd",how:"<b>t:</b> after p, k, s, sh, ch, f (worked). <b>d:</b> after other sounds (called). <b>ɪd:</b> after t or d, an extra syllable (wanted).",bad:"Saying \"-ed\" as a separate syllable everywhere (work-ed), or dropping it.",w:["worked","helped","fixed","called","moved","changed","wanted","needed","added"]},
+ es:{n:"-s: s / z / ɪz",how:"<b>s:</b> after p, t, k, f (sites). <b>z:</b> after other sounds (calls). <b>ɪz:</b> after s, z, sh, ch, j, an extra syllable (pages).",bad:"Dropping the final -s, or always saying \"s\".",w:["sites","steps","calls","emails","reviews","pages","places","changes"]},
+ cl:{n:"Clusters (no extra vowel)",how:"Say neighbouring consonants together, with no \"i/e\" in between. Break it up slowly, then join: tek-s-ts → texts.",bad:"Saying \"tekis\", \"askedo\", \"monthis\".",w:["texts","tests","asked","months","next steps","spreadsheet","instantly"]},
+ rl:{n:"R, L, dark L",how:"<b>R:</b> the tongue touches nothing, it pulls back and rounds, no rolling.<br><b>L (at the start):</b> tongue behind the top teeth. <b>Dark L (at the end):</b> back of the tongue raised, like \"ol\".",bad:"Rolling the R. Making the final L too thin.",w:["right","really","ready","light","lead","call","will","feel","people"]},
+ ft:{n:"Flap T, NG",how:"<b>Flap T:</b> between two vowels, T sounds like a soft \"d\" (water → wadder).<br><b>NG:</b> back of the tongue up, sound through the nose, no \"g\" at the end.",bad:"A hard \"t\" in water. Saying sing as \"sing-ga\".",w:["water","better","little","getting","sing","thing","working","morning"]},
+ sl:{n:"Silent letters",how:"These letters are written but not spoken.",bad:"Saying every written letter (Wed-nes-day).",w:["Wednesday","know","write","honest","hour","half","should","listen","design"]},
+ ws:{n:"Word stress",how:"One syllable is strong, long and higher; the rest are light. Nouns stress the front, verbs often the back (REcord / reCORD).",bad:"Giving every syllable the same weight, or stressing the wrong one.",w:["website","developer","automation","calendar","important","photograph","photography"]},
+ sw:{n:"Sentence stress + weak forms",how:"Stress the important words (nouns, verbs, adjectives). Small words (to, for, and, of, a, can) become a light schwa: to → tə, for → fə.",bad:"Stressing every word the same, so it sounds robotic.",w:["I NEED to SEE you","want tə talk","thanks fə coming","bread ən butter"]},
+ lk:{n:"Contractions + linking",how:"In speech, always contract (I'm, it's, don't). When a word ends in a consonant and the next starts with a vowel, join them: turn_it_off.",bad:"Saying \"I am\", \"it is\" in full, and stopping after every word.",w:["I'm","it's","don't","that's","turn it off","an hour","look at it","not at all"]},
+ in:{n:"Intonation",how:"<b>Yes/No questions:</b> voice goes up at the end ↗.<br><b>Wh- questions:</b> voice goes down at the end ↘.<br><b>Lists:</b> up on each item ↗, down on the last ↘.",bad:"Saying every sentence in the same tone, so questions and statements sound alike.",w:["Are you free?","What do you do?","booking, reminders, and follow-ups"]},
+ ch:{n:"Chunking + pauses",how:"Speak in groups of 3–6 words, then a short pause. Mark the pauses in the script with a slash (/).",bad:"Saying a whole sentence in one breath, or pausing after every word.",w:["Every week, / I'll share / one tip / you can use."]}
 };
 const SC=[
 ["Hi Victoria, thanks so much for making the time. I know Thursdays are usually busy, so I really appreciate it.",
@@ -212,7 +212,7 @@ const SC=[
 "Thanks again for your time. It's been a pleasure."]
 ];
 const D=[
- {s:["vw"],p:[["very","wary"],["vest","west"],["vine","wine"]],t:["Very well, very well, very well.","We visit Victoria's website every Wednesday."],sc:[1,[1,2]],x:"Aj <b>Day 1 recording</b>: shuru-te Script 1 puro ekbar pore phone-e record koro. Eta pore Day 15 ar Day 30-er sathe milabe."},
+ {s:["vw"],p:[["very","wary"],["vest","west"],["vine","wine"]],t:["Very well, very well, very well.","We visit Victoria's website every Wednesday."],sc:[1,[1,2]],x:"Today is your <b>Day 1 recording</b>: before you start, read Script 1 once and record it on your phone. You will compare it with Day 15 and Day 30."},
  {s:["fp"],p:[["fan","pan"],["fast","past"],["coffee","copy"]],t:["Fresh fried fish, fish fresh fried.","Five free fixes for your first funnel."],sc:[1,[1,2]]},
  {s:["th1"],p:[["three","tree"],["thank","tank"],["thin","tin"]],t:["Three thin things, three thick things.","Thirty-three thousand thoughtful thinkers."],sc:[1,[3,4]]},
  {s:["th2"],p:[["they","day"],["then","den"],["those","doze"]],t:["This, that, these, those, they, them, then, there.","Then they thought that this was the thing."],sc:[1,[3,4]]},
@@ -226,7 +226,7 @@ const D=[
  {s:["er"],p:[["work","walk"],["heard","hard"],["bird","bard"]],t:["The first girl learned the third word.","Turn, burn, learn, earn."],sc:[2,[5,6]]},
  {s:["dp"],p:[["wait","wet"],["main","men"],["now","no"]],t:["How now, brown cow?","I like my bright white kite.","Joy's choice was the noisy toy."],sc:[2,[1,2,3,4,5,6]]},
  {r:2},
- {s:["ed"],p:[["work","worked"],["call","called"],["want","wanted"]],t:["I worked, I walked, I talked, I asked.","We wanted, needed, added and started."],sc:[3,[1,2]],x:"Aj <b>Day 15 recording</b>: shuru-te Script 1 abar record koro. Day 1-er recording-er sathe pashapashi shono."},
+ {s:["ed"],p:[["work","worked"],["call","called"],["want","wanted"]],t:["I worked, I walked, I talked, I asked.","We wanted, needed, added and started."],sc:[3,[1,2]],x:"Today is your <b>Day 15 recording</b>: record Script 1 again before you start, then listen to it next to your Day 1 recording."},
  {s:["es"],p:[["site","sites"],["call","calls"],["page","pages"]],t:["Texts, tests, tasks, desks."],sc:[3,[3]]},
  {s:["cl"],p:[["ask","asked"],["test","texts"],["month","months"]],t:["Months of tests and lists of texts.","The sixth sick sheikh's sixth sheep's sick."],sc:[3,[4]]},
  {s:["rl"],p:[["light","right"],["lead","read"],["collect","correct"]],t:["Red lorry, yellow lorry.","Call all small tall people."],sc:[3,[5]]},
@@ -243,7 +243,7 @@ const D=[
  {r:5},
  {fin:1}
 ];
-const WK=[["Week 1","Consonant",1,7],["Week 2","Vowel",8,14],["Week 3","Shobder shesh",15,21],["Week 4","Puro bakko",22,30]];
+const WK=[["Week 1","Consonants",1,7],["Week 2","Vowels",8,14],["Week 3","Word endings",15,21],["Week 4","Full sentences",22,30]];
 const STEPS=[["Warm-up",5],["Sound",5],["Pairs",5],["Twister",5],["Script",15],["Record + check",5]];
 const $=id=>document.getElementById(id);
 let st={day:1,step:0,done:{}};
@@ -272,10 +272,10 @@ function dayData(n){
   const merge=(a,b)=>{const days=D.slice(a-1,b).filter(x=>x.s&&x.s.length);return{s:[...new Set(days.flatMap(x=>x.s))],p:days.flatMap(x=>x.p),t:days.map(x=>x.t[0])}};
   if(d.r){const rng=d.r===1?[1,6]:d.r===2?[8,13]:d.r===3?[15,20]:[1,26];const m=merge(...rng);
     const sc=d.r===5?null:[d.r,SC[d.r-1].map((_,i)=>i+1)];
-    return Object.assign(m,{title:d.r===5?"Review: shob kichu":"Review: "+WK[d.r-1][0],review:true,sc,
-      x:d.r===5?"Aj 4 ta script ekbar kore shadow koro (5 min kore). Pair ar twister prottek week theke.":"Aj notun kichu na. Ei shoptaher shob sound, pair ar twister abar, tarpor script puro text chara. Shesh-e script chara 2 minute oi topic-e nijer moto kotha bolo ar record koro."+(d.r>1?" Ager shoptaher script-o ekbar shadow koro.":"")})}
-  if(d.fin){const m=merge(1,26);return Object.assign(m,{title:"Final test",review:true,sc:[1,[1,2,3,4,5,6,7,8]],x:"Aj <b>Day 30 recording</b>: Script 1 record koro, tarpor Day 1 ar Day 15-er recording-er sathe pashapashi shono. Shesh-e ekta video-r voice nije record koro."})}
-  if(d.own){const m=merge(22,26);return Object.assign(m,{title:"Nijer content: "+d.own,own:d.own,sc:null,x:`Aj ElevenLabs-e tomar nijer ekta ${d.own} paste kore MP3 banao. Script step-e oita-i shadow korbe. Sound step-e Week 4-er rule-gulo mone koro.`})}
+    return Object.assign(m,{title:d.r===5?"Review: everything":"Review: "+WK[d.r-1][0],review:true,sc,
+      x:d.r===5?"Today, shadow all 4 scripts once (5 minutes each). Pairs and twisters come from every week.":"Nothing new today. Repeat this week's sounds, pairs and twisters, then the script without looking at the text. Finally, talk about the same topic in your own words for 2 minutes and record it."+(d.r>1?" Also shadow last week's script once.":"")})}
+  if(d.fin){const m=merge(1,26);return Object.assign(m,{title:"Final test",review:true,sc:[1,[1,2,3,4,5,6,7,8]],x:"Today is your <b>Day 30 recording</b>: record Script 1, then listen to it next to your Day 1 and Day 15 recordings. Finally, record the voice for a short video yourself."})}
+  if(d.own){const m=merge(22,26);return Object.assign(m,{title:"Your own content: "+d.own,own:d.own,sc:null,x:`Today, use your own ${d.own}: paste it into a text-to-speech tool and make an MP3. You will shadow it in the Script step. In the Sound step, remember the Week 4 rules.`})}
   return {s:d.s,p:d.p,t:d.t,sc:d.sc,x:d.x,title:d.s.map(k=>S[k].n).join(" · ")};
 }
 function weekOf(n){return WK.findIndex(w=>n>=w[2]&&n<=w[3])}
@@ -283,56 +283,56 @@ function weekOf(n){return WK.findIndex(w=>n>=w[2]&&n<=w[3])}
 function renderWeeks(){
   $("weeks").innerHTML=WK.map(w=>{let b="";for(let i=w[2];i<=w[3];i++){const d=D[i-1];b+=`<button class="day${st.done[i]?" done":""}${d.r||d.fin?" rev":""}${st.day===i?" on":""}" data-day="${i}" aria-label="Day ${i}">${i}</button>`}
     return `<div class="wk"><span>${w[0]} · ${w[1]}</span><div class="days">${b}</div></div>`}).join("");
-  const n=Object.keys(st.done).length;$("prog").textContent=`${n} / 30 din shesh`;
+  const n=Object.keys(st.done).length;$("prog").textContent=`${n} / 30 days done`;
 }
 function renderHead(){
   const d=dayData(st.day),w=WK[weekOf(st.day)];
-  $("head").innerHTML=`<span class="eb">Day ${st.day} · ${w[0]} · ${w[1]}</span><h2>Ajker focus: <span class="hl">${d.title}</span></h2>${d.x?`<span class="note">${d.x}</span>`:""}`;
+  $("head").innerHTML=`<span class="eb">Day ${st.day} · ${w[0]} · ${w[1]}</span><h2>Today's focus: <span class="hl">${d.title}</span></h2>${d.x?`<span class="note">${d.x}</span>`:""}`;
 }
 function renderSteps(){
   $("steps").innerHTML=STEPS.map((s,i)=>`<button class="st${i===st.step?" on":""}${i<st.step?" ok":""}" data-step="${i}"><b>${i+1}</b>${s[0]}</button>`).join("");
   $("back").disabled=st.step===0;$("back").style.visibility=st.step===0?"hidden":"visible";
-  $("next").textContent=st.step===5?(st.done[st.day]?"Porer din →":"Day "+st.day+" shesh ✓"):"Porer step →";
+  $("next").textContent=st.step===5?(st.done[st.day]?"Next day →":"Finish Day "+st.day+" ✓"):"Next step →";
 }
 let tId=null,tLeft=0;
-function timerHtml(min){return `<div class="timer"><span id="tv">${String(min).padStart(2,"0")}:00</span><button class="btn sm" id="tgo" data-min="${min}">Timer shuru</button></div>`}
+function timerHtml(min){return `<div class="timer"><span id="tv">${String(min).padStart(2,"0")}:00</span><button class="btn sm" id="tgo" data-min="${min}">Start timer</button></div>`}
 function renderCard(){
   clearInterval(tId);tId=null;
-  const d=dayData(st.day),i=st.step,[name,min]=STEPS[i];let h=`<div class="meta"><span class="tag">Step ${i+1} / 6 · ${min} minute</span>${timerHtml(min)}</div>`;
-  if(i===0){h+=`<h3>Warm-up: mukh ar jibh dhila koro</h3><ol class="todo">
-<li><b>Choyal dhila:</b> mukh boro kore "aaa", choyal niche nami-o, hat diye choyal-er dui pash masaj (30 sec)</li>
-<li><b>Thot gol-chora:</b> "oo" (gol) → "ee" (hashi), bar bar (30 sec)</li>
-<li><b>Jibh bahire:</b> jibh dater majhe ber kore "th-th-th" phu (30 sec)</li>
-<li><b>Jibh ghora:</b> mukh bondho, jibh diye dater upore 5 bar daan, 5 bar baam (30 sec)</li>
-<li><b>Lip trill:</b> thot dhila rekhe "brrrr", 4 bar (30 sec)</li>
-<li><b>Siren:</b> "mmm" bole gola nicher sur theke upore, abar niche (30 sec)</li>
+  const d=dayData(st.day),i=st.step,[name,min]=STEPS[i];let h=`<div class="meta"><span class="tag">Step ${i+1} / 6 · ${min} min</span>${timerHtml(min)}</div>`;
+  if(i===0){h+=`<h3>Warm-up: relax your mouth and tongue</h3><ol class="todo">
+<li><b>Loose jaw:</b> open wide on "aaa", drop the jaw, and massage both sides of the jaw with your hands (30 sec)</li>
+<li><b>Round and spread:</b> "oo" (round) → "ee" (smile), again and again (30 sec)</li>
+<li><b>Tongue out:</b> put the tongue between your teeth and blow "th-th-th" (30 sec)</li>
+<li><b>Tongue circles:</b> mouth closed, run your tongue over your teeth 5 times right, 5 times left (30 sec)</li>
+<li><b>Lip trill:</b> relax your lips and go "brrrr", 4 times (30 sec)</li>
+<li><b>Siren:</b> hum "mmm" from a low note up to high and back down (30 sec)</li>
 <li><b>Buzz:</b> "zzzz" 5 sec → "vvvv" 5 sec → "ffff" 5 sec (1 min)</li>
-<li><b>Druto:</b> "ma me mi mo mu", "la le li lo lu", "ra re ri ro ru", 3 bar (1 min)</li></ol>
-<p class="small">Aynay ba phone-er front camera-y mukh dekhe koro.</p>`}
-  if(i===1){h+=`<h3>Ajker sound shekho</h3>`;
-    if(!d.s.length)h+=`<p>Aj notun sound nei. Week 4-er rule mone rekho: dorkari shobde jor, choto shobde halka, shobdo jore jore bolo.</p>`;
-    h+=d.s.map(k=>{const s=S[k];return `<div class="sndcard"><h3 style="font-size:19px">${s.n}</h3>${window.mouthHTML?window.mouthHTML(k):""}<div class="box how"><b>Kivabe bolbe</b><span>${s.how}</span></div><div class="box bad"><b>Amra sadharonoto ja vul kori</b><span>${s.bad}</span></div><div><span class="tag">Shono, tarpor 10 bar bolo</span><div class="words" style="margin-top:8px">${s.w.map(wbtn).join("")}</div></div></div>`}).join("")}
-  if(i===2){h+=`<h3>Minimal pairs: kan thik koro</h3><p>Dui shobdo ekdom kachakachi, shudhu ajker sound-e alada. Prottek pair 5 bar: prothome shono, tarpor bolo. Duto alada shonacche kina kheyal koro.</p>`;
-    h+=d.p.length?`<div style="display:flex;flex-direction:column;gap:10px">${d.p.map(p=>`<div class="pair">${wbtn(p[0])}<i>vs</i>${wbtn(p[1])}</div>`).join("")}</div>`:`<p>Aj pair nei. Script-e slash (/) diye pause-er jayga dag dao, tarpor chunk kore bolo.</p>`}
-  if(i===3){h+=`<h3>Tongue twister</h3><p>Dhire 3 bar → normal 3 bar → druto 3 bar. Vul hole abar dhire. Druto-r cheye porishkar beshi dorkari.</p>`+d.t.map(t=>`<div class="tw"><p>${esc(t)}</p>${hasClip(t)?`<div class="row"><button class="btn sm" data-clip="${esc(t)}" data-rate="0.75">▶ Dhire</button><button class="btn sm" data-clip="${esc(t)}" data-rate="1">▶ Normal</button></div>`:""}</div>`).join("")+(d.t.some(t=>!hasClip(t))?`<p class="small">Twister-er clone audio ashbe Voice Pack Part 6–7 banale (porer mashe). Ekhon nije dhire pore bolo.</p>`:"")}
+<li><b>Fast syllables:</b> "ma me mi mo mu", "la le li lo lu", "ra re ri ro ru", 3 times (1 min)</li></ol>
+<p class="small">Do it in front of a mirror or your phone's front camera.</p>`}
+  if(i===1){h+=`<h3>Learn today's sound</h3>`;
+    if(!d.s.length)h+=`<p>No new sound today. Remember the Week 4 rules: stress the important words, keep small words light, and link words together.</p>`;
+    h+=d.s.map(k=>{const s=S[k];return `<div class="sndcard"><h3 style="font-size:19px">${s.n}</h3>${window.mouthHTML?window.mouthHTML(k):""}<div class="box how"><b>How to say it</b><span>${s.how}</span></div><div class="box bad"><b>Common mistakes</b><span>${s.bad}</span></div><div><span class="tag">Listen, then say each one 10 times</span><div class="words" style="margin-top:8px">${s.w.map(wbtn).join("")}</div></div></div>`}).join("")}
+  if(i===2){h+=`<h3>Minimal pairs: train your ear</h3><p>Two words that sound almost the same and differ only in today's sound. Do each pair 5 times: listen first, then say it. Check that the two words really sound different.</p>`;
+    h+=d.p.length?`<div style="display:flex;flex-direction:column;gap:10px">${d.p.map(p=>`<div class="pair">${wbtn(p[0])}<i>vs</i>${wbtn(p[1])}</div>`).join("")}</div>`:`<p>No pairs today. Mark the pauses in the script with a slash (/), then say it in chunks.</p>`}
+  if(i===3){h+=`<h3>Tongue twister</h3><p>3 times slowly → 3 times at normal speed → 3 times fast. If you slip, go slow again. Being clear matters more than being fast.</p>`+d.t.map(t=>`<div class="tw"><p>${esc(t)}</p>${hasClip(t)?`<div class="row"><button class="btn sm" data-clip="${esc(t)}" data-rate="0.75">▶ Slow</button><button class="btn sm" data-clip="${esc(t)}" data-rate="1">▶ Normal</button></div>`:""}</div>`).join("")+(d.t.some(t=>!hasClip(t))?`<p class="small">Audio for this twister is coming soon. For now, read it slowly yourself.</p>`:"")}
   if(i===4){
-    if(d.own){h+=`<h3>Script: tomar nijer ${d.own}</h3><ol class="todo"><li>Tomar ekta ${d.own} ElevenLabs-e paste koro (Mamun – Explainer, speed 1.0), MP3 download koro</li><li>Text dekhe 2 bar shono</li><li>Line by line: ekta line shono → pause → nije bolo. Atke gele oi line 5 bar</li></ol>`}
-    else{const [n,ps]=d.sc;h+=`<h3>Script ${n}, para ${ps.length>2?"puro":ps.join("–")}</h3><ol class="todo"><li>Niche ▶ chepe tomar clone voice-e shono, text dekhe <b>2 bar</b></li><li><b>Line by line:</b> ekta line shono → pause → nije bolo. Atke gele oi line 5 bar</li><li>Ajker sound-er shobdo-gulo-te bishesh kheyal</li></ol>
-<div class="row"><button class="btn main" data-para="${n}" data-ps="${ps.join(",")}">▶ Shono (tomar voice)</button><button class="btn" data-para="${n}" data-ps="${ps.join(",")}" data-rate="0.85">▶ Ektu dhire</button><button class="btn ghost" id="stop">■ Thamao</button></div>
+    if(d.own){h+=`<h3>Script: your own ${d.own}</h3><ol class="todo"><li>Paste one of your own ${d.own}s into a text-to-speech tool and download the MP3</li><li>Listen twice while reading the text</li><li>Line by line: listen to a line → pause → say it yourself. If you get stuck, repeat that line 5 times</li></ol>`}
+    else{const [n,ps]=d.sc;h+=`<h3>Script ${n}, ${ps.length>2?"full text":"paragraph "+ps.join("–")}</h3><ol class="todo"><li>Press ▶ below and listen <b>twice</b> while reading the text</li><li><b>Line by line:</b> listen to a line → pause → say it yourself. If you get stuck, repeat that line 5 times</li><li>Pay extra attention to the words with today's sound</li></ol>
+<div class="row"><button class="btn main" data-para="${n}" data-ps="${ps.join(",")}">▶ Listen</button><button class="btn" data-para="${n}" data-ps="${ps.join(",")}" data-rate="0.85">▶ A bit slower</button><button class="btn ghost" id="stop">■ Stop</button></div>
 <div class="script">${ps.map(k=>`<p><span class="pn">PARA ${k} <button class="btn sm" data-para="${n}" data-ps="${k}" style="margin-left:6px">▶</button></span>${esc(SC[n-1][k-1])}</p>`).join("")}</div>
-<details><summary class="small" style="cursor:pointer">Script ${n} er puro text copy korte</summary><div class="row" style="margin-top:8px"><button class="btn sm" id="copy" data-n="${n}">Copy Script ${n}</button><span class="small" id="copied"></span></div></details>`}}
-  if(i===5){const sen=d.own?"tomar post-er prothom bakko":(d.sc?SC[d.sc[0]-1][d.sc[1][0]-1].split(/(?<=[.?!])\s/)[0]:"Script 1-er prothom bakko");
-    h+=`<h3>Shadow, record, tarpor check</h3><ol class="todo"><li><b>Shadow:</b> text chara, audio-r 1 second piche piche overlap kore bolo (2 bar)</li><li><b>Record:</b> phone-e ajker para record koro, tomar clone-er pashe shono</li></ol>${d.sc?`<div class="row"><button class="btn main" data-para="${d.sc[0]}" data-ps="${d.sc[1].join(",")}">▶ Clone voice abar shono</button><button class="btn ghost" id="stop">■ Thamao</button></div>`:""}
-<div class="box how"><b>Uchcharon thik hocche kina, 2 vabe bujhbe</b>
-<span><b>1. Machine test (protidin):</b> <a href="https://translate.google.com/?sl=en&tl=bn&op=translate" target="_blank" rel="noopener">Google Translate</a> khulo, bam pash English, mic chapo, nicher bakko-ta bolo. Je shobdo bhul lekhe, oi shobdo tomar uchcharon-e porishkar hoyni. Shob shobdo thik lekhle bakko-ta pass.</span>
+<details><summary class="small" style="cursor:pointer">Copy the full text of Script ${n}</summary><div class="row" style="margin-top:8px"><button class="btn sm" id="copy" data-n="${n}">Copy Script ${n}</button><span class="small" id="copied"></span></div></details>`}}
+  if(i===5){const sen=d.own?"the first sentence of your post":(d.sc?SC[d.sc[0]-1][d.sc[1][0]-1].split(/(?<=[.?!])\s/)[0]:"the first sentence of Script 1");
+    h+=`<h3>Shadow, record, then check</h3><ol class="todo"><li><b>Shadow:</b> without the text, speak along about 1 second behind the audio (2 times)</li><li><b>Record:</b> record today's paragraph on your phone and listen to it next to the model voice</li></ol>${d.sc?`<div class="row"><button class="btn main" data-para="${d.sc[0]}" data-ps="${d.sc[1].join(",")}">▶ Listen to the model again</button><button class="btn ghost" id="stop">■ Stop</button></div>`:""}
+<div class="box how"><b>2 ways to check your pronunciation</b>
+<span><b>1. Machine test (every day):</b> open <a href="https://translate.google.com/?sl=en&op=translate" target="_blank" rel="noopener">Google Translate</a>, set the left side to English, tap the mic and say the sentence below. Any word it writes wrong was not clear yet. If every word is right, you pass.</span>
 <span style="font:600 17px var(--body);background:var(--card);border-radius:10px;padding:10px 12px">"${esc(sen)}"</span>
-<span>Ajker sound-er shobdo-gulo-o ekta ekta bole test koro: ${(d.s.length?S[d.s[0]].w.slice(0,4):["think","very","work","the"]).map(esc).join(", ")}.</span>
-<span><b>2. Kan test:</b> nijer recording ar ElevenLabs pashapashi shono. Nicher 3 ta prosno-r uttor "haan" hole valo.</span></div>
+<span>Also test today's sound words one by one: ${(d.s.length?S[d.s[0]].w.slice(0,4):["think","very","work","the"]).map(esc).join(", ")}.</span>
+<span><b>2. Ear test:</b> listen to your recording next to the model voice. If you can answer "yes" to the 3 questions below, you're doing well.</span></div>
 <ul class="check">
-<li><label><input type="checkbox" id="c1"> Google Translate ajker bakko-r shob shobdo thik likheche</label></li>
-<li><label><input type="checkbox" id="c2"> Ajker sound-er shobdo-gulo amar recording-e model-er moto shonay</label></li>
-<li><label><input type="checkbox" id="c3"> Je shobdo shobcheye alada lagche, notebook-e likhechi (kal oita-te focus)</label></li></ul>
-<p class="small">Proti Shukrobar recording-ta ei chat-e pathale ami speech recognition chaliye dekhbo kon shobdo machine dhorte parche na.</p>`}
+<li><label><input type="checkbox" id="c1"> Google Translate wrote every word of today's sentence correctly</label></li>
+<li><label><input type="checkbox" id="c2"> Today's sound words in my recording sound like the model</label></li>
+<li><label><input type="checkbox" id="c3"> I wrote down the word that sounds most different (I'll focus on it tomorrow)</label></li></ul>
+`}
   $("card").innerHTML=h;if(window.initMouths)window.initMouths($("card"));
 }
 function render(){renderWeeks();renderHead();renderSteps();renderCard()}
@@ -344,11 +344,11 @@ document.addEventListener("click",e=>{
   if(b.id==="stop"){try{clearTimeout(stopT);if(cur)cur.pause()}catch(err){}return}
   if(b.dataset.day){st.day=+b.dataset.day;st.step=0;save();render();window.scrollTo({top:$("head").offsetTop-10,behavior:"smooth"});return}
   if(b.dataset.step){st.step=+b.dataset.step;save();renderSteps();renderCard();return}
-  if(b.id==="tgo"){if(tId){clearInterval(tId);tId=null;b.textContent="Timer shuru";return}
-    tLeft=tLeft>0&&b.dataset.run?tLeft:+b.dataset.min*60;b.dataset.run=1;b.textContent="Thamao";
-    tId=setInterval(()=>{tLeft--;const v=$("tv");if(v)v.textContent=`${String(Math.floor(tLeft/60)).padStart(2,"0")}:${String(tLeft%60).padStart(2,"0")}`;if(tLeft<=0){clearInterval(tId);tId=null;if(v)v.textContent="Shesh ✓";b.textContent="Timer shuru";delete b.dataset.run}},1000);return}
+  if(b.id==="tgo"){if(tId){clearInterval(tId);tId=null;b.textContent="Start timer";return}
+    tLeft=tLeft>0&&b.dataset.run?tLeft:+b.dataset.min*60;b.dataset.run=1;b.textContent="Pause";
+    tId=setInterval(()=>{tLeft--;const v=$("tv");if(v)v.textContent=`${String(Math.floor(tLeft/60)).padStart(2,"0")}:${String(tLeft%60).padStart(2,"0")}`;if(tLeft<=0){clearInterval(tId);tId=null;if(v)v.textContent="Done ✓";b.textContent="Start timer";delete b.dataset.run}},1000);return}
   if(b.id==="copy"){const t=SC[+b.dataset.n-1].join("\n\n");const ok=()=>{$("copied").textContent="Copied"};
-    try{navigator.clipboard.writeText(t).then(ok,()=>{$("copied").textContent="Copy hoyni, text select kore copy koro"})}catch(err){$("copied").textContent="Copy hoyni"}return}
+    try{navigator.clipboard.writeText(t).then(ok,()=>{$("copied").textContent="Couldn't copy. Select the text and copy it manually."})}catch(err){$("copied").textContent="Couldn't copy"}return}
   if(b.id==="back"&&st.step>0){st.step--;save();renderSteps();renderCard();return}
   if(b.id==="next"){
     if(st.step<5){st.step++;save();renderSteps();renderCard();window.scrollTo({top:$("steps").offsetTop-10,behavior:"smooth"});return}
@@ -359,7 +359,7 @@ document.addEventListener("click",e=>{
 render();
 </script>
 <script type="module">
-import * as C from "./cloud.js?v=5";
+import * as C from "./cloud.js?v=6";
 const box=document.getElementById("acct");
 if(C.enabled){
   box.hidden=false;let user=null,timer=null;

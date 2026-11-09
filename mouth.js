@@ -45,39 +45,39 @@ const K=Object.keys(B);
 
 // label, pose (or [from,to] glide), tip, example-word matcher, steps, callouts [anchor,text]
 const SND={
- vw:[["V","V","Upore-r dat nicher thot-e halka chhoy. Gola kape.",/^v/i,["Nicher thot upore-r dater niche anon","Dat thote halka rakho (kamor na)","Gola kapiye batash chharo: vvv"],[["lip","Nicher thot"],["throat","Gola kape"]]],
-     ["W","W","Thot gol kore samne. Dat kothao lage na, tarpor khule jay.",/^(w|one)/i,["Thot gol kore samne thelo (oo)","Dat-e thot lagbe na","Thot khule porer vowel-e jao"],[["lip","Thot gol"],["throat","Gola kape"]]]],
- fp:[["F","F","Upore-r dat nicher thot-e, shudhu batash.",/^f|coffee/i,["Nicher thot upore-r dater niche anon","Dat thote halka rakho","Shudhu batash: ffff (gola kape na)"],[["lip","Nicher thot"]]],
-     ["P",["P0","P1"],"Dui thot bondho, tarpor joray khule batash (phu).",/^p|price|help/i,["Dui thot bondho koro","Mukher bhitore batash jomao","Thot hothat khule: phu!"],[["lip","Thot"]]]],
- th1:[["TH (θ)","TH","Jibh-er dogha dui dater majhe, shudhu batash. Gola kape na.",/./,["Mukh halka kholo","Jibh-er dogha upor-nicher dater majhe ber koro","Shudhu batash chharo (gola kape na)"],[["tip","Jibh dater majhe"]]]],
- th2:[["TH (ð)","DH","Jibh dater majhe, ebar gola kape.",/./,["Mukh halka kholo","Jibh-er dogha dater majhe","Gola kapiye bolo (the, this)"],[["tip","Jibh dater majhe"],["throat","Gola kape"]]]],
- zs:[["Z","Z","Dat kachakachi, jibh dater pichhone, gola kape (zzz).",/^z|busy|business|easy/i,["Dat kachakachi anon","Jibh-er dogha upore-r mari-r kache (chhobe na)","Gola kapiye: zzzz"],[["tip","Jibh mari-r kache"],["throat","Gola kape"]]],
-     ["S","S","Dat kachakachi, thot chora, shudhu batash (sss).",/^s(ee|ir)/i,["Dat kachakachi, thot chora","Jibh-er dogha mari-r kache","Shudhu batash: ssss"],[["tip","Jibh mari-r kache"]]],
-     ["SH","SH","Thot samne gol, jibh ektu pichhone (shh).",/^sh|sure/i,["Thot samne gol kore thelo","Jibh ektu pichhone, upore uthao","Batash: shhh"],[["lip","Thot samne"],["tip","Jibh pichhone"]]]],
- sc:[["S","S","S shuru theke sorasori, age kono \"e\" na.",/^s/i,["Thot chora, dat kachakachi","Jibh-er dogha mari-r kache","Sorasori ssss, age \"e\" na"],[["tip","Jibh mari-r kache"]]],
-     ["T","T","Jibh-er dogha upore-r dater thik pichhone chhoy, tarpor chharo.",/^t/i,["Jibh-er dogha upore-r mari-te chhoyao","Batash atkao","Jibh chhere dao: t"],[["ridge","Jibh ekhane chhoy"]]],
-     ["D","D","T-er motoi, kintu gola kape.",/^d/i,["Jibh-er dogha upore-r mari-te","Gola kapao","Jibh chhere dao: d"],[["ridge","Jibh ekhane chhoy"],["throat","Gola kape"]]]],
- ii:[["ɪ ship","I","Thot halka chora, dhila, khub choto.",/^(ship|live|fill|sit)$/i,["Mukh halka kholo, dhila","Jibh samne, majhari uchu","Choto kore bolo: ɪ"],[["mid","Jibh majhari uchu"]]],
-     ["iː sheep","II","Puro hashi, thot chora, lomba kore.",/^(sheep|leave|feel|seat)$/i,["Hashi-r moto thot chora","Jibh samne, onek uchu","Lomba kore bolo: iiː"],[["mid","Jibh onek uchu"],["lip","Hashi"]]]],
- ae:[["æ cat","AE","Mukh boro kore khola, choyal niche, thot chora.",/^(cat|bad|man|plan|answer)$/i,["Choyal onek niche namao","Thot chora","Jibh niche, samne: æ"],[["jaw","Choyal niche"]]],
-     ["e bed","E","Mukh majhari khola, halka chora.",/^(bed|men|help)$/i,["Mukh majhari kholo","Jibh samne, majhari","Bolo: e"],[["mid","Jibh majhari"]]]],
- ua:[["ʌ cup","UH","Mukh halka khola, dhila, choto.",/^(cup|love|money|monday|just)$/i,["Mukh halka kholo","Jibh dhila, majhkhane","Choto kore: ʌ"],[["mid","Jibh dhila"]]],
-     ["ɑː car","AA","Mukh boro kore khola, choyal niche, lomba.",/^(car|start|heart)$/i,["Choyal onek niche","Jibh niche, pichhone","Lomba kore: ɑː"],[["jaw","Choyal niche"],["back","Jibh pichhone niche"]]]],
- uo:[["ʊ book","U","Thot halka gol, choto.",/^(book|good)$/i,["Thot halka gol","Jibh-er pichhon halka upore","Choto kore: ʊ"],[["lip","Thot halka gol"]]],
-     ["uː food","UU","Thot puro gol, samne, lomba.",/^(food|new)$/i,["Thot puro gol, samne","Jibh-er pichhon upore","Lomba kore: uː"],[["lip","Thot gol"],["back","Jibh pichhone upore"]]],
-     ["oʊ go",["O","UU"],"O theke shuru kore thot aro gol hoye U-te jay.",/^(go|home|phone)$/i,["O diye shuru (mukh gol, khola)","Thot aro gol kore","U-te shesh: oʊ"],[["lip","Thot gol hoy"]]],
-     ["ɔː call","AW","Mukh khola, thot gol, lomba.",/^(call|talk)$/i,["Choyal namao","Thot gol","Lomba kore: ɔː"],[["lip","Thot gol"]]]],
- er:[["ɜː bird","ER","Mukh dhila, majhkhane, thot halka samne.",/^(work|first|person|learn)$/i,["Mukh dhila, majhari","Jibh majhkhane","Lomba kore: ɜː"],[["mid","Jibh majhkhane"]]],
-     ["ə schwa","SCHWA","Ekdom dhila, choto \"uh\". Stress chhara syllable-e.",/./,["Shob dhila koro","Jibh majhkhane, aram-e","Khub choto: ə"],[["mid","Jibh dhila"]]]],
- dp:[["eɪ day",["E","II"],"E theke I-te glide.",/^(day|make|late)$/i,["E diye shuru","Jibh upore uthte thake","I-te shesh: eɪ"],[["mid","Jibh uthe"]]],
-     ["aɪ time",["AA","II"],"A theke I-te glide.",/^(time|right)$/i,["A diye shuru (mukh khola)","Choyal uthe, jibh samne","I-te shesh: aɪ"],[["jaw","Choyal uthe"]]],
-     ["aʊ now",["AA","UU"],"A theke U-te glide, shesh-e thot gol.",/^(now|out)$/i,["A diye shuru","Thot gol hote thake","U-te shesh: aʊ"],[["lip","Thot gol hoy"]]],
-     ["ɔɪ voice",["AW","II"],"O theke I-te glide.",/^(choice|voice)$/i,["Gol O diye shuru","Thot chora hoy, jibh uthe","I-te shesh: ɔɪ"],[["mid","Jibh uthe"]]]],
- rl:[["R","R","Jibh kothao chhoy na, pichhone peche gol. Thot halka gol.",/^r/i,["Thot halka gol","Jibh-er dogha upore uthao, kintu chhobe na","Jibh peche, gola kapiye: r"],[["tip","Jibh chhoy na"]]],
-     ["L","L","Jibh-er dogha upore-r dater pichhone chhoy.",/^(light|lead)$/i,["Mukh halka kholo","Jibh-er dogha upore-r mari-te chhoyao","Jibh-er pash diye batash: l"],[["ridge","Jibh ekhane chhoy"]]],
-     ["Dark L","DL","Shesh-e L: jibh-er pichhon upore, \"ul\" er moto.",/^(call|will|feel|people)$/i,["Shobdo-r shesh-e L","Jibh-er pichhon upore uthao","\"ul\" er moto: dark L"],[["back","Jibh-er pichhon upore"]]]],
- ft:[["Flap T",["FT1","FT2"],"Duto vowel-er majhe T halka \"d\": jibh druto ek-bar chhuye chole jay.",/^(water|better|little|getting)$/i,["Vowel diye shuru","Jibh druto ek-bar mari chhoy","Sathe sathe chhere dao: wa-der"],[["ridge","Ek-bar chhoy"]]],
-     ["NG","NG","Jibh-er pichhon upore uthe bondho kore, nak diye sound. Shesh-e \"g\" bolbe na.",/ng$/i,["Mukh halka khola","Jibh-er pichhon upore uthe pichhon bondho","Batash nak diye: ng (g na)"],[["back","Jibh pichhone bondho"],["nose","Batash nak diye"]]]]
+ vw:[["V","V","Top teeth lightly touch the lower lip. Throat vibrates.",/^v/i,["Bring the lower lip up under the top teeth","Rest the teeth lightly on the lip (don't bite)","Push air out with your voice on: vvv"],[["lip","Lower lip"],["throat","Voice on"]]],
+     ["W","W","Round your lips and push them forward. Teeth touch nothing, then the lips open.",/^(w|one)/i,["Round your lips and push them forward (oo)","Teeth don't touch the lips","Open the lips into the next vowel"],[["lip","Rounded lips"],["throat","Voice on"]]]],
+ fp:[["F","F","Top teeth on the lower lip, air only.",/^f|coffee/i,["Bring the lower lip up under the top teeth","Rest the teeth lightly on the lip","Air only: ffff (no voice)"],[["lip","Lower lip"]]],
+     ["P",["P0","P1"],"Close both lips, then release them with a puff of air.",/^p|price|help/i,["Close both lips","Build up air behind them","Open the lips suddenly: puff!"],[["lip","Lips"]]]],
+ th1:[["TH (θ)","TH","Tongue tip between the teeth, air only. No voice.",/./,["Open your mouth a little","Put the tongue tip between your top and bottom teeth","Let only air out (no voice)"],[["tip","Tongue between teeth"]]]],
+ th2:[["TH (ð)","DH","Tongue between the teeth, with your voice on.",/./,["Open your mouth a little","Tongue tip between the teeth","Say it with your voice on (the, this)"],[["tip","Tongue between teeth"],["throat","Voice on"]]]],
+ zs:[["Z","Z","Teeth close together, tongue behind the teeth, voice on (zzz).",/^z|busy|business|easy/i,["Bring your teeth close together","Tongue tip near the ridge behind the top teeth (not touching)","Voice on: zzzz"],[["tip","Near the ridge"],["throat","Voice on"]]],
+     ["S","S","Teeth close together, lips spread, air only (sss).",/^s(ee|ir)/i,["Teeth close, lips spread","Tongue tip near the ridge","Air only: ssss"],[["tip","Near the ridge"]]],
+     ["SH","SH","Lips rounded forward, tongue a little further back (shh).",/^sh|sure/i,["Round your lips and push them forward","Pull the tongue back a little and raise it","Air: shhh"],[["lip","Lips forward"],["tip","Tongue further back"]]]],
+ sc:[["S","S","Start straight with \"s\", no \"e\" before it.",/^s/i,["Lips spread, teeth close","Tongue tip near the ridge","Go straight into ssss, no \"e\" first"],[["tip","Near the ridge"]]],
+     ["T","T","Tongue tip touches just behind the top teeth, then releases.",/^t/i,["Touch the ridge behind the top teeth with the tongue tip","Hold the air","Release the tongue: t"],[["ridge","Tongue touches here"]]],
+     ["D","D","Like T, but with your voice on.",/^d/i,["Tongue tip on the ridge","Voice on","Release the tongue: d"],[["ridge","Tongue touches here"],["throat","Voice on"]]]],
+ ii:[["ɪ ship","I","Lips slightly spread, relaxed, very short.",/^(ship|live|fill|sit)$/i,["Open a little, stay relaxed","Tongue forward, medium high","Keep it short: ɪ"],[["mid","Tongue medium high"]]],
+     ["iː sheep","II","Full smile, lips spread, long.",/^(sheep|leave|feel|seat)$/i,["Spread your lips like a smile","Tongue forward and very high","Make it long: iː"],[["mid","Tongue very high"],["lip","Smile"]]]],
+ ae:[["æ cat","AE","Mouth wide open, jaw down, lips spread.",/^(cat|bad|man|plan|answer)$/i,["Drop your jaw low","Spread your lips","Tongue low and forward: æ"],[["jaw","Jaw down"]]],
+     ["e bed","E","Mouth half open, lips slightly spread.",/^(bed|men|help)$/i,["Open your mouth halfway","Tongue forward, in the middle","Say: e"],[["mid","Tongue in the middle"]]]],
+ ua:[["ʌ cup","UH","Mouth slightly open, relaxed, short.",/^(cup|love|money|monday|just)$/i,["Open a little","Tongue relaxed in the middle","Keep it short: ʌ"],[["mid","Relaxed tongue"]]],
+     ["ɑː car","AA","Mouth wide open, jaw down, long.",/^(car|start|heart)$/i,["Drop your jaw low","Tongue low and back","Make it long: ɑː"],[["jaw","Jaw down"],["back","Tongue low and back"]]]],
+ uo:[["ʊ book","U","Lips slightly rounded, short.",/^(book|good)$/i,["Round your lips a little","Back of the tongue slightly raised","Keep it short: ʊ"],[["lip","Slightly rounded"]]],
+     ["uː food","UU","Lips fully rounded and forward, long.",/^(food|new)$/i,["Round your lips fully and push them forward","Back of the tongue raised","Make it long: uː"],[["lip","Rounded lips"],["back","Tongue back and high"]]],
+     ["oʊ go",["O","UU"],"Start on O, then round the lips more and glide to U.",/^(go|home|phone)$/i,["Start on O (round, open)","Round your lips more","End on U: oʊ"],[["lip","Lips get rounder"]]],
+     ["ɔː call","AW","Mouth open, lips rounded, long.",/^(call|talk)$/i,["Drop your jaw","Round your lips","Make it long: ɔː"],[["lip","Rounded lips"]]]],
+ er:[["ɜː bird","ER","Mouth relaxed, in the middle, lips slightly forward.",/^(work|first|person|learn)$/i,["Mouth relaxed, half open","Tongue in the middle","Make it long: ɜː"],[["mid","Tongue in the middle"]]],
+     ["ə schwa","SCHWA","Fully relaxed, short \"uh\". Used in unstressed syllables.",/./,["Relax everything","Tongue resting in the middle","Very short: ə"],[["mid","Relaxed tongue"]]]],
+ dp:[["eɪ day",["E","II"],"Glide from E to I.",/^(day|make|late)$/i,["Start on E","The tongue rises","End on I: eɪ"],[["mid","Tongue rises"]]],
+     ["aɪ time",["AA","II"],"Glide from A to I.",/^(time|right)$/i,["Start on A (mouth open)","Jaw rises, tongue moves forward","End on I: aɪ"],[["jaw","Jaw rises"]]],
+     ["aʊ now",["AA","UU"],"Glide from A to U, ending with rounded lips.",/^(now|out)$/i,["Start on A","Lips start to round","End on U: aʊ"],[["lip","Lips round"]]],
+     ["ɔɪ voice",["AW","II"],"Glide from O to I.",/^(choice|voice)$/i,["Start on a round O","Lips spread, tongue rises","End on I: ɔɪ"],[["mid","Tongue rises"]]]],
+ rl:[["R","R","The tongue touches nothing, it pulls back and rounds. Lips slightly rounded.",/^r/i,["Round your lips a little","Lift the tongue tip, but don't touch anything","Pull the tongue back, voice on: r"],[["tip","Touches nothing"]]],
+     ["L","L","Tongue tip touches the ridge behind the top teeth.",/^(light|lead)$/i,["Open a little","Touch the ridge behind the top teeth with the tongue tip","Air flows around the sides: l"],[["ridge","Tongue touches here"]]],
+     ["Dark L","DL","L at the end of a word: back of the tongue raised, like \"ul\".",/^(call|will|feel|people)$/i,["L at the end of a word","Raise the back of the tongue","Like \"ul\": dark L"],[["back","Back of tongue up"]]]],
+ ft:[["Flap T",["FT1","FT2"],"Between two vowels, T is a soft \"d\": the tongue taps once quickly.",/^(water|better|little|getting)$/i,["Start on the vowel","The tongue taps the ridge once, quickly","Release straight away: wa-der"],[["ridge","One quick tap"]]],
+     ["NG","NG","Back of the tongue rises and closes, sound goes through the nose. No \"g\" at the end.",/ng$/i,["Mouth slightly open","Back of the tongue rises and closes the back","Air through the nose: ng (no g)"],[["back","Back of tongue closes"],["nose","Air through the nose"]]]]
 };
 
 // ---------- helpers ----------
@@ -110,7 +110,7 @@ function drawFront(svg,p,id){
   if(p.fto>.02){const o=p.fto;s+=`<path d="M${cx-24*o},${cy-1} Q${cx-22*o},${cy+11*o} ${cx},${cy+12*o} Q${cx+22*o},${cy+11*o} ${cx+24*o},${cy-1} Z" fill="${C.tongue}" stroke="${C.tongue2}" stroke-width="1.2"/>`;
     }
   if(p.tk>.02)s+=`<g opacity="${p.tk}">${teethRow(cx,cy-11,a*.8,13,true)}</g>`;
-  s+=`</g><text x="14" y="24" class="vt">Samne theke</text>`;
+  s+=`</g><text x="14" y="24" class="vt">Front view</text>`;
   svg.innerHTML=s;
 }
 
@@ -128,7 +128,7 @@ function drawSide(svg,p,id,callouts){
   s+=`<path d="M312,123 C302,108 284,98 262,96 C225,90 190,86 160,90 C136,94 120,104 112,120 L106,254 L134,254 C140,236 146,${220+dy*.6} 160,${214+dy*.8} L270,${192+dy} L283,${160+dy} L287,154 L286,131 L300,128 Z" fill="#fdeeea" stroke="#d9a48e" stroke-width="1.5" stroke-linejoin="round"/>`;
   const vx=lerp(112,124,p.nas),vy=lerp(112,146,p.nas);
   s+=`<path d="M286,129 C278,116 266,108 252,106 C225,101 195,99 165,102 C150,104 140,108 134,113 Q124,118 ${vx},${vy}" stroke="#d9a48e" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M286,129 C278,116 266,108 252,106 C225,101 195,99 165,102 C150,104 140,108 134,113 Q124,118 ${vx},${vy}" stroke="${C.skin}" stroke-width="9" fill="none" stroke-linecap="round"/>`;
-  s+=`<text x="268" y="88" class="lb">Nak</text><text x="200" y="120" class="lb">Talu</text><text x="140" y="270" class="lb">Gola</text>`;
+  s+=`<text x="268" y="88" class="lb">Nose</text><text x="200" y="120" class="lb">Palate</text><text x="140" y="270" class="lb">Throat</text>`;
   // voice box
   s+=`<g class="vox" opacity="${(.25+.75*p.v).toFixed(2)}"><path d="M112,236 L134,236" stroke="#8a4e57" stroke-width="3"/><path class="vz" d="M114,${244} l4,-5 l4,5 l4,-5 l4,5 l4,-5" stroke="${p.v>.5?C.hl:"#8a4e57"}" stroke-width="2.5" fill="none" stroke-linejoin="round"/></g>`;
   // tongue
@@ -151,7 +151,7 @@ function drawSide(svg,p,id,callouts){
   (callouts||[]).forEach((c,i)=>{const a=A[c[0]];if(!a)return;const ly=76+i*24,lx2=98;const w=c[1].length*6.1+16;
     s+=`<circle cx="${a[0]}" cy="${a[1]}" r="6" fill="none" stroke="#16171a" stroke-width="4"/><circle cx="${a[0]}" cy="${a[1]}" r="6" fill="none" stroke="${C.hl}" stroke-width="2.5"/><path d="M${lx2+w},${ly} L${a[0]-6},${a[1]-5}" stroke="#1d1f23" stroke-width="1.1" stroke-dasharray="3 2.5"/>`;
     s+=`<rect x="${lx2}" y="${ly-10}" width="${w}" height="19" rx="9.5" fill="#16171a"/><text x="${lx2+8}" y="${ly+3.5}" class="ct">${c[1]}</text>`});
-  s+=`<text x="336" y="274" text-anchor="end" class="vt">Pash theke</text>`;
+  s+=`<text x="336" y="274" text-anchor="end" class="vt">Side view</text>`;
   svg.innerHTML=s;
 }
 
@@ -164,11 +164,11 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 let uid=0;
 window.mouthHTML=function(k){const L=SND[k];if(!L)return"";
   return `<div class="mouth" data-k="${k}">
-  <div class="mviews"><svg class="mf" viewBox="0 0 320 236" role="img" aria-label="Mukh samne theke"></svg><svg class="ms" viewBox="92 60 252 222" role="img" aria-label="Mukh pash theke"></svg></div>
+  <div class="mviews"><svg class="mf" viewBox="0 0 320 236" role="img" aria-label="Mouth, front view"></svg><svg class="ms" viewBox="92 60 252 222" role="img" aria-label="Mouth, side view"></svg></div>
   <div class="mctl"><div class="mrow"><div class="mchips">${L.map((x,i)=>`<button class="mchip" data-i="${i}">${x[0]}</button>`).join("")}</div>
-  <div class="mind"><span class="ind iv">🎵 Gola kape</span><span class="ind ia">💨 Batash</span><span class="ind in">👃 Nak diye</span></div></div>
+  <div class="mind"><span class="ind iv">🎵 Voice on</span><span class="ind ia">💨 Air</span><span class="ind in">👃 Through nose</span></div></div>
   <ol class="msteps"></ol>
-  <div class="mrow"><button class="mcmp">${L.length>1?"▶ Pashapashi dekho":"▶ Abar dekho"}</button><button class="mslow" aria-pressed="false">🐢 Dhire</button></div></div></div>`};
+  <div class="mrow"><button class="mcmp">${L.length>1?"▶ Compare all":"▶ Play again"}</button><button class="mslow" aria-pressed="false">🐢 Slow</button></div></div></div>`};
 async function show(m,i,play){
   const run=++m._run,L=SND[m.dataset.k],x=L[i],slow=m._slow?1.9:1;
   m.querySelectorAll(".mchip").forEach((c,j)=>c.classList.toggle("on",j===i));
