@@ -117,6 +117,33 @@ export async function listBoard() {
   return q.docs.map(d => Object.assign({ uid: d.id }, d.data())).sort((a, b) => b.daysDone - a.daysDone || b.streak - a.streak);
 }
 
+// ---------- level test results (private history per learner) ----------
+export const LEVELS = ["Pre-A1", "A1", "A2", "B1", "B2", "C1", "C1+"];
+export async function saveLevel(u, r) {
+  const f = await init(); if (!f || !u) return;
+  const S = f.S, per = {};
+  ["A1", "A2", "B1", "B2", "C1"].forEach(k => { if (r.per && Number.isInteger(r.per[k])) per[k] = r.per[k]; });
+  await S.addDoc(S.collection(f.db, "users", u.uid, "levels"), { level: r.level, per, name: u.displayName || "", email: u.email || "", at: S.serverTimestamp() });
+}
+export async function lastLevel(u) {
+  const f = await init(); if (!f || !u) return null;
+  const S = f.S;
+  const q = await S.getDocs(S.query(S.collection(f.db, "users", u.uid, "levels"), S.orderBy("at", "desc"), S.limit(1)));
+  if (q.empty) return null;
+  const d = q.docs[0].data();
+  return { level: d.level, per: d.per || {}, at: d.at && d.at.toMillis ? d.at.toMillis() : Date.now() };
+}
+// Admin only: latest result for every learner who saved one, keyed by uid.
+export async function listLevels() {
+  const f = await init(); const S = f.S;
+  const q = await S.getDocs(S.collectionGroup(f.db, "levels"));
+  const m = {};
+  q.docs.forEach(d => { const uid = d.ref.parent.parent.id, x = d.data(), t = x.at && x.at.seconds || 0;
+    if (!m[uid] || t > m[uid].t) m[uid] = { level: x.level, name: x.name || "", email: x.email || "", t, n: (m[uid] ? m[uid].n : 0) + 1 };
+    else m[uid].n++; });
+  return m;
+}
+
 // ---------- daily reminder (free: calendar event) ----------
 export function reminderLinks(hhmm) {
   const [h, m] = (hhmm || "20:00").split(":").map(Number);

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo-icon-512.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English Level Test · Accent Coach</title>
+<meta name="description" content="ফ্রি ইংরেজি লেভেল টেস্ট: ১৫ মিনিটে জেনে নিন আপনার আনুমানিক CEFR লেভেল (A1–C1+)।">
+<meta property="og:title" content="ফ্রি ইংরেজি লেভেল টেস্ট · Accent Coach">
+<meta property="og:description" content="১৫ মিনিটে জেনে নিন আপনার আনুমানিক ইংরেজি লেভেল (A1–C1+)।">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Hind+Siliguri:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<style>
+body{font-family:"Figtree","Hind Siliguri",system-ui,sans-serif}
+.bn{font-family:"Hind Siliguri","Figtree",sans-serif}
+main{padding:40px 0 80px}
+.wrap{max-width:760px;margin:0 auto}
+.intro{padding:34px 30px}
+.intro h1{font-size:clamp(30px,5vw,44px);font-weight:800}
+.intro h1 mark{background:var(--lime);color:#16171a;padding:0 10px;border-radius:10px}
+.intro p{color:var(--muted);margin-top:12px;font-size:17px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.facts div{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.facts b{display:block;font:800 22px var(--display)}
+.facts span{color:var(--muted);font-size:14px}
+.note{background:var(--lav);color:var(--lav-ink);border-radius:14px;padding:12px 16px;font-size:15px;margin-top:18px}
+.prev{margin-top:18px;padding:14px 16px;border-radius:14px;background:var(--lime-soft);font-weight:600}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;font-weight:700}
+.lvtag{background:var(--ink);color:var(--bg);border-radius:999px;padding:4px 12px;font-size:14px}
+.prog{height:10px;border-radius:9px;background:var(--line);overflow:hidden;margin-bottom:20px}
+.prog i{display:block;height:100%;width:0;background:#9fbf1f;transition:width .3s}
+.q{padding:28px 26px}
+.kind{display:inline-block;font:700 13px var(--body);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:10px}
+.inst{color:var(--muted);margin-bottom:10px}
+.passage{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px;font-size:17px;line-height:1.6}
+.stem{font:700 21px/1.45 var(--body);margin-bottom:18px}
+.opts{display:grid;gap:10px}
+.opt{text-align:left;font:600 17px var(--body);color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;display:flex;gap:12px;align-items:center}
+.opt:hover{border-color:var(--ink)}
+.opt b{width:30px;height:30px;flex:none;border-radius:9px;background:var(--bg);display:grid;place-items:center;font-size:14px}
+.opt.sel{border-color:var(--ink);background:var(--lime-soft)}
+.opt.sel b{background:var(--lime);color:#16171a}
+.play{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.play .btn{font-size:16px}
+.play small{color:var(--muted)}
+.nav2{display:flex;justify-content:space-between;align-items:center;margin-top:22px;gap:10px}
+.nav2 .btn[disabled]{opacity:.45;cursor:not-allowed}
+.res{padding:34px 30px;text-align:center}
+.big{font:800 96px/1 var(--display);margin:6px 0 4px}
+.big.lv{display:inline-block;background:var(--lime);color:#16171a;border-radius:28px;padding:10px 34px}
+.res h2{font-size:28px;margin-top:16px}
+.res .d{color:var(--muted);margin-top:10px;font-size:17px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0 6px;text-align:left}
+.skills div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.skills b{display:block;font:800 20px var(--display)}
+.skills span{color:var(--muted);font-size:14px}
+.ladder{display:flex;gap:6px;justify-content:center;margin:20px 0 4px;flex-wrap:wrap}
+.ladder span{font:800 15px var(--display);padding:8px 14px;border-radius:10px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.ladder span.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.box{text-align:left;margin-top:22px;padding:20px 22px}
+.box h3{font-size:20px;margin-bottom:10px}
+.box ul{padding-left:20px}
+.box li{margin:6px 0}
+.cloud{margin-top:18px;padding:14px 16px;border-radius:14px;border:1.5px dashed var(--line);display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font-weight:600}
+.cloud.ok{border-style:solid;border-color:#9fbf1f;background:var(--lime-soft)}
+.ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+@media(max-width:600px){.facts{grid-template-columns:1fr}.skills{grid-template-columns:repeat(2,1fr)}.q,.intro,.res{padding:24px 18px}.stem{font-size:19px}.big{font-size:72px}}
+</style></head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><a class="btn sp" href="app.html">Practice →</a></div></nav>
+<main><div class="container"><div class="wrap" id="out"></div></div></main>
+
+<script>
+(function(){
+var LV=["A1","A2","B1","B2","C1"];
+var KIND={g:"Grammar",v:"Vocabulary",r:"Reading",l:"Listening"};
+// Each level: 6 questions. a = index of the correct option (options are shuffled on screen).
+var Q={
+A1:[
+ {k:"g",s:"She ___ a teacher.",o:["is","am","are","be"],a:0},
+ {k:"g",s:"I ___ like coffee.",o:["don't","doesn't","not","no"],a:0},
+ {k:"v",s:"The opposite of “hot” is ___.",o:["cold","big","fast","tall"],a:0},
+ {k:"g",s:"There ___ two books on the table.",o:["are","is","be","am"],a:0},
+ {k:"r",p:"Hi Sara, I am at the shop. I will be home at 6 o'clock. – Mum",s:"When will Mum be home?",o:["At 6 o'clock","Now","At 9 o'clock","She is at home"],a:0},
+ {k:"l",t:"My name is Rahim. I am twenty years old, and I live in Dhaka.",s:"How old is Rahim?",o:["20","12","22","30"],a:0}
+],
+A2:[
+ {k:"g",s:"Yesterday we ___ to the park.",o:["went","go","gone","going"],a:0},
+ {k:"g",s:"This bag is ___ than that one.",o:["cheaper","more cheap","cheapest","cheap"],a:0},
+ {k:"v",s:"I ___ my homework every evening.",o:["do","make","take","play"],a:0},
+ {k:"g",s:"Look! It ___ outside.",o:["is raining","rains","rained","rain"],a:0},
+ {k:"r",p:"The library opens at 9 a.m. from Monday to Friday. On Saturday it opens at 11 a.m. It is closed on Sunday.",s:"When does the library open on Saturday?",o:["At 11 a.m.","At 9 a.m.","It doesn't open","On Sunday"],a:0},
+ {k:"l",t:"The train to Chittagong leaves at a quarter past four from platform three.",s:"What time does the train leave?",o:["4:15","4:45","3:15","4:30"],a:0}
+],
+B1:[
+ {k:"g",s:"If it rains tomorrow, we ___ at home.",o:["will stay","would stay","stayed","stay"],a:0},
+ {k:"g",s:"I have lived here ___ 2019.",o:["since","for","from","at"],a:0},
+ {k:"v",s:"Could you ___ the music down? I'm trying to sleep.",o:["turn","put","take","get"],a:0},
+ {k:"g",s:"The report ___ by the manager yesterday.",o:["was written","wrote","has written","is writing"],a:0},
+ {k:"r",p:"Although the hotel was expensive, we decided to stay there because it was close to the beach and the reviews were excellent.",s:"Why did they choose the hotel?",o:["Its location and good reviews","It was cheap","There was no other hotel","A friend worked there"],a:0},
+ {k:"l",t:"Sorry, I can't make it to the meeting on Tuesday. Could we move it to Thursday afternoon instead?",s:"What does the speaker want?",o:["To move the meeting to Thursday afternoon","To cancel the meeting","To meet on Tuesday morning","To join the meeting late"],a:0}
+],
+B2:[
+ {k:"g",s:"If I ___ about the traffic, I would have left earlier.",o:["had known","knew","have known","would know"],a:0},
+ {k:"g",s:"She suggested ___ a taxi to the airport.",o:["taking","to take","take","took"],a:0},
+ {k:"v",s:"The company decided to ___ the launch until next spring.",o:["put off","put up","put out","put on"],a:0},
+ {k:"v",s:"His argument was very ___; everyone in the room agreed with him.",o:["convincing","convinced","convince","conviction"],a:0},
+ {k:"r",p:"Remote work has given many employees more flexibility, but some managers worry that it makes collaboration harder and that new staff feel less connected to the team.",s:"What are the managers worried about?",o:["Weaker teamwork and connection","Higher office costs","Lower salaries","Employees wanting to return"],a:0},
+ {k:"l",t:"Contrary to what most people assume, the study found that short breaks every hour actually improved productivity rather than reducing it.",s:"What did the study find?",o:["Short breaks improved productivity","Breaks reduced productivity","Breaks had no effect","People should work longer hours"],a:0}
+],
+C1:[
+ {k:"g",s:"Not only ___ late, but he also forgot the documents.",o:["did he arrive","he arrived","he did arrive","arrived he"],a:0},
+ {k:"g",s:"___ the bad weather, the event went ahead as planned.",o:["Despite","Although","However","Even"],a:0},
+ {k:"v",s:"The minister's speech was deliberately ___, leaving journalists unsure of her real position.",o:["ambiguous","explicit","concise","blunt"],a:0},
+ {k:"v",s:"The new findings ___ doubt on the earlier theory.",o:["cast","threw","made","put"],a:0},
+ {k:"r",p:"While the initiative was hailed as a breakthrough, critics pointed out that its long-term viability hinged on funding that had yet to be secured.",s:"What is the critics' main point?",o:["Its future depends on money not yet guaranteed","It has already failed","It is fully funded","It was too expensive to start"],a:0},
+ {k:"l",t:"I wouldn't go so far as to say the proposal is flawed, but it does leave a number of questions unanswered.",s:"What is the speaker's opinion of the proposal?",o:["It is reasonable but incomplete","It is completely flawed","It is excellent","They haven't read it"],a:0}
+]};
+
+var INFO={
+ "Pre-A1":{n:"শুরুর ধাপ",d:"আপনি একদম শুরু থেকে শিখছেন। এটা কোনো সমস্যা না, সবাই কোথাও না কোথাও থেকে শুরু করে।",can:["খুব সাধারণ শব্দ আর বাক্য চিনতে পারেন"],next:["প্রতিদিন ১০–১৫টা নতুন শব্দ শিখুন (ছবিসহ)","am / is / are আর সাধারণ present tense দিয়ে শুরু করুন","ধীরে বলা ছোট ইংরেজি ভিডিও শুনুন"]},
+ A1:{n:"Beginner",d:"নিজের পরিচয় দেওয়া আর খুব সাধারণ প্রশ্নের উত্তর দিতে পারেন।",can:["নিজের নাম, বয়স, কোথায় থাকেন বলতে পারেন","সহজ নোট আর সাইন বুঝতে পারেন"],next:["past tense (went, saw, did) আর প্রশ্ন করা শিখুন","দৈনন্দিন কাজের শব্দ (খাবার, বাজার, যাতায়াত) বাড়ান","প্রতিদিন ৫টা সহজ বাক্য জোরে বলুন"]},
+ A2:{n:"Elementary",d:"দৈনন্দিন সহজ বিষয়ে কথা বলতে আর ছোট লেখা বুঝতে পারেন।",can:["কেনাকাটা, সময়, দিক নিয়ে সহজ কথা বলতে পারেন","ছোট নোটিশ বা মেসেজ বুঝতে পারেন"],next:["future (will / going to) আর present perfect শিখুন","নিজের দিন নিয়ে ৫–৬ বাক্যে বলা অভ্যাস করুন","স্লো ইংরেজি পডকাস্ট শুনুন"]},
+ B1:{n:"Intermediate",d:"পরিচিত বিষয়ে নিজের মতামত জানাতে আর সাধারণ কথোপকথন চালাতে পারেন।",can:["কাজ, পড়াশোনা, ভ্রমণ নিয়ে কথা বলতে পারেন","সাধারণ ইমেইল আর আর্টিকেলের মূল কথা বুঝতে পারেন"],next:["conditionals, passive আর phrasal verbs মজবুত করুন","১–২ মিনিট কোনো বিষয়ে না থেমে বলার চেষ্টা করুন","ইংরেজি সাবটাইটেলে ভিডিও দেখুন"]},
+ B2:{n:"Upper-Intermediate",d:"বেশিরভাগ পরিস্থিতিতে আত্মবিশ্বাসের সাথে কথা বলতে আর বিস্তারিত লেখা বুঝতে পারেন।",can:["ইন্টারভিউ আর ক্লায়েন্ট কলে কাজ চালাতে পারেন","নিউজ আর অফিসিয়াল লেখা বুঝতে পারেন"],next:["উচ্চারণ আর fluency-তে জোর দিন","advanced vocabulary আর collocations শিখুন","সাবটাইটেল ছাড়া ভিডিও/পডকাস্ট শুনুন"]},
+ C1:{n:"Advanced",d:"জটিল বিষয়ে সাবলীলভাবে কথা বলতে আর সূক্ষ্ম অর্থ বুঝতে পারেন।",can:["প্রফেশনাল মিটিং আর প্রেজেন্টেশন চালাতে পারেন","দীর্ঘ, জটিল লেখা বুঝতে পারেন"],next:["উচ্চারণ আর natural rhythm পালিশ করুন","বিশেষ বিষয়ের (কাজের ক্ষেত্রের) vocabulary বাড়ান","লেখার style আর tone নিয়ে কাজ করুন"]},
+ "C1+":{n:"Advanced+",d:"এই টেস্টের সবচেয়ে উঁচু লেভেলের সব প্রশ্ন ঠিক করেছেন। C2 নিশ্চিত করতে অফিসিয়াল পরীক্ষা (যেমন IELTS বা Cambridge) দেওয়া ভালো।",can:["প্রায় সব পরিস্থিতিতে সাবলীল ইংরেজি"],next:["উচ্চারণ আর accent পালিশ করুন","অফিসিয়াল পরীক্ষার প্রস্তুতি নিতে পারেন"]}
+};
+
+var KEY="ac-level";
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||"null")}catch(e){return null}}
+function save(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}
+function bn(n){return String(n).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯"[d]})}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+var out=document.getElementById("out");
+var S; // state
+
+function intro(){
+  var p=load(),prev="";
+  if(p){var days=Math.floor((Date.now()-p.at)/864e5);
+    prev='<div class="prev bn">আগের ফলাফল: <b>'+esc(p.level)+'</b> ('+(days?bn(days)+' দিন আগে':'আজ')+')'+(days<28?' · ৪ সপ্তাহ পর আবার দিলে উন্নতি ভালো বোঝা যাবে।':' · এখন আবার দিয়ে দেখুন কতটা উন্নতি হলো!')+'</div>';}
+  out.innerHTML='<div class="card intro"><span class="kind">Free English level test</span>'+
+   '<h1 class="bn">আপনার ইংরেজি লেভেল <mark>জেনে নিন</mark></h1>'+
+   '<p class="bn">Grammar, vocabulary, reading আর listening মিলিয়ে ছোট একটা টেস্ট। সহজ থেকে কঠিন প্রশ্ন আসবে, আর আপনার লেভেল বোঝা গেলেই টেস্ট শেষ হবে।</p>'+
+   '<div class="facts bn"><div><b>৮–১৫ মিনিট</b><span>সময় লাগবে</span></div><div><b>A1 → C1+</b><span>CEFR লেভেল</span></div><div><b>লগইন লাগবে না</b><span>একদম ফ্রি</span></div></div>'+
+   '<div class="note bn">🎧 Listening প্রশ্নের জন্য সাউন্ড চালু রাখুন। কোনো প্রশ্ন না জানলে আন্দাজ না করে “জানি না” চাপুন, তাহলে ফলাফল বেশি সঠিক হবে।</div>'+prev+
+   '<div class="ctas"><button class="btn pri" id="go" style="font-size:17px;padding:14px 24px">টেস্ট শুরু করুন →</button></div></div>';
+  document.getElementById("go").onclick=start;
+}
+
+function start(){
+  S={li:0,qi:0,ans:{},per:{},plays:{},sk:{g:[0,0],v:[0,0],r:[0,0],l:[0,0]},passed:-1,order:{}};
+  LV.forEach(function(l){S.order[l]=Q[l].map(function(q){return shuffle(q.o.map(function(t,i){return{t:t,ok:i===q.a}})).concat([{t:"জানি না",ok:false,dk:true}])})});
+  show();
+}
+
+function speak(text){
+  if(!("speechSynthesis" in window))return false;
+  speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=0.92;
+  var vs=speechSynthesis.getVoices().filter(function(v){return /^en(-|_)/i.test(v.lang)});
+  var pick=vs.find(function(v){return /en-US/i.test(v.lang)&&/Google|Samantha|Natural|Aria|Jenny/i.test(v.name)})||vs.find(function(v){return /en-US/i.test(v.lang)})||vs[0];
+  if(pick)u.voice=pick;speechSynthesis.speak(u);return true;
+}
+
+function show(){
+  var lv=LV[S.li],q=Q[lv][S.qi],opts=S.order[lv][S.qi],key=lv+S.qi,sel=S.ans[key];
+  var done=S.li*6+S.qi,total=30;
+  var h='<div class="top"><span class="bn">প্রশ্ন '+bn(S.qi+1)+'/৬</span><span class="lvtag">Level '+lv+'</span></div>'+
+    '<div class="prog"><i style="width:'+(done/total*100)+'%"></i></div><div class="card q"><span class="kind">'+KIND[q.k]+'</span>';
+  if(q.k==="g"||q.k==="v")h+='<div class="inst bn">খালি জায়গার জন্য সঠিক উত্তর বেছে নিন</div>';
+  if(q.k==="r")h+='<div class="inst bn">লেখাটা পড়ে প্রশ্নের উত্তর দিন</div><div class="passage">'+esc(q.p)+'</div>';
+  if(q.k==="l"){var left=2-(S.plays[key]||0);
+    h+='<div class="inst bn">অডিওটা শুনে প্রশ্নের উত্তর দিন (সর্বোচ্চ ২ বার)</div><div class="play"><button class="btn lime" id="pl"'+(left<=0?' disabled':'')+'>▶ শুনুন</button><small class="bn">'+left+' বার বাকি</small></div><div id="nosp"></div>';}
+  h+='<div class="stem">'+esc(q.s)+'</div><div class="opts">';
+  opts.forEach(function(o,i){h+='<button class="opt'+(sel===i?' sel':'')+(o.dk?' bn':'')+'" data-i="'+i+'"><b>'+(o.dk?'?':String.fromCharCode(65+i))+'</b>'+esc(o.t)+'</button>'});
+  h+='</div><div class="nav2"><span></span><button class="btn pri bn" id="nx"'+(sel===undefined?' disabled':'')+'>'+(S.qi===5?'জমা দিন →':'পরের প্রশ্ন →')+'</button></div></div>';
+  out.innerHTML=h;window.scrollTo(0,0);
+  out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){S.ans[key]=+b.dataset.i;show()}});
+  document.getElementById("nx").onclick=next;
+  var pl=document.getElementById("pl");
+  if(pl)pl.onclick=function(){if(!speak(q.t)){document.getElementById("nosp").innerHTML='<div class="passage"><span class="bn" style="color:var(--muted)">এই ব্রাউজারে অডিও চলছে না, তাই লেখাটা দেখানো হলো:</span><br>'+esc(q.t)+'</div>';}
+    S.plays[key]=(S.plays[key]||0)+1;var left=2-S.plays[key];pl.nextElementSibling.textContent=bn(left)+' বার বাকি';if(left<=0)pl.disabled=true;};
+}
+
+function next(){
+  if(window.speechSynthesis)speechSynthesis.cancel();
+  if(S.qi<5){S.qi++;show();return}
+  var lv=LV[S.li],c=0;
+  for(var i=0;i<6;i++){var o=S.order[lv][i][S.ans[lv+i]],k=Q[lv][i].k;S.sk[k][1]++;if(o&&o.ok){c++;S.sk[k][0]++}}
+  S.per[lv]=c;
+  if(c>=4){S.passed=S.li;if(S.li<LV.length-1){S.li++;S.qi=0;show();return}}
+  result();
+}
+
+function result(){
+  var lvl=S.passed<0?"Pre-A1":LV[S.passed];
+  if(lvl==="C1"&&S.per.C1===6)lvl="C1+";
+  var inf=INFO[lvl];
+  var rec={level:lvl,at:Date.now(),per:S.per};save(rec);
+  var ladder=["A1","A2","B1","B2","C1","C2"].map(function(l){var on=(lvl===l)||(lvl==="C1+"&&l==="C1");return '<span class="'+(on?'on':'')+'">'+l+'</span>'}).join("");
+  var sk=Object.keys(S.sk).map(function(k){var v=S.sk[k];return '<div><b>'+v[0]+'/'+v[1]+'</b><span>'+KIND[k]+'</span></div>'}).join("");
+  var h='<div class="card res"><span class="kind bn">আপনার আনুমানিক লেভেল</span><div><span class="big lv">'+(lvl==="Pre-A1"?"A0":lvl)+'</span></div>'+
+   '<h2>'+esc(inf.n)+'</h2><p class="d bn">'+inf.d+'</p><div class="ladder">'+ladder+'</div>'+
+   '<div class="skills">'+sk+'</div>'+
+   '<div class="card box bn"><h3>✅ এখন আপনি যা পারেন</h3><ul>'+inf.can.map(function(x){return '<li>'+x+'</li>'}).join("")+'</ul></div>'+
+   '<div class="card box bn"><h3>🎯 পরের ধাপে যা করবেন</h3><ul>'+inf.next.map(function(x){return '<li>'+x+'</li>'}).join("")+
+   '<li>উচ্চারণের জন্য আমাদের ফ্রি দৈনিক প্ল্যান ব্যবহার করুন</li></ul></div>'+
+   '<div class="note bn" style="text-align:left">📅 প্রতিদিন নিয়মিত প্র্যাকটিস করে ৪ সপ্তাহ পর আবার টেস্ট দিন, তাহলে নিজের উন্নতি নিজেই দেখতে পাবেন।<br>ℹ️ এটা একটা আনুমানিক টেস্ট, অফিসিয়াল সার্টিফিকেট না। Speaking আর writing এখানে মাপা হয়নি।</div>'+
+   '<div id="cloudbox" class="bn"></div><div class="ctas bn"><a class="btn pri" href="app.html">উচ্চারণ প্র্যাকটিস শুরু করুন →</a><button class="btn" id="again">আবার টেস্ট দিন</button><button class="btn" id="share">🔗 শেয়ার করুন</button></div></div>';
+  out.innerHTML=h;window.scrollTo(0,0);
+  document.getElementById("again").onclick=start;
+  if(window.acLevelResult)window.acLevelResult(rec);else window.acPending=rec;
+  document.getElementById("share").onclick=function(){var t="আমার ইংরেজি লেভেল "+(lvl==="Pre-A1"?"A0":lvl)+"! আপনিও ফ্রিতে টেস্ট দিন:",u="https://accent-coach.devmamun.com/level-test.html";
+    if(navigator.share)navigator.share({text:t,url:u}).catch(function(){});
+    else{try{navigator.clipboard.writeText(t+" "+u);this.textContent="✓ লিংক কপি হয়েছে"}catch(e){}}};
+}
+
+window.acIntro=function(){if(document.getElementById("go"))intro()};
+intro();
+})();
+</script>
+<script type="module">
+import * as C from "./cloud.js?v=15";
+let user=null,pending=window.acPending||null,state="";
+const box=()=>{const el=document.getElementById("cloudbox");if(!el||!pending)return;
+  if(state==="ok")el.innerHTML='<div class="cloud ok">☁️ ফলাফল আপনার অ্যাকাউন্টে সেভ হয়েছে। যেকোনো ডিভাইস থেকে দেখতে পাবেন।</div>';
+  else if(state==="saving")el.innerHTML='<div class="cloud">☁️ সেভ হচ্ছে…</div>';
+  else if(state==="err")el.innerHTML='<div class="cloud">⚠️ ক্লাউডে সেভ হয়নি (ফলাফল এই ডিভাইসে আছে)। <button class="btn" id="cs">আবার চেষ্টা করুন</button></div>';
+  else if(!user)el.innerHTML='<div class="cloud">☁️ ফলাফল অ্যাকাউন্টে সেভ করে রাখতে চান? <button class="btn" id="cs">Google দিয়ে লগইন করুন</button></div>';
+  const b=document.getElementById("cs");if(b)b.onclick=()=>{if(user)doSave();else C.signIn().catch(()=>{})};};
+async function doSave(){if(!user||!pending)return;state="saving";box();
+  try{await C.saveLevel(user,pending);state="ok"}catch(e){console.warn(e);state="err"}box();}
+window.acLevelResult=r=>{pending=r;state="";if(user)doSave();else box();};
+if(C.enabled)C.onUser(async u=>{if(u&&u.cached)return;user=u||null;
+  if(user&&pending&&state!=="ok"){doSave();return}
+  box();
+  if(user&&!pending){try{const c=await C.lastLevel(user);let l=null;try{l=JSON.parse(localStorage.getItem("ac-level")||"null")}catch(e){}
+    if(c&&(!l||c.at>l.at)){try{localStorage.setItem("ac-level",JSON.stringify(c))}catch(e){}window.acIntro&&window.acIntro()}}catch(e){console.warn(e)}}});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

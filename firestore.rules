@@ -26,6 +26,28 @@ service cloud.firestore {
       allow create: if signedIn() && request.auth.uid == uid && validUser(request.resource.data) && request.resource.data.createdAt == request.time;
       allow update: if signedIn() && request.auth.uid == uid && validUser(request.resource.data) && request.resource.data.createdAt == resource.data.createdAt;
       allow delete: if signedIn() && request.auth.uid == uid;
+
+      // Level test results: one document per attempt, written only by the learner, never edited.
+      match /levels/{lid} {
+        function validLevel(d) {
+          return d.keys().hasOnly(['level','per','name','email','at'])
+            && d.level in ['Pre-A1','A1','A2','B1','B2','C1','C1+']
+            && d.per is map && d.per.keys().hasOnly(['A1','A2','B1','B2','C1'])
+            && isInt(d.per.get('A1', 0), 0, 6) && isInt(d.per.get('A2', 0), 0, 6) && isInt(d.per.get('B1', 0), 0, 6)
+            && isInt(d.per.get('B2', 0), 0, 6) && isInt(d.per.get('C1', 0), 0, 6)
+            && d.name is string && d.name.size() <= 100
+            && d.email == request.auth.token.email
+            && d.at == request.time;
+        }
+        allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+        allow create: if signedIn() && request.auth.uid == uid && validLevel(request.resource.data);
+        allow delete: if signedIn() && request.auth.uid == uid;
+      }
+    }
+
+    // Admin can list every learner's level results at once.
+    match /{path=**}/levels/{lid} {
+      allow read: if isAdmin();
     }
 
     // Public leaderboard: first name + numbers only. Each learner can only write their own row,
