@@ -1,0 +1,802 @@
+[
+{
+"n": 101,
+"w": "last",
+"p": "adjective",
+"bn": "শেষ; গত",
+"ex": "This is the last bus tonight.",
+"exbn": "আজ রাতের এটাই শেষ বাস।"
+},
+{
+"n": 102,
+"w": "child",
+"p": "noun",
+"bn": "শিশু, বাচ্চা",
+"ex": "The child is sleeping.",
+"exbn": "বাচ্চাটা ঘুমাচ্ছে।"
+},
+{
+"n": 103,
+"w": "tell",
+"p": "verb",
+"bn": "বলা (কাউকে)",
+"ex": "Please tell me the truth.",
+"exbn": "দয়া করে আমাকে সত্যিটা বলো।"
+},
+{
+"n": 104,
+"w": "really",
+"p": "adverb",
+"bn": "সত্যিই; খুব",
+"ex": "I really like this song.",
+"exbn": "আমি সত্যিই এই গানটা পছন্দ করি।"
+},
+{
+"n": 105,
+"w": "call",
+"p": "verb",
+"bn": "ফোন করা; ডাকা",
+"ex": "I will call you tonight.",
+"exbn": "আমি আজ রাতে তোমাকে ফোন করব।"
+},
+{
+"n": 106,
+"w": "before",
+"p": "preposition",
+"bn": "আগে",
+"ex": "Wash your hands before dinner.",
+"exbn": "রাতের খাবারের আগে হাত ধুয়ে নাও।"
+},
+{
+"n": 107,
+"w": "company",
+"p": "noun",
+"bn": "কোম্পানি, প্রতিষ্ঠান",
+"ex": "She works for a big company.",
+"exbn": "সে একটা বড় কোম্পানিতে কাজ করে।"
+},
+{
+"n": 108,
+"w": "through",
+"p": "preposition",
+"bn": "মধ্য দিয়ে, ভেতর দিয়ে",
+"ex": "We walked through the park.",
+"exbn": "আমরা পার্কের মধ্য দিয়ে হেঁটে গেলাম।"
+},
+{
+"n": 109,
+"w": "down",
+"p": "adverb",
+"bn": "নিচে",
+"ex": "Please sit down.",
+"exbn": "দয়া করে বসুন।"
+},
+{
+"n": 110,
+"w": "show",
+"p": "verb",
+"bn": "দেখানো",
+"ex": "Can you show me the way?",
+"exbn": "আপনি কি আমাকে রাস্তাটা দেখাতে পারবেন?"
+},
+{
+"n": 111,
+"w": "life",
+"p": "noun",
+"bn": "জীবন",
+"ex": "Life is short.",
+"exbn": "জীবন ছোট।"
+},
+{
+"n": 112,
+"w": "man",
+"p": "noun",
+"bn": "পুরুষ, লোক",
+"ex": "A man is waiting outside.",
+"exbn": "একজন লোক বাইরে অপেক্ষা করছে।"
+},
+{
+"n": 113,
+"w": "change",
+"p": "verb",
+"bn": "বদলানো, পরিবর্তন করা",
+"ex": "I want to change my phone number.",
+"exbn": "আমি আমার ফোন নম্বর বদলাতে চাই।"
+},
+{
+"n": 114,
+"w": "place",
+"p": "noun",
+"bn": "জায়গা, স্থান",
+"ex": "This is a nice place to live.",
+"exbn": "এটা থাকার জন্য একটা সুন্দর জায়গা।"
+},
+{
+"n": 115,
+"w": "long",
+"p": "adjective",
+"bn": "লম্বা, দীর্ঘ",
+"ex": "It was a long day.",
+"exbn": "দিনটা অনেক লম্বা ছিল।"
+},
+{
+"n": 116,
+"w": "between",
+"p": "preposition",
+"bn": "মাঝে, মধ্যে",
+"ex": "The bank is between the school and the mosque.",
+"exbn": "ব্যাংকটা স্কুল আর মসজিদের মাঝে।"
+},
+{
+"n": 117,
+"w": "feel",
+"p": "verb",
+"bn": "অনুভব করা, লাগা",
+"ex": "I feel tired today.",
+"exbn": "আজ আমার ক্লান্ত লাগছে।"
+},
+{
+"n": 118,
+"w": "too",
+"p": "adverb",
+"bn": "-ও; বেশি",
+"ex": "This tea is too hot.",
+"exbn": "এই চা-টা বেশি গরম।"
+},
+{
+"n": 119,
+"w": "still",
+"p": "adverb",
+"bn": "এখনো",
+"ex": "I am still at the office.",
+"exbn": "আমি এখনো অফিসে আছি।"
+},
+{
+"n": 120,
+"w": "problem",
+"p": "noun",
+"bn": "সমস্যা",
+"ex": "There is a problem with my laptop.",
+"exbn": "আমার ল্যাপটপে একটা সমস্যা হয়েছে।"
+},
+{
+"n": 121,
+"w": "write",
+"p": "verb",
+"bn": "লেখা",
+"ex": "Please write your name here.",
+"exbn": "দয়া করে এখানে আপনার নাম লিখুন।"
+},
+{
+"n": 122,
+"w": "same",
+"p": "adjective",
+"bn": "একই",
+"ex": "We live in the same building.",
+"exbn": "আমরা একই বিল্ডিংয়ে থাকি।"
+},
+{
+"n": 123,
+"w": "lot",
+"p": "noun",
+"bn": "অনেক (a lot of)",
+"ex": "I have a lot of work today.",
+"exbn": "আজ আমার অনেক কাজ আছে।"
+},
+{
+"n": 124,
+"w": "great",
+"p": "adjective",
+"bn": "দারুণ; বিশাল",
+"ex": "That's a great idea!",
+"exbn": "দারুণ আইডিয়া!"
+},
+{
+"n": 125,
+"w": "try",
+"p": "verb",
+"bn": "চেষ্টা করা",
+"ex": "I will try my best.",
+"exbn": "আমি যথাসাধ্য চেষ্টা করব।"
+},
+{
+"n": 126,
+"w": "leave",
+"p": "verb",
+"bn": "চলে যাওয়া; রেখে যাওয়া",
+"ex": "I leave home at eight.",
+"exbn": "আমি আটটায় বাসা থেকে বের হই।"
+},
+{
+"n": 127,
+"w": "number",
+"p": "noun",
+"bn": "সংখ্যা, নম্বর",
+"ex": "What is your phone number?",
+"exbn": "তোমার ফোন নম্বর কত?"
+},
+{
+"n": 128,
+"w": "both",
+"p": "determiner",
+"bn": "দুটোই, দুজনেই",
+"ex": "Both of my sisters are doctors.",
+"exbn": "আমার দুই বোনই ডাক্তার।"
+},
+{
+"n": 129,
+"w": "own",
+"p": "adjective",
+"bn": "নিজের",
+"ex": "I want my own room.",
+"exbn": "আমি নিজের একটা রুম চাই।"
+},
+{
+"n": 130,
+"w": "part",
+"p": "noun",
+"bn": "অংশ",
+"ex": "This is the best part of the movie.",
+"exbn": "এটা সিনেমার সবচেয়ে ভালো অংশ।"
+},
+{
+"n": 131,
+"w": "point",
+"p": "noun",
+"bn": "বিষয়, মূল কথা; বিন্দু",
+"ex": "That's a good point.",
+"exbn": "এটা একটা ভালো কথা।"
+},
+{
+"n": 132,
+"w": "little",
+"p": "adjective",
+"bn": "ছোট; অল্প",
+"ex": "I speak a little English.",
+"exbn": "আমি অল্প ইংরেজি বলতে পারি।"
+},
+{
+"n": 133,
+"w": "help",
+"p": "verb",
+"bn": "সাহায্য করা",
+"ex": "Can you help me with this bag?",
+"exbn": "এই ব্যাগটা নিয়ে আমাকে একটু সাহায্য করবে?"
+},
+{
+"n": 134,
+"w": "ask",
+"p": "verb",
+"bn": "জিজ্ঞেস করা; চাওয়া",
+"ex": "Can I ask you a question?",
+"exbn": "আমি কি আপনাকে একটা প্রশ্ন করতে পারি?"
+},
+{
+"n": 135,
+"w": "meet",
+"p": "verb",
+"bn": "দেখা করা, সাক্ষাৎ করা",
+"ex": "Nice to meet you.",
+"exbn": "আপনার সাথে দেখা হয়ে ভালো লাগল।"
+},
+{
+"n": 136,
+"w": "start",
+"p": "verb",
+"bn": "শুরু করা",
+"ex": "The class starts at nine.",
+"exbn": "ক্লাস নয়টায় শুরু হয়।"
+},
+{
+"n": 137,
+"w": "talk",
+"p": "verb",
+"bn": "কথা বলা",
+"ex": "Can we talk later?",
+"exbn": "আমরা কি পরে কথা বলতে পারি?"
+},
+{
+"n": 138,
+"w": "something",
+"p": "pronoun",
+"bn": "কিছু একটা",
+"ex": "I want to tell you something.",
+"exbn": "আমি তোমাকে কিছু একটা বলতে চাই।"
+},
+{
+"n": 139,
+"w": "put",
+"p": "verb",
+"bn": "রাখা",
+"ex": "Put your bag on the chair.",
+"exbn": "তোমার ব্যাগটা চেয়ারের উপর রাখো।"
+},
+{
+"n": 140,
+"w": "another",
+"p": "determiner",
+"bn": "আরেকটা, অন্য একটা",
+"ex": "Can I have another cup of tea?",
+"exbn": "আমি কি আরেক কাপ চা পেতে পারি?"
+},
+{
+"n": 141,
+"w": "become",
+"p": "verb",
+"bn": "হয়ে ওঠা, হওয়া",
+"ex": "She wants to become a doctor.",
+"exbn": "সে ডাক্তার হতে চায়।"
+},
+{
+"n": 142,
+"w": "interest",
+"p": "noun",
+"bn": "আগ্রহ; সুদ",
+"ex": "I have a big interest in music.",
+"exbn": "গানের প্রতি আমার অনেক আগ্রহ।"
+},
+{
+"n": 143,
+"w": "country",
+"p": "noun",
+"bn": "দেশ",
+"ex": "Bangladesh is a beautiful country.",
+"exbn": "বাংলাদেশ একটা সুন্দর দেশ।"
+},
+{
+"n": 144,
+"w": "old",
+"p": "adjective",
+"bn": "পুরনো; বয়স্ক",
+"ex": "My grandfather is very old.",
+"exbn": "আমার দাদা অনেক বয়স্ক।"
+},
+{
+"n": 145,
+"w": "each",
+"p": "determiner",
+"bn": "প্রত্যেক",
+"ex": "Each student has a book.",
+"exbn": "প্রত্যেক ছাত্রের একটা বই আছে।"
+},
+{
+"n": 146,
+"w": "school",
+"p": "noun",
+"bn": "স্কুল, বিদ্যালয়",
+"ex": "My son goes to school by rickshaw.",
+"exbn": "আমার ছেলে রিকশায় করে স্কুলে যায়।"
+},
+{
+"n": 147,
+"w": "late",
+"p": "adjective",
+"bn": "দেরি",
+"ex": "Sorry, I am late.",
+"exbn": "দুঃখিত, আমার দেরি হয়ে গেছে।"
+},
+{
+"n": 148,
+"w": "high",
+"p": "adjective",
+"bn": "উঁচু; বেশি",
+"ex": "The price is too high.",
+"exbn": "দামটা অনেক বেশি।"
+},
+{
+"n": 149,
+"w": "different",
+"p": "adjective",
+"bn": "ভিন্ন, আলাদা",
+"ex": "We have different ideas.",
+"exbn": "আমাদের ভাবনা আলাদা।"
+},
+{
+"n": 150,
+"w": "off",
+"p": "adverb",
+"bn": "বন্ধ; দূরে",
+"ex": "Please turn off the light.",
+"exbn": "দয়া করে লাইটটা বন্ধ করে দাও।"
+},
+{
+"n": 151,
+"w": "next",
+"p": "adjective",
+"bn": "পরের",
+"ex": "See you next week.",
+"exbn": "পরের সপ্তাহে দেখা হবে।"
+},
+{
+"n": 152,
+"w": "end",
+"p": "noun",
+"bn": "শেষ",
+"ex": "Wait until the end of the movie.",
+"exbn": "সিনেমার শেষ পর্যন্ত অপেক্ষা করো।"
+},
+{
+"n": 153,
+"w": "live",
+"p": "verb",
+"bn": "থাকা, বাস করা; বেঁচে থাকা",
+"ex": "Where do you live?",
+"exbn": "তুমি কোথায় থাকো?"
+},
+{
+"n": 154,
+"w": "why",
+"p": "adverb",
+"bn": "কেন",
+"ex": "Why are you sad?",
+"exbn": "তুমি কেন মন খারাপ করে আছো?"
+},
+{
+"n": 155,
+"w": "while",
+"p": "conjunction",
+"bn": "যখন, এর মধ্যে",
+"ex": "I listen to music while I cook.",
+"exbn": "রান্না করার সময় আমি গান শুনি।"
+},
+{
+"n": 156,
+"w": "world",
+"p": "noun",
+"bn": "পৃথিবী, বিশ্ব",
+"ex": "He wants to travel the world.",
+"exbn": "সে পুরো পৃথিবী ঘুরতে চায়।"
+},
+{
+"n": 157,
+"w": "week",
+"p": "noun",
+"bn": "সপ্তাহ",
+"ex": "I go to the gym three times a week.",
+"exbn": "আমি সপ্তাহে তিন দিন জিমে যাই।"
+},
+{
+"n": 158,
+"w": "play",
+"p": "verb",
+"bn": "খেলা; বাজানো",
+"ex": "The children play in the field.",
+"exbn": "বাচ্চারা মাঠে খেলে।"
+},
+{
+"n": 159,
+"w": "might",
+"p": "modal verb",
+"bn": "হয়তো",
+"ex": "It might rain today.",
+"exbn": "আজ হয়তো বৃষ্টি হতে পারে।"
+},
+{
+"n": 160,
+"w": "must",
+"p": "modal verb",
+"bn": "অবশ্যই করতে হবে",
+"ex": "You must wear a helmet.",
+"exbn": "তোমাকে অবশ্যই হেলমেট পরতে হবে।"
+},
+{
+"n": 161,
+"w": "home",
+"p": "noun",
+"bn": "বাড়ি, বাসা",
+"ex": "I am going home now.",
+"exbn": "আমি এখন বাসায় যাচ্ছি।"
+},
+{
+"n": 162,
+"w": "never",
+"p": "adverb",
+"bn": "কখনো না",
+"ex": "I never drink coffee at night.",
+"exbn": "আমি রাতে কখনো কফি খাই না।"
+},
+{
+"n": 163,
+"w": "include",
+"p": "verb",
+"bn": "অন্তর্ভুক্ত করা",
+"ex": "The price includes breakfast.",
+"exbn": "দামের মধ্যে সকালের নাস্তাও ধরা আছে।"
+},
+{
+"n": 164,
+"w": "course",
+"p": "noun",
+"bn": "কোর্স; (of course) অবশ্যই",
+"ex": "I am taking an English course.",
+"exbn": "আমি একটা ইংরেজি কোর্স করছি।"
+},
+{
+"n": 165,
+"w": "house",
+"p": "noun",
+"bn": "বাড়ি, ঘর",
+"ex": "Their house is near the river.",
+"exbn": "তাদের বাড়িটা নদীর কাছে।"
+},
+{
+"n": 166,
+"w": "report",
+"p": "noun",
+"bn": "রিপোর্ট, প্রতিবেদন",
+"ex": "I need to finish this report today.",
+"exbn": "আজ আমাকে এই রিপোর্টটা শেষ করতে হবে।"
+},
+{
+"n": 167,
+"w": "group",
+"p": "noun",
+"bn": "দল, গ্রুপ",
+"ex": "We work in a small group.",
+"exbn": "আমরা একটা ছোট দলে কাজ করি।"
+},
+{
+"n": 168,
+"w": "case",
+"p": "noun",
+"bn": "ঘটনা, ক্ষেত্র; (in case) যদি",
+"ex": "In that case, I will wait.",
+"exbn": "সেক্ষেত্রে আমি অপেক্ষা করব।"
+},
+{
+"n": 169,
+"w": "woman",
+"p": "noun",
+"bn": "নারী, মহিলা",
+"ex": "That woman is my teacher.",
+"exbn": "ঐ মহিলা আমার শিক্ষক।"
+},
+{
+"n": 170,
+"w": "around",
+"p": "preposition",
+"bn": "চারপাশে; প্রায়",
+"ex": "There are trees around the house.",
+"exbn": "বাড়ির চারপাশে গাছ আছে।"
+},
+{
+"n": 171,
+"w": "book",
+"p": "noun",
+"bn": "বই",
+"ex": "I am reading a good book.",
+"exbn": "আমি একটা ভালো বই পড়ছি।"
+},
+{
+"n": 172,
+"w": "family",
+"p": "noun",
+"bn": "পরিবার",
+"ex": "I love my family.",
+"exbn": "আমি আমার পরিবারকে ভালোবাসি।"
+},
+{
+"n": 173,
+"w": "seem",
+"p": "verb",
+"bn": "মনে হওয়া",
+"ex": "You seem tired.",
+"exbn": "তোমাকে ক্লান্ত মনে হচ্ছে।"
+},
+{
+"n": 174,
+"w": "let",
+"p": "verb",
+"bn": "করতে দেওয়া",
+"ex": "Let me help you.",
+"exbn": "আমাকে তোমাকে সাহায্য করতে দাও।"
+},
+{
+"n": 175,
+"w": "again",
+"p": "adverb",
+"bn": "আবার",
+"ex": "Please say it again.",
+"exbn": "দয়া করে আবার বলুন।"
+},
+{
+"n": 176,
+"w": "kind",
+"p": "noun",
+"bn": "ধরন; (adjective) দয়ালু",
+"ex": "What kind of music do you like?",
+"exbn": "তুমি কোন ধরনের গান পছন্দ করো?"
+},
+{
+"n": 177,
+"w": "keep",
+"p": "verb",
+"bn": "রাখা; চালিয়ে যাওয়া",
+"ex": "Keep your phone in your pocket.",
+"exbn": "তোমার ফোন পকেটে রাখো।"
+},
+{
+"n": 178,
+"w": "hear",
+"p": "verb",
+"bn": "শোনা",
+"ex": "Can you hear me?",
+"exbn": "তুমি কি আমার কথা শুনতে পাচ্ছ?"
+},
+{
+"n": 179,
+"w": "system",
+"p": "noun",
+"bn": "পদ্ধতি, ব্যবস্থা",
+"ex": "The new system is very fast.",
+"exbn": "নতুন ব্যবস্থাটা খুব দ্রুত।"
+},
+{
+"n": 180,
+"w": "every",
+"p": "determiner",
+"bn": "প্রতি, প্রত্যেক",
+"ex": "I walk every morning.",
+"exbn": "আমি প্রতিদিন সকালে হাঁটি।"
+},
+{
+"n": 181,
+"w": "question",
+"p": "noun",
+"bn": "প্রশ্ন",
+"ex": "I have a question.",
+"exbn": "আমার একটা প্রশ্ন আছে।"
+},
+{
+"n": 182,
+"w": "during",
+"p": "preposition",
+"bn": "চলাকালীন, সময়ে",
+"ex": "Don't talk during the exam.",
+"exbn": "পরীক্ষার সময় কথা বলবে না।"
+},
+{
+"n": 183,
+"w": "always",
+"p": "adverb",
+"bn": "সবসময়",
+"ex": "She is always on time.",
+"exbn": "সে সবসময় সময়মতো আসে।"
+},
+{
+"n": 184,
+"w": "big",
+"p": "adjective",
+"bn": "বড়",
+"ex": "They live in a big house.",
+"exbn": "তারা একটা বড় বাড়িতে থাকে।"
+},
+{
+"n": 185,
+"w": "set",
+"p": "verb",
+"bn": "ঠিক করা, বসানো",
+"ex": "I set an alarm for six.",
+"exbn": "আমি ছয়টার জন্য অ্যালার্ম দিয়েছি।"
+},
+{
+"n": 186,
+"w": "small",
+"p": "adjective",
+"bn": "ছোট",
+"ex": "I have a small car.",
+"exbn": "আমার একটা ছোট গাড়ি আছে।"
+},
+{
+"n": 187,
+"w": "study",
+"p": "verb",
+"bn": "পড়াশোনা করা",
+"ex": "I study English every day.",
+"exbn": "আমি প্রতিদিন ইংরেজি পড়ি।"
+},
+{
+"n": 188,
+"w": "follow",
+"p": "verb",
+"bn": "অনুসরণ করা",
+"ex": "Follow me, please.",
+"exbn": "দয়া করে আমার পিছে পিছে আসুন।"
+},
+{
+"n": 189,
+"w": "begin",
+"p": "verb",
+"bn": "শুরু করা",
+"ex": "The meeting will begin soon.",
+"exbn": "মিটিং শিগগিরই শুরু হবে।"
+},
+{
+"n": 190,
+"w": "important",
+"p": "adjective",
+"bn": "গুরুত্বপূর্ণ",
+"ex": "This is an important meeting.",
+"exbn": "এটা একটা গুরুত্বপূর্ণ মিটিং।"
+},
+{
+"n": 191,
+"w": "since",
+"p": "preposition",
+"bn": "থেকে (কোনো সময় থেকে)",
+"ex": "I have lived here since 2020.",
+"exbn": "আমি ২০২০ সাল থেকে এখানে থাকি।"
+},
+{
+"n": 192,
+"w": "run",
+"p": "verb",
+"bn": "দৌড়ানো; চালানো",
+"ex": "I run in the park every morning.",
+"exbn": "আমি প্রতিদিন সকালে পার্কে দৌড়াই।"
+},
+{
+"n": 193,
+"w": "under",
+"p": "preposition",
+"bn": "নিচে",
+"ex": "The cat is under the bed.",
+"exbn": "বিড়ালটা খাটের নিচে।"
+},
+{
+"n": 194,
+"w": "turn",
+"p": "verb",
+"bn": "ঘোরানো, বাঁক নেওয়া",
+"ex": "Turn left at the corner.",
+"exbn": "মোড়ে গিয়ে বাঁয়ে ঘুরুন।"
+},
+{
+"n": 195,
+"w": "few",
+"p": "determiner",
+"bn": "অল্প কয়েকটা",
+"ex": "I have a few friends here.",
+"exbn": "এখানে আমার অল্প কয়েকজন বন্ধু আছে।"
+},
+{
+"n": 196,
+"w": "bring",
+"p": "verb",
+"bn": "নিয়ে আসা",
+"ex": "Please bring some water.",
+"exbn": "দয়া করে একটু পানি নিয়ে আসো।"
+},
+{
+"n": 197,
+"w": "early",
+"p": "adjective",
+"bn": "তাড়াতাড়ি, সকাল সকাল",
+"ex": "I wake up early.",
+"exbn": "আমি সকাল সকাল ঘুম থেকে উঠি।"
+},
+{
+"n": 198,
+"w": "hand",
+"p": "noun",
+"bn": "হাত",
+"ex": "Raise your hand.",
+"exbn": "তোমার হাত তোলো।"
+},
+{
+"n": 199,
+"w": "state",
+"p": "noun",
+"bn": "রাষ্ট্র, রাজ্য; অবস্থা",
+"ex": "Texas is a big state.",
+"exbn": "টেক্সাস একটা বড় রাজ্য।"
+},
+{
+"n": 200,
+"w": "move",
+"p": "verb",
+"bn": "নড়া, সরানো; বাসা বদলানো",
+"ex": "We will move to a new flat.",
+"exbn": "আমরা একটা নতুন ফ্ল্যাটে উঠব।"
+}
+]

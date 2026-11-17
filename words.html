@@ -90,7 +90,7 @@ main{padding:36px 0 80px}
 <script>
 (function(){
 var NEW_PER_DAY=20, GAPS=[1,3,7,15,30,60], MASTER=4;
-var FILES=["words/w001.json"], TOTAL=1000;
+var FILES=["w001","w002","w003","w004","w005","w006","w007","w008","w009","w010"].map(function(f){return "words/"+f+".json"}), TOTAL=1000;
 var W=[], BY={}, VOICE={}, st, tab="learn", rv=null, li=0;
 var KEY="ac-words";
 function bn(n){return String(n).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯"[d]})}

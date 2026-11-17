@@ -1,0 +1,802 @@
+[
+{
+"n": 301,
+"w": "control",
+"p": "verb",
+"bn": "নিয়ন্ত্রণ করা",
+"ex": "Try to control your anger.",
+"exbn": "রাগ নিয়ন্ত্রণ করার চেষ্টা করো।"
+},
+{
+"n": 302,
+"w": "already",
+"p": "adverb",
+"bn": "ইতিমধ্যে, আগেই",
+"ex": "I have already eaten.",
+"exbn": "আমি আগেই খেয়ে নিয়েছি।"
+},
+{
+"n": 303,
+"w": "concern",
+"p": "noun",
+"bn": "দুশ্চিন্তা, উদ্বেগ",
+"ex": "My main concern is your health.",
+"exbn": "আমার মূল দুশ্চিন্তা তোমার স্বাস্থ্য নিয়ে।"
+},
+{
+"n": 304,
+"w": "product",
+"p": "noun",
+"bn": "পণ্য",
+"ex": "This product is made in Bangladesh.",
+"exbn": "এই পণ্যটা বাংলাদেশে তৈরি।"
+},
+{
+"n": 305,
+"w": "lose",
+"p": "verb",
+"bn": "হারানো; হেরে যাওয়া",
+"ex": "Don't lose your ticket.",
+"exbn": "তোমার টিকিটটা হারিয়ো না।"
+},
+{
+"n": 306,
+"w": "story",
+"p": "noun",
+"bn": "গল্প",
+"ex": "My grandmother tells me a story every night.",
+"exbn": "আমার নানি প্রতি রাতে আমাকে একটা গল্প বলেন।"
+},
+{
+"n": 307,
+"w": "almost",
+"p": "adverb",
+"bn": "প্রায়",
+"ex": "I am almost ready.",
+"exbn": "আমি প্রায় তৈরি।"
+},
+{
+"n": 308,
+"w": "continue",
+"p": "verb",
+"bn": "চালিয়ে যাওয়া",
+"ex": "Please continue your work.",
+"exbn": "দয়া করে তোমার কাজ চালিয়ে যাও।"
+},
+{
+"n": 309,
+"w": "stand",
+"p": "verb",
+"bn": "দাঁড়ানো",
+"ex": "Please stand in the line.",
+"exbn": "দয়া করে লাইনে দাঁড়ান।"
+},
+{
+"n": 310,
+"w": "whole",
+"p": "adjective",
+"bn": "পুরো, সম্পূর্ণ",
+"ex": "I ate the whole pizza.",
+"exbn": "আমি পুরো পিৎজাটা খেয়ে ফেলেছি।"
+},
+{
+"n": 311,
+"w": "yet",
+"p": "adverb",
+"bn": "এখনো (না)",
+"ex": "I haven't finished yet.",
+"exbn": "আমি এখনো শেষ করিনি।"
+},
+{
+"n": 312,
+"w": "rate",
+"p": "noun",
+"bn": "হার, রেট",
+"ex": "What is the exchange rate today?",
+"exbn": "আজকের এক্সচেঞ্জ রেট কত?"
+},
+{
+"n": 313,
+"w": "care",
+"p": "verb",
+"bn": "যত্ন নেওয়া; (care about) গুরুত্ব দেওয়া",
+"ex": "Take care of yourself.",
+"exbn": "নিজের যত্ন নিও।"
+},
+{
+"n": 314,
+"w": "expect",
+"p": "verb",
+"bn": "আশা করা, প্রত্যাশা করা",
+"ex": "I expect him to call today.",
+"exbn": "আমি আশা করছি সে আজ ফোন করবে।"
+},
+{
+"n": 315,
+"w": "effect",
+"p": "noun",
+"bn": "প্রভাব, ফল",
+"ex": "The medicine had a good effect.",
+"exbn": "ওষুধটা ভালো কাজ করেছে।"
+},
+{
+"n": 316,
+"w": "sort",
+"p": "noun",
+"bn": "ধরন; (verb) সাজানো",
+"ex": "What sort of food do you like?",
+"exbn": "তুমি কোন ধরনের খাবার পছন্দ করো?"
+},
+{
+"n": 317,
+"w": "ever",
+"p": "adverb",
+"bn": "কখনো (প্রশ্নে)",
+"ex": "Have you ever been to Cox's Bazar?",
+"exbn": "তুমি কি কখনো কক্সবাজার গিয়েছ?"
+},
+{
+"n": 318,
+"w": "anything",
+"p": "pronoun",
+"bn": "কিছু, যেকোনো কিছু",
+"ex": "Do you need anything?",
+"exbn": "তোমার কি কিছু লাগবে?"
+},
+{
+"n": 319,
+"w": "cause",
+"p": "verb",
+"bn": "ঘটানো, কারণ হওয়া",
+"ex": "Heavy rain caused the flood.",
+"exbn": "ভারী বৃষ্টির কারণে বন্যা হয়েছে।"
+},
+{
+"n": 320,
+"w": "fall",
+"p": "verb",
+"bn": "পড়ে যাওয়া",
+"ex": "Be careful, don't fall.",
+"exbn": "সাবধান, পড়ে যেও না।"
+},
+{
+"n": 321,
+"w": "deal",
+"p": "noun",
+"bn": "চুক্তি; সুবিধাজনক দাম",
+"ex": "We made a deal.",
+"exbn": "আমরা একটা চুক্তি করেছি।"
+},
+{
+"n": 322,
+"w": "water",
+"p": "noun",
+"bn": "পানি",
+"ex": "Can I have a glass of water?",
+"exbn": "আমাকে এক গ্লাস পানি দেবেন?"
+},
+{
+"n": 323,
+"w": "send",
+"p": "verb",
+"bn": "পাঠানো",
+"ex": "I will send you the file.",
+"exbn": "আমি তোমাকে ফাইলটা পাঠিয়ে দেব।"
+},
+{
+"n": 324,
+"w": "allow",
+"p": "verb",
+"bn": "অনুমতি দেওয়া",
+"ex": "Phones are not allowed in the exam.",
+"exbn": "পরীক্ষায় ফোন নেওয়ার অনুমতি নেই।"
+},
+{
+"n": 325,
+"w": "soon",
+"p": "adverb",
+"bn": "শিগগিরই",
+"ex": "See you soon.",
+"exbn": "শিগগিরই দেখা হবে।"
+},
+{
+"n": 326,
+"w": "watch",
+"p": "verb",
+"bn": "দেখা (মনোযোগ দিয়ে)",
+"ex": "We watch TV after dinner.",
+"exbn": "আমরা রাতের খাবারের পর টিভি দেখি।"
+},
+{
+"n": 327,
+"w": "base",
+"p": "noun",
+"bn": "ভিত্তি; ঘাঁটি",
+"ex": "Our company's base is in Dhaka.",
+"exbn": "আমাদের কোম্পানির মূল অফিস ঢাকায়।"
+},
+{
+"n": 328,
+"w": "probably",
+"p": "adverb",
+"bn": "সম্ভবত",
+"ex": "He will probably come late.",
+"exbn": "সে সম্ভবত দেরিতে আসবে।"
+},
+{
+"n": 329,
+"w": "suggest",
+"p": "verb",
+"bn": "পরামর্শ দেওয়া",
+"ex": "I suggest you take a rest.",
+"exbn": "আমার পরামর্শ, তুমি একটু বিশ্রাম নাও।"
+},
+{
+"n": 330,
+"w": "past",
+"p": "noun",
+"bn": "অতীত; (preposition) পেরিয়ে",
+"ex": "Forget the past.",
+"exbn": "অতীত ভুলে যাও।"
+},
+{
+"n": 331,
+"w": "power",
+"p": "noun",
+"bn": "ক্ষমতা; বিদ্যুৎ",
+"ex": "The power went out last night.",
+"exbn": "কাল রাতে কারেন্ট চলে গিয়েছিল।"
+},
+{
+"n": 332,
+"w": "test",
+"p": "noun",
+"bn": "পরীক্ষা",
+"ex": "I have a math test tomorrow.",
+"exbn": "কাল আমার গণিত পরীক্ষা।"
+},
+{
+"n": 333,
+"w": "visit",
+"p": "verb",
+"bn": "দেখা করতে যাওয়া, বেড়াতে যাওয়া",
+"ex": "I will visit my aunt this weekend.",
+"exbn": "এই সপ্তাহান্তে আমি খালার বাসায় বেড়াতে যাব।"
+},
+{
+"n": 334,
+"w": "center",
+"p": "noun",
+"bn": "কেন্দ্র, মাঝখান",
+"ex": "The hotel is in the center of the city.",
+"exbn": "হোটেলটা শহরের মাঝখানে।"
+},
+{
+"n": 335,
+"w": "grow",
+"p": "verb",
+"bn": "বড় হওয়া; চাষ করা",
+"ex": "My father grows rice.",
+"exbn": "আমার বাবা ধান চাষ করেন।"
+},
+{
+"n": 336,
+"w": "nothing",
+"p": "pronoun",
+"bn": "কিছুই না",
+"ex": "There is nothing in the box.",
+"exbn": "বাক্সে কিছুই নেই।"
+},
+{
+"n": 337,
+"w": "return",
+"p": "verb",
+"bn": "ফিরে আসা; ফেরত দেওয়া",
+"ex": "I will return the book tomorrow.",
+"exbn": "আমি কাল বইটা ফেরত দেব।"
+},
+{
+"n": 338,
+"w": "mother",
+"p": "noun",
+"bn": "মা",
+"ex": "My mother is a teacher.",
+"exbn": "আমার মা একজন শিক্ষক।"
+},
+{
+"n": 339,
+"w": "walk",
+"p": "verb",
+"bn": "হাঁটা",
+"ex": "I walk to work.",
+"exbn": "আমি হেঁটে কাজে যাই।"
+},
+{
+"n": 340,
+"w": "matter",
+"p": "verb",
+"bn": "গুরুত্বপূর্ণ হওয়া; (noun) বিষয়",
+"ex": "It doesn't matter.",
+"exbn": "এতে কিছু যায় আসে না।"
+},
+{
+"n": 341,
+"w": "mind",
+"p": "noun",
+"bn": "মন; (verb) আপত্তি করা",
+"ex": "Do you mind if I sit here?",
+"exbn": "আমি এখানে বসলে কি আপনার আপত্তি আছে?"
+},
+{
+"n": 342,
+"w": "value",
+"p": "noun",
+"bn": "মূল্য",
+"ex": "Your time has great value.",
+"exbn": "তোমার সময়ের অনেক মূল্য।"
+},
+{
+"n": 343,
+"w": "office",
+"p": "noun",
+"bn": "অফিস",
+"ex": "I go to the office at nine.",
+"exbn": "আমি নয়টায় অফিসে যাই।"
+},
+{
+"n": 344,
+"w": "record",
+"p": "verb",
+"bn": "রেকর্ড করা",
+"ex": "Record your voice and listen.",
+"exbn": "তোমার কণ্ঠ রেকর্ড করে শোনো।"
+},
+{
+"n": 345,
+"w": "stay",
+"p": "verb",
+"bn": "থাকা",
+"ex": "I will stay at a hotel.",
+"exbn": "আমি একটা হোটেলে থাকব।"
+},
+{
+"n": 346,
+"w": "force",
+"p": "verb",
+"bn": "জোর করা",
+"ex": "Don't force him to eat.",
+"exbn": "তাকে খেতে জোর করো না।"
+},
+{
+"n": 347,
+"w": "stop",
+"p": "verb",
+"bn": "থামা, বন্ধ করা",
+"ex": "Please stop the car here.",
+"exbn": "দয়া করে গাড়িটা এখানে থামান।"
+},
+{
+"n": 348,
+"w": "several",
+"p": "determiner",
+"bn": "বেশ কয়েকটা",
+"ex": "I called him several times.",
+"exbn": "আমি তাকে বেশ কয়েকবার ফোন করেছি।"
+},
+{
+"n": 349,
+"w": "light",
+"p": "noun",
+"bn": "আলো; (adjective) হালকা",
+"ex": "Turn on the light, please.",
+"exbn": "দয়া করে লাইটটা জ্বালাও।"
+},
+{
+"n": 350,
+"w": "develop",
+"p": "verb",
+"bn": "উন্নত করা, গড়ে তোলা",
+"ex": "I want to develop my skills.",
+"exbn": "আমি আমার দক্ষতা বাড়াতে চাই।"
+},
+{
+"n": 351,
+"w": "remember",
+"p": "verb",
+"bn": "মনে রাখা, মনে পড়া",
+"ex": "I remember your name.",
+"exbn": "তোমার নাম আমার মনে আছে।"
+},
+{
+"n": 352,
+"w": "bit",
+"p": "noun",
+"bn": "একটু (a bit)",
+"ex": "I am a bit tired.",
+"exbn": "আমি একটু ক্লান্ত।"
+},
+{
+"n": 353,
+"w": "share",
+"p": "verb",
+"bn": "ভাগ করে নেওয়া, শেয়ার করা",
+"ex": "Let's share this cake.",
+"exbn": "চলো কেকটা ভাগ করে খাই।"
+},
+{
+"n": 354,
+"w": "real",
+"p": "adjective",
+"bn": "আসল, বাস্তব",
+"ex": "Is this a real diamond?",
+"exbn": "এটা কি আসল হীরা?"
+},
+{
+"n": 355,
+"w": "answer",
+"p": "noun",
+"bn": "উত্তর; (verb) উত্তর দেওয়া",
+"ex": "I know the answer.",
+"exbn": "আমি উত্তরটা জানি।"
+},
+{
+"n": 356,
+"w": "sit",
+"p": "verb",
+"bn": "বসা",
+"ex": "Please sit here.",
+"exbn": "দয়া করে এখানে বসুন।"
+},
+{
+"n": 357,
+"w": "figure",
+"p": "noun",
+"bn": "সংখ্যা; আকৃতি; (figure out) বুঝে বের করা",
+"ex": "I can't figure out this problem.",
+"exbn": "এই সমস্যাটা আমি বুঝে উঠতে পারছি না।"
+},
+{
+"n": 358,
+"w": "letter",
+"p": "noun",
+"bn": "চিঠি; অক্ষর",
+"ex": "I wrote a letter to my friend.",
+"exbn": "আমি বন্ধুকে একটা চিঠি লিখেছি।"
+},
+{
+"n": 359,
+"w": "decide",
+"p": "verb",
+"bn": "সিদ্ধান্ত নেওয়া",
+"ex": "I decided to learn English.",
+"exbn": "আমি ইংরেজি শেখার সিদ্ধান্ত নিয়েছি।"
+},
+{
+"n": 360,
+"w": "language",
+"p": "noun",
+"bn": "ভাষা",
+"ex": "Bangla is my first language.",
+"exbn": "বাংলা আমার মাতৃভাষা।"
+},
+{
+"n": 361,
+"w": "subject",
+"p": "noun",
+"bn": "বিষয়",
+"ex": "Math is my favorite subject.",
+"exbn": "গণিত আমার প্রিয় বিষয়।"
+},
+{
+"n": 362,
+"w": "class",
+"p": "noun",
+"bn": "ক্লাস, শ্রেণি",
+"ex": "Our class starts at ten.",
+"exbn": "আমাদের ক্লাস দশটায় শুরু হয়।"
+},
+{
+"n": 363,
+"w": "development",
+"p": "noun",
+"bn": "উন্নয়ন",
+"ex": "The city needs more development.",
+"exbn": "শহরের আরও উন্নয়ন দরকার।"
+},
+{
+"n": 364,
+"w": "town",
+"p": "noun",
+"bn": "শহর (ছোট)",
+"ex": "I grew up in a small town.",
+"exbn": "আমি একটা ছোট শহরে বড় হয়েছি।"
+},
+{
+"n": 365,
+"w": "half",
+"p": "noun",
+"bn": "অর্ধেক",
+"ex": "Give me half of the cake.",
+"exbn": "কেকের অর্ধেকটা আমাকে দাও।"
+},
+{
+"n": 366,
+"w": "minute",
+"p": "noun",
+"bn": "মিনিট",
+"ex": "Wait a minute, please.",
+"exbn": "এক মিনিট অপেক্ষা করুন।"
+},
+{
+"n": 367,
+"w": "food",
+"p": "noun",
+"bn": "খাবার",
+"ex": "The food here is delicious.",
+"exbn": "এখানকার খাবার খুব মজার।"
+},
+{
+"n": 368,
+"w": "break",
+"p": "verb",
+"bn": "ভাঙা; (noun) বিরতি",
+"ex": "Let's take a short break.",
+"exbn": "চলো একটু বিরতি নিই।"
+},
+{
+"n": 369,
+"w": "clear",
+"p": "adjective",
+"bn": "পরিষ্কার, স্পষ্ট",
+"ex": "Is that clear?",
+"exbn": "ব্যাপারটা কি পরিষ্কার?"
+},
+{
+"n": 370,
+"w": "future",
+"p": "noun",
+"bn": "ভবিষ্যৎ",
+"ex": "What are your plans for the future?",
+"exbn": "ভবিষ্যতের জন্য তোমার পরিকল্পনা কী?"
+},
+{
+"n": 371,
+"w": "either",
+"p": "determiner",
+"bn": "দুটোর যেকোনো একটা",
+"ex": "You can take either bus.",
+"exbn": "তুমি দুটোর যেকোনো বাসে উঠতে পারো।"
+},
+{
+"n": 372,
+"w": "ago",
+"p": "adverb",
+"bn": "আগে (সময়)",
+"ex": "I came here two years ago.",
+"exbn": "আমি দুই বছর আগে এখানে এসেছি।"
+},
+{
+"n": 373,
+"w": "per",
+"p": "preposition",
+"bn": "প্রতি",
+"ex": "The rent is ten thousand taka per month.",
+"exbn": "ভাড়া মাসে দশ হাজার টাকা।"
+},
+{
+"n": 374,
+"w": "remain",
+"p": "verb",
+"bn": "থেকে যাওয়া, রয়ে যাওয়া",
+"ex": "Please remain in your seats.",
+"exbn": "দয়া করে নিজের আসনে বসে থাকুন।"
+},
+{
+"n": 375,
+"w": "top",
+"p": "noun",
+"bn": "উপরের অংশ, চূড়া",
+"ex": "Write your name at the top.",
+"exbn": "উপরে তোমার নাম লেখো।"
+},
+{
+"n": 376,
+"w": "among",
+"p": "preposition",
+"bn": "মধ্যে (অনেকের)",
+"ex": "She is popular among students.",
+"exbn": "ছাত্রছাত্রীদের মধ্যে সে জনপ্রিয়।"
+},
+{
+"n": 377,
+"w": "win",
+"p": "verb",
+"bn": "জেতা",
+"ex": "I hope our team wins.",
+"exbn": "আশা করি আমাদের দল জিতবে।"
+},
+{
+"n": 378,
+"w": "color",
+"p": "noun",
+"bn": "রং",
+"ex": "My favorite color is blue.",
+"exbn": "আমার প্রিয় রং নীল।"
+},
+{
+"n": 379,
+"w": "involve",
+"p": "verb",
+"bn": "জড়িত থাকা, যুক্ত করা",
+"ex": "The job involves a lot of travel.",
+"exbn": "এই কাজে অনেক ভ্রমণ করতে হয়।"
+},
+{
+"n": 380,
+"w": "reach",
+"p": "verb",
+"bn": "পৌঁছানো",
+"ex": "We reached home at midnight.",
+"exbn": "আমরা মাঝরাতে বাসায় পৌঁছেছি।"
+},
+{
+"n": 381,
+"w": "social",
+"p": "adjective",
+"bn": "সামাজিক",
+"ex": "I don't use social media much.",
+"exbn": "আমি সোশ্যাল মিডিয়া বেশি ব্যবহার করি না।"
+},
+{
+"n": 382,
+"w": "period",
+"p": "noun",
+"bn": "সময়কাল",
+"ex": "The offer is for a short period.",
+"exbn": "অফারটা অল্প সময়ের জন্য।"
+},
+{
+"n": 383,
+"w": "across",
+"p": "preposition",
+"bn": "পার হয়ে, ওপারে",
+"ex": "The shop is across the road.",
+"exbn": "দোকানটা রাস্তার ওপারে।"
+},
+{
+"n": 384,
+"w": "note",
+"p": "noun",
+"bn": "নোট, ছোট লেখা",
+"ex": "I left a note on the table.",
+"exbn": "আমি টেবিলে একটা নোট রেখে এসেছি।"
+},
+{
+"n": 385,
+"w": "history",
+"p": "noun",
+"bn": "ইতিহাস",
+"ex": "I love reading history books.",
+"exbn": "আমি ইতিহাসের বই পড়তে ভালোবাসি।"
+},
+{
+"n": 386,
+"w": "create",
+"p": "verb",
+"bn": "তৈরি করা",
+"ex": "She creates beautiful designs.",
+"exbn": "সে সুন্দর ডিজাইন তৈরি করে।"
+},
+{
+"n": 387,
+"w": "drive",
+"p": "verb",
+"bn": "গাড়ি চালানো",
+"ex": "Can you drive?",
+"exbn": "তুমি কি গাড়ি চালাতে পারো?"
+},
+{
+"n": 388,
+"w": "along",
+"p": "preposition",
+"bn": "বরাবর, ধরে",
+"ex": "We walked along the river.",
+"exbn": "আমরা নদীর পাড় ধরে হাঁটলাম।"
+},
+{
+"n": 389,
+"w": "type",
+"p": "noun",
+"bn": "ধরন; (verb) টাইপ করা",
+"ex": "What type of phone do you have?",
+"exbn": "তোমার কোন ধরনের ফোন?"
+},
+{
+"n": 390,
+"w": "sound",
+"p": "noun",
+"bn": "শব্দ, আওয়াজ; (verb) শোনানো",
+"ex": "That sounds good!",
+"exbn": "শুনে ভালো লাগছে!"
+},
+{
+"n": 391,
+"w": "eye",
+"p": "noun",
+"bn": "চোখ",
+"ex": "She has big brown eyes.",
+"exbn": "তার বড় বড় বাদামি চোখ।"
+},
+{
+"n": 392,
+"w": "music",
+"p": "noun",
+"bn": "গান, সংগীত",
+"ex": "I listen to music every day.",
+"exbn": "আমি প্রতিদিন গান শুনি।"
+},
+{
+"n": 393,
+"w": "game",
+"p": "noun",
+"bn": "খেলা",
+"ex": "Let's play a game.",
+"exbn": "চলো একটা খেলা খেলি।"
+},
+{
+"n": 394,
+"w": "political",
+"p": "adjective",
+"bn": "রাজনৈতিক",
+"ex": "They talked about political news.",
+"exbn": "তারা রাজনৈতিক খবর নিয়ে কথা বলল।"
+},
+{
+"n": 395,
+"w": "free",
+"p": "adjective",
+"bn": "ফ্রি, বিনামূল্যে; অবসর",
+"ex": "Are you free tomorrow?",
+"exbn": "তুমি কি কাল ফ্রি আছো?"
+},
+{
+"n": 396,
+"w": "receive",
+"p": "verb",
+"bn": "পাওয়া, গ্রহণ করা",
+"ex": "Did you receive my email?",
+"exbn": "তুমি কি আমার ইমেইল পেয়েছ?"
+},
+{
+"n": 397,
+"w": "moment",
+"p": "noun",
+"bn": "মুহূর্ত",
+"ex": "Please wait a moment.",
+"exbn": "দয়া করে এক মুহূর্ত অপেক্ষা করুন।"
+},
+{
+"n": 398,
+"w": "sale",
+"p": "noun",
+"bn": "বিক্রি; সেল (ছাড়)",
+"ex": "The shop has a big sale this week.",
+"exbn": "এই সপ্তাহে দোকানে বড় সেল চলছে।"
+},
+{
+"n": 399,
+"w": "policy",
+"p": "noun",
+"bn": "নীতি, নিয়ম",
+"ex": "The company has a new policy.",
+"exbn": "কোম্পানির একটা নতুন নিয়ম হয়েছে।"
+},
+{
+"n": 400,
+"w": "further",
+"p": "adverb",
+"bn": "আরও; আরও দূরে",
+"ex": "Do you have any further questions?",
+"exbn": "আপনার কি আর কোনো প্রশ্ন আছে?"
+}
+]

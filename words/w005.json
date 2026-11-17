@@ -1,0 +1,802 @@
+[
+{
+"n": 401,
+"w": "body",
+"p": "noun",
+"bn": "শরীর",
+"ex": "Exercise is good for your body.",
+"exbn": "ব্যায়াম শরীরের জন্য ভালো।"
+},
+{
+"n": 402,
+"w": "require",
+"p": "verb",
+"bn": "প্রয়োজন হওয়া",
+"ex": "This job requires good English.",
+"exbn": "এই চাকরিতে ভালো ইংরেজি দরকার।"
+},
+{
+"n": 403,
+"w": "wait",
+"p": "verb",
+"bn": "অপেক্ষা করা",
+"ex": "Please wait here.",
+"exbn": "দয়া করে এখানে অপেক্ষা করুন।"
+},
+{
+"n": 404,
+"w": "general",
+"p": "adjective",
+"bn": "সাধারণ",
+"ex": "I have a general question.",
+"exbn": "আমার একটা সাধারণ প্রশ্ন আছে।"
+},
+{
+"n": 405,
+"w": "appear",
+"p": "verb",
+"bn": "দেখা দেওয়া; মনে হওয়া",
+"ex": "A message appeared on the screen.",
+"exbn": "স্ক্রিনে একটা মেসেজ দেখা গেল।"
+},
+{
+"n": 406,
+"w": "toward",
+"p": "preposition",
+"bn": "দিকে",
+"ex": "He walked toward the door.",
+"exbn": "সে দরজার দিকে হেঁটে গেল।"
+},
+{
+"n": 407,
+"w": "team",
+"p": "noun",
+"bn": "দল, টিম",
+"ex": "Our team won the match.",
+"exbn": "আমাদের দল ম্যাচটা জিতেছে।"
+},
+{
+"n": 408,
+"w": "easy",
+"p": "adjective",
+"bn": "সহজ",
+"ex": "This lesson is easy.",
+"exbn": "এই পাঠটা সহজ।"
+},
+{
+"n": 409,
+"w": "individual",
+"p": "adjective",
+"bn": "একক, আলাদা; (noun) ব্যক্তি",
+"ex": "Each individual student gets a certificate.",
+"exbn": "প্রত্যেক ছাত্র আলাদাভাবে সার্টিফিকেট পায়।"
+},
+{
+"n": 410,
+"w": "full",
+"p": "adjective",
+"bn": "পূর্ণ, ভরা",
+"ex": "The bus is full.",
+"exbn": "বাসটা ভর্তি।"
+},
+{
+"n": 411,
+"w": "black",
+"p": "adjective",
+"bn": "কালো",
+"ex": "I have a black bag.",
+"exbn": "আমার একটা কালো ব্যাগ আছে।"
+},
+{
+"n": 412,
+"w": "sense",
+"p": "noun",
+"bn": "বোধ, অর্থ",
+"ex": "That makes sense.",
+"exbn": "এটার মানে বোঝা যাচ্ছে।"
+},
+{
+"n": 413,
+"w": "perhaps",
+"p": "adverb",
+"bn": "হয়তো",
+"ex": "Perhaps he forgot.",
+"exbn": "হয়তো সে ভুলে গেছে।"
+},
+{
+"n": 414,
+"w": "add",
+"p": "verb",
+"bn": "যোগ করা",
+"ex": "Add some salt to the soup.",
+"exbn": "স্যুপে একটু লবণ দাও।"
+},
+{
+"n": 415,
+"w": "rule",
+"p": "noun",
+"bn": "নিয়ম",
+"ex": "Follow the rules.",
+"exbn": "নিয়ম মেনে চলো।"
+},
+{
+"n": 416,
+"w": "pass",
+"p": "verb",
+"bn": "পাস করা; পার হওয়া; এগিয়ে দেওয়া",
+"ex": "Can you pass me the salt?",
+"exbn": "লবণটা একটু এগিয়ে দেবে?"
+},
+{
+"n": 417,
+"w": "produce",
+"p": "verb",
+"bn": "উৎপাদন করা",
+"ex": "This factory produces shoes.",
+"exbn": "এই কারখানায় জুতা তৈরি হয়।"
+},
+{
+"n": 418,
+"w": "sell",
+"p": "verb",
+"bn": "বিক্রি করা",
+"ex": "They sell fresh fruit.",
+"exbn": "তারা তাজা ফল বিক্রি করে।"
+},
+{
+"n": 419,
+"w": "short",
+"p": "adjective",
+"bn": "ছোট, খাটো",
+"ex": "She has short hair.",
+"exbn": "তার চুল ছোট।"
+},
+{
+"n": 420,
+"w": "agree",
+"p": "verb",
+"bn": "একমত হওয়া",
+"ex": "I agree with you.",
+"exbn": "আমি তোমার সাথে একমত।"
+},
+{
+"n": 421,
+"w": "law",
+"p": "noun",
+"bn": "আইন",
+"ex": "Everyone must follow the law.",
+"exbn": "সবাইকে আইন মানতে হবে।"
+},
+{
+"n": 422,
+"w": "everything",
+"p": "pronoun",
+"bn": "সবকিছু",
+"ex": "Thank you for everything.",
+"exbn": "সবকিছুর জন্য ধন্যবাদ।"
+},
+{
+"n": 423,
+"w": "research",
+"p": "noun",
+"bn": "গবেষণা",
+"ex": "She is doing research on climate change.",
+"exbn": "সে জলবায়ু পরিবর্তন নিয়ে গবেষণা করছে।"
+},
+{
+"n": 424,
+"w": "cover",
+"p": "verb",
+"bn": "ঢাকা; অন্তর্ভুক্ত করা",
+"ex": "Cover the food, please.",
+"exbn": "দয়া করে খাবারটা ঢেকে রাখো।"
+},
+{
+"n": 425,
+"w": "paper",
+"p": "noun",
+"bn": "কাগজ",
+"ex": "I need a piece of paper.",
+"exbn": "আমার এক টুকরো কাগজ দরকার।"
+},
+{
+"n": 426,
+"w": "position",
+"p": "noun",
+"bn": "অবস্থান; পদ",
+"ex": "He applied for the manager position.",
+"exbn": "সে ম্যানেজার পদের জন্য আবেদন করেছে।"
+},
+{
+"n": 427,
+"w": "near",
+"p": "preposition",
+"bn": "কাছে",
+"ex": "Is there a pharmacy near here?",
+"exbn": "এখানে কাছে কি কোনো ফার্মেসি আছে?"
+},
+{
+"n": 428,
+"w": "human",
+"p": "adjective",
+"bn": "মানুষের, মানবিক",
+"ex": "To make mistakes is human.",
+"exbn": "ভুল করা মানুষের স্বভাব।"
+},
+{
+"n": 429,
+"w": "computer",
+"p": "noun",
+"bn": "কম্পিউটার",
+"ex": "I use my computer for work.",
+"exbn": "আমি কাজের জন্য কম্পিউটার ব্যবহার করি।"
+},
+{
+"n": 430,
+"w": "situation",
+"p": "noun",
+"bn": "পরিস্থিতি",
+"ex": "The situation is under control.",
+"exbn": "পরিস্থিতি নিয়ন্ত্রণে আছে।"
+},
+{
+"n": 431,
+"w": "staff",
+"p": "noun",
+"bn": "কর্মী (সবাই মিলে)",
+"ex": "The hotel staff are very friendly.",
+"exbn": "হোটেলের কর্মীরা খুব আন্তরিক।"
+},
+{
+"n": 432,
+"w": "activity",
+"p": "noun",
+"bn": "কাজকর্ম, কার্যকলাপ",
+"ex": "Swimming is my favorite activity.",
+"exbn": "সাঁতার আমার প্রিয় কাজ।"
+},
+{
+"n": 433,
+"w": "film",
+"p": "noun",
+"bn": "সিনেমা, চলচ্চিত্র",
+"ex": "Let's watch a film tonight.",
+"exbn": "চলো আজ রাতে একটা সিনেমা দেখি।"
+},
+{
+"n": 434,
+"w": "morning",
+"p": "noun",
+"bn": "সকাল",
+"ex": "Good morning!",
+"exbn": "শুভ সকাল!"
+},
+{
+"n": 435,
+"w": "war",
+"p": "noun",
+"bn": "যুদ্ধ",
+"ex": "Nobody wants war.",
+"exbn": "কেউ যুদ্ধ চায় না।"
+},
+{
+"n": 436,
+"w": "account",
+"p": "noun",
+"bn": "অ্যাকাউন্ট, হিসাব",
+"ex": "I opened a bank account.",
+"exbn": "আমি একটা ব্যাংক অ্যাকাউন্ট খুলেছি।"
+},
+{
+"n": 437,
+"w": "shop",
+"p": "noun",
+"bn": "দোকান; (verb) কেনাকাটা করা",
+"ex": "The shop closes at nine.",
+"exbn": "দোকানটা নয়টায় বন্ধ হয়।"
+},
+{
+"n": 438,
+"w": "major",
+"p": "adjective",
+"bn": "প্রধান, বড়",
+"ex": "This is a major problem.",
+"exbn": "এটা একটা বড় সমস্যা।"
+},
+{
+"n": 439,
+"w": "someone",
+"p": "pronoun",
+"bn": "কেউ একজন",
+"ex": "Someone is at the door.",
+"exbn": "দরজায় কেউ একজন এসেছে।"
+},
+{
+"n": 440,
+"w": "above",
+"p": "preposition",
+"bn": "উপরে",
+"ex": "The clock is above the door.",
+"exbn": "ঘড়িটা দরজার উপরে।"
+},
+{
+"n": 441,
+"w": "design",
+"p": "noun",
+"bn": "নকশা, ডিজাইন",
+"ex": "I like the design of this website.",
+"exbn": "এই ওয়েবসাইটের ডিজাইনটা আমার পছন্দ।"
+},
+{
+"n": 442,
+"w": "event",
+"p": "noun",
+"bn": "অনুষ্ঠান, ঘটনা",
+"ex": "The event starts at six.",
+"exbn": "অনুষ্ঠানটা ছয়টায় শুরু হবে।"
+},
+{
+"n": 443,
+"w": "special",
+"p": "adjective",
+"bn": "বিশেষ",
+"ex": "Today is a special day.",
+"exbn": "আজ একটা বিশেষ দিন।"
+},
+{
+"n": 444,
+"w": "sometimes",
+"p": "adverb",
+"bn": "মাঝে মাঝে",
+"ex": "Sometimes I cook dinner.",
+"exbn": "মাঝে মাঝে আমি রাতের খাবার রান্না করি।"
+},
+{
+"n": 445,
+"w": "condition",
+"p": "noun",
+"bn": "অবস্থা; শর্ত",
+"ex": "The car is in good condition.",
+"exbn": "গাড়িটা ভালো অবস্থায় আছে।"
+},
+{
+"n": 446,
+"w": "carry",
+"p": "verb",
+"bn": "বহন করা, নিয়ে যাওয়া",
+"ex": "Can you carry this box?",
+"exbn": "তুমি কি এই বাক্সটা বহন করতে পারবে?"
+},
+{
+"n": 447,
+"w": "choose",
+"p": "verb",
+"bn": "বেছে নেওয়া",
+"ex": "Choose one color.",
+"exbn": "একটা রং বেছে নাও।"
+},
+{
+"n": 448,
+"w": "father",
+"p": "noun",
+"bn": "বাবা",
+"ex": "My father works in a bank.",
+"exbn": "আমার বাবা একটা ব্যাংকে কাজ করেন।"
+},
+{
+"n": 449,
+"w": "decision",
+"p": "noun",
+"bn": "সিদ্ধান্ত",
+"ex": "It was a hard decision.",
+"exbn": "এটা একটা কঠিন সিদ্ধান্ত ছিল।"
+},
+{
+"n": 450,
+"w": "table",
+"p": "noun",
+"bn": "টেবিল",
+"ex": "Put the plates on the table.",
+"exbn": "প্লেটগুলো টেবিলে রাখো।"
+},
+{
+"n": 451,
+"w": "certain",
+"p": "adjective",
+"bn": "নিশ্চিত; নির্দিষ্ট",
+"ex": "I am certain he will come.",
+"exbn": "আমি নিশ্চিত সে আসবে।"
+},
+{
+"n": 452,
+"w": "forward",
+"p": "adverb",
+"bn": "সামনে",
+"ex": "Please move forward.",
+"exbn": "দয়া করে সামনে এগিয়ে যান।"
+},
+{
+"n": 453,
+"w": "main",
+"p": "adjective",
+"bn": "প্রধান, মূল",
+"ex": "This is the main road.",
+"exbn": "এটা প্রধান সড়ক।"
+},
+{
+"n": 454,
+"w": "die",
+"p": "verb",
+"bn": "মারা যাওয়া",
+"ex": "The plant died because it had no water.",
+"exbn": "পানি না পেয়ে গাছটা মরে গেছে।"
+},
+{
+"n": 455,
+"w": "bear",
+"p": "verb",
+"bn": "সহ্য করা; (noun) ভালুক",
+"ex": "I can't bear this noise.",
+"exbn": "আমি এই শব্দ সহ্য করতে পারছি না।"
+},
+{
+"n": 456,
+"w": "cut",
+"p": "verb",
+"bn": "কাটা",
+"ex": "Cut the onion into small pieces.",
+"exbn": "পেঁয়াজটা ছোট ছোট টুকরো করে কাটো।"
+},
+{
+"n": 457,
+"w": "describe",
+"p": "verb",
+"bn": "বর্ণনা করা",
+"ex": "Can you describe the man?",
+"exbn": "লোকটার বর্ণনা দিতে পারবেন?"
+},
+{
+"n": 458,
+"w": "himself",
+"p": "pronoun",
+"bn": "সে নিজে, নিজেকে",
+"ex": "He made the cake himself.",
+"exbn": "সে নিজেই কেকটা বানিয়েছে।"
+},
+{
+"n": 459,
+"w": "available",
+"p": "adjective",
+"bn": "পাওয়া যায়, খালি আছে",
+"ex": "Is this room available?",
+"exbn": "এই রুমটা কি খালি আছে?"
+},
+{
+"n": 460,
+"w": "especially",
+"p": "adverb",
+"bn": "বিশেষ করে",
+"ex": "I love fruit, especially mangoes.",
+"exbn": "আমি ফল পছন্দ করি, বিশেষ করে আম।"
+},
+{
+"n": 461,
+"w": "strong",
+"p": "adjective",
+"bn": "শক্তিশালী; কড়া",
+"ex": "I like strong tea.",
+"exbn": "আমি কড়া চা পছন্দ করি।"
+},
+{
+"n": 462,
+"w": "rise",
+"p": "verb",
+"bn": "ওঠা, বাড়া",
+"ex": "The sun rises in the east.",
+"exbn": "সূর্য পূর্ব দিকে ওঠে।"
+},
+{
+"n": 463,
+"w": "girl",
+"p": "noun",
+"bn": "মেয়ে",
+"ex": "The girl is reading a book.",
+"exbn": "মেয়েটা একটা বই পড়ছে।"
+},
+{
+"n": 464,
+"w": "maybe",
+"p": "adverb",
+"bn": "হয়তো",
+"ex": "Maybe we can meet tomorrow.",
+"exbn": "হয়তো আমরা কাল দেখা করতে পারি।"
+},
+{
+"n": 465,
+"w": "community",
+"p": "noun",
+"bn": "সমাজ, সম্প্রদায়",
+"ex": "He helps people in his community.",
+"exbn": "সে তার এলাকার মানুষকে সাহায্য করে।"
+},
+{
+"n": 466,
+"w": "else",
+"p": "adverb",
+"bn": "অন্য, আর",
+"ex": "Do you want anything else?",
+"exbn": "তুমি কি আর কিছু চাও?"
+},
+{
+"n": 467,
+"w": "particular",
+"p": "adjective",
+"bn": "নির্দিষ্ট, বিশেষ",
+"ex": "Is there a particular reason?",
+"exbn": "কোনো নির্দিষ্ট কারণ আছে কি?"
+},
+{
+"n": 468,
+"w": "role",
+"p": "noun",
+"bn": "ভূমিকা",
+"ex": "Parents play an important role.",
+"exbn": "বাবা-মা গুরুত্বপূর্ণ ভূমিকা রাখেন।"
+},
+{
+"n": 469,
+"w": "join",
+"p": "verb",
+"bn": "যোগ দেওয়া",
+"ex": "Do you want to join us?",
+"exbn": "তুমি কি আমাদের সাথে যোগ দিতে চাও?"
+},
+{
+"n": 470,
+"w": "difficult",
+"p": "adjective",
+"bn": "কঠিন",
+"ex": "English grammar is not that difficult.",
+"exbn": "ইংরেজি ব্যাকরণ অতটা কঠিন না।"
+},
+{
+"n": 471,
+"w": "please",
+"p": "adverb",
+"bn": "দয়া করে, অনুগ্রহ করে",
+"ex": "Please help me.",
+"exbn": "দয়া করে আমাকে সাহায্য করুন।"
+},
+{
+"n": 472,
+"w": "detail",
+"p": "noun",
+"bn": "বিস্তারিত",
+"ex": "Send me the details by email.",
+"exbn": "বিস্তারিত আমাকে ইমেইলে পাঠাও।"
+},
+{
+"n": 473,
+"w": "difference",
+"p": "noun",
+"bn": "পার্থক্য",
+"ex": "What is the difference between these two?",
+"exbn": "এই দুটোর মধ্যে পার্থক্য কী?"
+},
+{
+"n": 474,
+"w": "action",
+"p": "noun",
+"bn": "কাজ, পদক্ষেপ",
+"ex": "We need to take action now.",
+"exbn": "আমাদের এখনই পদক্ষেপ নিতে হবে।"
+},
+{
+"n": 475,
+"w": "health",
+"p": "noun",
+"bn": "স্বাস্থ্য",
+"ex": "Health is wealth.",
+"exbn": "স্বাস্থ্যই সম্পদ।"
+},
+{
+"n": 476,
+"w": "eat",
+"p": "verb",
+"bn": "খাওয়া",
+"ex": "What do you want to eat?",
+"exbn": "তুমি কী খেতে চাও?"
+},
+{
+"n": 477,
+"w": "step",
+"p": "noun",
+"bn": "ধাপ; পদক্ষেপ",
+"ex": "Let's go step by step.",
+"exbn": "চলো ধাপে ধাপে এগোই।"
+},
+{
+"n": 478,
+"w": "true",
+"p": "adjective",
+"bn": "সত্য",
+"ex": "Is it true?",
+"exbn": "এটা কি সত্যি?"
+},
+{
+"n": 479,
+"w": "phone",
+"p": "noun",
+"bn": "ফোন",
+"ex": "My phone is not working.",
+"exbn": "আমার ফোনটা কাজ করছে না।"
+},
+{
+"n": 480,
+"w": "themselves",
+"p": "pronoun",
+"bn": "তারা নিজেরা",
+"ex": "They built the house themselves.",
+"exbn": "তারা নিজেরাই বাড়িটা বানিয়েছে।"
+},
+{
+"n": 481,
+"w": "draw",
+"p": "verb",
+"bn": "আঁকা",
+"ex": "My son likes to draw animals.",
+"exbn": "আমার ছেলে পশুপাখি আঁকতে পছন্দ করে।"
+},
+{
+"n": 482,
+"w": "white",
+"p": "adjective",
+"bn": "সাদা",
+"ex": "She wore a white dress.",
+"exbn": "সে একটা সাদা জামা পরেছিল।"
+},
+{
+"n": 483,
+"w": "date",
+"p": "noun",
+"bn": "তারিখ",
+"ex": "What is the date today?",
+"exbn": "আজ কত তারিখ?"
+},
+{
+"n": 484,
+"w": "practice",
+"p": "noun",
+"bn": "অনুশীলন, চর্চা",
+"ex": "Practice makes perfect.",
+"exbn": "অনুশীলনে মানুষ দক্ষ হয়।"
+},
+{
+"n": 485,
+"w": "model",
+"p": "noun",
+"bn": "মডেল, নমুনা",
+"ex": "What model is your phone?",
+"exbn": "তোমার ফোনটা কোন মডেলের?"
+},
+{
+"n": 486,
+"w": "raise",
+"p": "verb",
+"bn": "তোলা, বাড়ানো",
+"ex": "Raise your hand if you know.",
+"exbn": "জানলে হাত তোলো।"
+},
+{
+"n": 487,
+"w": "customer",
+"p": "noun",
+"bn": "ক্রেতা, গ্রাহক",
+"ex": "The customer is always right.",
+"exbn": "ক্রেতা সবসময় ঠিক।"
+},
+{
+"n": 488,
+"w": "front",
+"p": "noun",
+"bn": "সামনের অংশ",
+"ex": "Let's meet in front of the gate.",
+"exbn": "চলো গেটের সামনে দেখা করি।"
+},
+{
+"n": 489,
+"w": "explain",
+"p": "verb",
+"bn": "ব্যাখ্যা করা",
+"ex": "Can you explain this again?",
+"exbn": "তুমি কি এটা আবার বুঝিয়ে বলবে?"
+},
+{
+"n": 490,
+"w": "door",
+"p": "noun",
+"bn": "দরজা",
+"ex": "Close the door, please.",
+"exbn": "দয়া করে দরজাটা বন্ধ করো।"
+},
+{
+"n": 491,
+"w": "outside",
+"p": "adverb",
+"bn": "বাইরে",
+"ex": "The children are playing outside.",
+"exbn": "বাচ্চারা বাইরে খেলছে।"
+},
+{
+"n": 492,
+"w": "behind",
+"p": "preposition",
+"bn": "পিছনে",
+"ex": "The car park is behind the building.",
+"exbn": "পার্কিংটা বিল্ডিংয়ের পিছনে।"
+},
+{
+"n": 493,
+"w": "economic",
+"p": "adjective",
+"bn": "অর্থনৈতিক",
+"ex": "The country has economic problems.",
+"exbn": "দেশটার অর্থনৈতিক সমস্যা আছে।"
+},
+{
+"n": 494,
+"w": "site",
+"p": "noun",
+"bn": "জায়গা, সাইট; ওয়েবসাইট",
+"ex": "Visit our site for more information.",
+"exbn": "আরও তথ্যের জন্য আমাদের সাইটে যান।"
+},
+{
+"n": 495,
+"w": "approach",
+"p": "noun",
+"bn": "পদ্ধতি; (verb) কাছে আসা",
+"ex": "We need a new approach.",
+"exbn": "আমাদের একটা নতুন পদ্ধতি দরকার।"
+},
+{
+"n": 496,
+"w": "teacher",
+"p": "noun",
+"bn": "শিক্ষক",
+"ex": "My teacher is very kind.",
+"exbn": "আমার শিক্ষক খুব দয়ালু।"
+},
+{
+"n": 497,
+"w": "land",
+"p": "noun",
+"bn": "জমি, স্থল; (verb) অবতরণ করা",
+"ex": "The plane will land at five.",
+"exbn": "প্লেনটা পাঁচটায় নামবে।"
+},
+{
+"n": 498,
+"w": "charge",
+"p": "verb",
+"bn": "চার্জ দেওয়া; দাম নেওয়া",
+"ex": "I need to charge my phone.",
+"exbn": "আমার ফোনে চার্জ দিতে হবে।"
+},
+{
+"n": 499,
+"w": "finally",
+"p": "adverb",
+"bn": "অবশেষে",
+"ex": "Finally, the rain stopped.",
+"exbn": "অবশেষে বৃষ্টি থামল।"
+},
+{
+"n": 500,
+"w": "sign",
+"p": "verb",
+"bn": "সই করা; (noun) চিহ্ন, সাইনবোর্ড",
+"ex": "Please sign here.",
+"exbn": "দয়া করে এখানে সই করুন।"
+}
+]

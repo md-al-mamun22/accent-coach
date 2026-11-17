@@ -1,0 +1,802 @@
+[
+{
+"n": 901,
+"w": "fun",
+"p": "noun",
+"bn": "মজা",
+"ex": "We had a lot of fun.",
+"exbn": "আমরা অনেক মজা করেছি।"
+},
+{
+"n": 902,
+"w": "protect",
+"p": "verb",
+"bn": "রক্ষা করা",
+"ex": "Wear a helmet to protect your head.",
+"exbn": "মাথা রক্ষা করতে হেলমেট পরো।"
+},
+{
+"n": 903,
+"w": "resource",
+"p": "noun",
+"bn": "সম্পদ, উৎস",
+"ex": "Water is a precious resource.",
+"exbn": "পানি একটা মূল্যবান সম্পদ।"
+},
+{
+"n": 904,
+"w": "science",
+"p": "noun",
+"bn": "বিজ্ঞান",
+"ex": "My brother studies science.",
+"exbn": "আমার ভাই বিজ্ঞান পড়ে।"
+},
+{
+"n": 905,
+"w": "disease",
+"p": "noun",
+"bn": "রোগ",
+"ex": "Clean water prevents disease.",
+"exbn": "বিশুদ্ধ পানি রোগ প্রতিরোধ করে।"
+},
+{
+"n": 906,
+"w": "balance",
+"p": "noun",
+"bn": "ভারসাম্য; ব্যালান্স",
+"ex": "Check your mobile balance.",
+"exbn": "তোমার মোবাইলের ব্যালান্স দেখো।"
+},
+{
+"n": 907,
+"w": "damage",
+"p": "noun",
+"bn": "ক্ষতি",
+"ex": "The storm caused a lot of damage.",
+"exbn": "ঝড়ে অনেক ক্ষতি হয়েছে।"
+},
+{
+"n": 908,
+"w": "basis",
+"p": "noun",
+"bn": "ভিত্তি (on a daily basis = প্রতিদিন)",
+"ex": "I exercise on a daily basis.",
+"exbn": "আমি প্রতিদিন ব্যায়াম করি।"
+},
+{
+"n": 909,
+"w": "author",
+"p": "noun",
+"bn": "লেখক",
+"ex": "Who is the author of this book?",
+"exbn": "এই বইয়ের লেখক কে?"
+},
+{
+"n": 910,
+"w": "basic",
+"p": "adjective",
+"bn": "মৌলিক, প্রাথমিক",
+"ex": "I know basic English.",
+"exbn": "আমি প্রাথমিক ইংরেজি জানি।"
+},
+{
+"n": 911,
+"w": "encourage",
+"p": "verb",
+"bn": "উৎসাহ দেওয়া",
+"ex": "My teacher encourages me to read.",
+"exbn": "আমার শিক্ষক আমাকে পড়তে উৎসাহ দেন।"
+},
+{
+"n": 912,
+"w": "hair",
+"p": "noun",
+"bn": "চুল",
+"ex": "She has long black hair.",
+"exbn": "তার লম্বা কালো চুল।"
+},
+{
+"n": 913,
+"w": "male",
+"p": "adjective",
+"bn": "পুরুষ",
+"ex": "Is the cat male or female?",
+"exbn": "বিড়ালটা ছেলে না মেয়ে?"
+},
+{
+"n": 914,
+"w": "operate",
+"p": "verb",
+"bn": "চালানো; অপারেশন করা",
+"ex": "Can you operate this machine?",
+"exbn": "তুমি কি এই মেশিনটা চালাতে পারো?"
+},
+{
+"n": 915,
+"w": "reflect",
+"p": "verb",
+"bn": "প্রতিফলিত করা; ভেবে দেখা",
+"ex": "The lake reflects the sky.",
+"exbn": "লেকের পানিতে আকাশের ছায়া পড়ে।"
+},
+{
+"n": 916,
+"w": "exercise",
+"p": "noun",
+"bn": "ব্যায়াম; অনুশীলনী",
+"ex": "I do exercise every morning.",
+"exbn": "আমি প্রতিদিন সকালে ব্যায়াম করি।"
+},
+{
+"n": 917,
+"w": "useful",
+"p": "adjective",
+"bn": "উপকারী, কাজের",
+"ex": "This app is very useful.",
+"exbn": "এই অ্যাপটা খুব কাজের।"
+},
+{
+"n": 918,
+"w": "restaurant",
+"p": "noun",
+"bn": "রেস্টুরেন্ট",
+"ex": "Let's eat at a restaurant tonight.",
+"exbn": "চলো আজ রাতে রেস্টুরেন্টে খাই।"
+},
+{
+"n": 919,
+"w": "income",
+"p": "noun",
+"bn": "আয়",
+"ex": "His monthly income is good.",
+"exbn": "তার মাসিক আয় ভালো।"
+},
+{
+"n": 920,
+"w": "property",
+"p": "noun",
+"bn": "সম্পত্তি",
+"ex": "This land is my father's property.",
+"exbn": "এই জমিটা আমার বাবার সম্পত্তি।"
+},
+{
+"n": 921,
+"w": "previous",
+"p": "adjective",
+"bn": "আগের",
+"ex": "My previous job was in a bank.",
+"exbn": "আমার আগের চাকরি একটা ব্যাংকে ছিল।"
+},
+{
+"n": 922,
+"w": "dark",
+"p": "adjective",
+"bn": "অন্ধকার; গাঢ়",
+"ex": "It's getting dark.",
+"exbn": "অন্ধকার হয়ে আসছে।"
+},
+{
+"n": 923,
+"w": "imagine",
+"p": "verb",
+"bn": "কল্পনা করা",
+"ex": "Imagine you are on a beach.",
+"exbn": "কল্পনা করো তুমি একটা সমুদ্রসৈকতে আছো।"
+},
+{
+"n": 924,
+"w": "okay",
+"p": "adjective",
+"bn": "ঠিক আছে",
+"ex": "Is everything okay?",
+"exbn": "সব ঠিক আছে তো?"
+},
+{
+"n": 925,
+"w": "earn",
+"p": "verb",
+"bn": "আয় করা, উপার্জন করা",
+"ex": "He earns money online.",
+"exbn": "সে অনলাইনে টাকা আয় করে।"
+},
+{
+"n": 926,
+"w": "daughter",
+"p": "noun",
+"bn": "মেয়ে (সন্তান)",
+"ex": "Their daughter is very smart.",
+"exbn": "তাদের মেয়েটা খুব বুদ্ধিমতী।"
+},
+{
+"n": 927,
+"w": "post",
+"p": "verb",
+"bn": "পোস্ট করা; ডাকে পাঠানো",
+"ex": "I will post the photo on Facebook.",
+"exbn": "আমি ছবিটা ফেসবুকে পোস্ট করব।"
+},
+{
+"n": 928,
+"w": "newspaper",
+"p": "noun",
+"bn": "খবরের কাগজ, পত্রিকা",
+"ex": "My father reads the newspaper every day.",
+"exbn": "আমার বাবা প্রতিদিন পত্রিকা পড়েন।"
+},
+{
+"n": 929,
+"w": "define",
+"p": "verb",
+"bn": "সংজ্ঞা দেওয়া, ব্যাখ্যা করা",
+"ex": "How do you define success?",
+"exbn": "তুমি সাফল্যকে কীভাবে ব্যাখ্যা করো?"
+},
+{
+"n": 930,
+"w": "conclusion",
+"p": "noun",
+"bn": "উপসংহার, সিদ্ধান্ত",
+"ex": "In conclusion, practice every day.",
+"exbn": "শেষ কথা হলো, প্রতিদিন অনুশীলন করো।"
+},
+{
+"n": 931,
+"w": "clock",
+"p": "noun",
+"bn": "ঘড়ি (দেয়াল বা টেবিলের)",
+"ex": "The clock on the wall is slow.",
+"exbn": "দেয়ালের ঘড়িটা পিছিয়ে চলছে।"
+},
+{
+"n": 932,
+"w": "everybody",
+"p": "pronoun",
+"bn": "সবাই",
+"ex": "Everybody loves him.",
+"exbn": "সবাই তাকে ভালোবাসে।"
+},
+{
+"n": 933,
+"w": "weekend",
+"p": "noun",
+"bn": "সপ্তাহান্ত, ছুটির দিন",
+"ex": "What are you doing this weekend?",
+"exbn": "এই সপ্তাহান্তে তুমি কী করছ?"
+},
+{
+"n": 934,
+"w": "perform",
+"p": "verb",
+"bn": "পরিবেশন করা; সম্পন্ন করা",
+"ex": "The band will perform tonight.",
+"exbn": "ব্যান্ডটা আজ রাতে পারফর্ম করবে।"
+},
+{
+"n": 935,
+"w": "professional",
+"p": "adjective",
+"bn": "পেশাদার",
+"ex": "She is a professional photographer.",
+"exbn": "সে একজন পেশাদার ফটোগ্রাফার।"
+},
+{
+"n": 936,
+"w": "mine",
+"p": "pronoun",
+"bn": "আমার (জিনিস)",
+"ex": "This book is mine.",
+"exbn": "এই বইটা আমার।"
+},
+{
+"n": 937,
+"w": "debate",
+"p": "noun",
+"bn": "বিতর্ক",
+"ex": "We had a debate at school.",
+"exbn": "স্কুলে আমাদের একটা বিতর্ক প্রতিযোগিতা হয়েছিল।"
+},
+{
+"n": 938,
+"w": "memory",
+"p": "noun",
+"bn": "স্মৃতি; মেমরি",
+"ex": "My grandfather has a very good memory.",
+"exbn": "আমার দাদার স্মৃতিশক্তি খুব ভালো।"
+},
+{
+"n": 939,
+"w": "green",
+"p": "adjective",
+"bn": "সবুজ",
+"ex": "The trees are green.",
+"exbn": "গাছগুলো সবুজ।"
+},
+{
+"n": 940,
+"w": "song",
+"p": "noun",
+"bn": "গান",
+"ex": "This is my favorite song.",
+"exbn": "এটা আমার প্রিয় গান।"
+},
+{
+"n": 941,
+"w": "object",
+"p": "noun",
+"bn": "বস্তু, জিনিস",
+"ex": "What is that small object?",
+"exbn": "ঐ ছোট জিনিসটা কী?"
+},
+{
+"n": 942,
+"w": "maintain",
+"p": "verb",
+"bn": "বজায় রাখা, রক্ষণাবেক্ষণ করা",
+"ex": "Maintain a healthy weight.",
+"exbn": "স্বাস্থ্যকর ওজন বজায় রাখো।"
+},
+{
+"n": 943,
+"w": "credit",
+"p": "noun",
+"bn": "ক্রেডিট; কৃতিত্ব",
+"ex": "Can I pay with a credit card?",
+"exbn": "আমি কি ক্রেডিট কার্ডে পেমেন্ট করতে পারি?"
+},
+{
+"n": 944,
+"w": "ring",
+"p": "noun",
+"bn": "আংটি; (verb) বাজা",
+"ex": "She wears a gold ring.",
+"exbn": "সে একটা সোনার আংটি পরে।"
+},
+{
+"n": 945,
+"w": "discover",
+"p": "verb",
+"bn": "আবিষ্কার করা, খুঁজে পাওয়া",
+"ex": "I discovered a nice café near my house.",
+"exbn": "বাসার কাছে আমি একটা সুন্দর ক্যাফে খুঁজে পেয়েছি।"
+},
+{
+"n": 946,
+"w": "dead",
+"p": "adjective",
+"bn": "মৃত; (ব্যাটারি) শেষ",
+"ex": "My phone battery is dead.",
+"exbn": "আমার ফোনের চার্জ শেষ।"
+},
+{
+"n": 947,
+"w": "afternoon",
+"p": "noun",
+"bn": "বিকেল",
+"ex": "See you in the afternoon.",
+"exbn": "বিকেলে দেখা হবে।"
+},
+{
+"n": 948,
+"w": "prefer",
+"p": "verb",
+"bn": "বেশি পছন্দ করা",
+"ex": "I prefer tea to coffee.",
+"exbn": "আমি কফির চেয়ে চা বেশি পছন্দ করি।"
+},
+{
+"n": 949,
+"w": "extend",
+"p": "verb",
+"bn": "বাড়ানো (সময় বা দৈর্ঘ্য)",
+"ex": "Can I extend my stay?",
+"exbn": "আমি কি আমার থাকার সময় বাড়াতে পারি?"
+},
+{
+"n": 950,
+"w": "possibility",
+"p": "noun",
+"bn": "সম্ভাবনা",
+"ex": "There is a possibility of rain.",
+"exbn": "বৃষ্টির সম্ভাবনা আছে।"
+},
+{
+"n": 951,
+"w": "direction",
+"p": "noun",
+"bn": "দিক; নির্দেশনা",
+"ex": "Which direction is the station?",
+"exbn": "স্টেশনটা কোন দিকে?"
+},
+{
+"n": 952,
+"w": "facility",
+"p": "noun",
+"bn": "সুবিধা (ব্যবস্থা)",
+"ex": "The hotel has a gym facility.",
+"exbn": "হোটেলে জিমের সুবিধা আছে।"
+},
+{
+"n": 953,
+"w": "variety",
+"p": "noun",
+"bn": "বৈচিত্র্য, নানা ধরন",
+"ex": "The shop has a variety of fruits.",
+"exbn": "দোকানে নানা ধরনের ফল আছে।"
+},
+{
+"n": 954,
+"w": "daily",
+"p": "adjective",
+"bn": "দৈনিক, প্রতিদিনের",
+"ex": "Make English part of your daily life.",
+"exbn": "ইংরেজিকে তোমার প্রতিদিনের জীবনের অংশ বানাও।"
+},
+{
+"n": 955,
+"w": "clothes",
+"p": "noun",
+"bn": "কাপড়-চোপড়",
+"ex": "I need to wash my clothes.",
+"exbn": "আমাকে কাপড় ধুতে হবে।"
+},
+{
+"n": 956,
+"w": "screen",
+"p": "noun",
+"bn": "পর্দা, স্ক্রিন",
+"ex": "My phone screen is broken.",
+"exbn": "আমার ফোনের স্ক্রিন ভেঙে গেছে।"
+},
+{
+"n": 957,
+"w": "track",
+"p": "noun",
+"bn": "পথ, ট্র্যাক; (verb) খেয়াল রাখা",
+"ex": "Keep track of your spending.",
+"exbn": "তোমার খরচের হিসাব রাখো।"
+},
+{
+"n": 958,
+"w": "dance",
+"p": "verb",
+"bn": "নাচা",
+"ex": "She loves to dance.",
+"exbn": "সে নাচতে ভালোবাসে।"
+},
+{
+"n": 959,
+"w": "completely",
+"p": "adverb",
+"bn": "সম্পূর্ণভাবে",
+"ex": "I completely forgot.",
+"exbn": "আমি একদম ভুলে গেছি।"
+},
+{
+"n": 960,
+"w": "female",
+"p": "adjective",
+"bn": "নারী, স্ত্রী (লিঙ্গ)",
+"ex": "We need a female doctor.",
+"exbn": "আমাদের একজন মহিলা ডাক্তার দরকার।"
+},
+{
+"n": 961,
+"w": "responsibility",
+"p": "noun",
+"bn": "দায়িত্ব",
+"ex": "It's my responsibility.",
+"exbn": "এটা আমার দায়িত্ব।"
+},
+{
+"n": 962,
+"w": "original",
+"p": "adjective",
+"bn": "আসল, মৌলিক",
+"ex": "Is this the original copy?",
+"exbn": "এটা কি আসল কপি?"
+},
+{
+"n": 963,
+"w": "sister",
+"p": "noun",
+"bn": "বোন",
+"ex": "My sister is older than me.",
+"exbn": "আমার বোন আমার চেয়ে বড়।"
+},
+{
+"n": 964,
+"w": "rock",
+"p": "noun",
+"bn": "পাথর",
+"ex": "He sat on a big rock.",
+"exbn": "সে একটা বড় পাথরের উপর বসল।"
+},
+{
+"n": 965,
+"w": "dream",
+"p": "noun",
+"bn": "স্বপ্ন",
+"ex": "My dream is to visit Japan.",
+"exbn": "আমার স্বপ্ন জাপান ঘুরতে যাওয়া।"
+},
+{
+"n": 966,
+"w": "nor",
+"p": "conjunction",
+"bn": "(neither ... nor) এটাও না, ওটাও না",
+"ex": "I like neither tea nor coffee.",
+"exbn": "আমি চা-ও পছন্দ করি না, কফিও না।"
+},
+{
+"n": 967,
+"w": "university",
+"p": "noun",
+"bn": "বিশ্ববিদ্যালয়",
+"ex": "She studies at Dhaka University.",
+"exbn": "সে ঢাকা বিশ্ববিদ্যালয়ে পড়ে।"
+},
+{
+"n": 968,
+"w": "easily",
+"p": "adverb",
+"bn": "সহজে",
+"ex": "You can easily learn this.",
+"exbn": "তুমি সহজেই এটা শিখতে পারবে।"
+},
+{
+"n": 969,
+"w": "agency",
+"p": "noun",
+"bn": "সংস্থা, এজেন্সি",
+"ex": "I booked the trip through an agency.",
+"exbn": "আমি একটা এজেন্সির মাধ্যমে ট্রিপটা বুক করেছি।"
+},
+{
+"n": 970,
+"w": "dollar",
+"p": "noun",
+"bn": "ডলার",
+"ex": "How much is one dollar in taka?",
+"exbn": "এক ডলার সমান কত টাকা?"
+},
+{
+"n": 971,
+"w": "garden",
+"p": "noun",
+"bn": "বাগান",
+"ex": "We grow vegetables in our garden.",
+"exbn": "আমরা বাগানে সবজি চাষ করি।"
+},
+{
+"n": 972,
+"w": "fix",
+"p": "verb",
+"bn": "ঠিক করা, মেরামত করা",
+"ex": "Can you fix my phone?",
+"exbn": "তুমি কি আমার ফোনটা ঠিক করে দিতে পারবে?"
+},
+{
+"n": 973,
+"w": "ahead",
+"p": "adverb",
+"bn": "সামনে, আগে",
+"ex": "Go straight ahead.",
+"exbn": "সোজা সামনে যান।"
+},
+{
+"n": 974,
+"w": "cross",
+"p": "verb",
+"bn": "পার হওয়া",
+"ex": "Cross the road carefully.",
+"exbn": "সাবধানে রাস্তা পার হও।"
+},
+{
+"n": 975,
+"w": "yeah",
+"p": "adverb",
+"bn": "হ্যাঁ (কথ্য)",
+"ex": "Yeah, I know.",
+"exbn": "হ্যাঁ, আমি জানি।"
+},
+{
+"n": 976,
+"w": "weight",
+"p": "noun",
+"bn": "ওজন",
+"ex": "What is your weight?",
+"exbn": "তোমার ওজন কত?"
+},
+{
+"n": 977,
+"w": "legal",
+"p": "adjective",
+"bn": "আইনি, বৈধ",
+"ex": "Is it legal to park here?",
+"exbn": "এখানে গাড়ি রাখা কি বৈধ?"
+},
+{
+"n": 978,
+"w": "proposal",
+"p": "noun",
+"bn": "প্রস্তাব",
+"ex": "They accepted our proposal.",
+"exbn": "তারা আমাদের প্রস্তাব গ্রহণ করেছে।"
+},
+{
+"n": 979,
+"w": "version",
+"p": "noun",
+"bn": "সংস্করণ, ভার্সন",
+"ex": "Download the latest version of the app.",
+"exbn": "অ্যাপের সর্বশেষ ভার্সনটা ডাউনলোড করো।"
+},
+{
+"n": 980,
+"w": "conversation",
+"p": "noun",
+"bn": "কথোপকথন",
+"ex": "We had a long conversation.",
+"exbn": "আমাদের লম্বা সময় কথা হয়েছে।"
+},
+{
+"n": 981,
+"w": "somebody",
+"p": "pronoun",
+"bn": "কেউ একজন",
+"ex": "Somebody called you.",
+"exbn": "কেউ একজন তোমাকে ফোন করেছিল।"
+},
+{
+"n": 982,
+"w": "pound",
+"p": "noun",
+"bn": "পাউন্ড (মুদ্রা বা ওজন)",
+"ex": "It costs ten pounds.",
+"exbn": "এটার দাম দশ পাউন্ড।"
+},
+{
+"n": 983,
+"w": "magazine",
+"p": "noun",
+"bn": "ম্যাগাজিন, পত্রিকা",
+"ex": "I read a fashion magazine.",
+"exbn": "আমি একটা ফ্যাশন ম্যাগাজিন পড়ি।"
+},
+{
+"n": 984,
+"w": "shape",
+"p": "noun",
+"bn": "আকার",
+"ex": "The cake is in the shape of a heart.",
+"exbn": "কেকটা হৃদয়ের আকারে বানানো।"
+},
+{
+"n": 985,
+"w": "sea",
+"p": "noun",
+"bn": "সমুদ্র",
+"ex": "I want to swim in the sea.",
+"exbn": "আমি সমুদ্রে সাঁতার কাটতে চাই।"
+},
+{
+"n": 986,
+"w": "immediately",
+"p": "adverb",
+"bn": "সাথে সাথে, এখনই",
+"ex": "Call me immediately.",
+"exbn": "সাথে সাথে আমাকে ফোন দিও।"
+},
+{
+"n": 987,
+"w": "welcome",
+"p": "adjective",
+"bn": "স্বাগত",
+"ex": "Welcome to our home!",
+"exbn": "আমাদের বাসায় স্বাগতম!"
+},
+{
+"n": 988,
+"w": "smile",
+"p": "verb",
+"bn": "হাসা (মুচকি)",
+"ex": "Smile for the photo!",
+"exbn": "ছবির জন্য একটু হাসো!"
+},
+{
+"n": 989,
+"w": "communication",
+"p": "noun",
+"bn": "যোগাযোগ",
+"ex": "Good communication is important.",
+"exbn": "ভালো যোগাযোগ গুরুত্বপূর্ণ।"
+},
+{
+"n": 990,
+"w": "agent",
+"p": "noun",
+"bn": "প্রতিনিধি, এজেন্ট",
+"ex": "Talk to our sales agent.",
+"exbn": "আমাদের সেলস এজেন্টের সাথে কথা বলুন।"
+},
+{
+"n": 991,
+"w": "traditional",
+"p": "adjective",
+"bn": "ঐতিহ্যবাহী",
+"ex": "Pitha is a traditional Bangladeshi food.",
+"exbn": "পিঠা বাংলাদেশের ঐতিহ্যবাহী খাবার।"
+},
+{
+"n": 992,
+"w": "replace",
+"p": "verb",
+"bn": "বদলে দেওয়া, প্রতিস্থাপন করা",
+"ex": "I need to replace my phone battery.",
+"exbn": "আমার ফোনের ব্যাটারি বদলাতে হবে।"
+},
+{
+"n": 993,
+"w": "judge",
+"p": "noun",
+"bn": "বিচারক; (verb) বিচার করা",
+"ex": "Don't judge people by their clothes.",
+"exbn": "পোশাক দেখে মানুষকে বিচার করো না।"
+},
+{
+"n": 994,
+"w": "herself",
+"p": "pronoun",
+"bn": "সে নিজে (মেয়ে), নিজেকে",
+"ex": "She made the dress herself.",
+"exbn": "সে নিজেই জামাটা বানিয়েছে।"
+},
+{
+"n": 995,
+"w": "suddenly",
+"p": "adverb",
+"bn": "হঠাৎ",
+"ex": "Suddenly, the lights went out.",
+"exbn": "হঠাৎ করে লাইট চলে গেল।"
+},
+{
+"n": 996,
+"w": "generation",
+"p": "noun",
+"bn": "প্রজন্ম",
+"ex": "The young generation loves technology.",
+"exbn": "তরুণ প্রজন্ম প্রযুক্তি ভালোবাসে।"
+},
+{
+"n": 997,
+"w": "estimate",
+"p": "verb",
+"bn": "আনুমানিক হিসাব করা",
+"ex": "Can you estimate the cost?",
+"exbn": "খরচটা আনুমানিক কত হবে বলতে পারবে?"
+},
+{
+"n": 998,
+"w": "favorite",
+"p": "adjective",
+"bn": "প্রিয়",
+"ex": "What is your favorite food?",
+"exbn": "তোমার প্রিয় খাবার কী?"
+},
+{
+"n": 999,
+"w": "difficulty",
+"p": "noun",
+"bn": "অসুবিধা, কষ্ট",
+"ex": "I had difficulty finding a job.",
+"exbn": "চাকরি খুঁজতে আমার অসুবিধা হয়েছে।"
+},
+{
+"n": 1000,
+"w": "purchase",
+"p": "verb",
+"bn": "কেনা",
+"ex": "You can purchase tickets online.",
+"exbn": "তুমি অনলাইনে টিকিট কিনতে পারো।"
+}
+]

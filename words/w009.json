@@ -1,0 +1,802 @@
+[
+{
+"n": 801,
+"w": "husband",
+"p": "noun",
+"bn": "স্বামী",
+"ex": "Her husband is an engineer.",
+"exbn": "তার স্বামী একজন ইঞ্জিনিয়ার।"
+},
+{
+"n": 802,
+"w": "access",
+"p": "noun",
+"bn": "প্রবেশাধিকার, ব্যবহারের সুযোগ",
+"ex": "Do you have access to the internet?",
+"exbn": "তোমার কি ইন্টারনেট ব্যবহারের সুযোগ আছে?"
+},
+{
+"n": 803,
+"w": "movement",
+"p": "noun",
+"bn": "নড়াচড়া; আন্দোলন",
+"ex": "I saw a movement behind the tree.",
+"exbn": "গাছের পিছনে কিছু একটা নড়তে দেখলাম।"
+},
+{
+"n": 804,
+"w": "treat",
+"p": "verb",
+"bn": "আচরণ করা; চিকিৎসা করা",
+"ex": "Treat everyone with respect.",
+"exbn": "সবার সাথে সম্মানের সাথে আচরণ করো।"
+},
+{
+"n": 805,
+"w": "identify",
+"p": "verb",
+"bn": "শনাক্ত করা, চিহ্নিত করা",
+"ex": "Can you identify the problem?",
+"exbn": "তুমি কি সমস্যাটা শনাক্ত করতে পারবে?"
+},
+{
+"n": 806,
+"w": "loss",
+"p": "noun",
+"bn": "ক্ষতি; হারানো",
+"ex": "The company had a big loss this year.",
+"exbn": "এ বছর কোম্পানির বড় ক্ষতি হয়েছে।"
+},
+{
+"n": 807,
+"w": "shall",
+"p": "modal verb",
+"bn": "(প্রস্তাবে) করব কি",
+"ex": "Shall we go now?",
+"exbn": "আমরা কি এখন যাব?"
+},
+{
+"n": 808,
+"w": "modern",
+"p": "adjective",
+"bn": "আধুনিক",
+"ex": "They live in a modern flat.",
+"exbn": "তারা একটা আধুনিক ফ্ল্যাটে থাকে।"
+},
+{
+"n": 809,
+"w": "pressure",
+"p": "noun",
+"bn": "চাপ",
+"ex": "I work well under pressure.",
+"exbn": "চাপের মধ্যেও আমি ভালো কাজ করি।"
+},
+{
+"n": 810,
+"w": "bus",
+"p": "noun",
+"bn": "বাস",
+"ex": "I take the bus to work.",
+"exbn": "আমি বাসে করে কাজে যাই।"
+},
+{
+"n": 811,
+"w": "treatment",
+"p": "noun",
+"bn": "চিকিৎসা",
+"ex": "He is getting treatment in Dhaka.",
+"exbn": "সে ঢাকায় চিকিৎসা নিচ্ছে।"
+},
+{
+"n": 812,
+"w": "yourself",
+"p": "pronoun",
+"bn": "তুমি নিজে, নিজেকে",
+"ex": "Take care of yourself.",
+"exbn": "নিজের যত্ন নিও।"
+},
+{
+"n": 813,
+"w": "supply",
+"p": "noun",
+"bn": "সরবরাহ",
+"ex": "The water supply is off today.",
+"exbn": "আজ পানি সরবরাহ বন্ধ।"
+},
+{
+"n": 814,
+"w": "village",
+"p": "noun",
+"bn": "গ্রাম",
+"ex": "My grandparents live in a village.",
+"exbn": "আমার দাদা-দাদি গ্রামে থাকেন।"
+},
+{
+"n": 815,
+"w": "worth",
+"p": "adjective",
+"bn": "মূল্য আছে (worth it = সার্থক)",
+"ex": "This book is worth reading.",
+"exbn": "এই বইটা পড়ার মতো।"
+},
+{
+"n": 816,
+"w": "natural",
+"p": "adjective",
+"bn": "প্রাকৃতিক, স্বাভাবিক",
+"ex": "It's natural to feel nervous.",
+"exbn": "নার্ভাস লাগা স্বাভাবিক।"
+},
+{
+"n": 817,
+"w": "express",
+"p": "verb",
+"bn": "প্রকাশ করা",
+"ex": "It's hard to express my feelings.",
+"exbn": "আমার অনুভূতি প্রকাশ করা কঠিন।"
+},
+{
+"n": 818,
+"w": "indicate",
+"p": "verb",
+"bn": "নির্দেশ করা, ইঙ্গিত দেওয়া",
+"ex": "The sign indicates the exit.",
+"exbn": "চিহ্নটা বের হওয়ার পথ দেখায়।"
+},
+{
+"n": 819,
+"w": "attend",
+"p": "verb",
+"bn": "উপস্থিত থাকা, যোগ দেওয়া",
+"ex": "I will attend the meeting.",
+"exbn": "আমি মিটিংয়ে উপস্থিত থাকব।"
+},
+{
+"n": 820,
+"w": "brother",
+"p": "noun",
+"bn": "ভাই",
+"ex": "My brother lives in Sylhet.",
+"exbn": "আমার ভাই সিলেটে থাকে।"
+},
+{
+"n": 821,
+"w": "investment",
+"p": "noun",
+"bn": "বিনিয়োগ",
+"ex": "Education is a good investment.",
+"exbn": "শিক্ষা একটা ভালো বিনিয়োগ।"
+},
+{
+"n": 822,
+"w": "score",
+"p": "noun",
+"bn": "স্কোর, নম্বর",
+"ex": "What was the final score?",
+"exbn": "শেষ স্কোর কত ছিল?"
+},
+{
+"n": 823,
+"w": "organize",
+"p": "verb",
+"bn": "আয়োজন করা; গুছিয়ে রাখা",
+"ex": "We will organize a party.",
+"exbn": "আমরা একটা পার্টির আয়োজন করব।"
+},
+{
+"n": 824,
+"w": "trip",
+"p": "noun",
+"bn": "ভ্রমণ, ট্রিপ",
+"ex": "We went on a trip to Sylhet.",
+"exbn": "আমরা সিলেটে বেড়াতে গিয়েছিলাম।"
+},
+{
+"n": 825,
+"w": "beyond",
+"p": "preposition",
+"bn": "ছাড়িয়ে, ওপারে",
+"ex": "The village is beyond the river.",
+"exbn": "গ্রামটা নদীর ওপারে।"
+},
+{
+"n": 826,
+"w": "sleep",
+"p": "verb",
+"bn": "ঘুমানো",
+"ex": "I sleep seven hours a night.",
+"exbn": "আমি রাতে সাত ঘণ্টা ঘুমাই।"
+},
+{
+"n": 827,
+"w": "fish",
+"p": "noun",
+"bn": "মাছ",
+"ex": "Bengalis love fish and rice.",
+"exbn": "বাঙালিরা মাছ-ভাত ভালোবাসে।"
+},
+{
+"n": 828,
+"w": "promise",
+"p": "verb",
+"bn": "প্রতিশ্রুতি দেওয়া, কথা দেওয়া",
+"ex": "I promise I will come.",
+"exbn": "আমি কথা দিচ্ছি, আমি আসব।"
+},
+{
+"n": 829,
+"w": "potential",
+"p": "noun",
+"bn": "সম্ভাবনা",
+"ex": "She has great potential.",
+"exbn": "তার অনেক সম্ভাবনা আছে।"
+},
+{
+"n": 830,
+"w": "energy",
+"p": "noun",
+"bn": "শক্তি, এনার্জি",
+"ex": "I have no energy today.",
+"exbn": "আজ আমার শরীরে কোনো শক্তি নেই।"
+},
+{
+"n": 831,
+"w": "trouble",
+"p": "noun",
+"bn": "ঝামেলা, সমস্যা",
+"ex": "I had trouble finding the house.",
+"exbn": "বাড়িটা খুঁজে পেতে আমার ঝামেলা হয়েছে।"
+},
+{
+"n": 832,
+"w": "relation",
+"p": "noun",
+"bn": "সম্পর্ক; আত্মীয়",
+"ex": "She is a relation of mine.",
+"exbn": "সে আমার এক আত্মীয়।"
+},
+{
+"n": 833,
+"w": "touch",
+"p": "verb",
+"bn": "ছোঁয়া, স্পর্শ করা",
+"ex": "Don't touch the wire.",
+"exbn": "তারটা ছুঁয়ো না।"
+},
+{
+"n": 834,
+"w": "file",
+"p": "noun",
+"bn": "ফাইল",
+"ex": "Please send me the file.",
+"exbn": "দয়া করে আমাকে ফাইলটা পাঠাও।"
+},
+{
+"n": 835,
+"w": "middle",
+"p": "noun",
+"bn": "মাঝখান",
+"ex": "Stand in the middle.",
+"exbn": "মাঝখানে দাঁড়াও।"
+},
+{
+"n": 836,
+"w": "bar",
+"p": "noun",
+"bn": "বার; দণ্ড, টুকরো",
+"ex": "I bought a chocolate bar.",
+"exbn": "আমি একটা চকলেট বার কিনেছি।"
+},
+{
+"n": 837,
+"w": "suffer",
+"p": "verb",
+"bn": "কষ্ট পাওয়া, ভোগা",
+"ex": "He suffers from back pain.",
+"exbn": "সে পিঠের ব্যথায় ভোগে।"
+},
+{
+"n": 838,
+"w": "strategy",
+"p": "noun",
+"bn": "কৌশল",
+"ex": "We need a new strategy.",
+"exbn": "আমাদের একটা নতুন কৌশল দরকার।"
+},
+{
+"n": 839,
+"w": "deep",
+"p": "adjective",
+"bn": "গভীর",
+"ex": "The lake is very deep.",
+"exbn": "লেকটা খুব গভীর।"
+},
+{
+"n": 840,
+"w": "except",
+"p": "preposition",
+"bn": "ছাড়া",
+"ex": "Everyone came except Karim.",
+"exbn": "করিম ছাড়া সবাই এসেছিল।"
+},
+{
+"n": 841,
+"w": "clean",
+"p": "verb",
+"bn": "পরিষ্কার করা; (adjective) পরিষ্কার",
+"ex": "I clean my room on Fridays.",
+"exbn": "আমি শুক্রবারে আমার রুম পরিষ্কার করি।"
+},
+{
+"n": 842,
+"w": "tend",
+"p": "verb",
+"bn": "প্রবণতা থাকা (tend to = সাধারণত হয়)",
+"ex": "I tend to wake up early.",
+"exbn": "আমি সাধারণত তাড়াতাড়ি ঘুম থেকে উঠি।"
+},
+{
+"n": 843,
+"w": "advance",
+"p": "noun",
+"bn": "অগ্রগতি; (in advance) আগে থেকে",
+"ex": "Please book in advance.",
+"exbn": "দয়া করে আগে থেকে বুকিং দিন।"
+},
+{
+"n": 844,
+"w": "fill",
+"p": "verb",
+"bn": "ভরা, পূরণ করা",
+"ex": "Fill the bottle with water.",
+"exbn": "বোতলটা পানি দিয়ে ভরো।"
+},
+{
+"n": 845,
+"w": "star",
+"p": "noun",
+"bn": "তারা; তারকা",
+"ex": "Look at the stars!",
+"exbn": "তারাগুলো দেখো!"
+},
+{
+"n": 846,
+"w": "network",
+"p": "noun",
+"bn": "নেটওয়ার্ক",
+"ex": "The mobile network is slow here.",
+"exbn": "এখানে মোবাইল নেটওয়ার্ক ধীর।"
+},
+{
+"n": 847,
+"w": "generally",
+"p": "adverb",
+"bn": "সাধারণত",
+"ex": "I generally go to bed at eleven.",
+"exbn": "আমি সাধারণত এগারোটায় ঘুমাতে যাই।"
+},
+{
+"n": 848,
+"w": "operation",
+"p": "noun",
+"bn": "অপারেশন, অস্ত্রোপচার; কার্যক্রম",
+"ex": "My father had an operation last week.",
+"exbn": "গত সপ্তাহে আমার বাবার অপারেশন হয়েছে।"
+},
+{
+"n": 849,
+"w": "match",
+"p": "noun",
+"bn": "খেলা, ম্যাচ; (verb) মিলে যাওয়া",
+"ex": "Did you watch the match?",
+"exbn": "তুমি কি ম্যাচটা দেখেছ?"
+},
+{
+"n": 850,
+"w": "avoid",
+"p": "verb",
+"bn": "এড়িয়ে চলা",
+"ex": "Avoid junk food.",
+"exbn": "জাংক ফুড এড়িয়ে চলো।"
+},
+{
+"n": 851,
+"w": "seat",
+"p": "noun",
+"bn": "আসন, সিট",
+"ex": "Is this seat free?",
+"exbn": "এই সিটটা কি খালি?"
+},
+{
+"n": 852,
+"w": "throw",
+"p": "verb",
+"bn": "ছুড়ে মারা, ফেলা",
+"ex": "Don't throw rubbish on the road.",
+"exbn": "রাস্তায় ময়লা ফেলো না।"
+},
+{
+"n": 853,
+"w": "task",
+"p": "noun",
+"bn": "কাজ",
+"ex": "I have three tasks to finish today.",
+"exbn": "আজ আমাকে তিনটা কাজ শেষ করতে হবে।"
+},
+{
+"n": 854,
+"w": "normal",
+"p": "adjective",
+"bn": "স্বাভাবিক",
+"ex": "Everything is normal.",
+"exbn": "সবকিছু স্বাভাবিক আছে।"
+},
+{
+"n": 855,
+"w": "goal",
+"p": "noun",
+"bn": "লক্ষ্য; গোল",
+"ex": "My goal is to get a good job.",
+"exbn": "আমার লক্ষ্য একটা ভালো চাকরি পাওয়া।"
+},
+{
+"n": 856,
+"w": "associate",
+"p": "verb",
+"bn": "সম্পর্কিত মনে করা",
+"ex": "People associate this color with peace.",
+"exbn": "মানুষ এই রংকে শান্তির সাথে মেলায়।"
+},
+{
+"n": 857,
+"w": "blue",
+"p": "adjective",
+"bn": "নীল",
+"ex": "The sky is blue.",
+"exbn": "আকাশ নীল।"
+},
+{
+"n": 858,
+"w": "positive",
+"p": "adjective",
+"bn": "ইতিবাচক",
+"ex": "Stay positive.",
+"exbn": "ইতিবাচক থাকো।"
+},
+{
+"n": 859,
+"w": "option",
+"p": "noun",
+"bn": "বিকল্প",
+"ex": "We have two options.",
+"exbn": "আমাদের দুটো বিকল্প আছে।"
+},
+{
+"n": 860,
+"w": "box",
+"p": "noun",
+"bn": "বাক্স",
+"ex": "Put the books in the box.",
+"exbn": "বইগুলো বাক্সে রাখো।"
+},
+{
+"n": 861,
+"w": "huge",
+"p": "adjective",
+"bn": "বিশাল",
+"ex": "They live in a huge house.",
+"exbn": "তারা একটা বিশাল বাড়িতে থাকে।"
+},
+{
+"n": 862,
+"w": "message",
+"p": "noun",
+"bn": "বার্তা, মেসেজ",
+"ex": "I sent you a message.",
+"exbn": "আমি তোমাকে একটা মেসেজ পাঠিয়েছি।"
+},
+{
+"n": 863,
+"w": "instance",
+"p": "noun",
+"bn": "উদাহরণ (for instance = যেমন)",
+"ex": "For instance, you can learn ten words a day.",
+"exbn": "যেমন, তুমি দিনে দশটা শব্দ শিখতে পারো।"
+},
+{
+"n": 864,
+"w": "style",
+"p": "noun",
+"bn": "স্টাইল, ধরন",
+"ex": "I like her style.",
+"exbn": "আমি তার স্টাইল পছন্দ করি।"
+},
+{
+"n": 865,
+"w": "refer",
+"p": "verb",
+"bn": "উল্লেখ করা; পাঠানো (কারো কাছে)",
+"ex": "The doctor referred me to a specialist.",
+"exbn": "ডাক্তার আমাকে একজন বিশেষজ্ঞের কাছে পাঠিয়েছেন।"
+},
+{
+"n": 866,
+"w": "cold",
+"p": "adjective",
+"bn": "ঠান্ডা",
+"ex": "It is cold today.",
+"exbn": "আজ ঠান্ডা পড়েছে।"
+},
+{
+"n": 867,
+"w": "push",
+"p": "verb",
+"bn": "ধাক্কা দেওয়া, ঠেলা",
+"ex": "Push the door.",
+"exbn": "দরজাটা ঠেলো।"
+},
+{
+"n": 868,
+"w": "quarter",
+"p": "noun",
+"bn": "এক-চতুর্থাংশ; পনেরো মিনিট",
+"ex": "It's a quarter past three.",
+"exbn": "তিনটা বেজে পনেরো মিনিট।"
+},
+{
+"n": 869,
+"w": "assume",
+"p": "verb",
+"bn": "ধরে নেওয়া",
+"ex": "I assume you are hungry.",
+"exbn": "আমি ধরে নিচ্ছি তোমার ক্ষুধা লেগেছে।"
+},
+{
+"n": 870,
+"w": "baby",
+"p": "noun",
+"bn": "শিশু, বাচ্চা",
+"ex": "The baby is crying.",
+"exbn": "বাচ্চাটা কাঁদছে।"
+},
+{
+"n": 871,
+"w": "successful",
+"p": "adjective",
+"bn": "সফল",
+"ex": "He is a successful businessman.",
+"exbn": "তিনি একজন সফল ব্যবসায়ী।"
+},
+{
+"n": 872,
+"w": "sing",
+"p": "verb",
+"bn": "গান গাওয়া",
+"ex": "She sings beautifully.",
+"exbn": "সে খুব সুন্দর গান গায়।"
+},
+{
+"n": 873,
+"w": "doubt",
+"p": "noun",
+"bn": "সন্দেহ",
+"ex": "I have no doubt about it.",
+"exbn": "এ নিয়ে আমার কোনো সন্দেহ নেই।"
+},
+{
+"n": 874,
+"w": "competition",
+"p": "noun",
+"bn": "প্রতিযোগিতা",
+"ex": "She won the singing competition.",
+"exbn": "সে গানের প্রতিযোগিতায় জিতেছে।"
+},
+{
+"n": 875,
+"w": "theory",
+"p": "noun",
+"bn": "তত্ত্ব",
+"ex": "In theory, it should work.",
+"exbn": "তত্ত্ব অনুযায়ী এটা কাজ করার কথা।"
+},
+{
+"n": 876,
+"w": "propose",
+"p": "verb",
+"bn": "প্রস্তাব করা",
+"ex": "I propose we start at nine.",
+"exbn": "আমি প্রস্তাব করছি আমরা নয়টায় শুরু করি।"
+},
+{
+"n": 877,
+"w": "reference",
+"p": "noun",
+"bn": "রেফারেন্স, উল্লেখ",
+"ex": "Can you give me a reference letter?",
+"exbn": "তুমি কি আমাকে একটা রেফারেন্স চিঠি দিতে পারবে?"
+},
+{
+"n": 878,
+"w": "argument",
+"p": "noun",
+"bn": "তর্ক; যুক্তি",
+"ex": "They had an argument about money.",
+"exbn": "টাকা নিয়ে তাদের মধ্যে তর্ক হয়েছিল।"
+},
+{
+"n": 879,
+"w": "adult",
+"p": "noun",
+"bn": "প্রাপ্তবয়স্ক",
+"ex": "The ticket price for an adult is 500 taka.",
+"exbn": "প্রাপ্তবয়স্কদের টিকিটের দাম ৫০০ টাকা।"
+},
+{
+"n": 880,
+"w": "fly",
+"p": "verb",
+"bn": "উড়া; বিমানে যাওয়া",
+"ex": "We will fly to Chittagong.",
+"exbn": "আমরা বিমানে চট্টগ্রাম যাব।"
+},
+{
+"n": 881,
+"w": "document",
+"p": "noun",
+"bn": "দলিল, ডকুমেন্ট",
+"ex": "Bring all your documents.",
+"exbn": "তোমার সব কাগজপত্র নিয়ে এসো।"
+},
+{
+"n": 882,
+"w": "pattern",
+"p": "noun",
+"bn": "নকশা; ধরন",
+"ex": "I like the pattern on this shirt.",
+"exbn": "এই শার্টের নকশাটা আমার পছন্দ।"
+},
+{
+"n": 883,
+"w": "application",
+"p": "noun",
+"bn": "আবেদন; অ্যাপ",
+"ex": "I sent my job application.",
+"exbn": "আমি আমার চাকরির আবেদন পাঠিয়েছি।"
+},
+{
+"n": 884,
+"w": "hot",
+"p": "adjective",
+"bn": "গরম; ঝাল",
+"ex": "The soup is too hot.",
+"exbn": "স্যুপটা অনেক গরম।"
+},
+{
+"n": 885,
+"w": "obviously",
+"p": "adverb",
+"bn": "স্পষ্টতই, অবশ্যই",
+"ex": "Obviously, he was angry.",
+"exbn": "স্পষ্টতই সে রেগে ছিল।"
+},
+{
+"n": 886,
+"w": "unclear",
+"p": "adjective",
+"bn": "অস্পষ্ট",
+"ex": "The instructions are unclear.",
+"exbn": "নির্দেশনাগুলো অস্পষ্ট।"
+},
+{
+"n": 887,
+"w": "bill",
+"p": "noun",
+"bn": "বিল",
+"ex": "Can I have the bill, please?",
+"exbn": "বিলটা দেবেন, প্লিজ?"
+},
+{
+"n": 888,
+"w": "search",
+"p": "verb",
+"bn": "খোঁজা",
+"ex": "I searched everywhere for my keys.",
+"exbn": "আমি চাবিটা সব জায়গায় খুঁজেছি।"
+},
+{
+"n": 889,
+"w": "separate",
+"p": "adjective",
+"bn": "আলাদা",
+"ex": "We sleep in separate rooms.",
+"exbn": "আমরা আলাদা রুমে ঘুমাই।"
+},
+{
+"n": 890,
+"w": "central",
+"p": "adjective",
+"bn": "কেন্দ্রীয়, মাঝখানের",
+"ex": "The hotel is in a central location.",
+"exbn": "হোটেলটা শহরের মাঝখানে।"
+},
+{
+"n": 891,
+"w": "career",
+"p": "noun",
+"bn": "পেশাজীবন, ক্যারিয়ার",
+"ex": "I want a career in IT.",
+"exbn": "আমি আইটিতে ক্যারিয়ার গড়তে চাই।"
+},
+{
+"n": 892,
+"w": "anyway",
+"p": "adverb",
+"bn": "যাই হোক",
+"ex": "Anyway, let's start.",
+"exbn": "যাই হোক, চলো শুরু করি।"
+},
+{
+"n": 893,
+"w": "speech",
+"p": "noun",
+"bn": "বক্তৃতা",
+"ex": "He gave a short speech.",
+"exbn": "তিনি একটা ছোট বক্তৃতা দিলেন।"
+},
+{
+"n": 894,
+"w": "dog",
+"p": "noun",
+"bn": "কুকুর",
+"ex": "The dog is barking.",
+"exbn": "কুকুরটা ঘেউ ঘেউ করছে।"
+},
+{
+"n": 895,
+"w": "officer",
+"p": "noun",
+"bn": "কর্মকর্তা, অফিসার",
+"ex": "He is a police officer.",
+"exbn": "তিনি একজন পুলিশ অফিসার।"
+},
+{
+"n": 896,
+"w": "throughout",
+"p": "preposition",
+"bn": "জুড়ে, পুরো সময় ধরে",
+"ex": "It rained throughout the day.",
+"exbn": "সারাদিন ধরে বৃষ্টি হয়েছে।"
+},
+{
+"n": 897,
+"w": "oil",
+"p": "noun",
+"bn": "তেল",
+"ex": "Add some oil to the pan.",
+"exbn": "প্যানে একটু তেল দাও।"
+},
+{
+"n": 898,
+"w": "dress",
+"p": "noun",
+"bn": "জামা, পোশাক",
+"ex": "She bought a new dress.",
+"exbn": "সে একটা নতুন জামা কিনেছে।"
+},
+{
+"n": 899,
+"w": "profit",
+"p": "noun",
+"bn": "লাভ, মুনাফা",
+"ex": "The shop made a good profit.",
+"exbn": "দোকানটা ভালো লাভ করেছে।"
+},
+{
+"n": 900,
+"w": "guess",
+"p": "verb",
+"bn": "অনুমান করা",
+"ex": "Guess who called me!",
+"exbn": "বলো তো কে আমাকে ফোন করেছিল!"
+}
+]

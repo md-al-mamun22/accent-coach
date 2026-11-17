@@ -1,0 +1,802 @@
+[
+{
+"n": 701,
+"w": "guy",
+"p": "noun",
+"bn": "লোক, ছেলে (কথ্য)",
+"ex": "He is a nice guy.",
+"exbn": "সে একজন ভালো ছেলে।"
+},
+{
+"n": 702,
+"w": "function",
+"p": "noun",
+"bn": "কাজ, ভূমিকা; অনুষ্ঠান",
+"ex": "What is the function of this button?",
+"exbn": "এই বাটনটার কাজ কী?"
+},
+{
+"n": 703,
+"w": "yesterday",
+"p": "adverb",
+"bn": "গতকাল",
+"ex": "I met him yesterday.",
+"exbn": "আমি গতকাল তার সাথে দেখা করেছি।"
+},
+{
+"n": 704,
+"w": "image",
+"p": "noun",
+"bn": "ছবি, প্রতিচ্ছবি",
+"ex": "Upload an image of your ID.",
+"exbn": "তোমার আইডি কার্ডের একটা ছবি আপলোড করো।"
+},
+{
+"n": 705,
+"w": "size",
+"p": "noun",
+"bn": "মাপ, সাইজ",
+"ex": "What size are your shoes?",
+"exbn": "তোমার জুতার সাইজ কত?"
+},
+{
+"n": 706,
+"w": "behavior",
+"p": "noun",
+"bn": "আচরণ",
+"ex": "His behavior was very rude.",
+"exbn": "তার আচরণ খুব অভদ্র ছিল।"
+},
+{
+"n": 707,
+"w": "addition",
+"p": "noun",
+"bn": "যোগ; (in addition) এছাড়াও",
+"ex": "In addition, we offer free delivery.",
+"exbn": "এছাড়াও আমরা ফ্রি ডেলিভারি দিই।"
+},
+{
+"n": 708,
+"w": "determine",
+"p": "verb",
+"bn": "নির্ধারণ করা",
+"ex": "The test will determine your level.",
+"exbn": "টেস্টটা তোমার লেভেল নির্ধারণ করবে।"
+},
+{
+"n": 709,
+"w": "station",
+"p": "noun",
+"bn": "স্টেশন",
+"ex": "Where is the bus station?",
+"exbn": "বাস স্টেশনটা কোথায়?"
+},
+{
+"n": 710,
+"w": "population",
+"p": "noun",
+"bn": "জনসংখ্যা",
+"ex": "Dhaka has a large population.",
+"exbn": "ঢাকার জনসংখ্যা অনেক বেশি।"
+},
+{
+"n": 711,
+"w": "fail",
+"p": "verb",
+"bn": "ব্যর্থ হওয়া, ফেল করা",
+"ex": "Don't be afraid to fail.",
+"exbn": "ব্যর্থ হতে ভয় পেয়ো না।"
+},
+{
+"n": 712,
+"w": "environment",
+"p": "noun",
+"bn": "পরিবেশ",
+"ex": "We must protect the environment.",
+"exbn": "আমাদের পরিবেশ রক্ষা করতে হবে।"
+},
+{
+"n": 713,
+"w": "production",
+"p": "noun",
+"bn": "উৎপাদন",
+"ex": "Rice production was high this year.",
+"exbn": "এ বছর ধানের উৎপাদন বেশি হয়েছে।"
+},
+{
+"n": 714,
+"w": "contract",
+"p": "noun",
+"bn": "চুক্তিপত্র",
+"ex": "Read the contract before you sign.",
+"exbn": "সই করার আগে চুক্তিপত্রটা পড়ে নাও।"
+},
+{
+"n": 715,
+"w": "player",
+"p": "noun",
+"bn": "খেলোয়াড়",
+"ex": "He is a good cricket player.",
+"exbn": "সে একজন ভালো ক্রিকেট খেলোয়াড়।"
+},
+{
+"n": 716,
+"w": "comment",
+"p": "noun",
+"bn": "মন্তব্য",
+"ex": "Leave a comment below.",
+"exbn": "নিচে একটা মন্তব্য করুন।"
+},
+{
+"n": 717,
+"w": "enter",
+"p": "verb",
+"bn": "প্রবেশ করা; লেখা (তথ্য)",
+"ex": "Enter your password.",
+"exbn": "তোমার পাসওয়ার্ড লেখো।"
+},
+{
+"n": 718,
+"w": "occur",
+"p": "verb",
+"bn": "ঘটা",
+"ex": "The accident occurred at night.",
+"exbn": "দুর্ঘটনাটা রাতে ঘটেছিল।"
+},
+{
+"n": 719,
+"w": "alone",
+"p": "adverb",
+"bn": "একা",
+"ex": "She lives alone.",
+"exbn": "সে একা থাকে।"
+},
+{
+"n": 720,
+"w": "significant",
+"p": "adjective",
+"bn": "উল্লেখযোগ্য, গুরুত্বপূর্ণ",
+"ex": "There was a significant change.",
+"exbn": "একটা উল্লেখযোগ্য পরিবর্তন হয়েছে।"
+},
+{
+"n": 721,
+"w": "drug",
+"p": "noun",
+"bn": "ওষুধ; মাদক",
+"ex": "This drug helps with pain.",
+"exbn": "এই ওষুধটা ব্যথা কমায়।"
+},
+{
+"n": 722,
+"w": "wall",
+"p": "noun",
+"bn": "দেয়াল",
+"ex": "There is a clock on the wall.",
+"exbn": "দেয়ালে একটা ঘড়ি আছে।"
+},
+{
+"n": 723,
+"w": "series",
+"p": "noun",
+"bn": "ধারাবাহিক, সিরিজ",
+"ex": "I am watching a new TV series.",
+"exbn": "আমি একটা নতুন টিভি সিরিজ দেখছি।"
+},
+{
+"n": 724,
+"w": "direct",
+"p": "adjective",
+"bn": "সরাসরি",
+"ex": "Is there a direct flight to London?",
+"exbn": "লন্ডনে কি সরাসরি ফ্লাইট আছে?"
+},
+{
+"n": 725,
+"w": "success",
+"p": "noun",
+"bn": "সাফল্য",
+"ex": "Hard work is the key to success.",
+"exbn": "কঠোর পরিশ্রমই সাফল্যের চাবিকাঠি।"
+},
+{
+"n": 726,
+"w": "tomorrow",
+"p": "adverb",
+"bn": "আগামীকাল",
+"ex": "See you tomorrow.",
+"exbn": "কাল দেখা হবে।"
+},
+{
+"n": 727,
+"w": "director",
+"p": "noun",
+"bn": "পরিচালক",
+"ex": "He is the director of the company.",
+"exbn": "তিনি কোম্পানির পরিচালক।"
+},
+{
+"n": 728,
+"w": "clearly",
+"p": "adverb",
+"bn": "স্পষ্টভাবে",
+"ex": "Please speak clearly.",
+"exbn": "দয়া করে স্পষ্ট করে বলুন।"
+},
+{
+"n": 729,
+"w": "lack",
+"p": "noun",
+"bn": "অভাব",
+"ex": "He failed because of a lack of practice.",
+"exbn": "অনুশীলনের অভাবে সে ফেল করেছে।"
+},
+{
+"n": 730,
+"w": "review",
+"p": "noun",
+"bn": "রিভিউ, পর্যালোচনা",
+"ex": "I read the reviews before buying.",
+"exbn": "কেনার আগে আমি রিভিউগুলো পড়ি।"
+},
+{
+"n": 731,
+"w": "depend",
+"p": "verb",
+"bn": "নির্ভর করা",
+"ex": "It depends on the weather.",
+"exbn": "এটা আবহাওয়ার উপর নির্ভর করে।"
+},
+{
+"n": 732,
+"w": "race",
+"p": "noun",
+"bn": "দৌড় প্রতিযোগিতা",
+"ex": "He won the race.",
+"exbn": "সে দৌড়ে প্রথম হয়েছে।"
+},
+{
+"n": 733,
+"w": "recognize",
+"p": "verb",
+"bn": "চিনতে পারা",
+"ex": "I didn't recognize you!",
+"exbn": "আমি তো তোমাকে চিনতেই পারিনি!"
+},
+{
+"n": 734,
+"w": "window",
+"p": "noun",
+"bn": "জানালা",
+"ex": "Open the window, please.",
+"exbn": "দয়া করে জানালাটা খোলো।"
+},
+{
+"n": 735,
+"w": "purpose",
+"p": "noun",
+"bn": "উদ্দেশ্য",
+"ex": "What is the purpose of your visit?",
+"exbn": "আপনার আসার উদ্দেশ্য কী?"
+},
+{
+"n": 736,
+"w": "department",
+"p": "noun",
+"bn": "বিভাগ",
+"ex": "She works in the sales department.",
+"exbn": "সে সেলস বিভাগে কাজ করে।"
+},
+{
+"n": 737,
+"w": "gain",
+"p": "verb",
+"bn": "অর্জন করা; বাড়া",
+"ex": "I gained a lot of experience.",
+"exbn": "আমি অনেক অভিজ্ঞতা অর্জন করেছি।"
+},
+{
+"n": 738,
+"w": "tree",
+"p": "noun",
+"bn": "গাছ",
+"ex": "There is a mango tree in our yard.",
+"exbn": "আমাদের উঠানে একটা আম গাছ আছে।"
+},
+{
+"n": 739,
+"w": "college",
+"p": "noun",
+"bn": "কলেজ",
+"ex": "My sister goes to college.",
+"exbn": "আমার বোন কলেজে পড়ে।"
+},
+{
+"n": 740,
+"w": "argue",
+"p": "verb",
+"bn": "তর্ক করা",
+"ex": "Please don't argue.",
+"exbn": "দয়া করে তর্ক করো না।"
+},
+{
+"n": 741,
+"w": "board",
+"p": "noun",
+"bn": "বোর্ড; (verb) ওঠা (যানবাহনে)",
+"ex": "Write it on the board.",
+"exbn": "বোর্ডে এটা লেখো।"
+},
+{
+"n": 742,
+"w": "holiday",
+"p": "noun",
+"bn": "ছুটি",
+"ex": "Friday is a holiday.",
+"exbn": "শুক্রবার ছুটির দিন।"
+},
+{
+"n": 743,
+"w": "mark",
+"p": "noun",
+"bn": "দাগ; নম্বর (পরীক্ষার)",
+"ex": "I got good marks in English.",
+"exbn": "আমি ইংরেজিতে ভালো নম্বর পেয়েছি।"
+},
+{
+"n": 744,
+"w": "church",
+"p": "noun",
+"bn": "গির্জা",
+"ex": "There is an old church in the town.",
+"exbn": "শহরে একটা পুরনো গির্জা আছে।"
+},
+{
+"n": 745,
+"w": "machine",
+"p": "noun",
+"bn": "যন্ত্র, মেশিন",
+"ex": "The washing machine is broken.",
+"exbn": "ওয়াশিং মেশিনটা নষ্ট।"
+},
+{
+"n": 746,
+"w": "achieve",
+"p": "verb",
+"bn": "অর্জন করা",
+"ex": "You can achieve your goals.",
+"exbn": "তুমি তোমার লক্ষ্য অর্জন করতে পারবে।"
+},
+{
+"n": 747,
+"w": "item",
+"p": "noun",
+"bn": "জিনিস, আইটেম",
+"ex": "How many items are in your bag?",
+"exbn": "তোমার ব্যাগে কয়টা জিনিস আছে?"
+},
+{
+"n": 748,
+"w": "prove",
+"p": "verb",
+"bn": "প্রমাণ করা",
+"ex": "Can you prove it?",
+"exbn": "তুমি কি এটা প্রমাণ করতে পারবে?"
+},
+{
+"n": 749,
+"w": "cent",
+"p": "noun",
+"bn": "সেন্ট (ডলারের ভগ্নাংশ)",
+"ex": "It costs ninety-nine cents.",
+"exbn": "এটার দাম নিরানব্বই সেন্ট।"
+},
+{
+"n": 750,
+"w": "season",
+"p": "noun",
+"bn": "ঋতু, মৌসুম",
+"ex": "Winter is my favorite season.",
+"exbn": "শীত আমার প্রিয় ঋতু।"
+},
+{
+"n": 751,
+"w": "floor",
+"p": "noun",
+"bn": "মেঝে; তলা",
+"ex": "My office is on the fifth floor.",
+"exbn": "আমার অফিস পাঁচ তলায়।"
+},
+{
+"n": 752,
+"w": "stuff",
+"p": "noun",
+"bn": "জিনিসপত্র (কথ্য)",
+"ex": "Put your stuff in the car.",
+"exbn": "তোমার জিনিসপত্র গাড়িতে রাখো।"
+},
+{
+"n": 753,
+"w": "wide",
+"p": "adjective",
+"bn": "চওড়া, প্রশস্ত",
+"ex": "The river is very wide here.",
+"exbn": "এখানে নদীটা খুব চওড়া।"
+},
+{
+"n": 754,
+"w": "anyone",
+"p": "pronoun",
+"bn": "কেউ, যে কেউ",
+"ex": "Is anyone home?",
+"exbn": "বাসায় কেউ আছে?"
+},
+{
+"n": 755,
+"w": "method",
+"p": "noun",
+"bn": "পদ্ধতি",
+"ex": "This is a good method for learning words.",
+"exbn": "শব্দ শেখার জন্য এটা একটা ভালো পদ্ধতি।"
+},
+{
+"n": 756,
+"w": "analysis",
+"p": "noun",
+"bn": "বিশ্লেষণ",
+"ex": "The report has a detailed analysis.",
+"exbn": "রিপোর্টে বিস্তারিত বিশ্লেষণ আছে।"
+},
+{
+"n": 757,
+"w": "election",
+"p": "noun",
+"bn": "নির্বাচন",
+"ex": "The election is next month.",
+"exbn": "নির্বাচন আগামী মাসে।"
+},
+{
+"n": 758,
+"w": "military",
+"p": "adjective",
+"bn": "সামরিক",
+"ex": "He joined the military.",
+"exbn": "সে সেনাবাহিনীতে যোগ দিয়েছে।"
+},
+{
+"n": 759,
+"w": "hotel",
+"p": "noun",
+"bn": "হোটেল",
+"ex": "We stayed at a nice hotel.",
+"exbn": "আমরা একটা ভালো হোটেলে ছিলাম।"
+},
+{
+"n": 760,
+"w": "club",
+"p": "noun",
+"bn": "ক্লাব",
+"ex": "I joined a book club.",
+"exbn": "আমি একটা বই পড়ার ক্লাবে যোগ দিয়েছি।"
+},
+{
+"n": 761,
+"w": "below",
+"p": "preposition",
+"bn": "নিচে",
+"ex": "Write your answer below.",
+"exbn": "নিচে তোমার উত্তর লেখো।"
+},
+{
+"n": 762,
+"w": "movie",
+"p": "noun",
+"bn": "সিনেমা",
+"ex": "Let's watch a movie.",
+"exbn": "চলো একটা সিনেমা দেখি।"
+},
+{
+"n": 763,
+"w": "doctor",
+"p": "noun",
+"bn": "ডাক্তার",
+"ex": "You should see a doctor.",
+"exbn": "তোমার ডাক্তার দেখানো উচিত।"
+},
+{
+"n": 764,
+"w": "discussion",
+"p": "noun",
+"bn": "আলোচনা",
+"ex": "We had a long discussion.",
+"exbn": "আমাদের লম্বা আলোচনা হয়েছে।"
+},
+{
+"n": 765,
+"w": "sorry",
+"p": "adjective",
+"bn": "দুঃখিত",
+"ex": "I'm sorry I'm late.",
+"exbn": "দেরি করার জন্য দুঃখিত।"
+},
+{
+"n": 766,
+"w": "challenge",
+"p": "noun",
+"bn": "চ্যালেঞ্জ, কঠিন কাজ",
+"ex": "Learning a language is a challenge.",
+"exbn": "একটা ভাষা শেখা একটা চ্যালেঞ্জ।"
+},
+{
+"n": 767,
+"w": "nation",
+"p": "noun",
+"bn": "জাতি, রাষ্ট্র",
+"ex": "The whole nation celebrated.",
+"exbn": "পুরো জাতি উদযাপন করেছে।"
+},
+{
+"n": 768,
+"w": "nearly",
+"p": "adverb",
+"bn": "প্রায়",
+"ex": "It's nearly ten o'clock.",
+"exbn": "প্রায় দশটা বাজে।"
+},
+{
+"n": 769,
+"w": "statement",
+"p": "noun",
+"bn": "বিবৃতি; (bank statement) হিসাবের বিবরণী",
+"ex": "I need my bank statement.",
+"exbn": "আমার ব্যাংক স্টেটমেন্ট দরকার।"
+},
+{
+"n": 770,
+"w": "link",
+"p": "noun",
+"bn": "লিংক, সংযোগ",
+"ex": "Click on this link.",
+"exbn": "এই লিংকে ক্লিক করো।"
+},
+{
+"n": 771,
+"w": "despite",
+"p": "preposition",
+"bn": "সত্ত্বেও",
+"ex": "Despite the rain, we went out.",
+"exbn": "বৃষ্টি সত্ত্বেও আমরা বাইরে গেলাম।"
+},
+{
+"n": 772,
+"w": "introduce",
+"p": "verb",
+"bn": "পরিচয় করিয়ে দেওয়া",
+"ex": "Let me introduce my friend.",
+"exbn": "আমার বন্ধুর সাথে পরিচয় করিয়ে দিই।"
+},
+{
+"n": 773,
+"w": "advantage",
+"p": "noun",
+"bn": "সুবিধা",
+"ex": "What are the advantages of this plan?",
+"exbn": "এই পরিকল্পনার সুবিধাগুলো কী?"
+},
+{
+"n": 774,
+"w": "ready",
+"p": "adjective",
+"bn": "তৈরি, প্রস্তুত",
+"ex": "Dinner is ready.",
+"exbn": "রাতের খাবার তৈরি।"
+},
+{
+"n": 775,
+"w": "marry",
+"p": "verb",
+"bn": "বিয়ে করা",
+"ex": "They will marry next year.",
+"exbn": "তারা আগামী বছর বিয়ে করবে।"
+},
+{
+"n": 776,
+"w": "strike",
+"p": "noun",
+"bn": "ধর্মঘট; (verb) আঘাত করা",
+"ex": "There is a bus strike today.",
+"exbn": "আজ বাস ধর্মঘট চলছে।"
+},
+{
+"n": 777,
+"w": "mile",
+"p": "noun",
+"bn": "মাইল",
+"ex": "The beach is two miles away.",
+"exbn": "সৈকতটা দুই মাইল দূরে।"
+},
+{
+"n": 778,
+"w": "seek",
+"p": "verb",
+"bn": "খোঁজা, চাওয়া",
+"ex": "You should seek advice from a lawyer.",
+"exbn": "তোমার একজন আইনজীবীর পরামর্শ নেওয়া উচিত।"
+},
+{
+"n": 779,
+"w": "ability",
+"p": "noun",
+"bn": "সামর্থ্য, ক্ষমতা",
+"ex": "She has the ability to lead.",
+"exbn": "তার নেতৃত্ব দেওয়ার ক্ষমতা আছে।"
+},
+{
+"n": 780,
+"w": "unit",
+"p": "noun",
+"bn": "একক, ইউনিট",
+"ex": "Read unit three for homework.",
+"exbn": "বাড়ির কাজের জন্য তৃতীয় ইউনিটটা পড়ো।"
+},
+{
+"n": 781,
+"w": "card",
+"p": "noun",
+"bn": "কার্ড",
+"ex": "Can I pay by card?",
+"exbn": "আমি কি কার্ডে পেমেন্ট করতে পারি?"
+},
+{
+"n": 782,
+"w": "hospital",
+"p": "noun",
+"bn": "হাসপাতাল",
+"ex": "She works in a hospital.",
+"exbn": "সে একটা হাসপাতালে কাজ করে।"
+},
+{
+"n": 783,
+"w": "quickly",
+"p": "adverb",
+"bn": "দ্রুত, তাড়াতাড়ি",
+"ex": "Come here quickly!",
+"exbn": "তাড়াতাড়ি এখানে আসো!"
+},
+{
+"n": 784,
+"w": "interview",
+"p": "noun",
+"bn": "সাক্ষাৎকার, ইন্টারভিউ",
+"ex": "I have a job interview tomorrow.",
+"exbn": "কাল আমার চাকরির ইন্টারভিউ।"
+},
+{
+"n": 785,
+"w": "agreement",
+"p": "noun",
+"bn": "চুক্তি; একমত হওয়া",
+"ex": "We reached an agreement.",
+"exbn": "আমরা একটা সমঝোতায় পৌঁছেছি।"
+},
+{
+"n": 786,
+"w": "release",
+"p": "verb",
+"bn": "মুক্তি দেওয়া; প্রকাশ করা",
+"ex": "The new film will release on Friday.",
+"exbn": "নতুন সিনেমাটা শুক্রবার মুক্তি পাবে।"
+},
+{
+"n": 787,
+"w": "tax",
+"p": "noun",
+"bn": "কর, ট্যাক্স",
+"ex": "Everyone must pay tax.",
+"exbn": "সবাইকে কর দিতে হবে।"
+},
+{
+"n": 788,
+"w": "solution",
+"p": "noun",
+"bn": "সমাধান",
+"ex": "We need a quick solution.",
+"exbn": "আমাদের একটা দ্রুত সমাধান দরকার।"
+},
+{
+"n": 789,
+"w": "capital",
+"p": "noun",
+"bn": "রাজধানী; মূলধন",
+"ex": "Dhaka is the capital of Bangladesh.",
+"exbn": "ঢাকা বাংলাদেশের রাজধানী।"
+},
+{
+"n": 790,
+"w": "popular",
+"p": "adjective",
+"bn": "জনপ্রিয়",
+"ex": "This song is very popular.",
+"exbn": "এই গানটা খুব জনপ্রিয়।"
+},
+{
+"n": 791,
+"w": "specific",
+"p": "adjective",
+"bn": "নির্দিষ্ট",
+"ex": "Can you be more specific?",
+"exbn": "তুমি কি আরও নির্দিষ্ট করে বলবে?"
+},
+{
+"n": 792,
+"w": "beautiful",
+"p": "adjective",
+"bn": "সুন্দর",
+"ex": "What a beautiful view!",
+"exbn": "কী সুন্দর দৃশ্য!"
+},
+{
+"n": 793,
+"w": "fear",
+"p": "noun",
+"bn": "ভয়",
+"ex": "I have a fear of dogs.",
+"exbn": "আমার কুকুরে ভয় লাগে।"
+},
+{
+"n": 794,
+"w": "aim",
+"p": "noun",
+"bn": "লক্ষ্য",
+"ex": "My aim is to speak English fluently.",
+"exbn": "আমার লক্ষ্য সাবলীলভাবে ইংরেজি বলা।"
+},
+{
+"n": 795,
+"w": "television",
+"p": "noun",
+"bn": "টেলিভিশন",
+"ex": "We watched the match on television.",
+"exbn": "আমরা টেলিভিশনে খেলাটা দেখেছি।"
+},
+{
+"n": 796,
+"w": "serious",
+"p": "adjective",
+"bn": "গুরুতর; সিরিয়াস",
+"ex": "Is it a serious problem?",
+"exbn": "এটা কি গুরুতর সমস্যা?"
+},
+{
+"n": 797,
+"w": "target",
+"p": "noun",
+"bn": "লক্ষ্য, টার্গেট",
+"ex": "Our sales target is very high.",
+"exbn": "আমাদের বিক্রির টার্গেট অনেক বেশি।"
+},
+{
+"n": 798,
+"w": "degree",
+"p": "noun",
+"bn": "ডিগ্রি; মাত্রা",
+"ex": "She has a degree in English.",
+"exbn": "তার ইংরেজিতে ডিগ্রি আছে।"
+},
+{
+"n": 799,
+"w": "pull",
+"p": "verb",
+"bn": "টানা",
+"ex": "Pull the door to open it.",
+"exbn": "দরজা খুলতে টান দাও।"
+},
+{
+"n": 800,
+"w": "red",
+"p": "adjective",
+"bn": "লাল",
+"ex": "She is wearing a red sari.",
+"exbn": "সে একটা লাল শাড়ি পরেছে।"
+}
+]
