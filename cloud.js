@@ -148,14 +148,15 @@ export async function listLevels() {
 export async function loadVocab(u) {
   const f = await init(); if (!f || !u) return null;
   const s = await f.S.getDoc(f.S.doc(f.db, "users", u.uid, "vocab", "main"));
-  return s.exists() ? (s.data().w || {}) : null;
+  return s.exists() ? { w: s.data().w || {}, f: s.data().f || {} } : null;
 }
-export async function saveVocab(u, w) {
+export async function saveVocab(u, w, fav) {
   const f = await init(); if (!f || !u) return;
   const S = f.S, clean = {};
   Object.keys(w || {}).slice(0, 3000).forEach(k => { const e = w[k];
     if (k.length <= 40 && Array.isArray(e) && e.length === 3) clean[k] = [e[0] | 0, e[1] | 0, Math.floor(+e[2] || 0)]; });
-  await S.setDoc(S.doc(f.db, "users", u.uid, "vocab", "main"), { w: clean, updatedAt: S.serverTimestamp() });
+  const fv = {}; Object.keys(fav || {}).slice(0, 1000).forEach(k => { if (k.length <= 40) fv[k] = 1; });
+  await S.setDoc(S.doc(f.db, "users", u.uid, "vocab", "main"), { w: clean, f: fv, updatedAt: S.serverTimestamp() });
 }
 
 // ---------- daily reminder (free: calendar event) ----------

@@ -49,8 +49,9 @@ service cloud.firestore {
     match /users/{uid}/vocab/{doc} {
       allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
       allow create, update: if signedIn() && request.auth.uid == uid && doc == 'main'
-        && request.resource.data.keys().hasOnly(['w','updatedAt'])
+        && request.resource.data.keys().hasOnly(['w','f','updatedAt'])
         && request.resource.data.w is map && request.resource.data.w.size() <= 3000
+        && (!('f' in request.resource.data) || (request.resource.data.f is map && request.resource.data.f.size() <= 1000))
         && request.resource.data.updatedAt == request.time;
       allow delete: if signedIn() && request.auth.uid == uid;
     }
