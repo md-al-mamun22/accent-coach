@@ -91,7 +91,7 @@ main{padding:36px 0 80px}
 (function(){
 var NEW_PER_DAY=20, GAPS=[1,3,7,15,30,60], MASTER=4;
 var FILES=["w001","w002","w003","w004","w005","w006","w007","w008","w009","w010"].map(function(f){return "words/"+f+".json"}), TOTAL=1000;
-var W=[], BY={}, VOICE={}, st, tab="learn", rv=null, li=0;
+var W=[], BY={}, VOICE={}, SVOICE={}, st, tab="learn", rv=null, li=0;
 var KEY="ac-words";
 function bn(n){return String(n).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯"[d]})}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
@@ -112,8 +112,9 @@ function pickVoice(){if(!("speechSynthesis" in window))return;var vs=speechSynth
   synthVoice=vs.find(function(v){return /en-US/i.test(v.lang)&&/Google|Samantha|Natural|Aria|Jenny/i.test(v.name)})||vs.find(function(v){return /en-US/i.test(v.lang)})||vs[0]||null;}
 if("speechSynthesis" in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice;}
 var audio=new Audio();
-function say(text,isWord){
+function say(text,isWord,sn){
   audio.pause();if(window.speechSynthesis)speechSynthesis.cancel();
+  if(sn&&SVOICE[sn]){audio.src="audio/sent/"+SVOICE[sn];audio.play().catch(function(){});return}
   if(isWord&&VOICE[text.toLowerCase()]){audio.src="audio/words/"+VOICE[text.toLowerCase()];audio.play().catch(function(){});return}
   if(!("speechSynthesis" in window))return;
   var u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=isWord?0.85:0.92;if(synthVoice)u.voice=synthVoice;speechSynthesis.speak(u);
@@ -131,9 +132,9 @@ function stats(){
 function card(x,reveal){
   return '<div class="word"><h2>'+esc(x.w)+'</h2><button class="play" data-say="'+esc(x.w)+'" data-word="1" aria-label="উচ্চারণ শুনুন">▶</button><span class="pos">'+esc(x.p)+'</span></div>'+
    '<div class="'+(reveal?'':'hidden ')+'reveal" id="rv"><div class="mean">'+esc(x.bn)+'</div>'+
-   '<div class="ex"><button class="play sm" data-say="'+esc(x.ex)+'" aria-label="বাক্যটা শুনুন">▶</button><div><p>'+hl(x.ex,x.w)+'</p><span>'+esc(x.exbn)+'</span></div></div></div>';
+   '<div class="ex"><button class="play sm" data-say="'+esc(x.ex)+'" data-sn="'+x.n+'" aria-label="বাক্যটা শুনুন">▶</button><div><p>'+hl(x.ex,x.w)+'</p><span>'+esc(x.exbn)+'</span></div></div></div>';
 }
-function wire(){out.querySelectorAll("[data-say]").forEach(function(b){b.onclick=function(){say(b.dataset.say,!!b.dataset.word)}})}
+function wire(){out.querySelectorAll("[data-say]").forEach(function(b){b.onclick=function(){say(b.dataset.say,!!b.dataset.word,b.dataset.sn)}})}
 var out=document.getElementById("out");
 
 function showLearn(){
@@ -177,8 +178,8 @@ function setTab(t){tab=t;document.querySelectorAll(".tab").forEach(function(b){b
 document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){setTab(b.dataset.t)}});
 
 window.acVocab={get:function(){return st.w},apply:function(w){st.w=w;persist();stats();setTab(tab)}};
-Promise.all(FILES.map(function(f){return fetch(f).then(function(r){return r.json()})}).concat([fetch("audio/words/index.json").then(function(r){return r.ok?r.json():[]}).catch(function(){return []})]))
- .then(function(r){var v=r.pop();r.forEach(function(a){W=W.concat(a)});W.forEach(function(x){BY[x.w]=x});
+Promise.all(FILES.map(function(f){return fetch(f).then(function(r){return r.json()})}).concat([fetch("audio/words/index.json").then(function(r){return r.ok?r.json():[]}).catch(function(){return []}),fetch("audio/sent/index.json").then(function(r){return r.ok?r.json():[]}).catch(function(){return []})]))
+ .then(function(r){var sv=r.pop(),v=r.pop();(sv||[]).forEach(function(f){SVOICE[String(parseInt(f,10))]=f});r.forEach(function(a){W=W.concat(a)});W.forEach(function(x){BY[x.w]=x});
    (v||[]).forEach(function(f){VOICE[f.replace(/\.mp3$/,"").toLowerCase()]=f});
    stats();setTab(due().length?"review":"learn");})
  .catch(function(){out.innerHTML='<div class="card done bn"><h2>শব্দগুলো লোড হয়নি</h2><p>ইন্টারনেট সংযোগ দেখে পেজটা আবার খুলুন।</p></div>'});
