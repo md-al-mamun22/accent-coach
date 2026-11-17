@@ -105,6 +105,7 @@ function learned(){return Object.keys(st.w).length}
 function mastered(){var c=0;for(var k in st.w)if(st.w[k][0]>=MASTER)c++;return c}
 function due(){var t=dayNo();return W.filter(function(x){var e=st.w[x.w];return e&&e[1]<=t})}
 function newToday(){return st.nd===dayNo()?st.nc:0}
+function limitToday(){return NEW_PER_DAY+(st.bd===dayNo()?(st.bonus||0):0)}
 function fresh(){return W.filter(function(x){return !st.w[x.w]})}
 
 var synthVoice=null;
@@ -138,12 +139,13 @@ function wire(){out.querySelectorAll("[data-say]").forEach(function(b){b.onclick
 var out=document.getElementById("out");
 
 function showLearn(){
-  var left=NEW_PER_DAY-newToday(), pool=fresh();
+  var lim=limitToday(), left=lim-newToday(), pool=fresh();
   if(!pool.length){out.innerHTML='<div class="card done bn"><div class="em">🎉</div><h2>এই সেটের সব শব্দ শেখা শেষ!</h2><p>পরের শব্দগুলো শীঘ্রই যোগ হবে। ততদিন রিভিশন চালিয়ে যান।</p></div>';return}
-  if(left<=0){var d=due().length;out.innerHTML='<div class="card done bn"><div class="em">✅</div><h2>আজকের '+bn(NEW_PER_DAY)+'টা নতুন শব্দ শেখা শেষ!</h2><p>কাল আবার নতুন শব্দ আসবে।'+(d?' এখন '+bn(d)+'টা শব্দ রিভিশন বাকি আছে।':'')+'</p>'+(d?'<div class="acts" style="justify-content:center"><button class="btn pri" id="toRv">রিভিশন শুরু করুন →</button></div>':'')+'</div>';
-    var b=document.getElementById("toRv");if(b)b.onclick=function(){setTab("review")};return}
+  if(left<=0){var d=due().length;out.innerHTML='<div class="card done bn"><div class="em">✅</div><h2>আজকের লক্ষ্য পূরণ: '+bn(newToday())+'টা নতুন শব্দ!</h2><p>চাইলে আরও শিখতে পারেন। তবে নতুন শব্দ যত বেশি, পরের দিনগুলোতে রিভিশনও তত বেশি আসবে।'+(d?' এখন '+bn(d)+'টা শব্দ রিভিশন বাকি আছে।':'')+'</p><div class="acts" style="justify-content:center"><button class="btn lime" id="more">আরও '+bn(NEW_PER_DAY)+'টা শব্দ শিখুন →</button>'+(d?'<button class="btn pri" id="toRv">রিভিশন শুরু করুন →</button>':'')+'</div></div>';
+    var b=document.getElementById("toRv");if(b)b.onclick=function(){setTab("review")};
+    document.getElementById("more").onclick=function(){var t=dayNo();if(st.bd!==t){st.bd=t;st.bonus=0}st.bonus=(st.bonus||0)+NEW_PER_DAY;persist();showLearn()};return}
   var x=pool[0];
-  out.innerHTML='<div class="card wc"><div class="wtop bn"><span>নতুন শব্দ · আজ '+bn(newToday()+1)+'/'+bn(NEW_PER_DAY)+'</span><span>#'+bn(x.n)+'</span></div>'+card(x,true)+
+  out.innerHTML='<div class="card wc"><div class="wtop bn"><span>নতুন শব্দ · আজ '+bn(newToday()+1)+'/'+bn(lim)+'</span><span>#'+bn(x.n)+'</span></div>'+card(x,true)+
    '<div class="note bn">💡 শব্দটা ২–৩ বার শুনে জোরে বলুন, তারপর উদাহরণ বাক্যটাও বলুন।</div>'+
    '<div class="acts"><span></span><button class="btn pri" id="ok">শিখেছি, পরেরটা →</button></div></div>';
   wire();say(x.w,true);
