@@ -144,6 +144,20 @@ export async function listLevels() {
   return m;
 }
 
+// ---------- 1000-word vocabulary progress (one private document per learner) ----------
+export async function loadVocab(u) {
+  const f = await init(); if (!f || !u) return null;
+  const s = await f.S.getDoc(f.S.doc(f.db, "users", u.uid, "vocab", "main"));
+  return s.exists() ? (s.data().w || {}) : null;
+}
+export async function saveVocab(u, w) {
+  const f = await init(); if (!f || !u) return;
+  const S = f.S, clean = {};
+  Object.keys(w || {}).slice(0, 3000).forEach(k => { const e = w[k];
+    if (k.length <= 40 && Array.isArray(e) && e.length === 3) clean[k] = [e[0] | 0, e[1] | 0, Math.floor(+e[2] || 0)]; });
+  await S.setDoc(S.doc(f.db, "users", u.uid, "vocab", "main"), { w: clean, updatedAt: S.serverTimestamp() });
+}
+
 // ---------- daily reminder (free: calendar event) ----------
 export function reminderLinks(hhmm) {
   const [h, m] = (hhmm || "20:00").split(":").map(Number);

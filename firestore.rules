@@ -45,6 +45,16 @@ service cloud.firestore {
       }
     }
 
+    // 1000-word vocabulary progress: one private document per learner.
+    match /users/{uid}/vocab/{doc} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if signedIn() && request.auth.uid == uid && doc == 'main'
+        && request.resource.data.keys().hasOnly(['w','updatedAt'])
+        && request.resource.data.w is map && request.resource.data.w.size() <= 3000
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if signedIn() && request.auth.uid == uid;
+    }
+
     // Admin can list every learner's level results at once.
     match /{path=**}/levels/{lid} {
       allow read: if isAdmin();

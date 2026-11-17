@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo-icon-512.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1000 Words · Accent Coach</title>
+<meta name="description" content="ইংরেজির সবচেয়ে বেশি ব্যবহৃত ১০০০ শব্দ: বাংলা অর্থ, উদাহরণ বাক্য, উচ্চারণ আর রিভিশন। একদম ফ্রি।">
+<meta property="og:title" content="১০০০ জরুরি ইংরেজি শব্দ · Accent Coach">
+<meta property="og:description" content="রোজ ২০টা শব্দ: বাংলা অর্থ, উদাহরণ বাক্য, উচ্চারণ আর রিভিশন।">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Hind+Siliguri:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<style>
+body{font-family:"Figtree","Hind Siliguri",system-ui,sans-serif}
+.bn{font-family:"Hind Siliguri","Figtree",sans-serif}
+main{padding:36px 0 80px}
+.wrap{max-width:760px;margin:0 auto}
+.hero{padding:26px 26px 22px}
+.hero h1{font-size:clamp(28px,5vw,40px);font-weight:800}
+.hero h1 mark{background:var(--lime);color:#16171a;padding:0 10px;border-radius:10px}
+.hero p{color:var(--muted);margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stats div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.stats b{display:block;font:800 24px var(--display)}
+.stats span{color:var(--muted);font-size:14px}
+.bigbar{height:10px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:14px}
+.bigbar i{display:block;height:100%;background:#9fbf1f;width:0;transition:width .4s}
+.tabs{display:flex;gap:8px;margin:18px 0 14px;flex-wrap:wrap}
+.tab{font:700 16px "Hind Siliguri",var(--body);border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:9px 18px;cursor:pointer}
+.tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tab small{background:var(--lime);color:#16171a;border-radius:999px;padding:1px 8px;margin-left:6px;font-size:13px}
+.wc{padding:28px 26px}
+.wtop{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-weight:700;font-size:14px}
+.word{display:flex;align-items:center;gap:14px;margin:16px 0 4px;flex-wrap:wrap}
+.word h2{font:800 clamp(44px,9vw,64px)/1 var(--display);letter-spacing:-.02em}
+.pos{display:inline-block;background:var(--lav);color:var(--lav-ink);border-radius:999px;padding:3px 12px;font-weight:700;font-size:14px}
+.play{width:52px;height:52px;border-radius:50%;border:0;background:var(--lime);color:#16171a;font-size:20px;cursor:pointer;flex:none;display:grid;place-items:center}
+.play.sm{width:38px;height:38px;font-size:15px;background:var(--bg);border:1.5px solid var(--line);color:var(--ink)}
+.mean{font:700 24px/1.4 "Hind Siliguri",var(--body);margin:14px 0 6px}
+.ex{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-top:14px;display:flex;gap:12px;align-items:flex-start}
+.ex p{font-size:19px;font-weight:600;line-height:1.45}
+.ex p b{background:var(--lime-soft);border-radius:6px;padding:0 4px}
+.ex span{display:block;color:var(--muted);font:600 16px "Hind Siliguri",var(--body);margin-top:4px}
+.hidden{display:none}
+.reveal{margin-top:18px}
+.acts{display:flex;justify-content:space-between;gap:10px;margin-top:22px;flex-wrap:wrap}
+.acts .btn{font:700 16px "Hind Siliguri",var(--body);padding:12px 18px}
+.btn.bad{border-color:#ffb4ab;color:#b42318}
+.done{padding:34px 26px;text-align:center}
+.done .em{font-size:52px}
+.done h2{font-size:26px;margin:8px 0}
+.done p{color:var(--muted)}
+.list input{width:100%;font:600 16px var(--body);padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);margin-bottom:12px}
+.row{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row b{font:800 18px var(--display)}
+.row span{display:block;color:var(--muted);font:600 15px "Hind Siliguri",var(--body)}
+.row .n{color:var(--muted);font-weight:700;font-size:14px}
+.tag{font:700 13px "Hind Siliguri",var(--body);border-radius:999px;padding:3px 10px;background:var(--bg);color:var(--muted);white-space:nowrap}
+.tag.l{background:var(--lime-soft);color:#3d4a12}
+.tag.m{background:var(--lime);color:#16171a}
+.note{background:var(--lav);color:var(--lav-ink);border-radius:14px;padding:12px 16px;font-size:15px;margin-top:14px}
+.cloud{margin-top:14px;font-size:15px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.foot{color:var(--muted);font-size:13px;margin-top:22px;text-align:center}
+.foot a{color:inherit}
+@media(max-width:600px){.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.tab{font-size:14px;padding:9px 6px;white-space:nowrap}.tab small{margin-left:3px;padding:1px 6px}.wc,.hero{padding:22px 18px}.stats b{font-size:20px}.mean{font-size:21px}.ex p{font-size:17px}.acts .btn{flex:1;justify-content:center}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .tag.l{color:#d6f25a}}
+</style></head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><a class="btn sp" href="app.html">Practice →</a></div></nav>
+<main><div class="container"><div class="wrap">
+  <div class="card hero">
+    <span class="pos">Vocabulary</span>
+    <h1 class="bn" style="margin-top:10px">জরুরি <mark>১০০০</mark> ইংরেজি শব্দ</h1>
+    <p class="bn">দৈনন্দিন ইংরেজিতে সবচেয়ে বেশি আসা শব্দগুলো, বাংলা অর্থ আর উদাহরণ বাক্যসহ। রোজ ২০টা নতুন শব্দ, আর শেখা শব্দগুলো নির্দিষ্ট বিরতিতে আবার রিভিশনে আসবে যাতে ভুলে না যান।</p>
+    <div class="stats bn"><div><b id="sLearn">০</b><span>শব্দ শেখা হয়েছে</span></div><div><b id="sMaster">০</b><span>পাকা হয়েছে</span></div><div><b id="sDue">০</b><span>আজ রিভিশন</span></div></div>
+    <div class="bigbar"><i id="bar"></i></div>
+    <div class="cloud bn" id="cloud"></div>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="tab on" data-t="learn" role="tab">📘 আজকের শব্দ</button>
+    <button class="tab" data-t="review" role="tab">🔁 রিভিশন <small id="dueBadge">০</small></button>
+    <button class="tab" data-t="all" role="tab">📋 সব শব্দ</button>
+  </div>
+  <div id="out"></div>
+  <p class="foot">Word list: <a href="https://www.newgeneralservicelist.com" target="_blank" rel="noopener">New General Service List</a> (Browne, Culligan &amp; Phillips, 2013), CC BY-SA 4.0. বাংলা অর্থ আর উদাহরণ বাক্য Accent Coach-এর, একই লাইসেন্সে।</p>
+</div></div></main>
+
+<script>
+(function(){
+var NEW_PER_DAY=20, GAPS=[1,3,7,15,30,60], MASTER=4;
+var FILES=["words/w001.json"], TOTAL=1000;
+var W=[], BY={}, VOICE={}, st, tab="learn", rv=null, li=0;
+var KEY="ac-words";
+function bn(n){return String(n).replace(/\d/g,function(d){return "০১২৩৪৫৬৭৮৯"[d]})}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function dayNo(){var d=new Date();return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5)}
+function load(){var s=null;try{s=JSON.parse(localStorage.getItem(KEY)||"null")}catch(e){}
+  return s&&s.w?s:{w:{},nd:0,nc:0};}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}if(window.acVocabChanged)window.acVocabChanged(st.w)}
+st=load();
+// entry: [box, dueDay, lastChangedMs]
+function learned(){return Object.keys(st.w).length}
+function mastered(){var c=0;for(var k in st.w)if(st.w[k][0]>=MASTER)c++;return c}
+function due(){var t=dayNo();return W.filter(function(x){var e=st.w[x.w];return e&&e[1]<=t})}
+function newToday(){return st.nd===dayNo()?st.nc:0}
+function fresh(){return W.filter(function(x){return !st.w[x.w]})}
+
+var synthVoice=null;
+function pickVoice(){if(!("speechSynthesis" in window))return;var vs=speechSynthesis.getVoices().filter(function(v){return /^en(-|_)/i.test(v.lang)});
+  synthVoice=vs.find(function(v){return /en-US/i.test(v.lang)&&/Google|Samantha|Natural|Aria|Jenny/i.test(v.name)})||vs.find(function(v){return /en-US/i.test(v.lang)})||vs[0]||null;}
+if("speechSynthesis" in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice;}
+var audio=new Audio();
+function say(text,isWord){
+  audio.pause();if(window.speechSynthesis)speechSynthesis.cancel();
+  if(isWord&&VOICE[text.toLowerCase()]){audio.src="audio/words/"+VOICE[text.toLowerCase()];audio.play().catch(function(){});return}
+  if(!("speechSynthesis" in window))return;
+  var u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=isWord?0.85:0.92;if(synthVoice)u.voice=synthVoice;speechSynthesis.speak(u);
+}
+function hl(ex,w){var re=new RegExp("\\b("+w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"[a-z]*)\\b","i");return esc(ex).replace(re,"<b>$1</b>")}
+
+function stats(){
+  var l=learned(),m=mastered(),d=due().length;
+  document.getElementById("sLearn").textContent=bn(l)+"/"+bn(TOTAL);
+  document.getElementById("sMaster").textContent=bn(m);
+  document.getElementById("sDue").textContent=bn(d);
+  document.getElementById("dueBadge").textContent=bn(d);
+  document.getElementById("bar").style.width=(l/TOTAL*100)+"%";
+}
+function card(x,reveal){
+  return '<div class="word"><h2>'+esc(x.w)+'</h2><button class="play" data-say="'+esc(x.w)+'" data-word="1" aria-label="উচ্চারণ শুনুন">▶</button><span class="pos">'+esc(x.p)+'</span></div>'+
+   '<div class="'+(reveal?'':'hidden ')+'reveal" id="rv"><div class="mean">'+esc(x.bn)+'</div>'+
+   '<div class="ex"><button class="play sm" data-say="'+esc(x.ex)+'" aria-label="বাক্যটা শুনুন">▶</button><div><p>'+hl(x.ex,x.w)+'</p><span>'+esc(x.exbn)+'</span></div></div></div>';
+}
+function wire(){out.querySelectorAll("[data-say]").forEach(function(b){b.onclick=function(){say(b.dataset.say,!!b.dataset.word)}})}
+var out=document.getElementById("out");
+
+function showLearn(){
+  var left=NEW_PER_DAY-newToday(), pool=fresh();
+  if(!pool.length){out.innerHTML='<div class="card done bn"><div class="em">🎉</div><h2>এই সেটের সব শব্দ শেখা শেষ!</h2><p>পরের শব্দগুলো শীঘ্রই যোগ হবে। ততদিন রিভিশন চালিয়ে যান।</p></div>';return}
+  if(left<=0){var d=due().length;out.innerHTML='<div class="card done bn"><div class="em">✅</div><h2>আজকের '+bn(NEW_PER_DAY)+'টা নতুন শব্দ শেখা শেষ!</h2><p>কাল আবার নতুন শব্দ আসবে।'+(d?' এখন '+bn(d)+'টা শব্দ রিভিশন বাকি আছে।':'')+'</p>'+(d?'<div class="acts" style="justify-content:center"><button class="btn pri" id="toRv">রিভিশন শুরু করুন →</button></div>':'')+'</div>';
+    var b=document.getElementById("toRv");if(b)b.onclick=function(){setTab("review")};return}
+  var x=pool[0];
+  out.innerHTML='<div class="card wc"><div class="wtop bn"><span>নতুন শব্দ · আজ '+bn(newToday()+1)+'/'+bn(NEW_PER_DAY)+'</span><span>#'+bn(x.n)+'</span></div>'+card(x,true)+
+   '<div class="note bn">💡 শব্দটা ২–৩ বার শুনে জোরে বলুন, তারপর উদাহরণ বাক্যটাও বলুন।</div>'+
+   '<div class="acts"><span></span><button class="btn pri" id="ok">শিখেছি, পরেরটা →</button></div></div>';
+  wire();say(x.w,true);
+  document.getElementById("ok").onclick=function(){
+    var t=dayNo();if(st.nd!==t){st.nd=t;st.nc=0}
+    st.nc++;st.w[x.w]=[0,t+GAPS[0],Date.now()];persist();stats();showLearn();};
+}
+function showReview(){
+  var list=due();
+  if(!list.length){out.innerHTML='<div class="card done bn"><div class="em">🌿</div><h2>আজ কোনো রিভিশন বাকি নেই</h2><p>'+(learned()?'শেখা শব্দগুলো ঠিক সময়ে আবার এখানে আসবে।':'আগে “আজকের শব্দ” থেকে কয়েকটা শব্দ শিখুন। পরদিন থেকে সেগুলো এখানে রিভিশনে আসবে।')+'</p></div>';return}
+  var x=list[0];
+  out.innerHTML='<div class="card wc"><div class="wtop bn"><span>রিভিশন · বাকি '+bn(list.length)+'টা</span><span>#'+bn(x.n)+'</span></div>'+card(x,false)+
+   '<div class="acts" id="a1"><span class="bn" style="color:var(--muted);align-self:center">অর্থটা মনে করার চেষ্টা করুন…</span><button class="btn pri" id="show">অর্থ দেখুন</button></div>'+
+   '<div class="acts hidden" id="a2"><button class="btn bad" id="no">😕 ভুলে গেছিলাম</button><button class="btn lime" id="yes">✓ মনে ছিল</button></div></div>';
+  wire();say(x.w,true);
+  document.getElementById("show").onclick=function(){document.getElementById("rv").classList.remove("hidden");document.getElementById("a1").classList.add("hidden");document.getElementById("a2").classList.remove("hidden")};
+  function grade(ok){var e=st.w[x.w],t=dayNo(),box=ok?Math.min(e[0]+1,GAPS.length-1):0;st.w[x.w]=[box,t+GAPS[box],Date.now()];persist();stats();showReview();}
+  document.getElementById("yes").onclick=function(){grade(true)};
+  document.getElementById("no").onclick=function(){grade(false)};
+}
+function showAll(){
+  out.innerHTML='<div class="card list" style="padding:16px"><input id="q" class="bn" placeholder="শব্দ বা বাংলা অর্থ খুঁজুন…" aria-label="Search"><div id="rows"></div></div>';
+  function draw(q){q=(q||"").toLowerCase().trim();
+    document.getElementById("rows").innerHTML=W.filter(function(x){return !q||x.w.toLowerCase().indexOf(q)>=0||x.bn.indexOf(q)>=0}).map(function(x){
+      var e=st.w[x.w],tg=!e?'<span class="tag">নতুন</span>':e[0]>=MASTER?'<span class="tag m">পাকা</span>':'<span class="tag l">শিখছেন</span>';
+      return '<div class="row"><button class="play sm" data-say="'+esc(x.w)+'" data-word="1" aria-label="উচ্চারণ">▶</button><div><b>'+esc(x.w)+'</b><span>'+esc(x.bn)+'</span></div>'+tg+'</div>'}).join("")||'<p class="bn" style="color:var(--muted);padding:16px">কিছু পাওয়া যায়নি।</p>';
+    wire();}
+  draw("");document.getElementById("q").oninput=function(e){draw(e.target.value)};
+}
+function setTab(t){tab=t;document.querySelectorAll(".tab").forEach(function(b){b.classList.toggle("on",b.dataset.t===t)});
+  if(t==="learn")showLearn();else if(t==="review")showReview();else showAll();}
+document.querySelectorAll(".tab").forEach(function(b){b.onclick=function(){setTab(b.dataset.t)}});
+
+window.acVocab={get:function(){return st.w},apply:function(w){st.w=w;persist();stats();setTab(tab)}};
+Promise.all(FILES.map(function(f){return fetch(f).then(function(r){return r.json()})}).concat([fetch("audio/words/index.json").then(function(r){return r.ok?r.json():[]}).catch(function(){return []})]))
+ .then(function(r){var v=r.pop();r.forEach(function(a){W=W.concat(a)});W.forEach(function(x){BY[x.w]=x});
+   (v||[]).forEach(function(f){VOICE[f.replace(/\.mp3$/,"").toLowerCase()]=f});
+   stats();setTab(due().length?"review":"learn");})
+ .catch(function(){out.innerHTML='<div class="card done bn"><h2>শব্দগুলো লোড হয়নি</h2><p>ইন্টারনেট সংযোগ দেখে পেজটা আবার খুলুন।</p></div>'});
+})();
+</script>
+<script type="module">
+import * as C from "./cloud.js?v=16";
+const box=document.getElementById("cloud");
+let user=null,timer=null;
+function merge(a,b){const o=Object.assign({},a);for(const k in b){if(!o[k]||(b[k][2]||0)>(o[k][2]||0))o[k]=b[k]}return o}
+function render(msg){if(!C.enabled){box.innerHTML="";return}
+  if(!user){box.innerHTML='☁️ প্রগ্রেস সব ডিভাইসে রাখতে <button class="btn" id="si">Google দিয়ে লগইন করুন</button>';document.getElementById("si").onclick=()=>C.signIn().catch(()=>{});return}
+  box.innerHTML=msg||"☁️ প্রগ্রেস আপনার অ্যাকাউন্টে সেভ হচ্ছে";}
+window.acVocabChanged=w=>{if(!user)return;clearTimeout(timer);timer=setTimeout(async()=>{try{await C.saveVocab(user,w);render()}catch(e){console.warn(e);render("⚠️ ক্লাউডে সেভ হয়নি, এই ডিভাইসে আছে")}},1500)};
+render();
+if(C.enabled)C.onUser(async u=>{if(u&&u.cached)return;user=u||null;render();
+  if(!user)return;
+  try{const c=await C.loadVocab(user);const local=window.acVocab.get();const m=merge(local,c||{});
+    window.acVocab.apply(m);if(JSON.stringify(m)!==JSON.stringify(c||{}))await C.saveVocab(user,m);}catch(e){console.warn(e)}});
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
