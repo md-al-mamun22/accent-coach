@@ -321,7 +321,7 @@ button.word.playing .play{transform:scale(1.08)}
       <a class="rv fc" href="words.html"><div class="ic">📘</div><h3>1000 key words</h3><p>The most-used English words with a simple definition, an example sentence and audio. Smart revision brings them back before you forget.</p><span class="go" data-p="words">Learn words →</span></a>
       <a class="rv fc" href="phrases.html"><div class="ic">💬</div><h3>Everyday phrases</h3><p>150 ready-to-use sentences for shops, travel, phone calls, the office, interviews and client meetings.</p><span class="go" data-p="phrases">Practice phrases →</span></a>
       <a class="rv fc" href="listen.html"><div class="ic">🎧</div><h3>Listening practice</h3><p>12 short real-life conversations. Listen without reading, answer 3 questions, then check the transcript line by line.</p><span class="go" data-p="listen">Start listening →</span></a>
-      <a class="rv fc" href="grammar.html"><div class="ic">✏️</div><h3>Grammar lessons</h3><p>15 short lessons, from am / is / are to the passive voice. Simple explanations, examples with audio and 5 practice questions each.</p><span class="go" data-p="grammar">Open lessons →</span></a>
+      <a class="rv fc" href="grammar.html"><div class="ic">✏️</div><h3>Grammar lessons</h3><p>27 short lessons from A1 to C1, from am / is / are to inversion and mixed conditionals. Simple explanations, examples with audio and 5 practice questions each.</p><span class="go" data-p="grammar">Open lessons →</span></a>
       <a class="rv fc" href="app.html"><div class="ic">🗣️</div><h3>30-day pronunciation</h3><p>Fix the sounds many learners mix up: v / w, th, ship / sheep, word endings, stress and rhythm.</p><span class="go" data-p="app">Start Day 1 →</span></a>
       <a class="rv fc" href="phrases.html"><div class="ic">🎙️</div><h3>Speak and compare</h3><p>Say a word or sentence, record yourself, and play it next to the correct version. In supported browsers, it also checks the words you said.</p><span class="go">Try it →</span></a>
       <a class="rv fc" href="leaderboard.html"><div class="ic">☁️</div><h3>Progress that follows you</h3><p>Use it without an account, or log in with Google to keep your progress on every device and join the leaderboard.</p><span class="go">See the leaderboard →</span></a>
@@ -415,7 +415,7 @@ button.word.playing .play{transform:scale(1.08)}
     if(w&&w.w){var nw=Object.keys(w.w).length;if(nw)setGo("words",nw+" / 1000 words learned")}
     var ph=peek("ac-prog-phrases")||{},np=Object.keys(ph).filter(function(k){return ph[k][0]>0}).length;if(np)setGo("phrases",np+" / 150 phrases learned");
     var li=peek("ac-prog-listen")||{},nl=Object.keys(li).length;if(nl)setGo("listen",nl+" / 12 conversations done");
-    var gr=peek("ac-prog-grammar")||{},ng=Object.keys(gr).filter(function(k){return gr[k][0]>=4}).length;if(ng)setGo("grammar",ng+" / 15 lessons done");
+    var gr=peek("ac-prog-grammar")||{},ng=Object.keys(gr).filter(function(k){return gr[k][0]>=4}).length;if(ng)setGo("grammar",ng+" / 27 lessons done");
     if(path.track&&path.track[0]){var days={};for(var k in path){var m=k.match(/^d(\d+)_/);if(m&&path[k][0]>0)days[m[1]]=1}
       var nd=Object.keys(days).length;cta.textContent="Continue my 12-week plan →";cta.href="path.html";
       var mp=document.getElementById("myprog");mp.hidden=false;document.getElementById("mptxt").textContent="You've worked on "+nd+" of 84 days";

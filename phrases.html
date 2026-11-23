@@ -106,7 +106,7 @@ function quiz(t){AC.stop();playing=false;
 }
 S.onSync(function(){stats();if(!cur)home()});
 Promise.all([fetch("data/phrases.json").then(function(r){return r.json()}),AC.voiceReady]).then(function(r){T=r[0];T.forEach(function(t){ALL=ALL.concat(t.items)});stats();
-  var k=location.hash.slice(1),t=T.find(function(x){return x.k===k});t?topic(t):home();})
+  var go=function(){var k=location.hash.slice(1),t=T.find(function(x){return x.k===k});t?topic(t):home()};go();window.addEventListener("hashchange",go);})
  .catch(function(){out.innerHTML='<div class="card done"><h2>Didn\'t load</h2><p>Check your internet connection and open the page again.</p></div>'});
 })();
 </script>

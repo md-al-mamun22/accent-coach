@@ -3,19 +3,19 @@
 <meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/logo-icon-512.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>English Grammar Lessons for Beginners with Exercises (A1–B1) | Accent Coach</title>
-<meta name="description" content="15 short English grammar lessons with simple explanations, audio examples and practice questions: am/is/are, present simple, past simple, present perfect, conditionals, passive voice and more.">
+<title>English Grammar Lessons with Exercises, Beginner to Advanced (A1–C1) | Accent Coach</title>
+<meta name="description" content="27 short English grammar lessons from A1 to C1 with simple explanations, audio examples and practice questions: tenses, conditionals, reported speech, passive voice, inversion and more.">
 <link rel="canonical" href="https://accent-coach.devmamun.com/grammar.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Accent Coach">
 <meta property="og:url" content="https://accent-coach.devmamun.com/grammar.html">
-<meta property="og:title" content="English Grammar Lessons for Beginners with Exercises (A1–B1) | Accent Coach">
-<meta property="og:description" content="15 short English grammar lessons with simple explanations, audio examples and practice questions: am/is/are, present simple, past simple, present perfect, conditionals, passive voice and more.">
+<meta property="og:title" content="English Grammar Lessons with Exercises, Beginner to Advanced (A1–C1) | Accent Coach">
+<meta property="og:description" content="27 short English grammar lessons from A1 to C1 with simple explanations, audio examples and practice questions: tenses, conditionals, reported speech, passive voice, inversion and more.">
 <meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="English Grammar Lessons for Beginners with Exercises (A1–B1) | Accent Coach">
-<meta name="twitter:description" content="15 short English grammar lessons with simple explanations, audio examples and practice questions: am/is/are, present simple, past simple, present perfect, conditionals, passive voice and more.">
+<meta name="twitter:title" content="English Grammar Lessons with Exercises, Beginner to Advanced (A1–C1) | Accent Coach">
+<meta name="twitter:description" content="27 short English grammar lessons from A1 to C1 with simple explanations, audio examples and practice questions: tenses, conditionals, reported speech, passive voice, inversion and more.">
 <meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
@@ -40,8 +40,8 @@
   <div class="card hero">
     <div class="herotop"><span class="pos">Grammar</span><button class="bnsw"></button></div>
     <h1>English grammar, <mark>made simple</mark></h1>
-    <p>No thick books. 15 short lessons from A1 to B1, each with a clear explanation, 5 examples with audio and 5 practice questions. Get 4 or more right and the lesson is done.</p>
-    <div class="stats"><div><b id="sDone">0</b><span>lessons done</span></div><div><b id="sAvg">–</b><span>average score</span></div><div><b id="sAll">15</b><span>lessons</span></div></div>
+    <p>No thick books. 27 short lessons from A1 to C1, each with a clear explanation, 5 examples with audio and 5 practice questions. Get 4 or more right and the lesson is done.</p>
+    <div class="stats"><div><b id="sDone">0</b><span>lessons done</span></div><div><b id="sAvg">–</b><span>average score</span></div><div><b id="sAll">27</b><span>lessons</span></div></div>
     <div class="bigbar"><i id="bar"></i></div>
     <div class="cloud" id="cloud"></div>
   </div>
@@ -54,7 +54,7 @@
 var L=[],S=AC.store("grammar"),out=document.getElementById("out"),cur=null,esc=AC.esc;
 function best(id){return S.get(id)}
 function stats(){var d=L.filter(function(l){return best(l.id)>=4}).length,tried=L.filter(function(l){return S.d[l.id]}),avg=tried.length?tried.reduce(function(a,l){return a+best(l.id)},0)/tried.length:0;
-  document.getElementById("sDone").textContent=d+" / "+L.length;document.getElementById("sAvg").textContent=tried.length?avg.toFixed(1)+" / 5":"–";
+  document.getElementById("sDone").textContent=d+" / "+L.length;document.getElementById("sAll").textContent=L.length;document.getElementById("sAvg").textContent=tried.length?avg.toFixed(1)+" / 5":"–";
   document.getElementById("bar").style.width=(L.length?d/L.length*100:0)+"%";}
 function home(){cur=null;AC.stop();var h="",lv="";
   L.forEach(function(l,i){if(l.lv!==lv){if(lv)h+='</div>';lv=l.lv;h+='<div class="lvh">LEVEL '+lv+'</div><div class="grid">'}
@@ -93,7 +93,7 @@ function quiz(l){var qs=l.q.map(function(q){return {s:q.s,a:q.o[0],o:AC.shuffle(
     var a=document.getElementById("nl");if(a)a.onclick=function(){lesson(nx)};var b=document.getElementById("rl");if(b)b.onclick=function(){lesson(l)};document.getElementById("hm").onclick=home;}
   show();}
 S.onSync(function(){stats();if(!cur)home()});
-fetch("data/grammar.json").then(function(r){return r.json()}).then(function(d){L=d;stats();var k=location.hash.slice(1),l=L.find(function(x){return x.id===k});l?lesson(l):home()})
+fetch("data/grammar.json").then(function(r){return r.json()}).then(function(d){L=d;stats();var go=function(){var k=location.hash.slice(1),l=L.find(function(x){return x.id===k});l?lesson(l):home()};go();window.addEventListener("hashchange",go)})
  .catch(function(){out.innerHTML='<div class="card done"><h2>Didn\'t load</h2><p>Check your internet connection and open the page again.</p></div>'});
 })();
 </script>

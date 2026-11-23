@@ -102,7 +102,7 @@ function quiz(d){run++;AC.stop();var qs=d.q.map(function(q){return {q:q,order:AC
     var a=document.getElementById("nd");if(a)a.onclick=function(){dlg(nx)};var b=document.getElementById("hm");if(b)b.onclick=home;}
   show();}
 S.onSync(function(){stats();if(!cur)home()});
-Promise.all([fetch("data/listen.json").then(function(r){return r.json()}),AC.voiceReady]).then(function(r){D=r[0];stats();var k=location.hash.slice(1),d=D.find(function(x){return x.id===k});d?dlg(d):home()})
+Promise.all([fetch("data/listen.json").then(function(r){return r.json()}),AC.voiceReady]).then(function(r){D=r[0];stats();var go=function(){var k=location.hash.slice(1),d=D.find(function(x){return x.id===k});d?dlg(d):home()};go();window.addEventListener("hashchange",go)})
  .catch(function(){out.innerHTML='<div class="card done"><h2>Didn\'t load</h2><p>Check your internet connection and open the page again.</p></div>'});
 })();
 </script>

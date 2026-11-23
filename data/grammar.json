@@ -1213,5 +1213,977 @@
 "Use the passive when we don't know or don't care who did the action: be + the past participle (made, built, written).",
 "To say who did it, add by at the end: The book was written by Humayun Ahmed."
 ]
+},
+{
+"id": "g16",
+"lv": "B1",
+"en": "If… (second conditional)",
+"rule": "If + past simple, … would + verb",
+"ex": [
+{
+"en": "If I had a car, I would drive to work.",
+"bn": "আমার গাড়ি থাকলে আমি গাড়ি চালিয়ে অফিসে যেতাম।"
+},
+{
+"en": "If she lived near the sea, she would swim every day.",
+"bn": "সে সমুদ্রের কাছে থাকলে প্রতিদিন সাঁতার কাটত।"
+},
+{
+"en": "What would you do if you won the lottery?",
+"bn": "লটারি জিতলে তুমি কী করতে?"
+},
+{
+"en": "If I were you, I would call him.",
+"bn": "আমি তোমার জায়গায় থাকলে তাকে ফোন করতাম।"
+},
+{
+"en": "We wouldn't go out if it rained.",
+"bn": "বৃষ্টি হলে আমরা বাইরে যেতাম না।"
+}
+],
+"q": [
+{
+"s": "If I ___ rich, I would travel the world.",
+"o": [
+"were",
+"am",
+"will be"
+]
+},
+{
+"s": "If she had time, she ___ help us.",
+"o": [
+"would",
+"will",
+"is"
+]
+},
+{
+"s": "What would you do if you ___ your job?",
+"o": [
+"lost",
+"lose",
+"will lose"
+]
+},
+{
+"s": "If I were you, I ___ take the job.",
+"o": [
+"would",
+"will",
+"am"
+]
+},
+{
+"s": "They ___ buy a house if they had enough money.",
+"o": [
+"would",
+"will",
+"did"
+]
+}
+],
+"bnsub": "Second conditional: কল্পনার পরিস্থিতি",
+"expbn": [
+"এখন বা ভবিষ্যতে যা সত্য না, বা হওয়ার সম্ভাবনা কম, এমন কাল্পনিক পরিস্থিতি বোঝাতে second conditional: If I had more time, I would learn French।",
+"if-এর অংশে past simple, অন্য অংশে would + মূল ক্রিয়া। be হলে সাধারণত সবার সাথে were: If I were you, I would rest।"
+],
+"rulebn": "If + past simple, … would + verb",
+"sub": "Imagining a different present or future",
+"exp": [
+"Use the second conditional for situations that are imaginary or unlikely, now or in the future: If I had more time, I would learn French.",
+"Use the past simple after if, and would + base verb in the other part. With be, we often use were for everyone: If I were you, I would rest."
+]
+},
+{
+"id": "g17",
+"lv": "B1",
+"en": "who / which / that / where / whose",
+"rule": "who = people · which = things · that = people or things · where = places · whose = belonging to",
+"ex": [
+{
+"en": "The woman who called you is my aunt.",
+"bn": "যে মহিলা তোমাকে ফোন করেছিলেন, তিনি আমার খালা।"
+},
+{
+"en": "I lost the phone which I bought last week.",
+"bn": "গত সপ্তাহে কেনা ফোনটা আমি হারিয়ে ফেলেছি।"
+},
+{
+"en": "This is the town where I grew up.",
+"bn": "এই সেই শহর যেখানে আমি বড় হয়েছি।"
+},
+{
+"en": "He is the teacher that helped me most.",
+"bn": "উনিই সেই শিক্ষক যিনি আমাকে সবচেয়ে বেশি সাহায্য করেছেন।"
+},
+{
+"en": "I met a man whose son plays for Bangladesh.",
+"bn": "আমার এমন একজনের সাথে দেখা হলো যার ছেলে বাংলাদেশের হয়ে খেলে।"
+}
+],
+"q": [
+{
+"s": "The girl ___ won the prize is my cousin.",
+"o": [
+"who",
+"which",
+"where"
+]
+},
+{
+"s": "I like books ___ have happy endings.",
+"o": [
+"which",
+"who",
+"where"
+]
+},
+{
+"s": "This is the hospital ___ I was born.",
+"o": [
+"where",
+"which",
+"who"
+]
+},
+{
+"s": "The man ___ car was stolen called the police.",
+"o": [
+"whose",
+"who",
+"which"
+]
+},
+{
+"s": "Is this the bus ___ goes to Uttara?",
+"o": [
+"that",
+"who",
+"where"
+]
+}
+],
+"bnsub": "who, which, that, where, whose দিয়ে বাড়তি তথ্য",
+"expbn": [
+"নতুন বাক্য শুরু না করে কোনো ব্যক্তি বা জিনিস সম্পর্কে বাড়তি তথ্য দিতে relative clause: The man who lives next door is a doctor।",
+"মানুষের জন্য who, জিনিসের জন্য which, মানুষ বা জিনিস দুটোর জন্যই that, জায়গার জন্য where আর কার জিনিস বোঝাতে whose।"
+],
+"rulebn": "who = people · which = things · that = people or things · where = places · whose = belonging to",
+"sub": "Adding information with relative clauses",
+"exp": [
+"Use a relative clause to say more about a noun without starting a new sentence: The man who lives next door is a doctor.",
+"Use who for people, which for things, that for people or things, where for places and whose for possession: This is the café where we met. The woman whose bag was stolen called the police."
+]
+},
+{
+"id": "g18",
+"lv": "B2",
+"en": "If… (third conditional)",
+"rule": "If + had + past participle, … would have + past participle",
+"ex": [
+{
+"en": "If I had studied harder, I would have passed the exam.",
+"bn": "আরও মন দিয়ে পড়লে আমি পরীক্ষায় পাস করতাম।"
+},
+{
+"en": "If we had known about the traffic, we would have left earlier.",
+"bn": "জ্যামের কথা জানলে আমরা আরও আগে বের হতাম।"
+},
+{
+"en": "She would have come if you had invited her.",
+"bn": "তুমি দাওয়াত দিলে সে আসত।"
+},
+{
+"en": "If it hadn't rained, we would have played cricket.",
+"bn": "বৃষ্টি না হলে আমরা ক্রিকেট খেলতাম।"
+},
+{
+"en": "What would you have done if you had missed the flight?",
+"bn": "ফ্লাইট মিস করলে তুমি কী করতে?"
+}
+],
+"q": [
+{
+"s": "If I ___ the alarm, I would have woken up on time.",
+"o": [
+"had heard",
+"heard",
+"have heard"
+]
+},
+{
+"s": "If they had asked me, I ___ them.",
+"o": [
+"would have helped",
+"would help",
+"will help"
+]
+},
+{
+"s": "She ___ the job if she had applied.",
+"o": [
+"would have got",
+"would get",
+"will get"
+]
+},
+{
+"s": "If you ___ me, I would have come to the party.",
+"o": [
+"had invited",
+"invited",
+"have invited"
+]
+},
+{
+"s": "We would have won if our best player ___ injured.",
+"o": [
+"hadn't been",
+"wasn't",
+"isn't"
+]
+}
+],
+"bnsub": "Third conditional: অতীত অন্যরকম হলে কী হতো",
+"expbn": [
+"অতীতে যা ঘটেনি, সেটা ঘটলে কী হতো তা বলতে third conditional, প্রায়ই আফসোস বোঝাতে: If I had left earlier, I would have caught the train।",
+"if-এর অংশে had + ক্রিয়ার তৃতীয় রূপ, অন্য অংশে would have + ক্রিয়ার তৃতীয় রূপ। দুটো অংশই অতীতের, আর ঘটনাটা আসলে ঘটেনি।"
+],
+"rulebn": "If + had + past participle, … would have + past participle",
+"sub": "Imagining a different past",
+"exp": [
+"Use the third conditional to imagine a different past, often to talk about regrets: If I had left earlier, I would have caught the train.",
+"Use if + had + past participle, and would have + past participle in the other part. Both parts are about the past, and the situation did not really happen."
+]
+},
+{
+"id": "g19",
+"lv": "B2",
+"en": "Reported speech",
+"rule": "am / is → was · will → would · can → could · present → past · past → had + past participle",
+"ex": [
+{
+"en": "She said she was hungry.",
+"bn": "সে বলল তার খিদে পেয়েছে।"
+},
+{
+"en": "He told me he would be late.",
+"bn": "সে আমাকে বলল তার দেরি হবে।"
+},
+{
+"en": "They said they had finished the work.",
+"bn": "তারা বলল তারা কাজ শেষ করে ফেলেছে।"
+},
+{
+"en": "My boss said I could leave early.",
+"bn": "আমার বস বললেন আমি আগে চলে যেতে পারি।"
+},
+{
+"en": "She asked me where I lived.",
+"bn": "সে আমাকে জিজ্ঞেস করল আমি কোথায় থাকি।"
+}
+],
+"q": [
+{
+"s": "“I am busy,” he said. → He said he ___ busy.",
+"o": [
+"was",
+"is",
+"be"
+]
+},
+{
+"s": "“I will help you,” she said. → She said she ___ help me.",
+"o": [
+"would",
+"will",
+"can"
+]
+},
+{
+"s": "He ___ me that he was leaving.",
+"o": [
+"told",
+"said",
+"say"
+]
+},
+{
+"s": "“We have finished,” they said. → They said they ___ finished.",
+"o": [
+"had",
+"have",
+"has"
+]
+},
+{
+"s": "“Where did you go?” she asked. → She asked me where I ___.",
+"o": [
+"had gone",
+"go",
+"going"
+]
+}
+],
+"bnsub": "Reported speech: অন্যের কথা জানানো",
+"expbn": [
+"অন্য কেউ কী বলেছে তা জানাতে reported speech। সাধারণত tense এক ধাপ পিছিয়ে যায়: “I am tired” → He said he was tired।",
+"দরকার হলে pronoun আর সময়ের শব্দ বদলায়: tomorrow → the next day। say-এর পরে কারো নাম বা pronoun বসে না, কিন্তু tell-এর পরে বসাতেই হয়: He told me he was busy।"
+],
+"rulebn": "am / is → was · will → would · can → could · present → past · past → had + past participle",
+"sub": "Telling someone what another person said",
+"exp": [
+"Use reported speech to tell someone what another person said. The tense usually moves one step back: “I am tired” → He said (that) he was tired.",
+"Change pronouns and time words when needed: “I will call you tomorrow” → She said she would call me the next day. After say, don't add a person; after tell, you must: He told me he was busy."
+]
+},
+{
+"id": "g20",
+"lv": "B2",
+"en": "must / might / can't (deduction)",
+"rule": "must be = almost sure · might / may / could be = possible · can't be = almost sure it's not",
+"ex": [
+{
+"en": "You must be hungry after that long journey.",
+"bn": "এত লম্বা যাত্রার পর তোমার নিশ্চয়ই খিদে পেয়েছে।"
+},
+{
+"en": "The door is locked. They might be out.",
+"bn": "দরজা বন্ধ। তারা হয়তো বাইরে গেছে।"
+},
+{
+"en": "That can't be Karim. He's in London.",
+"bn": "ওটা করিম হতে পারে না। সে লন্ডনে।"
+},
+{
+"en": "She must have forgotten our meeting.",
+"bn": "সে নিশ্চয়ই আমাদের মিটিংয়ের কথা ভুলে গেছে।"
+},
+{
+"en": "He might have taken the wrong bus.",
+"bn": "সে হয়তো ভুল বাসে উঠেছে।"
+}
+],
+"q": [
+{
+"s": "He's been working for 12 hours. He ___ be tired.",
+"o": [
+"must",
+"can't",
+"mustn't"
+]
+},
+{
+"s": "I'm not sure where she is. She ___ be at the library.",
+"o": [
+"might",
+"must",
+"can't"
+]
+},
+{
+"s": "That ___ be his car. His car is red, and this one is blue.",
+"o": [
+"can't",
+"must",
+"might"
+]
+},
+{
+"s": "The ground is wet. It must ___ last night.",
+"o": [
+"have rained",
+"rain",
+"rained"
+]
+},
+{
+"s": "She didn't answer the phone. She ___ have been asleep.",
+"o": [
+"might",
+"can't",
+"must not"
+]
+}
+],
+"bnsub": "must, might, can't দিয়ে অনুমান",
+"expbn": [
+"কোনো কিছু নিয়ে কতটা নিশ্চিত তা বোঝাতে: must = প্রায় নিশ্চিত হ্যাঁ, might / may / could = হতে পারে, can't = প্রায় নিশ্চিত না।",
+"অতীতের অনুমানে have + ক্রিয়ার তৃতীয় রূপ যোগ হয়: You must have been tired। She might have missed the bus।"
+],
+"rulebn": "must be = almost sure · might / may / could be = possible · can't be = almost sure it's not",
+"sub": "Saying how sure you are",
+"exp": [
+"Use must, might (may, could) and can't to show how sure you are about something now: She must be at home (I'm almost sure). He might be busy (it's possible). That can't be true (I'm almost sure it isn't).",
+"For the past, add have + past participle: You must have been tired. She might have missed the bus. He can't have seen us."
+]
+},
+{
+"id": "g21",
+"lv": "B2",
+"en": "Past perfect",
+"rule": "had + past participle (had gone, had seen, had finished)",
+"ex": [
+{
+"en": "When we got to the station, the train had left.",
+"bn": "আমরা স্টেশনে পৌঁছানোর আগেই ট্রেন ছেড়ে দিয়েছিল।"
+},
+{
+"en": "She had never flown before her trip to Dubai.",
+"bn": "দুবাই যাওয়ার আগে সে কখনো প্লেনে চড়েনি।"
+},
+{
+"en": "I had already eaten when he called.",
+"bn": "সে যখন ফোন করল, তার আগেই আমি খেয়ে ফেলেছিলাম।"
+},
+{
+"en": "By the time the police arrived, the thief had escaped.",
+"bn": "পুলিশ আসার আগেই চোর পালিয়ে গিয়েছিল।"
+},
+{
+"en": "He was nervous because he hadn't prepared.",
+"bn": "সে প্রস্তুতি নেয়নি বলে নার্ভাস ছিল।"
+}
+],
+"q": [
+{
+"s": "When I arrived, the meeting ___ already started.",
+"o": [
+"had",
+"has",
+"have"
+]
+},
+{
+"s": "She was tired because she ___ all night.",
+"o": [
+"had worked",
+"has worked",
+"works"
+]
+},
+{
+"s": "By the time we got there, everyone ___ home.",
+"o": [
+"had gone",
+"has gone",
+"goes"
+]
+},
+{
+"s": "I ___ never seen snow before I went to Japan.",
+"o": [
+"had",
+"have",
+"was"
+]
+},
+{
+"s": "He couldn't pay because he ___ his wallet.",
+"o": [
+"had lost",
+"has lost",
+"loses"
+]
+}
+],
+"bnsub": "Past perfect: অতীতের আগের অতীত",
+"expbn": [
+"অতীতে দুটো ঘটনার মধ্যে যেটা আগে ঘটেছিল, সেটা বোঝাতে past perfect (had + ক্রিয়ার তৃতীয় রূপ): When I arrived, the film had already started।",
+"এতে ঘটনাগুলোর ক্রম পরিষ্কার হয়। already, just, never, before, by the time-এর সাথে প্রায়ই আসে।"
+],
+"rulebn": "had + past participle (had gone, had seen, had finished)",
+"sub": "The earlier of two past actions",
+"exp": [
+"Use the past perfect (had + past participle) for an action that happened before another action in the past: When I arrived, the film had already started.",
+"It makes the order of past events clear. It often goes with already, just, never, before and by the time."
+]
+},
+{
+"id": "g22",
+"lv": "B2",
+"en": "used to / be used to / get used to",
+"rule": "used to + verb (past habit) · be used to + -ing (normal for me) · get used to + -ing (becoming normal)",
+"ex": [
+{
+"en": "I used to play cricket every afternoon.",
+"bn": "আমি আগে প্রতিদিন বিকেলে ক্রিকেট খেলতাম।"
+},
+{
+"en": "She didn't use to like coffee.",
+"bn": "আগে সে কফি পছন্দ করত না।"
+},
+{
+"en": "I'm used to waking up early.",
+"bn": "আমি ভোরে ওঠায় অভ্যস্ত।"
+},
+{
+"en": "He is getting used to his new job.",
+"bn": "সে নতুন চাকরিতে অভ্যস্ত হয়ে উঠছে।"
+},
+{
+"en": "It took me a month to get used to the cold.",
+"bn": "ঠান্ডায় অভ্যস্ত হতে আমার এক মাস লেগেছিল।"
+}
+],
+"q": [
+{
+"s": "When I was a child, I ___ climb trees.",
+"o": [
+"used to",
+"am used to",
+"get used to"
+]
+},
+{
+"s": "I'm used to ___ in heavy traffic.",
+"o": [
+"driving",
+"drive",
+"drove"
+]
+},
+{
+"s": "Did you ___ live in Chittagong?",
+"o": [
+"use to",
+"used to",
+"using to"
+]
+},
+{
+"s": "It's hard at first, but you will ___ used to it.",
+"o": [
+"get",
+"be",
+"use"
+]
+},
+{
+"s": "Working at night is normal for her. She ___ used to it.",
+"o": [
+"is",
+"uses",
+"has"
+]
+}
+],
+"bnsub": "used to, be used to, get used to-এর পার্থক্য",
+"expbn": [
+"used to + ক্রিয়া = অতীতে যা নিয়মিত হতো কিন্তু এখন আর হয় না: I used to live in Sylhet।",
+"be used to + -ing = কোনো কিছুতে অভ্যস্ত: I'm used to working late। get used to = ধীরে ধীরে অভ্যস্ত হয়ে ওঠা: You will get used to the traffic।"
+],
+"rulebn": "used to + verb (past habit) · be used to + -ing (normal for me) · get used to + -ing (becoming normal)",
+"sub": "Past habits and getting familiar",
+"exp": [
+"used to + verb talks about past habits or situations that are not true now: I used to live in Sylhet.",
+"be used to + noun or -ing means something is normal for you: I'm used to working late. get used to means it is becoming normal: You will get used to the traffic."
+]
+},
+{
+"id": "g23",
+"lv": "B2",
+"en": "Gerunds and infinitives",
+"rule": "enjoy / finish / avoid + -ing · want / decide / hope + to + verb · preposition + -ing",
+"ex": [
+{
+"en": "I enjoy cooking for my family.",
+"bn": "পরিবারের জন্য রান্না করতে আমার ভালো লাগে।"
+},
+{
+"en": "We decided to leave early.",
+"bn": "আমরা আগে বেরিয়ে যাওয়ার সিদ্ধান্ত নিলাম।"
+},
+{
+"en": "He finished writing the report.",
+"bn": "সে রিপোর্ট লেখা শেষ করল।"
+},
+{
+"en": "She hopes to get a scholarship.",
+"bn": "সে একটা স্কলারশিপ পাওয়ার আশা করছে।"
+},
+{
+"en": "Thank you for helping me.",
+"bn": "আমাকে সাহায্য করার জন্য ধন্যবাদ।"
+}
+],
+"q": [
+{
+"s": "I enjoy ___ to music.",
+"o": [
+"listening",
+"to listen",
+"listen"
+]
+},
+{
+"s": "They decided ___ a new car.",
+"o": [
+"to buy",
+"buying",
+"buy"
+]
+},
+{
+"s": "Please avoid ___ your phone while driving.",
+"o": [
+"using",
+"to use",
+"use"
+]
+},
+{
+"s": "I'm good at ___ problems.",
+"o": [
+"solving",
+"to solve",
+"solve"
+]
+},
+{
+"s": "We need ___ more water.",
+"o": [
+"to drink",
+"drinking",
+"drink"
+]
+}
+],
+"bnsub": "-ing নাকি to + ক্রিয়া",
+"expbn": [
+"কিছু ক্রিয়ার পরে -ing বসে: enjoy, finish, avoid, mind, keep, suggest। যেমন I enjoy reading।",
+"কিছু ক্রিয়ার পরে to + ক্রিয়া বসে: want, decide, hope, plan, need, agree, promise। preposition-এর পরে সবসময় -ing: I'm interested in learning Spanish।"
+],
+"rulebn": "enjoy / finish / avoid + -ing · want / decide / hope + to + verb · preposition + -ing",
+"sub": "enjoy doing or decide to do?",
+"exp": [
+"Some verbs are followed by -ing: enjoy, finish, avoid, mind, keep, suggest. I enjoy reading.",
+"Others are followed by to + verb: want, decide, hope, plan, need, agree, promise. She decided to study abroad. After a preposition, always use -ing: I'm interested in learning Spanish."
+]
+},
+{
+"id": "g24",
+"lv": "C1",
+"en": "Mixed conditionals",
+"rule": "If + had + past participle, … would + verb (now) · If + past simple, … would have + past participle (then)",
+"ex": [
+{
+"en": "If I had saved more money, I would have a house now.",
+"bn": "আরও টাকা জমালে এখন আমার একটা বাড়ি থাকত।"
+},
+{
+"en": "If she had studied medicine, she would be a doctor today.",
+"bn": "সে মেডিকেলে পড়লে আজ ডাক্তার হতো।"
+},
+{
+"en": "If he weren't so shy, he would have spoken at the meeting.",
+"bn": "সে এত লাজুক না হলে মিটিংয়ে কথা বলত।"
+},
+{
+"en": "If I spoke French, I would have understood the film.",
+"bn": "আমি ফ্রেঞ্চ জানলে সিনেমাটা বুঝতাম।"
+},
+{
+"en": "We wouldn't be lost if we had brought a map.",
+"bn": "ম্যাপ আনলে আমরা পথ হারাতাম না।"
+}
+],
+"q": [
+{
+"s": "If I had slept well last night, I ___ so tired now.",
+"o": [
+"wouldn't be",
+"wouldn't have been",
+"won't be"
+]
+},
+{
+"s": "If she ___ the train, she would be here now.",
+"o": [
+"hadn't missed",
+"didn't miss",
+"doesn't miss"
+]
+},
+{
+"s": "If he were more organised, he ___ the deadline last week.",
+"o": [
+"wouldn't have missed",
+"won't miss",
+"didn't miss"
+]
+},
+{
+"s": "We would be in Cox's Bazar now if we ___ the tickets.",
+"o": [
+"had booked",
+"booked",
+"book"
+]
+},
+{
+"s": "If I ___ English as a child, I would be fluent now.",
+"o": [
+"had learned",
+"learned",
+"learn"
+]
+}
+],
+"bnsub": "Mixed conditional: অতীত আর বর্তমান মিলিয়ে",
+"expbn": [
+"mixed conditional দুই সময়কে জোড়ে। অতীতের শর্ত, বর্তমানের ফল: If I had taken that job, I would be rich now।",
+"বর্তমানের শর্ত, অতীতের ফল: If I were more careful, I wouldn't have made that mistake। প্রতিটা অংশের রূপ তার নিজের সময় দেখে বাছুন।"
+],
+"rulebn": "If + had + past participle, … would + verb (now) · If + past simple, … would have + past participle (then)",
+"sub": "Mixing past and present in one if-sentence",
+"exp": [
+"Mixed conditionals connect different times. A past condition with a present result: If I had taken that job, I would be rich now.",
+"A present condition with a past result: If I were more careful, I wouldn't have made that mistake. Choose the form of each half by its own time."
+]
+},
+{
+"id": "g25",
+"lv": "C1",
+"en": "Inversion for emphasis",
+"rule": "Never / Rarely / Not only + auxiliary + subject + verb",
+"ex": [
+{
+"en": "Never have I eaten such delicious food.",
+"bn": "এত সুস্বাদু খাবার আমি কখনো খাইনি।"
+},
+{
+"en": "Rarely do we see snow in Dhaka.",
+"bn": "ঢাকায় আমরা খুব কমই তুষার দেখি।"
+},
+{
+"en": "Not only did he finish early, but he also helped others.",
+"bn": "সে শুধু আগে শেষই করেনি, অন্যদেরও সাহায্য করেছে।"
+},
+{
+"en": "Hardly had we arrived when it started to rain.",
+"bn": "আমরা পৌঁছাতে না পৌঁছাতেই বৃষ্টি শুরু হলো।"
+},
+{
+"en": "Under no circumstances should you share your password.",
+"bn": "কোনো অবস্থাতেই পাসওয়ার্ড কাউকে দেবেন না।"
+}
+],
+"q": [
+{
+"s": "Never ___ seen such a big crowd.",
+"o": [
+"have I",
+"I have",
+"I"
+]
+},
+{
+"s": "Rarely ___ he eat breakfast.",
+"o": [
+"does",
+"he does",
+"is"
+]
+},
+{
+"s": "Not only ___ she sing, but she also plays the guitar.",
+"o": [
+"does",
+"she does",
+"is"
+]
+},
+{
+"s": "Hardly had we sat down ___ the phone rang.",
+"o": [
+"when",
+"than",
+"then"
+]
+},
+{
+"s": "Under no circumstances ___ leave the door open.",
+"o": [
+"should you",
+"you should",
+"you"
+]
+}
+],
+"bnsub": "জোর দিতে উল্টো ক্রম (inversion)",
+"expbn": [
+"ফর্মাল বা জোরালো ইংরেজিতে কিছু না-বোধক শব্দ বাক্যের শুরুতে আনা যায়, তখন সাহায্যকারী ক্রিয়া subject-এর আগে বসে: Never have I seen such a beautiful view।",
+"এমন শব্দ: never, rarely, seldom, not only, hardly … when, no sooner … than, under no circumstances।"
+],
+"rulebn": "Never / Rarely / Not only + auxiliary + subject + verb",
+"sub": "Never have I… / Not only… but also",
+"exp": [
+"In formal or dramatic English, some negative or limiting words can start the sentence, and then the auxiliary comes before the subject: Never have I seen such a beautiful view.",
+"Common starters: never, rarely, seldom, not only, hardly … when, no sooner … than, under no circumstances. Not only is she smart, but she is also kind."
+]
+},
+{
+"id": "g26",
+"lv": "C1",
+"en": "wish / if only",
+"rule": "wish + past (now) · wish + had + past participle (regret) · wish + would (annoyance)",
+"ex": [
+{
+"en": "I wish I lived closer to my office.",
+"bn": "আহা, যদি অফিসের আরও কাছে থাকতাম।"
+},
+{
+"en": "If only I knew the answer!",
+"bn": "ইশ, যদি উত্তরটা জানতাম!"
+},
+{
+"en": "She wishes she had gone to the party.",
+"bn": "সে আফসোস করছে, পার্টিতে গেলে ভালো হতো।"
+},
+{
+"en": "I wish it would stop raining.",
+"bn": "বৃষ্টিটা থামলে ভালো হতো।"
+},
+{
+"en": "Do you ever wish you were taller?",
+"bn": "তোমার কি কখনো মনে হয়, আরেকটু লম্বা হলে ভালো হতো?"
+}
+],
+"q": [
+{
+"s": "I wish I ___ how to swim.",
+"o": [
+"knew",
+"know",
+"will know"
+]
+},
+{
+"s": "He wishes he ___ that car. It breaks down every week.",
+"o": [
+"hadn't bought",
+"didn't buy",
+"doesn't buy"
+]
+},
+{
+"s": "I wish you ___ stop interrupting me.",
+"o": [
+"would",
+"will",
+"did"
+]
+},
+{
+"s": "If only I ___ more time yesterday!",
+"o": [
+"had had",
+"have",
+"would have"
+]
+},
+{
+"s": "She wishes she ___ in a bigger city.",
+"o": [
+"lived",
+"lives",
+"will live"
+]
+}
+],
+"bnsub": "wish আর if only দিয়ে ইচ্ছা ও আফসোস",
+"expbn": [
+"বর্তমানের কোনো অবস্থা অন্যরকম হোক চাইলে wish বা if only + past simple: I wish I had more free time।",
+"অতীতের আফসোসে wish + past perfect: I wish I had studied harder। কারো আচরণে বিরক্তি বোঝাতে wish + would: I wish you would stop shouting।"
+],
+"rulebn": "wish + past (now) · wish + had + past participle (regret) · wish + would (annoyance)",
+"sub": "Wanting things to be different",
+"exp": [
+"Use wish or if only + past simple for a present situation you want to be different: I wish I had more free time. (I don't have enough.)",
+"Use wish + past perfect for past regrets: I wish I had studied harder. Use wish + would to complain about someone's behaviour: I wish you would stop shouting."
+]
+},
+{
+"id": "g27",
+"lv": "C1",
+"en": "Cleft sentences",
+"rule": "What I need is … · It was … who / that …",
+"ex": [
+{
+"en": "What I love about Dhaka is the food.",
+"bn": "ঢাকার যে জিনিসটা আমার সবচেয়ে ভালো লাগে, তা হলো খাবার।"
+},
+{
+"en": "It was my sister who taught me to cook.",
+"bn": "আমার বোনই আমাকে রান্না শিখিয়েছে।"
+},
+{
+"en": "What we need is more time.",
+"bn": "আমাদের যা দরকার তা হলো আরও সময়।"
+},
+{
+"en": "It was in 2020 that we moved here.",
+"bn": "২০২০ সালেই আমরা এখানে এসেছিলাম।"
+},
+{
+"en": "What surprised me was how friendly everyone was.",
+"bn": "আমাকে যা অবাক করেছে তা হলো সবাই কত বন্ধুসুলভ।"
+}
+],
+"q": [
+{
+"s": "___ I want is a quiet weekend.",
+"o": [
+"What",
+"That",
+"Which"
+]
+},
+{
+"s": "It was my father ___ gave me this watch.",
+"o": [
+"who",
+"what",
+"which"
+]
+},
+{
+"s": "It was in Sylhet ___ we first met.",
+"o": [
+"that",
+"what",
+"who"
+]
+},
+{
+"s": "What she needs ___ a good rest.",
+"o": [
+"is",
+"are",
+"be"
+]
+},
+{
+"s": "___ was the price that surprised me.",
+"o": [
+"It",
+"What",
+"This"
+]
+}
+],
+"bnsub": "Cleft sentence: গুরুত্বপূর্ণ অংশে জোর দেওয়া",
+"expbn": [
+"একটা বাক্যকে দুই ভাগ করে গুরুত্বপূর্ণ অংশে জোর দিতে cleft sentence: What I need is a holiday। It was Karim who found the mistake।",
+"জিনিস বা কাজে জোর দিতে What … is / was, আর মানুষ, সময় বা জায়গায় জোর দিতে It is / was … that / who।"
+],
+"rulebn": "What I need is … · It was … who / that …",
+"sub": "What I need is… / It was… who",
+"exp": [
+"Cleft sentences split one idea into two parts to put the focus on the important information: What I need is a holiday. It was Karim who found the mistake.",
+"Use What + clause + is / was … to highlight a thing or an action. Use It is / was … that / who … to highlight a person, a time or a place."
+]
 }
 ]

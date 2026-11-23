@@ -44,7 +44,7 @@
     <a class="tcard" href="words.html"><span class="ic">📘</span><b>1000 key words</b><span>Simple definitions, example sentences, audio and smart revision.</span><em class="pg" data-p="words"></em></a>
     <a class="tcard" href="phrases.html"><span class="ic">💬</span><b>Everyday phrases</b><span>150 ready-made sentences for 10 real-life situations.</span><em class="pg" data-p="phrases"></em></a>
     <a class="tcard" href="listen.html"><span class="ic">🎧</span><b>Listening practice</b><span>12 real-life conversations with questions.</span><em class="pg" data-p="listen"></em></a>
-    <a class="tcard" href="grammar.html"><span class="ic">✏️</span><b>Grammar lessons</b><span>15 short lessons with practice questions.</span><em class="pg" data-p="grammar"></em></a>
+    <a class="tcard" href="grammar.html"><span class="ic">✏️</span><b>Grammar lessons</b><span>27 short lessons from A1 to C1, with practice questions.</span><em class="pg" data-p="grammar"></em></a>
     <a class="tcard" href="app.html"><span class="ic">🗣</span><b>30-day pronunciation</b><span>Tricky sounds, word endings and full sentences.</span><em class="pg" data-p="app"></em></a>
   </div>
 </div></div></main>
@@ -58,7 +58,7 @@ set("level",lv&&lv.level?"Last result: "+lv.level:"");
 try{var w=JSON.parse(localStorage.getItem("ac-words")||"null");if(w&&w.w){var n=Object.keys(w.w).length;if(n)set("words",n+" / 1000 words learned")}}catch(e){}
 var ph=cnt(AC.peek("phrases"),function(k,v){return v>0});if(ph)set("phrases",ph+" / 150 phrases learned");
 var li=cnt(AC.peek("listen"),function(){return true});if(li)set("listen",li+" / 12 conversations done");
-var gr=cnt(AC.peek("grammar"),function(k,v){return v>=4});if(gr)set("grammar",gr+" / 15 lessons done");
+var gr=cnt(AC.peek("grammar"),function(k,v){return v>=4});if(gr)set("grammar",gr+" / 27 lessons done");
 var p=AC.peek("path");if(p.track&&p.track[0]){var days={};for(var k in p){var m=k.match(/^d(\d+)_/);if(m&&p[k][0]>0)days[m[1]]=(days[m[1]]||0)+1}set("path","In progress · worked on "+Object.keys(days).length+" days")}else set("path","Start now →");
 try{var a=JSON.parse(localStorage.getItem("accent-coach")||"null");if(a&&a.day)set("app","In progress · Day "+a.day)}catch(e){}
 })();

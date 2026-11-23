@@ -73,13 +73,14 @@ var S=AC.store("path"),out=document.getElementById("out"),bn=AC.bn,esc=AC.esc,PH
 var TRACKS=[null,
  {name:"Beginner",lv:"Pre-A1 – A1",d:"From the very start: basic words, simple phrases and grammar from am / is / are.",gr:0,ph:["greet","daily","shop","travel","help","phone","feel","office","client","interview"],li:"A1"},
  {name:"Middle",lv:"A2",d:"You know the basics. Now: everyday conversations with confidence, and the past and future done right.",gr:4,ph:["daily","shop","travel","phone","help","office","feel","greet","client","interview"],li:"A2"},
- {name:"Advanced",lv:"B1 and above",d:"English for work, clients and interviews; harder grammar and faster listening.",gr:12,ph:["office","client","interview","phone","feel","help","daily","travel","shop","greet"],li:"B1"}];
-function trackFromLevel(l){if(!l)return 0;return /^(Pre-A1|A1)$/.test(l)?1:l==="A2"?2:3}
+ {name:"Intermediate",lv:"B1",d:"English for work, clients and interviews; conditionals, relative clauses and faster listening.",gr:12,ph:["office","client","interview","phone","feel","help","pvdaily","pvwork","daily","travel","shop","greet"],li:"B1"},
+ {name:"Advanced",lv:"B2 – C1",d:"Advanced grammar, phrasal verbs and idioms, longer conversations and the next 1800 words.",gr:17,ph:["pvwork","idioms","pvdaily","client","interview","office","feel","phone","help","daily"],li:"B2"}];
+function trackFromLevel(l){if(!l)return 0;return /^(Pre-A1|A1)$/.test(l)?1:l==="A2"?2:l==="B1"?3:4}
 function level(){try{var v=JSON.parse(localStorage.getItem("ac-level")||"null");return v&&v.level}catch(e){return null}}
 function track(){return S.get("track")||0}
 // ---------- the plan: 12 weeks x 7 days, built from the chosen track ----------
 function order(arr,start){return arr.slice(start).concat(arr.slice(0,start))}
-function liOrder(t){var lvs=t.li==="A1"?["A1","A2","B1"]:t.li==="A2"?["A2","B1","A1"]:["B1","A2","A1"];var o=[];lvs.forEach(function(l){LI.forEach(function(d){if(d.lv===l)o.push(d)})});return o}
+function liOrder(t){var lvs={A1:["A1","A2","B1","B2","C1"],A2:["A2","B1","A1","B2","C1"],B1:["B1","B2","A2","C1","A1"],B2:["B2","C1","B1","A2","A1"]}[t.li];var o=[];lvs.forEach(function(l){LI.forEach(function(d){if(d.lv===l)o.push(d)})});return o}
 function plan(t){var T=TRACKS[t],days=[],g=order(GR,T.gr),li=liOrder(T),phs=T.ph.map(function(k){return PH.find(function(p){return p.k===k})}).filter(Boolean),gi=0;
   for(var d=1;d<=84;d++){var wk=Math.ceil(d/7),wd=(d-1)%7+1,tasks=[];
     if(wd===7){
@@ -113,7 +114,7 @@ function stats(){var t=track();document.getElementById("sTrack").textContent=t?T
 function choose(){var l=level(),sug=trackFromLevel(l);
   out.innerHTML='<div class="card wc"><h2 style="font-size:26px">Choose your track</h2><p style="color:var(--muted);margin-top:6px">'+(l?'Your last level test result is <b>'+esc(l)+'</b>, so the highlighted track is the one for you. You can still pick another.':'To get the right track, take the 10-minute level test first. Or pick one yourself.')+'</p>'+
    (l?'':'<div class="acts" style="margin-top:14px"><a class="btn pri" href="level-test.html">Take the level test →</a></div>')+
-   '<div class="tracks">'+[1,2,3].map(function(i){var T=TRACKS[i];return '<button class="tr'+(i===sug?' on':'')+'" data-t="'+i+'"><b>'+(i===sug?'⭐ ':'')+T.name+' · '+T.lv+'</b><span>'+T.d+'</span></button>'}).join("")+'</div>'+
+   '<div class="tracks">'+[1,2,3,4].map(function(i){var T=TRACKS[i];return '<button class="tr'+(i===sug?' on':'')+'" data-t="'+i+'"><b>'+(i===sug?'⭐ ':'')+T.name+' · '+T.lv+'</b><span>'+T.d+'</span></button>'}).join("")+'</div>'+
    (track()?'<div class="acts"><button class="btn" id="cn">Cancel</button><span></span></div>':'')+'</div>';
   out.querySelectorAll(".tr").forEach(function(b){b.onclick=function(){var t=+b.dataset.t;if(track()&&t!==track()&&!confirm("Changing your track resets the ticks in your plan. Your progress in words, phrases and grammar stays. Change track?"))return;
     if(t!==track()){Object.keys(S.d).forEach(function(k){if(/^d\d/.test(k))S.d[k]=[0,Date.now()]})}S.set("track",t);P=plan(t);view=null;stats();show()}});
