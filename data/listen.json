@@ -1024,5 +1024,638 @@
 ]
 }
 ]
+},
+{
+"id": "d13",
+"lv": "B2",
+"ic": "🗓️",
+"bn": "ডেডলাইন নিয়ে আলোচনা",
+"en": "Negotiating a deadline",
+"lines": [
+{
+"id": "d13_01",
+"s": "A",
+"t": "Thanks for making time today. I wanted to talk about the launch date."
+},
+{
+"id": "d13_02",
+"s": "B",
+"t": "Sure. Is everything still on track for the fifteenth?"
+},
+{
+"id": "d13_03",
+"s": "A",
+"t": "Mostly, yes, but the payment pages are taking longer than we expected."
+},
+{
+"id": "d13_04",
+"s": "B",
+"t": "That's a bit worrying. What exactly is causing the delay?"
+},
+{
+"id": "d13_05",
+"s": "A",
+"t": "Your payment provider changed its system last week, so we have to rebuild part of the checkout."
+},
+{
+"id": "d13_06",
+"s": "B",
+"t": "I see. So what are you suggesting?"
+},
+{
+"id": "d13_07",
+"s": "A",
+"t": "We could launch on the fifteenth without online payments, or move the whole launch to the twenty-second."
+},
+{
+"id": "d13_08",
+"s": "B",
+"t": "Hmm. Launching without payments doesn't really make sense for us."
+},
+{
+"id": "d13_09",
+"s": "A",
+"t": "I agree. If we move the date, I can promise everything will be fully tested."
+},
+{
+"id": "d13_10",
+"s": "B",
+"t": "All right, let's go with the twenty-second. But please keep me updated every Friday."
+},
+{
+"id": "d13_11",
+"s": "A",
+"t": "Absolutely. I'll send you a short progress report every Friday afternoon."
+}
+],
+"q": [
+{
+"s": "Why is the project late?",
+"o": [
+"The payment provider changed its system",
+"The designer was sick",
+"The client changed the design"
+],
+"sbn": "প্রজেক্ট দেরি হচ্ছে কেন?",
+"obn": [
+"পেমেন্ট প্রোভাইডার তাদের সিস্টেম বদলেছে",
+"ডিজাইনার অসুস্থ ছিল",
+"ক্লায়েন্ট ডিজাইন বদলেছে"
+]
+},
+{
+"s": "What does the client decide?",
+"o": [
+"To launch on the 22nd",
+"To launch on the 15th without payments",
+"To cancel the project"
+],
+"sbn": "ক্লায়েন্ট কী সিদ্ধান্ত নিল?",
+"obn": [
+"২২ তারিখে লঞ্চ করা",
+"পেমেন্ট ছাড়াই ১৫ তারিখে লঞ্চ করা",
+"প্রজেক্ট বাতিল করা"
+]
+},
+{
+"s": "What does A promise to do?",
+"o": [
+"Send a progress report every Friday",
+"Call the client every day",
+"Give a discount"
+],
+"sbn": "A কী করার কথা দিল?",
+"obn": [
+"প্রতি শুক্রবার অগ্রগতির রিপোর্ট পাঠানো",
+"প্রতিদিন ক্লায়েন্টকে ফোন করা",
+"ডিসকাউন্ট দেওয়া"
+]
+}
+]
+},
+{
+"id": "d14",
+"lv": "B2",
+"ic": "📦",
+"bn": "দেরিতে আসা পার্সেল",
+"en": "A problem with a delivery",
+"lines": [
+{
+"id": "d14_01",
+"s": "B",
+"t": "Good afternoon, Swift Delivery customer support. How can I help?"
+},
+{
+"id": "d14_02",
+"s": "A",
+"t": "Hi. I ordered a laptop ten days ago, and it still hasn't arrived. The website said three to five days."
+},
+{
+"id": "d14_03",
+"s": "B",
+"t": "I'm sorry about that. Could you give me your order number, please?"
+},
+{
+"id": "d14_04",
+"s": "A",
+"t": "Yes, it's four, eight, two, seven, one."
+},
+{
+"id": "d14_05",
+"s": "B",
+"t": "Thank you. It looks like the parcel was sent to our Chittagong office by mistake."
+},
+{
+"id": "d14_06",
+"s": "A",
+"t": "Chittagong? I live in Dhaka. I needed it for work this week."
+},
+{
+"id": "d14_07",
+"s": "B",
+"t": "I completely understand. I can arrange express delivery, and it should reach you tomorrow before noon."
+},
+{
+"id": "d14_08",
+"s": "A",
+"t": "Tomorrow is fine. But honestly, I'm not happy about this delay."
+},
+{
+"id": "d14_09",
+"s": "B",
+"t": "Of course. As an apology, we'll refund your delivery charge."
+},
+{
+"id": "d14_10",
+"s": "A",
+"t": "Thank you. Could you also send me a text when it's on the way?"
+},
+{
+"id": "d14_11",
+"s": "B",
+"t": "Certainly. You'll get a message with the driver's number in the morning."
+}
+],
+"q": [
+{
+"s": "Where was the parcel sent by mistake?",
+"o": [
+"To the Chittagong office",
+"To the Sylhet office",
+"Back to the seller"
+],
+"sbn": "পার্সেলটা ভুল করে কোথায় পাঠানো হয়েছিল?",
+"obn": [
+"চট্টগ্রাম অফিসে",
+"সিলেট অফিসে",
+"বিক্রেতার কাছে ফেরত"
+]
+},
+{
+"s": "When will the laptop arrive?",
+"o": [
+"Tomorrow before noon",
+"Tomorrow evening",
+"In five days"
+],
+"sbn": "ল্যাপটপ কখন পৌঁছাবে?",
+"obn": [
+"কাল দুপুরের আগে",
+"কাল সন্ধ্যায়",
+"পাঁচ দিন পর"
+]
+},
+{
+"s": "What will the company do to say sorry?",
+"o": [
+"Refund the delivery charge",
+"Give a free laptop bag",
+"Give a 10% discount"
+],
+"sbn": "দুঃখ প্রকাশ করতে কোম্পানি কী করবে?",
+"obn": [
+"ডেলিভারি চার্জ ফেরত দেবে",
+"একটা ফ্রি ল্যাপটপ ব্যাগ দেবে",
+"১০% ছাড় দেবে"
+]
+}
+]
+},
+{
+"id": "d15",
+"lv": "B2",
+"ic": "🎉",
+"bn": "অফিসের ইভেন্টের পরিকল্পনা",
+"en": "Planning a team event",
+"lines": [
+{
+"id": "d15_01",
+"s": "A",
+"t": "So, we've got a budget of fifty thousand taka for the end-of-year event. Any ideas?"
+},
+{
+"id": "d15_02",
+"s": "B",
+"t": "Last year we just had dinner at a restaurant. People said it felt a bit boring."
+},
+{
+"id": "d15_03",
+"s": "A",
+"t": "True. What about a day trip instead? Somewhere outside the city."
+},
+{
+"id": "d15_04",
+"s": "B",
+"t": "That could work, but some people won't want to travel for hours."
+},
+{
+"id": "d15_05",
+"s": "A",
+"t": "Fair point. How about a place close to Dhaka, maybe an hour away, with games and lunch included?"
+},
+{
+"id": "d15_06",
+"s": "B",
+"t": "I like that. We could also do a small award ceremony in the afternoon."
+},
+{
+"id": "d15_07",
+"s": "A",
+"t": "Good idea. Should we ask the team first, though? I don't want to decide everything ourselves."
+},
+{
+"id": "d15_08",
+"s": "B",
+"t": "Let's send a quick survey with two or three options and a deadline of Thursday."
+},
+{
+"id": "d15_09",
+"s": "A",
+"t": "Perfect. I'll write the survey today, and you can check the prices."
+},
+{
+"id": "d15_10",
+"s": "B",
+"t": "Deal. I'll call a few resorts tomorrow morning."
+}
+],
+"q": [
+{
+"s": "Why do they want something different this year?",
+"o": [
+"Last year's dinner felt boring",
+"The budget is bigger",
+"The restaurant has closed"
+],
+"sbn": "এবার তারা অন্যরকম কিছু চায় কেন?",
+"obn": [
+"গত বছরের ডিনার একঘেয়ে লেগেছিল",
+"বাজেট বেড়েছে",
+"রেস্টুরেন্টটা বন্ধ হয়ে গেছে"
+]
+},
+{
+"s": "How will they decide?",
+"o": [
+"By sending a survey to the team",
+"The manager will decide alone",
+"By voting in a meeting"
+],
+"sbn": "তারা কীভাবে সিদ্ধান্ত নেবে?",
+"obn": [
+"টিমকে একটা সার্ভে পাঠিয়ে",
+"ম্যানেজার একাই ঠিক করবেন",
+"মিটিংয়ে ভোট দিয়ে"
+]
+},
+{
+"s": "What will B do tomorrow?",
+"o": [
+"Call a few resorts",
+"Write the survey",
+"Book a restaurant"
+],
+"sbn": "B কাল কী করবে?",
+"obn": [
+"কয়েকটা রিসোর্টে ফোন করবে",
+"সার্ভে লিখবে",
+"রেস্টুরেন্ট বুক করবে"
+]
+}
+]
+},
+{
+"id": "d16",
+"lv": "C1",
+"ic": "📈",
+"bn": "পারফরম্যান্স রিভিউ",
+"en": "A performance review",
+"lines": [
+{
+"id": "d16_01",
+"s": "B",
+"t": "Thanks for coming in. I'd like to start with what went well this year."
+},
+{
+"id": "d16_02",
+"s": "A",
+"t": "Sure. I'm keen to hear your feedback."
+},
+{
+"id": "d16_03",
+"s": "B",
+"t": "Your work on the client portal was outstanding. The client specifically mentioned how responsive you were."
+},
+{
+"id": "d16_04",
+"s": "A",
+"t": "That's great to hear. It was a demanding project, but I learned a lot."
+},
+{
+"id": "d16_05",
+"s": "B",
+"t": "It showed. On the other hand, a few internal deadlines slipped, especially in the summer."
+},
+{
+"id": "d16_06",
+"s": "A",
+"t": "That's fair. I took on too much at once and didn't flag it early enough."
+},
+{
+"id": "d16_07",
+"s": "B",
+"t": "Exactly. Next year, I'd like you to raise concerns as soon as you see a risk, rather than waiting."
+},
+{
+"id": "d16_08",
+"s": "A",
+"t": "Understood. Would it help if I shared a short weekly status update with you?"
+},
+{
+"id": "d16_09",
+"s": "B",
+"t": "That would be really helpful. And I'd also like you to start mentoring one of the junior developers."
+},
+{
+"id": "d16_10",
+"s": "A",
+"t": "I'd be happy to. I've actually been hoping for a chance to lead more."
+},
+{
+"id": "d16_11",
+"s": "B",
+"t": "Good. Let's put both of those in your goals for next year."
+}
+],
+"q": [
+{
+"s": "What did the client praise?",
+"o": [
+"How responsive A was",
+"How cheap the project was",
+"The design of the logo"
+],
+"sbn": "ক্লায়েন্ট কিসের প্রশংসা করেছে?",
+"obn": [
+"A কত দ্রুত সাড়া দিয়েছে",
+"প্রজেক্ট কত সস্তা ছিল",
+"লোগোর ডিজাইন"
+]
+},
+{
+"s": "What problem does the manager mention?",
+"o": [
+"Some internal deadlines slipped",
+"A was often late to work",
+"A made mistakes in the code"
+],
+"sbn": "ম্যানেজার কোন সমস্যার কথা বললেন?",
+"obn": [
+"কিছু অভ্যন্তরীণ ডেডলাইন পিছিয়ে গেছে",
+"A প্রায়ই দেরিতে অফিসে আসে",
+"A কোডে ভুল করেছে"
+]
+},
+{
+"s": "What new responsibility will A take on?",
+"o": [
+"Mentoring a junior developer",
+"Managing the sales team",
+"Writing the company blog"
+],
+"sbn": "A কোন নতুন দায়িত্ব নেবে?",
+"obn": [
+"একজন জুনিয়র ডেভেলপারকে গাইড করা",
+"সেলস টিম চালানো",
+"কোম্পানির ব্লগ লেখা"
+]
+}
+]
+},
+{
+"id": "d17",
+"lv": "C1",
+"ic": "💡",
+"bn": "নতুন আইডিয়া উপস্থাপন",
+"en": "Pitching an idea",
+"lines": [
+{
+"id": "d17_01",
+"s": "A",
+"t": "In short, our app connects small farmers directly with restaurants in the city, so both sides get a fairer price."
+},
+{
+"id": "d17_02",
+"s": "B",
+"t": "Interesting. But plenty of delivery apps already exist. What makes yours different?"
+},
+{
+"id": "d17_03",
+"s": "A",
+"t": "Most of them focus on consumers. We focus on businesses, and we handle quality checks before anything is delivered."
+},
+{
+"id": "d17_04",
+"s": "B",
+"t": "How do you make money?"
+},
+{
+"id": "d17_05",
+"s": "A",
+"t": "We take a seven percent fee on each order, and restaurants can pay for a premium plan with faster delivery."
+},
+{
+"id": "d17_06",
+"s": "B",
+"t": "And how many customers do you have so far?"
+},
+{
+"id": "d17_07",
+"s": "A",
+"t": "We ran a three-month pilot with twelve restaurants, and nine of them have already signed annual contracts."
+},
+{
+"id": "d17_08",
+"s": "B",
+"t": "That's a solid start. What's the biggest risk you see?"
+},
+{
+"id": "d17_09",
+"s": "A",
+"t": "Honestly, logistics. Keeping vegetables fresh on long journeys is expensive, so we're testing cold boxes with a local partner."
+},
+{
+"id": "d17_10",
+"s": "B",
+"t": "I appreciate the honesty. Send me your financial projections, and let's talk again next week."
+}
+],
+"q": [
+{
+"s": "Who does the app mainly connect?",
+"o": [
+"Farmers and restaurants",
+"Students and teachers",
+"Shoppers and online stores"
+],
+"sbn": "অ্যাপটা মূলত কাদের মধ্যে যোগাযোগ করায়?",
+"obn": [
+"কৃষক আর রেস্টুরেন্ট",
+"ছাত্র আর শিক্ষক",
+"ক্রেতা আর অনলাইন দোকান"
+]
+},
+{
+"s": "How did the pilot go?",
+"o": [
+"Nine of the twelve restaurants signed contracts",
+"All the restaurants left",
+"It hasn't started yet"
+],
+"sbn": "পরীক্ষামূলক পর্বটা কেমন গেছে?",
+"obn": [
+"১২টা রেস্টুরেন্টের ৯টা চুক্তি করেছে",
+"সব রেস্টুরেন্ট চলে গেছে",
+"এখনো শুরু হয়নি"
+]
+},
+{
+"s": "What does A see as the biggest risk?",
+"o": [
+"Keeping vegetables fresh during delivery",
+"Finding enough farmers",
+"The app crashing"
+],
+"sbn": "A সবচেয়ে বড় ঝুঁকি কোনটাকে মনে করে?",
+"obn": [
+"ডেলিভারির সময় সবজি তাজা রাখা",
+"যথেষ্ট কৃষক পাওয়া",
+"অ্যাপ ক্র্যাশ করা"
+]
+}
+]
+},
+{
+"id": "d18",
+"lv": "C1",
+"ic": "🏠",
+"bn": "বাসা থেকে কাজ: পক্ষে-বিপক্ষে",
+"en": "Debating remote work",
+"lines": [
+{
+"id": "d18_01",
+"s": "B",
+"t": "I honestly don't know how you work from home every day. I'd go crazy."
+},
+{
+"id": "d18_02",
+"s": "A",
+"t": "It took some getting used to, I'll admit. But I save nearly three hours of commuting."
+},
+{
+"id": "d18_03",
+"s": "B",
+"t": "Sure, but don't you miss the people? Half of what I learn comes from overhearing colleagues."
+},
+{
+"id": "d18_04",
+"s": "A",
+"t": "That's a fair point. Junior staff probably lose out the most when everyone is remote."
+},
+{
+"id": "d18_05",
+"s": "B",
+"t": "Exactly. And it's harder to switch off when your office is your bedroom."
+},
+{
+"id": "d18_06",
+"s": "A",
+"t": "True, which is why I set strict hours and keep my laptop out of the bedroom."
+},
+{
+"id": "d18_07",
+"s": "B",
+"t": "So would you never go back to the office?"
+},
+{
+"id": "d18_08",
+"s": "A",
+"t": "I wouldn't say never. I think two days in the office and three at home would be ideal."
+},
+{
+"id": "d18_09",
+"s": "B",
+"t": "Now that I could live with. Collaboration days and focus days."
+},
+{
+"id": "d18_10",
+"s": "A",
+"t": "Precisely. It's not really about where we work, but about what kind of work we're doing."
+}
+],
+"q": [
+{
+"s": "What does A save by working from home?",
+"o": [
+"Nearly three hours of commuting",
+"A lot of money on lunch",
+"Time spent in meetings"
+],
+"sbn": "বাসা থেকে কাজ করে A কী বাঁচায়?",
+"obn": [
+"যাতায়াতের প্রায় তিন ঘণ্টা",
+"দুপুরের খাবারের অনেক টাকা",
+"মিটিংয়ের সময়"
+]
+},
+{
+"s": "Who does A think loses out most from remote work?",
+"o": [
+"Junior staff",
+"Managers",
+"Clients"
+],
+"sbn": "A-এর মতে রিমোট কাজে সবচেয়ে বেশি ক্ষতি কার?",
+"obn": [
+"জুনিয়র কর্মীদের",
+"ম্যানেজারদের",
+"ক্লায়েন্টদের"
+]
+},
+{
+"s": "What does A think would be ideal?",
+"o": [
+"Two office days and three home days",
+"Working from home every day",
+"Going back to the office full time"
+],
+"sbn": "A-এর মতে আদর্শ কী?",
+"obn": [
+"সপ্তাহে দুই দিন অফিস, তিন দিন বাসা",
+"প্রতিদিন বাসা থেকে কাজ",
+"পুরো সময় অফিসে ফেরা"
+]
+}
+]
 }
 ]

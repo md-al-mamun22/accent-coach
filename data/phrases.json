@@ -828,5 +828,569 @@
 ],
 "en": "Opinions & feelings",
 "bn": "মতামত ও অনুভূতি"
+},
+{
+"k": "pvdaily",
+"ic": "🔁",
+"en": "Phrasal verbs: everyday life",
+"bn": "ফ্রেজাল ভার্ব: রোজকার জীবন",
+"items": [
+{
+"id": "p151",
+"en": "I usually wake up at six.",
+"bn": "আমি সাধারণত ছয়টায় ঘুম থেকে উঠি।",
+"m": "wake up = stop sleeping",
+"g": "up",
+"go": [
+"off",
+"in",
+"on"
+]
+},
+{
+"id": "p152",
+"en": "Please turn off the lights when you leave.",
+"bn": "বের হওয়ার সময় দয়া করে লাইটগুলো বন্ধ করে দিন।",
+"m": "turn off = stop a light or machine",
+"g": "turn",
+"go": [
+"take",
+"give",
+"get"
+]
+},
+{
+"id": "p153",
+"en": "Can you pick me up from the station?",
+"bn": "আমাকে কি স্টেশন থেকে নিয়ে আসতে পারবে?",
+"m": "pick up = collect someone by car",
+"g": "pick",
+"go": [
+"look",
+"give",
+"turn"
+]
+},
+{
+"id": "p154",
+"en": "I'm looking for my keys.",
+"bn": "আমি আমার চাবি খুঁজছি।",
+"m": "look for = try to find",
+"g": "looking",
+"go": [
+"giving",
+"putting",
+"taking"
+]
+},
+{
+"id": "p155",
+"en": "Please fill in this form.",
+"bn": "দয়া করে এই ফর্মটা পূরণ করুন।",
+"m": "fill in = complete a form",
+"g": "fill",
+"go": [
+"give",
+"run",
+"look"
+]
+},
+{
+"id": "p156",
+"en": "Don't give up. You can do it!",
+"bn": "হাল ছেড়ো না। তুমি পারবে!",
+"m": "give up = stop trying",
+"g": "give",
+"go": [
+"fill",
+"bring",
+"put"
+]
+},
+{
+"id": "p157",
+"en": "I need to find out the bus times.",
+"bn": "আমাকে বাসের সময়গুলো জেনে নিতে হবে।",
+"m": "find out = discover information",
+"g": "out",
+"go": [
+"up",
+"in",
+"off"
+]
+},
+{
+"id": "p158",
+"en": "Let's eat out tonight.",
+"bn": "চলো আজ রাতে বাইরে খাই।",
+"m": "eat out = eat at a restaurant",
+"g": "out",
+"go": [
+"off",
+"over",
+"on"
+]
+},
+{
+"id": "p159",
+"en": "She looks after her little brother.",
+"bn": "সে তার ছোট ভাইয়ের দেখাশোনা করে।",
+"m": "look after = take care of",
+"g": "looks",
+"go": [
+"gives",
+"puts",
+"takes"
+]
+},
+{
+"id": "p160",
+"en": "Hurry up! We're late.",
+"bn": "তাড়াতাড়ি করো! আমাদের দেরি হয়ে গেছে।",
+"m": "hurry up = move faster",
+"g": "up",
+"go": [
+"off",
+"in",
+"at"
+]
+},
+{
+"id": "p161",
+"en": "Please put on your seat belt.",
+"bn": "দয়া করে সিট বেল্ট পরে নিন।",
+"m": "put on = start wearing",
+"g": "put",
+"go": [
+"take",
+"give",
+"look"
+]
+},
+{
+"id": "p162",
+"en": "Can you turn down the music? I'm trying to sleep.",
+"bn": "গানটা একটু আস্তে করবে? আমি ঘুমানোর চেষ্টা করছি।",
+"m": "turn down = make quieter",
+"g": "down",
+"go": [
+"in",
+"over",
+"at"
+]
+},
+{
+"id": "p163",
+"en": "We ran out of milk, so I went to the shop.",
+"bn": "দুধ শেষ হয়ে গিয়েছিল, তাই আমি দোকানে গেলাম।",
+"m": "run out of = have none left",
+"g": "out",
+"go": [
+"in",
+"off",
+"up"
+]
+},
+{
+"id": "p164",
+"en": "Come in and sit down.",
+"bn": "ভেতরে এসে বসুন।",
+"m": "sit down = take a seat",
+"g": "down",
+"go": [
+"off",
+"at",
+"from"
+]
+},
+{
+"id": "p165",
+"en": "We get on well with our neighbours.",
+"bn": "প্রতিবেশীদের সাথে আমাদের সম্পর্ক ভালো।",
+"m": "get on with = have a friendly relationship",
+"g": "on",
+"go": [
+"off",
+"in",
+"up"
+]
+}
+]
+},
+{
+"k": "pvwork",
+"ic": "💼",
+"en": "Phrasal verbs: work",
+"bn": "ফ্রেজাল ভার্ব: কাজের জায়গায়",
+"items": [
+{
+"id": "p166",
+"en": "I'll call you back in ten minutes.",
+"bn": "আমি দশ মিনিট পর তোমাকে আবার ফোন করব।",
+"m": "call back = phone someone again",
+"g": "call",
+"go": [
+"give",
+"look",
+"put"
+]
+},
+{
+"id": "p167",
+"en": "Let's follow up with the client next week.",
+"bn": "চলো পরের সপ্তাহে ক্লায়েন্টের সাথে আবার যোগাযোগ করি।",
+"m": "follow up = check or continue later",
+"g": "follow",
+"go": [
+"look",
+"give",
+"turn"
+]
+},
+{
+"id": "p168",
+"en": "We had to put off the meeting until Monday.",
+"bn": "আমাদের মিটিংটা সোমবার পর্যন্ত পিছিয়ে দিতে হয়েছে।",
+"m": "put off = delay",
+"g": "off",
+"go": [
+"up",
+"in",
+"on"
+]
+},
+{
+"id": "p169",
+"en": "Please carry on. I didn't mean to interrupt.",
+"bn": "দয়া করে চালিয়ে যান। আমি বাধা দিতে চাইনি।",
+"m": "carry on = continue",
+"g": "carry",
+"go": [
+"look",
+"give",
+"fill"
+]
+},
+{
+"id": "p170",
+"en": "I'll deal with the customer's complaint.",
+"bn": "গ্রাহকের অভিযোগটা আমি দেখছি।",
+"m": "deal with = handle a problem",
+"g": "with",
+"go": [
+"at",
+"in",
+"for"
+]
+},
+{
+"id": "p171",
+"en": "Can you sort out this billing problem?",
+"bn": "বিলের এই সমস্যাটা কি তুমি ঠিক করে দিতে পারবে?",
+"m": "sort out = solve",
+"g": "out",
+"go": [
+"in",
+"off",
+"on"
+]
+},
+{
+"id": "p172",
+"en": "The manager will look into the issue.",
+"bn": "ম্যানেজার বিষয়টা খতিয়ে দেখবেন।",
+"m": "look into = investigate",
+"g": "look",
+"go": [
+"give",
+"turn",
+"put"
+]
+},
+{
+"id": "p173",
+"en": "We need to come up with a better plan.",
+"bn": "আমাদের আরও ভালো একটা পরিকল্পনা বের করতে হবে।",
+"m": "come up with = think of an idea",
+"g": "come",
+"go": [
+"take",
+"give",
+"look"
+]
+},
+{
+"id": "p174",
+"en": "She will take over the project next month.",
+"bn": "সে আগামী মাসে প্রজেক্টের দায়িত্ব নেবে।",
+"m": "take over = take control of",
+"g": "over",
+"go": [
+"off",
+"in",
+"out"
+]
+},
+{
+"id": "p175",
+"en": "Always back up your files.",
+"bn": "সবসময় তোমার ফাইলগুলোর ব্যাকআপ রাখো।",
+"m": "back up = save a copy",
+"g": "up",
+"go": [
+"off",
+"in",
+"out"
+]
+},
+{
+"id": "p176",
+"en": "Log in with your email and password.",
+"bn": "ইমেইল আর পাসওয়ার্ড দিয়ে লগইন করুন।",
+"m": "log in = enter an account",
+"g": "in",
+"go": [
+"over",
+"up",
+"at"
+]
+},
+{
+"id": "p177",
+"en": "Please hand in your report by Monday.",
+"bn": "সোমবারের মধ্যে আপনার রিপোর্ট জমা দিন।",
+"m": "hand in = give work to a teacher or boss",
+"g": "in",
+"go": [
+"up",
+"off",
+"on"
+]
+},
+{
+"id": "p178",
+"en": "He pointed out a mistake in my code.",
+"bn": "সে আমার কোডের একটা ভুল ধরিয়ে দিল।",
+"m": "point out = show or mention",
+"g": "out",
+"go": [
+"in",
+"off",
+"up"
+]
+},
+{
+"id": "p179",
+"en": "Let's set up a meeting for Tuesday.",
+"bn": "চলো মঙ্গলবারের জন্য একটা মিটিং ঠিক করি।",
+"m": "set up = arrange",
+"g": "set",
+"go": [
+"give",
+"look",
+"turn"
+]
+},
+{
+"id": "p180",
+"en": "Our sales went up by twenty percent.",
+"bn": "আমাদের বিক্রি বিশ শতাংশ বেড়েছে।",
+"m": "go up = increase",
+"g": "up",
+"go": [
+"off",
+"in",
+"on"
+]
+}
+]
+},
+{
+"k": "idioms",
+"ic": "🎭",
+"en": "Common idioms",
+"bn": "প্রচলিত ইডিয়ম",
+"items": [
+{
+"id": "p181",
+"en": "This exam was a piece of cake.",
+"bn": "এই পরীক্ষাটা একদম সহজ ছিল।",
+"m": "a piece of cake = very easy",
+"g": "cake",
+"go": [
+"bread",
+"pie",
+"rice"
+]
+},
+{
+"id": "p182",
+"en": "I'm feeling under the weather today.",
+"bn": "আজ শরীরটা একটু খারাপ লাগছে।",
+"m": "under the weather = a little sick",
+"g": "weather",
+"go": [
+"water",
+"rain",
+"table"
+]
+},
+{
+"id": "p183",
+"en": "Let's call it a day. We can finish tomorrow.",
+"bn": "আজ এখানেই থামি। কাল শেষ করা যাবে।",
+"m": "call it a day = stop working for today",
+"g": "day",
+"go": [
+"week",
+"time",
+"job"
+]
+},
+{
+"id": "p184",
+"en": "Break a leg in your interview!",
+"bn": "ইন্টারভিউয়ের জন্য শুভকামনা!",
+"m": "break a leg = good luck",
+"g": "leg",
+"go": [
+"arm",
+"hand",
+"foot"
+]
+},
+{
+"id": "p185",
+"en": "The new phone costs an arm and a leg.",
+"bn": "নতুন ফোনটার দাম আকাশছোঁয়া।",
+"m": "cost an arm and a leg = be very expensive",
+"g": "arm",
+"go": [
+"eye",
+"hand",
+"ear"
+]
+},
+{
+"id": "p186",
+"en": "Don't beat around the bush. Tell me the truth.",
+"bn": "ঘুরিয়ে-পেঁচিয়ে না বলে সত্যিটা বলো।",
+"m": "beat around the bush = avoid saying something directly",
+"g": "bush",
+"go": [
+"tree",
+"house",
+"garden"
+]
+},
+{
+"id": "p187",
+"en": "We're in the same boat, so let's help each other.",
+"bn": "আমরা একই অবস্থায় আছি, তাই চলো একে অপরকে সাহায্য করি।",
+"m": "in the same boat = in the same difficult situation",
+"g": "boat",
+"go": [
+"bus",
+"car",
+"house"
+]
+},
+{
+"id": "p188",
+"en": "Can you keep an eye on my bag?",
+"bn": "আমার ব্যাগটা একটু দেখে রাখবে?",
+"m": "keep an eye on = watch carefully",
+"g": "eye",
+"go": [
+"ear",
+"hand",
+"nose"
+]
+},
+{
+"id": "p189",
+"en": "I'll sleep on it and tell you tomorrow.",
+"bn": "আমি একটু ভেবে দেখে কাল জানাব।",
+"m": "sleep on it = think about it overnight",
+"g": "sleep",
+"go": [
+"eat",
+"sit",
+"walk"
+]
+},
+{
+"id": "p190",
+"en": "Learning English takes time. Rome wasn't built in a day.",
+"bn": "ইংরেজি শিখতে সময় লাগে। এক দিনে সব হয় না।",
+"m": "Rome wasn't built in a day = big things take time",
+"g": "Rome",
+"go": [
+"Paris",
+"London",
+"Dhaka"
+]
+},
+{
+"id": "p191",
+"en": "You hit the nail on the head.",
+"bn": "তুমি একদম ঠিক কথাটা বলেছ।",
+"m": "hit the nail on the head = be exactly right",
+"g": "nail",
+"go": [
+"ball",
+"wall",
+"door"
+]
+},
+{
+"id": "p192",
+"en": "It's raining cats and dogs outside.",
+"bn": "বাইরে মুষলধারে বৃষ্টি হচ্ছে।",
+"m": "raining cats and dogs = raining very heavily",
+"g": "dogs",
+"go": [
+"birds",
+"cows",
+"fish"
+]
+},
+{
+"id": "p193",
+"en": "Let's get the ball rolling.",
+"bn": "চলো কাজটা শুরু করে দিই।",
+"m": "get the ball rolling = start something",
+"g": "ball",
+"go": [
+"car",
+"wheel",
+"door"
+]
+},
+{
+"id": "p194",
+"en": "Once in a blue moon, I eat fast food.",
+"bn": "আমি কালেভদ্রে ফাস্ট ফুড খাই।",
+"m": "once in a blue moon = very rarely",
+"g": "blue",
+"go": [
+"red",
+"full",
+"new"
+]
+},
+{
+"id": "p195",
+"en": "She has a lot on her plate this week.",
+"bn": "এই সপ্তাহে তার অনেক কাজ।",
+"m": "have a lot on your plate = have many things to do",
+"g": "plate",
+"go": [
+"table",
+"cup",
+"bag"
+]
+}
+]
 }
 ]

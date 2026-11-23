@@ -306,7 +306,7 @@ button.word.playing .play{transform:scale(1.08)}
 <div class="stats">
   <div class="container"><div class="grid">
     <div class="rv"><b class="cnt" data-to="1000">1000</b><span>most-used words</span></div>
-    <div class="rv"><b class="cnt" data-to="150">150</b><span>everyday phrases</span></div>
+    <div class="rv"><b class="cnt" data-to="195">195</b><span>phrases & idioms</span></div>
     <div class="rv"><b class="cnt" data-to="12">12</b><span>week plan for your level</span></div>
     <div class="rv"><b>$0</b><span>free, forever</span></div>
   </div></div>
@@ -319,8 +319,8 @@ button.word.playing .play{transform:scale(1.08)}
       <a class="rv fc" href="level-test.html"><div class="ic">📊</div><h3>Level test</h3><p>30 questions on grammar, words, reading and listening. Find out where you are, from A1 to C1, in about 10 minutes.</p><span class="go" data-p="level">Take the test →</span></a>
       <a class="rv fc dark" href="path.html"><div class="ic">🗺️</div><h3>12-week plan</h3><p>A daily to-do list for your level: 30–40 minutes of words, phrases, listening, grammar and pronunciation.</p><span class="go" data-p="path">Start the plan →</span></a>
       <a class="rv fc" href="words.html"><div class="ic">📘</div><h3>1000 key words</h3><p>The most-used English words with a simple definition, an example sentence and audio. Smart revision brings them back before you forget.</p><span class="go" data-p="words">Learn words →</span></a>
-      <a class="rv fc" href="phrases.html"><div class="ic">💬</div><h3>Everyday phrases</h3><p>150 ready-to-use sentences for shops, travel, phone calls, the office, interviews and client meetings.</p><span class="go" data-p="phrases">Practice phrases →</span></a>
-      <a class="rv fc" href="listen.html"><div class="ic">🎧</div><h3>Listening practice</h3><p>12 short real-life conversations. Listen without reading, answer 3 questions, then check the transcript line by line.</p><span class="go" data-p="listen">Start listening →</span></a>
+      <a class="rv fc" href="phrases.html"><div class="ic">💬</div><h3>Everyday phrases</h3><p>195 ready-to-use phrases, phrasal verbs and idioms for shops, travel, phone calls, the office, interviews and client meetings.</p><span class="go" data-p="phrases">Practice phrases →</span></a>
+      <a class="rv fc" href="listen.html"><div class="ic">🎧</div><h3>Listening practice</h3><p>18 real-life conversations from A1 to C1. Listen without reading, answer 3 questions, then check the transcript line by line.</p><span class="go" data-p="listen">Start listening →</span></a>
       <a class="rv fc" href="grammar.html"><div class="ic">✏️</div><h3>Grammar lessons</h3><p>27 short lessons from A1 to C1, from am / is / are to inversion and mixed conditionals. Simple explanations, examples with audio and 5 practice questions each.</p><span class="go" data-p="grammar">Open lessons →</span></a>
       <a class="rv fc" href="app.html"><div class="ic">🗣️</div><h3>30-day pronunciation</h3><p>Fix the sounds many learners mix up: v / w, th, ship / sheep, word endings, stress and rhythm.</p><span class="go" data-p="app">Start Day 1 →</span></a>
       <a class="rv fc" href="phrases.html"><div class="ic">🎙️</div><h3>Speak and compare</h3><p>Say a word or sentence, record yourself, and play it next to the correct version. In supported browsers, it also checks the words you said.</p><span class="go">Try it →</span></a>
@@ -347,7 +347,7 @@ button.word.playing .play{transform:scale(1.08)}
     <div class="sec-head"><span class="eyebrow"><i></i>12-week plan</span><h2>Twelve weeks, from basics to confident speaking</h2><p>Every week has six learning days and one review day. Your track (beginner, middle or advanced) decides which phrases, grammar lessons and conversations come first.</p></div>
     <div class="weeks">
       <div class="rv wk"><small>Weeks 1–4</small><h3>Build the base</h3><p>20 new words a day, the 30-day pronunciation course, your first phrase topics and grammar lessons.</p><ul><li>words</li><li>sounds</li><li>phrases</li><li>grammar</li></ul></div>
-      <div class="rv wk"><small>Weeks 5–6</small><h3>Speak &amp; listen</h3><p>Finish all 10 phrase topics, work through the 12 conversations, and retake the level test.</p><ul><li>listening</li><li>phrases</li><li>level check</li></ul></div>
+      <div class="rv wk"><small>Weeks 5–6</small><h3>Speak &amp; listen</h3><p>Finish the phrase topics, work through the conversations for your level, and retake the level test.</p><ul><li>listening</li><li>phrases</li><li>level check</li></ul></div>
       <div class="rv wk"><small>Weeks 7–9</small><h3>Make it stick</h3><p>Reach 1000 words, review phrases by topic, and go through the grammar lessons a second time.</p><ul><li>1000 words</li><li>revision</li><li>grammar</li></ul></div>
       <div class="rv wk hl"><small>Weeks 10–12</small><h3>Speak with confidence</h3><p>Shadow full sentences, record yourself every week, and take the final level test.</p><ul><li>shadowing</li><li>recording</li><li>final test</li></ul></div>
     </div>
@@ -413,8 +413,8 @@ button.word.playing .play{transform:scale(1.08)}
     var lv=peek("ac-level"),path=peek("ac-prog-path")||{},w=peek("ac-words"),cta=document.getElementById("heroCta"),cta2=document.getElementById("heroCta2");
     if(lv&&lv.level)setGo("level","Your last result: "+lv.level);
     if(w&&w.w){var nw=Object.keys(w.w).length;if(nw)setGo("words",nw+" / 1000 words learned")}
-    var ph=peek("ac-prog-phrases")||{},np=Object.keys(ph).filter(function(k){return ph[k][0]>0}).length;if(np)setGo("phrases",np+" / 150 phrases learned");
-    var li=peek("ac-prog-listen")||{},nl=Object.keys(li).length;if(nl)setGo("listen",nl+" / 12 conversations done");
+    var ph=peek("ac-prog-phrases")||{},np=Object.keys(ph).filter(function(k){return ph[k][0]>0}).length;if(np)setGo("phrases",np+" / 195 phrases learned");
+    var li=peek("ac-prog-listen")||{},nl=Object.keys(li).length;if(nl)setGo("listen",nl+" / 18 conversations done");
     var gr=peek("ac-prog-grammar")||{},ng=Object.keys(gr).filter(function(k){return gr[k][0]>=4}).length;if(ng)setGo("grammar",ng+" / 27 lessons done");
     if(path.track&&path.track[0]){var days={};for(var k in path){var m=k.match(/^d(\d+)_/);if(m&&path[k][0]>0)days[m[1]]=1}
       var nd=Object.keys(days).length;cta.textContent="Continue my 12-week plan →";cta.href="path.html";

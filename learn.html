@@ -42,8 +42,8 @@
     <a class="tcard main" href="path.html"><span class="ic">🗺️</span><b>12-week plan</b><span>A daily list of 30–40 minutes of tasks for your level, one step at a time.</span><em class="pg" data-p="path"></em></a>
     <a class="tcard" href="level-test.html"><span class="ic">📊</span><b>Level test</b><span>Find out in 10 minutes where you are, from A1 to C1.</span><em class="pg" data-p="level"></em></a>
     <a class="tcard" href="words.html"><span class="ic">📘</span><b>1000 key words</b><span>Simple definitions, example sentences, audio and smart revision.</span><em class="pg" data-p="words"></em></a>
-    <a class="tcard" href="phrases.html"><span class="ic">💬</span><b>Everyday phrases</b><span>150 ready-made sentences for 10 real-life situations.</span><em class="pg" data-p="phrases"></em></a>
-    <a class="tcard" href="listen.html"><span class="ic">🎧</span><b>Listening practice</b><span>12 real-life conversations with questions.</span><em class="pg" data-p="listen"></em></a>
+    <a class="tcard" href="phrases.html"><span class="ic">💬</span><b>Everyday phrases</b><span>195 phrases for real-life situations, plus phrasal verbs and idioms.</span><em class="pg" data-p="phrases"></em></a>
+    <a class="tcard" href="listen.html"><span class="ic">🎧</span><b>Listening practice</b><span>18 real-life conversations from A1 to C1, with questions.</span><em class="pg" data-p="listen"></em></a>
     <a class="tcard" href="grammar.html"><span class="ic">✏️</span><b>Grammar lessons</b><span>27 short lessons from A1 to C1, with practice questions.</span><em class="pg" data-p="grammar"></em></a>
     <a class="tcard" href="app.html"><span class="ic">🗣</span><b>30-day pronunciation</b><span>Tricky sounds, word endings and full sentences.</span><em class="pg" data-p="app"></em></a>
   </div>
@@ -56,8 +56,8 @@ function cnt(d,f){var n=0;for(var k in d)if(f(k,d[k][0]))n++;return n}
 var lv=null;try{lv=JSON.parse(localStorage.getItem("ac-level")||"null")}catch(e){}
 set("level",lv&&lv.level?"Last result: "+lv.level:"");
 try{var w=JSON.parse(localStorage.getItem("ac-words")||"null");if(w&&w.w){var n=Object.keys(w.w).length;if(n)set("words",n+" / 1000 words learned")}}catch(e){}
-var ph=cnt(AC.peek("phrases"),function(k,v){return v>0});if(ph)set("phrases",ph+" / 150 phrases learned");
-var li=cnt(AC.peek("listen"),function(){return true});if(li)set("listen",li+" / 12 conversations done");
+var ph=cnt(AC.peek("phrases"),function(k,v){return v>0});if(ph)set("phrases",ph+" / 195 phrases learned");
+var li=cnt(AC.peek("listen"),function(){return true});if(li)set("listen",li+" / 18 conversations done");
 var gr=cnt(AC.peek("grammar"),function(k,v){return v>=4});if(gr)set("grammar",gr+" / 27 lessons done");
 var p=AC.peek("path");if(p.track&&p.track[0]){var days={};for(var k in p){var m=k.match(/^d(\d+)_/);if(m&&p[k][0]>0)days[m[1]]=(days[m[1]]||0)+1}set("path","In progress · worked on "+Object.keys(days).length+" days")}else set("path","Start now →");
 try{var a=JSON.parse(localStorage.getItem("accent-coach")||"null");if(a&&a.day)set("app","In progress · Day "+a.day)}catch(e){}

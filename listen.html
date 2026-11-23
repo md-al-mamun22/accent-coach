@@ -3,19 +3,19 @@
 <meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/logo-icon-512.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>English Listening Practice: 12 Conversations with Questions (A1–B1) | Accent Coach</title>
-<meta name="description" content="Free English listening practice with 12 short real-life conversations: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
+<title>English Listening Practice: 18 Conversations with Questions (A1–C1) | Accent Coach</title>
+<meta name="description" content="Free English listening practice with 18 real-life conversations from A1 to C1: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
 <link rel="canonical" href="https://accent-coach.devmamun.com/listen.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Accent Coach">
 <meta property="og:url" content="https://accent-coach.devmamun.com/listen.html">
-<meta property="og:title" content="English Listening Practice: 12 Conversations with Questions (A1–B1) | Accent Coach">
-<meta property="og:description" content="Free English listening practice with 12 short real-life conversations: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
+<meta property="og:title" content="English Listening Practice: 18 Conversations with Questions (A1–C1) | Accent Coach">
+<meta property="og:description" content="Free English listening practice with 18 real-life conversations from A1 to C1: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
 <meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="English Listening Practice: 12 Conversations with Questions (A1–B1) | Accent Coach">
-<meta name="twitter:description" content="Free English listening practice with 12 short real-life conversations: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
+<meta name="twitter:title" content="English Listening Practice: 18 Conversations with Questions (A1–C1) | Accent Coach">
+<meta name="twitter:description" content="Free English listening practice with 18 real-life conversations from A1 to C1: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
 <meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
@@ -41,8 +41,8 @@
   <div class="card hero">
     <div class="herotop"><span class="pos">Listening</span><button class="bnsw"></button></div>
     <h1>English <mark>listening practice</mark></h1>
-    <p>12 short, real-life conversations from A1 to B1. Listen first without reading, answer 3 questions, then read the transcript and replay any line you missed.</p>
-    <div class="stats"><div><b id="sDone">0</b><span>conversations done</span></div><div><b id="sOk">0</b><span>correct answers</span></div><div><b id="sAll">12</b><span>conversations</span></div></div>
+    <p>18 real-life conversations from A1 to C1, from ordering tea to a performance review. Listen first without reading, answer 3 questions, then read the transcript and replay any line you missed.</p>
+    <div class="stats"><div><b id="sDone">0</b><span>conversations done</span></div><div><b id="sOk">0</b><span>correct answers</span></div><div><b id="sAll">18</b><span>conversations</span></div></div>
     <div class="bigbar"><i id="bar"></i></div>
     <div class="cloud" id="cloud"></div>
   </div>
@@ -55,7 +55,7 @@
 (function(){
 var D=[],S=AC.store("listen"),out=document.getElementById("out"),cur=null,esc=AC.esc,run=0;
 function stats(){var d=D.filter(function(x){return S.d[x.id]}),ok=d.reduce(function(a,x){return a+S.get(x.id)},0);
-  document.getElementById("sDone").textContent=d.length+" / "+D.length;document.getElementById("sOk").textContent=ok+" / "+(D.length*3);
+  document.getElementById("sDone").textContent=d.length+" / "+D.length;document.getElementById("sAll").textContent=D.length;document.getElementById("sOk").textContent=ok+" / "+(D.length*3);
   document.getElementById("bar").style.width=(D.length?d.length/D.length*100:0)+"%";}
 function home(){cur=null;run++;AC.stop();var h="",lv="";
   D.forEach(function(d,i){if(d.lv!==lv){if(lv)h+='</div>';lv=d.lv;h+='<div class="lvh">LEVEL '+lv+'</div><div class="grid">'}
@@ -85,16 +85,16 @@ function dlg(d){cur=d;run++;AC.stop();var i=D.indexOf(d);
   document.getElementById("go").onclick=function(){quiz(d)};}
 function quiz(d){run++;AC.stop();var qs=d.q.map(function(q){return {q:q,order:AC.shuffle([0,1,2])}}),Q={i:0,s:0};
   function show(){var it=qs[Q.i],q=it.q;
-    out.innerHTML='<div class="card wc"><div class="wtop"><button class="back" id="bk">← Listen again</button><span>Question '+(Q.i+1)+' of 3 · score '+Q.s+'</span></div>'+
+    out.innerHTML='<div class="card wc"><div class="wtop"><button class="back" id="bk">← Listen again</button><span>Question '+(Q.i+1)+' of '+qs.length+' · score '+Q.s+'</span></div>'+
      '<div class="qstem">'+esc(q.s)+'</div><div class="bnx">'+esc(q.sbn)+'</div><div class="opts">'+it.order.map(function(k){return '<button class="opt" data-k="'+k+'">'+esc(q.o[k])+'<span class="bnx obn">'+esc(q.obn[k])+'</span></button>'}).join("")+'</div>'+
-     '<div class="acts hidden" id="qn"><span></span><button class="btn pri" id="nx">'+(Q.i<2?'Next question →':'See your score →')+'</button></div></div>';
+     '<div class="acts hidden" id="qn"><span></span><button class="btn pri" id="nx">'+(Q.i<qs.length-1?'Next question →':'See your score →')+'</button></div></div>';
     document.getElementById("bk").onclick=function(){dlg(d)};
     out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=b.dataset.k==="0";
       out.querySelectorAll(".opt").forEach(function(c){c.disabled=true;if(c.dataset.k==="0")c.classList.add("ok")});
       if(ok)Q.s++;else b.classList.add("no");document.getElementById("qn").classList.remove("hidden")}});
-    document.getElementById("nx").onclick=function(){Q.i++;Q.i<3?show():end()};}
+    document.getElementById("nx").onclick=function(){Q.i++;Q.i<qs.length?show():end()};}
   function end(){if(!S.d[d.id]||Q.s>S.get(d.id))S.set(d.id,Q.s);stats();var nx=D[D.indexOf(d)+1];
-    out.innerHTML='<div class="card wc"><div style="text-align:center"><div style="font-size:48px">'+(Q.s===3?'🏆':Q.s===2?'🎉':'💪')+'</div><h2 style="font-size:28px;margin:6px 0">Score '+Q.s+' / 3</h2>'+
+    out.innerHTML='<div class="card wc"><div style="text-align:center"><div style="font-size:48px">'+(Q.s===qs.length?'🏆':Q.s>=qs.length-1?'🎉':'💪')+'</div><h2 style="font-size:28px;margin:6px 0">Score '+Q.s+' / '+qs.length+'</h2>'+
      '<p style="color:var(--muted)">Now read the transcript. If a line was hard to catch, press ▶ to hear it again and say it out loud.</p></div>'+
      '<div style="margin-top:12px">'+transcript(d,false)+'</div>'+
      '<div class="acts"><button class="btn" id="rq">Answer again</button>'+(nx?'<button class="btn pri" id="nd">Next conversation →</button>':'<button class="btn pri" id="hm">All conversations</button>')+'</div></div>';

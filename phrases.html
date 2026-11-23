@@ -3,25 +3,26 @@
 <meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/logo-icon-512.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>150 Everyday English Phrases with Audio: Work, Travel, Shopping | Accent Coach</title>
-<meta name="description" content="Useful English phrases for real life: greetings, shopping, travel, phone calls, the office, job interviews and client meetings. Listen, repeat, record yourself and test yourself. Free.">
+<title>Everyday English Phrases, Phrasal Verbs &amp; Idioms with Audio | Accent Coach</title>
+<meta name="description" content="195 useful English phrases for real life: greetings, shopping, travel, phone calls, the office, job interviews and client meetings, plus common phrasal verbs and idioms. Listen, repeat and test yourself. Free.">
 <link rel="canonical" href="https://accent-coach.devmamun.com/phrases.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Accent Coach">
 <meta property="og:url" content="https://accent-coach.devmamun.com/phrases.html">
-<meta property="og:title" content="150 Everyday English Phrases with Audio: Work, Travel, Shopping | Accent Coach">
-<meta property="og:description" content="Useful English phrases for real life: greetings, shopping, travel, phone calls, the office, job interviews and client meetings. Listen, repeat, record yourself and test yourself. Free.">
+<meta property="og:title" content="Everyday English Phrases, Phrasal Verbs &amp; Idioms with Audio | Accent Coach">
+<meta property="og:description" content="195 useful English phrases for real life: greetings, shopping, travel, phone calls, the office, job interviews and client meetings, plus common phrasal verbs and idioms. Listen, repeat and test yourself. Free.">
 <meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="150 Everyday English Phrases with Audio: Work, Travel, Shopping | Accent Coach">
-<meta name="twitter:description" content="Useful English phrases for real life: greetings, shopping, travel, phone calls, the office, job interviews and client meetings. Listen, repeat, record yourself and test yourself. Free.">
+<meta name="twitter:title" content="Everyday English Phrases, Phrasal Verbs &amp; Idioms with Audio | Accent Coach">
+<meta name="twitter:description" content="195 useful English phrases for real life: greetings, shopping, travel, phone calls, the office, job interviews and client meetings, plus common phrasal verbs and idioms. Listen, repeat and test yourself. Free.">
 <meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="site.css">
 <link rel="stylesheet" href="learn.css?v=2">
 <link rel="stylesheet" href="chrome.css?v=5">
+<style>.pm{color:var(--lav-ink);background:var(--lav);display:inline-block;border-radius:8px;padding:2px 10px;font-weight:700;font-size:14px;margin-top:4px}</style>
 </head>
 <body>
 <nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><div class="nl"><a href="level-test.html">Level test</a><a href="path.html">12-week plan</a><a href="words.html">Words</a><a href="phrases.html" class="on">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="app.html">Pronunciation</a></div><a class="btn pri" href="path.html">Open my plan →</a></div></nav>
@@ -29,8 +30,8 @@
   <div class="card hero">
     <div class="herotop"><span class="pos">Phrases</span><button class="bnsw"></button></div>
     <h1>Everyday <mark>English phrases</mark></h1>
-    <p>150 ready-to-use sentences for the moments you really need English: shops, travel, phone calls, the office, job interviews and client meetings. Listen, say them out loud and compare your voice.</p>
-    <div class="stats"><div><b id="sDone">0</b><span>phrases learned</span></div><div><b id="sTop">0</b><span>topics finished</span></div><div><b id="sAll">150</b><span>phrases in total</span></div></div>
+    <p>195 ready-to-use phrases for the moments you really need English: shops, travel, phone calls, the office, job interviews and client meetings, plus common phrasal verbs and idioms. Listen, say them out loud and compare your voice.</p>
+    <div class="stats"><div><b id="sDone">0</b><span>phrases learned</span></div><div><b id="sTop">0</b><span>topics finished</span></div><div><b id="sAll">195</b><span>phrases in total</span></div></div>
     <div class="bigbar"><i id="bar"></i></div>
     <div class="cloud" id="cloud"></div>
   </div>
@@ -45,7 +46,7 @@ var T=[],ALL=[],S=AC.store("phrases"),out=document.getElementById("out"),cur=nul
 function done(id){return S.get(id)>0}
 function tDone(t){return t.items.filter(function(x){return done(x.id)}).length}
 function stats(){var n=ALL.filter(function(x){return done(x.id)}).length,tc=T.filter(function(t){return tDone(t)===t.items.length}).length;
-  document.getElementById("sDone").textContent=n;document.getElementById("sTop").textContent=tc+" / "+T.length;
+  document.getElementById("sDone").textContent=n;document.getElementById("sAll").textContent=ALL.length;document.getElementById("sTop").textContent=tc+" / "+T.length;
   document.getElementById("bar").style.width=(ALL.length?n/ALL.length*100:0)+"%";}
 function home(){cur=null;AC.stop();
   out.innerHTML='<div class="grid">'+T.map(function(t,i){var d=tDone(t);
@@ -57,7 +58,7 @@ function topic(t){cur=t;playing=false;
    '<h2 style="font-size:28px;margin:12px 0 2px">'+t.ic+' '+esc(t.en)+'</h2><div class="bnx">'+esc(t.bn)+'</div>'+
    '<div class="acts" style="margin-top:12px"><button class="btn" id="pa">▶ Play all</button><button class="btn lime" id="qz">🧠 Topic quiz</button></div>'+
    '<div class="note">💡 Listen to each phrase and say it out loud 2–3 times. When you know it, tap “Learned”.</div>'+
-   '<div id="items" style="margin-top:6px">'+t.items.map(function(x){return '<div class="item" data-id="'+x.id+'"><div class="top"><button class="play sm" data-p="'+x.id+'" aria-label="Play">▶</button><div><div class="en">'+esc(x.en)+'</div><div class="bnt bnx">'+esc(x.bn)+'</div></div><button class="chk'+(done(x.id)?' on':'')+'" data-c="'+x.id+'">'+(done(x.id)?'✓ Learned':'Learned?')+'</button></div><div class="spk"><button class="btn" data-s="'+x.id+'">🎙 Say it</button><span class="spkres"></span></div></div>'}).join("")+'</div></div>';
+   '<div id="items" style="margin-top:6px">'+t.items.map(function(x){return '<div class="item" data-id="'+x.id+'"><div class="top"><button class="play sm" data-p="'+x.id+'" aria-label="Play">▶</button><div><div class="en">'+esc(x.en)+'</div>'+(x.m?'<div class="pm">'+esc(x.m)+'</div>':'')+'<div class="bnt bnx">'+esc(x.bn)+'</div></div><button class="chk'+(done(x.id)?' on':'')+'" data-c="'+x.id+'">'+(done(x.id)?'✓ Learned':'Learned?')+'</button></div><div class="spk"><button class="btn" data-s="'+x.id+'">🎙 Say it</button><span class="spkres"></span></div></div>'}).join("")+'</div></div>';
   var by={};t.items.forEach(function(x){by[x.id]=x});
   document.getElementById("bk").onclick=home;
   out.querySelectorAll("[data-p]").forEach(function(b){b.onclick=function(){playing=false;AC.say(by[b.dataset.p].en,b.dataset.p)}});
@@ -79,18 +80,20 @@ function gapWord(en){var ws=(en.match(/[A-Za-z']+/g)||[]).filter(function(w){ret
 function quiz(t){AC.stop();playing=false;
   var words=[];ALL.forEach(function(y){(y.en.match(/[A-Za-z]+/g)||[]).forEach(function(w){if(w.length>=4&&!SKIP[w.toLowerCase()])words.push(w.toLowerCase())})});
   var qs=AC.shuffle(t.items).slice(0,8).map(function(x,i){
-    var g=i%2?gapWord(x.en):null;
+    // phrasal verbs and idioms have a fixed gap and hand-picked wrong answers
+    if(x.g&&i%3!==2)return {x:x,t:"gap",g:x.g,opts:AC.shuffle([x.g].concat(x.go))};
+    var g=!x.g&&i%2?gapWord(x.en):null;
     if(g){var others=AC.shuffle(words.filter(function(w){return w!==g.toLowerCase()&&x.en.toLowerCase().indexOf(w)<0})).filter(function(w,k,a){return a.indexOf(w)===k}).slice(0,3);
       return {x:x,t:"gap",g:g,opts:AC.shuffle([g.toLowerCase()].concat(others))}}
     return {x:x,t:"listen",opts:AC.shuffle([x].concat(AC.shuffle(ALL.filter(function(y){return y.id!==x.id})).slice(0,3)))}}),Q={i:0,s:0,wrong:[]};
   function show(){var q=qs[Q.i],x=q.x,h='<div class="card wc"><div class="wtop"><button class="back" id="bk">← Back to topic</button><span>Question '+(Q.i+1)+' of '+qs.length+' · score '+Q.s+'</span></div>';
     if(q.t==="listen")h+='<div style="color:var(--muted);margin-top:12px">Listen. Which phrase do you hear?</div><div class="spk"><button class="play" id="rp" aria-label="Play again">▶</button><span style="color:var(--muted)">Tap to hear it again</span></div>';
     else h+='<div style="color:var(--muted);margin-top:12px">Which word completes the phrase?</div><div class="qstem">'+esc(x.en).replace(new RegExp("\\b"+q.g+"\\b"),"<u>_____</u>")+'</div>';
-    h+='<div class="bnx" style="margin-top:4px">'+esc(x.bn)+'</div>';
+    h+=(q.t==="gap"&&x.m?'<div class="pm" style="margin-top:4px">Hint: '+esc(x.m.split(" = ")[1]||"")+'</div>':'')+'<div class="bnx" style="margin-top:4px">'+esc(x.bn)+'</div>';
     h+='<div class="opts">'+q.opts.map(function(o,i){return '<button class="opt" data-i="'+i+'">'+esc(q.t==="listen"?o.en:o)+'</button>'}).join("")+'</div><div class="acts hidden" id="qn"><span></span><button class="btn pri" id="nx">'+(Q.i+1<qs.length?'Next question →':'See your score →')+'</button></div></div>';
     out.innerHTML=h;document.getElementById("bk").onclick=function(){topic(t)};
     if(q.t==="listen"){AC.say(x.en,x.id);document.getElementById("rp").onclick=function(){AC.say(x.en,x.id)}}
-    var right=function(i){return q.t==="listen"?q.opts[i].id===x.id:q.opts[i]===q.g.toLowerCase()};
+    var right=function(i){return q.t==="listen"?q.opts[i].id===x.id:q.opts[i].toLowerCase()===q.g.toLowerCase()};
     out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=right(+b.dataset.i);
       out.querySelectorAll(".opt").forEach(function(c){c.disabled=true;if(right(+c.dataset.i))c.classList.add("ok")});
       if(ok)Q.s++;else{b.classList.add("no");Q.wrong.push(x)}
@@ -98,7 +101,7 @@ function quiz(t){AC.stop();playing=false;
     document.getElementById("nx").onclick=function(){Q.i++;Q.i<qs.length?show():end()};}
   function end(){var n=qs.length;
     out.innerHTML='<div class="card done"><div class="em">'+(Q.s===n?'🏆':Q.s>=n*.7?'🎉':'💪')+'</div><h2>Score '+Q.s+' / '+n+'</h2><p>'+(Q.wrong.length?'Have another look at these phrases:':'Excellent! All correct.')+'</p>'+
-     (Q.wrong.length?'<div style="text-align:left;margin-top:12px">'+Q.wrong.map(function(x){return '<div class="item"><div class="top"><button class="play sm" data-p="'+x.id+'" aria-label="Play">▶</button><div><div class="en">'+esc(x.en)+'</div><div class="bnt bnx">'+esc(x.bn)+'</div></div></div></div>'}).join("")+'</div>':'')+
+     (Q.wrong.length?'<div style="text-align:left;margin-top:12px">'+Q.wrong.map(function(x){return '<div class="item"><div class="top"><button class="play sm" data-p="'+x.id+'" aria-label="Play">▶</button><div><div class="en">'+esc(x.en)+'</div>'+(x.m?'<div class="pm">'+esc(x.m)+'</div>':'')+'<div class="bnt bnx">'+esc(x.bn)+'</div></div></div></div>'}).join("")+'</div>':'')+
      '<div class="acts" style="justify-content:center"><button class="btn pri" id="ag">Try again</button><button class="btn" id="bt">Back to topic</button></div></div>';
     out.querySelectorAll("[data-p]").forEach(function(b){var x=ALL.find(function(y){return y.id===b.dataset.p});b.onclick=function(){AC.say(x.en,x.id)}});
     document.getElementById("ag").onclick=function(){quiz(t)};document.getElementById("bt").onclick=function(){topic(t)};}
