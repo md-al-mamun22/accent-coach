@@ -3,19 +3,19 @@
 <meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/logo-icon-512.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1000 Most Common English Words with Meanings, Examples &amp; Audio | Accent Coach</title>
-<meta name="description" content="Learn the 1000 most common English words with simple definitions, example sentences and audio. 20 new words a day, spaced-repetition revision and quizzes. Free.">
+<title>2800 Most Common English Words with Meanings, Examples &amp; Audio | Accent Coach</title>
+<meta name="description" content="Learn the 2800 most common English words with simple definitions, example sentences and audio. 20 new words a day, spaced-repetition revision and quizzes. Free.">
 <link rel="canonical" href="https://accent-coach.devmamun.com/words.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Accent Coach">
 <meta property="og:url" content="https://accent-coach.devmamun.com/words.html">
-<meta property="og:title" content="1000 Most Common English Words with Meanings, Examples &amp; Audio | Accent Coach">
-<meta property="og:description" content="Learn the 1000 most common English words with simple definitions, example sentences and audio. 20 new words a day, spaced-repetition revision and quizzes. Free.">
+<meta property="og:title" content="2800 Most Common English Words with Meanings, Examples &amp; Audio | Accent Coach">
+<meta property="og:description" content="Learn the 2800 most common English words with simple definitions, example sentences and audio. 20 new words a day, spaced-repetition revision and quizzes. Free.">
 <meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="1000 Most Common English Words with Meanings, Examples &amp; Audio | Accent Coach">
-<meta name="twitter:description" content="Learn the 1000 most common English words with simple definitions, example sentences and audio. 20 new words a day, spaced-repetition revision and quizzes. Free.">
+<meta name="twitter:title" content="2800 Most Common English Words with Meanings, Examples &amp; Audio | Accent Coach">
+<meta name="twitter:description" content="Learn the 2800 most common English words with simple definitions, example sentences and audio. 20 new words a day, spaced-repetition revision and quizzes. Free.">
 <meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
@@ -103,8 +103,9 @@ main{padding:36px 0 80px}
 <main><div class="container"><div class="wrap">
   <div class="card hero">
     <div class="herotop"><span class="pos">Vocabulary</span><button class="bnsw"></button></div>
-    <h1>The <mark>1000</mark> most common English words</h1>
+    <h1>The <mark>2800</mark> most common English words</h1>
     <p>The words you meet most in everyday English, each with a simple definition, an example sentence and audio. Learn 20 new words a day, and smart revision brings them back just before you forget.</p>
+    <div class="wset" style="margin:0 0 12px;font-weight:700">New words from: <select id="wset" style="font:inherit;padding:6px 10px;border-radius:10px"><option value="1">Set 1 · 1000 basic words (A1–B1)</option><option value="2">Set 2 · 1801 more words (B1–C1)</option><option value="all">Both sets</option></select></div>
     <div class="stats"><div><b id="sLearn">0</b><span>words learned</span></div><div><b id="sMaster">0</b><span>mastered</span></div><div><b id="sDue">0</b><span>to revise today</span></div></div>
     <div class="bigbar"><i id="bar"></i></div>
     <div class="cloud" id="cloud"></div>
@@ -119,12 +120,14 @@ main{padding:36px 0 80px}
   <div id="out"></div>
   <p class="foot">Word list: <a href="https://www.newgeneralservicelist.com" target="_blank" rel="noopener">New General Service List</a> (Browne, Culligan &amp; Phillips, 2013), CC BY-SA 4.0. Definitions, example sentences and Bangla meanings by Accent Coach, under the same licence.</p>
 </div></div></main>
-<footer class="sitefoot"><div class="container"><span>© 2026 Accent Coach · Free English learning · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span><div class="fl"><a href="index.html">Home</a><a href="learn.html">All tools</a><a href="level-test.html">English level test</a><a href="path.html">12-week plan</a><a href="words.html">1000 common words</a><a href="phrases.html">Everyday phrases</a><a href="listen.html">Listening practice</a><a href="grammar.html">Grammar lessons</a><a href="app.html">Pronunciation course</a></div></div></footer>
+<footer class="sitefoot"><div class="container"><span>© 2026 Accent Coach · Free English learning · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span><div class="fl"><a href="index.html">Home</a><a href="learn.html">All tools</a><a href="level-test.html">English level test</a><a href="path.html">12-week plan</a><a href="words.html">2800 common words</a><a href="phrases.html">Everyday phrases</a><a href="listen.html">Listening practice</a><a href="grammar.html">Grammar lessons</a><a href="app.html">Pronunciation course</a></div></div></footer>
 <script src="kit.js?v=2"></script>
 <script>
 (function(){
 var NEW_PER_DAY=20, GAPS=[1,3,7,15,30,60], MASTER=4;
-var FILES=["w001","w002","w003","w004","w005","w006","w007","w008","w009","w010"].map(function(f){return "words/"+f+".json"}), TOTAL=1000;
+var FILES=[];for(var fi=1;fi<=28;fi++)FILES.push("words/w"+("00"+fi).slice(-3)+".json");var TOTAL=2801;
+var SET=(function(){try{return localStorage.getItem("ac-wset")||"1"}catch(e){return "1"}})();
+function inSet(x){return SET==="all"||(SET==="1"?x.n<=1000:x.n>1000)}
 var W=[], BY={}, VOICE={}, SVOICE={}, st, tab="learn";
 var KEY="ac-words";
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
@@ -139,7 +142,7 @@ function mastered(){var c=0;for(var k in st.w)if(st.w[k][0]>=MASTER)c++;return c
 function due(){var t=dayNo();return W.filter(function(x){var e=st.w[x.w];return e&&e[1]<=t})}
 function newToday(){return st.nd===dayNo()?st.nc:0}
 function limitToday(){return NEW_PER_DAY+(st.bd===dayNo()?(st.bonus||0):0)}
-function fresh(){return W.filter(function(x){return !st.w[x.w]})}
+function fresh(){return W.filter(function(x){return inSet(x)&&!st.w[x.w]})}
 
 var synthVoice=null;
 function pickVoice(){if(!("speechSynthesis" in window))return;var vs=speechSynthesis.getVoices().filter(function(v){return /^en(-|_)/i.test(v.lang)});
@@ -305,7 +308,7 @@ window.acVocab={get:function(){return {w:st.w,f:st.f||{}}},apply:function(w,f){s
 Promise.all(FILES.map(function(f){return fetch(f).then(function(r){return r.json()})}).concat([fetch("audio/words/index.json").then(function(r){return r.ok?r.json():[]}).catch(function(){return []}),fetch("audio/sent/index.json").then(function(r){return r.ok?r.json():[]}).catch(function(){return []})]))
  .then(function(r){var sv=r.pop(),v=r.pop();(sv||[]).forEach(function(f){SVOICE[String(parseInt(f,10))]=f});r.forEach(function(a){W=W.concat(a)});W.forEach(function(x){BY[x.w]=x});
    (v||[]).forEach(function(f){VOICE[f.replace(/\.mp3$/,"").toLowerCase()]=f});
-   stats();setTab(due().length?"review":"learn");})
+   stats();var ws=document.getElementById("wset");ws.value=SET;ws.onchange=function(){SET=ws.value;try{localStorage.setItem("ac-wset",SET)}catch(e){}setTab("learn")};setTab(due().length?"review":"learn");})
  .catch(function(){out.innerHTML='<div class="card done"><h2>The words didn\'t load</h2><p>Check your internet connection and open the page again.</p></div>'});
 })();
 </script>
