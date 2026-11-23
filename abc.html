@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo-icon-512.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>English Alphabet & Phonics for Beginners: ABC Sounds with Audio | Accent Coach</title>
+<meta name="description" content="Learn the English alphabet from zero: letter names, letter sounds, picture words, sh/ch/th sounds and the magic e, with audio and a listening quiz. Free, with optional Bangla help.">
+<link rel="canonical" href="https://accent-coach.devmamun.com/abc.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accent Coach">
+<meta property="og:url" content="https://accent-coach.devmamun.com/abc.html">
+<meta property="og:title" content="English Alphabet & Phonics for Beginners: ABC Sounds with Audio | Accent Coach">
+<meta property="og:description" content="Learn the English alphabet from zero: letter names, letter sounds, picture words, sh/ch/th sounds and the magic e, with audio and a listening quiz. Free, with optional Bangla help.">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="English Alphabet & Phonics for Beginners: ABC Sounds with Audio | Accent Coach">
+<meta name="twitter:description" content="Learn the English alphabet from zero: letter names, letter sounds, picture words, sh/ch/th sounds and the magic e, with audio and a listening quiz. Free, with optional Bangla help.">
+<meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="learn.css?v=2">
+<style>.abc{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-top:16px}
+.lt{cursor:pointer;border:1.5px solid var(--line);background:var(--card);border-radius:18px;padding:14px;text-align:center;font-family:var(--body);color:var(--ink)}
+.lt:hover{border-color:var(--ink)}.lt .big{font:800 44px var(--display);display:block;line-height:1}
+.lt .em{font-size:30px;display:block;margin:6px 0}.lt small{color:var(--muted);display:block;font-size:13px}.lt b{font-size:17px}
+.sec{font:800 20px var(--display);margin:28px 0 4px}.note{color:var(--muted);margin-top:4px}
+.mrow{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}.mrow b{font:800 22px var(--display);min-width:60px}
+.qbig{font-size:64px;text-align:center;margin:18px 0}</style>
+<link rel="stylesheet" href="chrome.css?v=5">
+</head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><div class="nl"><a href="level-test.html">Level test</a><a href="path.html">12-week plan</a><a href="words.html">Words</a><a href="phrases.html">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="reading.html">Reading</a><a href="speak.html">Speaking</a><a href="app.html">Pronunciation</a></div><a class="btn pri" href="path.html">Open my plan →</a></div></nav>
+<main><div class="container"><div class="wrap">
+<div class="card hero">
+<div class="herotop"><span class="pos">ABC &amp; Phonics</span><button class="bnsw"></button></div>
+<h1>Start from zero: <mark>ABC &amp; sounds</mark></h1>
+<p>Tap a letter to hear its name, its sound and a word. Then learn letter pairs like sh, ch and th, and the "magic e". Finish with a quick listening quiz.</p>
+<p class="bnx">প্রতিটা অক্ষরে চাপ দিন: অক্ষরের নাম, উচ্চারণ আর একটা শব্দ শুনবেন। খেয়াল করুন F, P, V, Z, TH — এগুলো বাংলার ফ, ভ, জ, থ থেকে আলাদা।</p>
+<div class="acts" style="margin-top:14px"><button class="btn pri" id="qzb">🎧 Letter quiz</button><button class="btn" id="allb">▶ Play A to Z</button></div>
+</div>
+<div id="out"></div>
+</div></div></main>
+<footer class="sitefoot"><div class="container"><span>© 2026 Accent Coach · Free English learning · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span><div class="fl"><a href="index.html">Home</a><a href="learn.html">All tools</a><a href="level-test.html">English level test</a><a href="path.html">12-week plan</a><a href="words.html">2800 common words</a><a href="phrases.html">Everyday phrases</a><a href="listen.html">Listening practice</a><a href="grammar.html">Grammar lessons</a><a href="abc.html" class="on">ABC &amp; phonics</a><a href="reading.html">Reading practice</a><a href="speak.html">Speaking &amp; writing</a><a href="app.html">Pronunciation course</a></div></div></footer>
+<script src="kit.js?v=2"></script>
+<script>
+(function(){
+var X={"L": [["A", "ay", "/æ/ as in apple", "apple", "🍎", "আপেল"], ["B", "bee", "/b/", "ball", "⚽", "বল"], ["C", "see", "/k/ (sometimes /s/)", "cat", "🐱", "বিড়াল"], ["D", "dee", "/d/", "dog", "🐶", "কুকুর"], ["E", "ee", "/e/ as in egg", "egg", "🥚", "ডিম"], ["F", "ef", "/f/ (not ফ)", "fish", "🐟", "মাছ"], ["G", "jee", "/g/ (sometimes /dʒ/)", "goat", "🐐", "ছাগল"], ["H", "aitch", "/h/", "hat", "👒", "টুপি"], ["I", "eye", "/ɪ/ as in ink", "ink", "🖋️", "কালি"], ["J", "jay", "/dʒ/", "juice", "🧃", "জুস"], ["K", "kay", "/k/", "kite", "🪁", "ঘুড়ি"], ["L", "el", "/l/", "lion", "🦁", "সিংহ"], ["M", "em", "/m/", "moon", "🌙", "চাঁদ"], ["N", "en", "/n/", "nose", "👃", "নাক"], ["O", "oh", "/ɒ/ as in orange", "orange", "🍊", "কমলা"], ["P", "pee", "/p/ (not ফ)", "pen", "🖊️", "কলম"], ["Q", "kyoo", "/kw/", "queen", "👑", "রানি"], ["R", "ar", "/r/", "rain", "🌧️", "বৃষ্টি"], ["S", "es", "/s/", "sun", "☀️", "সূর্য"], ["T", "tee", "/t/", "tree", "🌳", "গাছ"], ["U", "yoo", "/ʌ/ as in umbrella", "umbrella", "☂️", "ছাতা"], ["V", "vee", "/v/ (top teeth on lip, not ভ)", "van", "🚐", "ভ্যান"], ["W", "double-you", "/w/ (round lips)", "water", "💧", "পানি"], ["X", "ex", "/ks/", "box", "📦", "বাক্স"], ["Y", "why", "/j/", "yellow", "🟡", "হলুদ"], ["Z", "zed / zee", "/z/ (not জ)", "zebra", "🦓", "জেব্রা"]], "D": [["sh", "ship", "🚢", "জাহাজ"], ["ch", "chair", "🪑", "চেয়ার"], ["th", "three", "3️⃣", "তিন (জিহ্বা দাঁতের মাঝে)"], ["th", "this", "👉", "এটা (জিহ্বা দাঁতের মাঝে, গলায় কম্পন)"], ["ph", "phone", "📱", "ফোন (ph = f)"], ["ck", "duck", "🦆", "হাঁস"], ["ng", "ring", "💍", "আংটি"], ["wh", "whale", "🐋", "তিমি"]], "M": [["a_e", "cap → cape", "made, name, cake"], ["i_e", "kit → kite", "time, bike, five"], ["o_e", "hop → hope", "home, nose, phone"], ["u_e", "cut → cute", "huge, tube, use"]]};
+var out=document.getElementById("out"),esc=AC.esc,run=false;
+function say(t,d){AC.say(t,null,d,{rate:.8})}
+function home(){AC.stop();run=false;var h='<div class="abc">'+X.L.map(function(l,i){return '<button class="lt" data-i="'+i+'"><span class="big">'+l[0]+l[0].toLowerCase()+'</span><span class="em">'+l[4]+'</span><b>'+l[3]+'</b><small>'+esc(l[2])+'</small><small class="bnx">'+l[5]+'</small></button>'}).join("")+'</div>';
+ h+='<div class="sec">Letter pairs (two letters, one sound)</div><p class="note">Tap to hear.</p><div class="abc">'+X.D.map(function(d,i){return '<button class="lt" data-d="'+i+'"><span class="big">'+d[0]+'</span><span class="em">'+d[2]+'</span><b>'+d[1]+'</b><small class="bnx">'+d[3]+'</small></button>'}).join("")+'</div>';
+ h+='<div class="sec">The magic e</div><p class="note">An e at the end is silent, but it makes the vowel say its name.</p><p class="bnx">শব্দের শেষে e উচ্চারিত হয় না, কিন্তু আগের স্বরবর্ণটা তার নিজের নামের মতো উচ্চারিত হয়: cap → cape।</p><div class="card wc" style="margin-top:12px">'+X.M.map(function(m,i){return '<div class="mrow"><b>'+m[0]+'</b><span style="flex:1"><b style="font-size:18px">'+m[1]+'</b><br><small style="color:var(--muted)">'+m[2]+'</small></span><button class="play sm" data-m="'+i+'">▶</button></div>'}).join("")+'</div>';
+ out.innerHTML=h;
+ out.querySelectorAll("[data-i]").forEach(function(b){b.onclick=function(){var l=X.L[b.dataset.i];AC.stop();say(l[0]+".",function(){setTimeout(function(){say(l[3]+".")},250)})}});
+ out.querySelectorAll("[data-d]").forEach(function(b){b.onclick=function(){AC.stop();say(X.D[b.dataset.d][1])}});
+ out.querySelectorAll("[data-m]").forEach(function(b){b.onclick=function(){AC.stop();say(X.M[b.dataset.m][1].replace("→",",")+". "+X.M[b.dataset.m][2])}});}
+document.getElementById("allb").onclick=function(){if(run){home();return}home();run=true;var i=0;(function nx(){if(!run||i>=26){run=false;return}var l=X.L[i++],el=out.querySelector('[data-i="'+(i-1)+'"]');el.style.borderColor="var(--ink)";say(l[0]+", "+l[3],function(){el.style.borderColor="";setTimeout(nx,350)})})()};
+var Q;
+function quiz(){AC.stop();run=false;Q={i:0,s:0,list:AC.shuffle(X.L).slice(0,10)};ask()}
+function ask(){var l=Q.list[Q.i],opts=AC.shuffle([l].concat(AC.shuffle(X.L.filter(function(x){return x!==l})).slice(0,3)));
+ out.innerHTML='<div class="card wc"><div class="wtop"><button class="back" id="bk">← ABC</button><span>Question '+(Q.i+1)+' of 10 · score '+Q.s+'</span></div><div class="qbig">'+l[4]+'</div><p style="text-align:center;font-weight:700">Listen. Which letter does this word start with?</p><p class="bnx" style="text-align:center">শুনুন। শব্দটা কোন অক্ষর দিয়ে শুরু?</p><div style="text-align:center;margin:10px 0"><button class="play" id="rp">▶</button></div><div class="grid">'+opts.map(function(o){return '<button class="opt" data-k="'+o[0]+'" style="text-align:center;font-size:28px">'+o[0]+' '+o[0].toLowerCase()+'</button>'}).join("")+'</div><div class="acts hidden" id="qn"><span id="fb"></span><button class="btn pri" id="nx">'+(Q.i<9?"Next →":"See score →")+'</button></div></div>';
+ document.getElementById("bk").onclick=home;var p=function(){say(l[3])};p();document.getElementById("rp").onclick=p;
+ out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=b.dataset.k===l[0];if(ok)Q.s++;out.querySelectorAll(".opt").forEach(function(x){x.disabled=true;if(x.dataset.k===l[0])x.classList.add("ok")});if(!ok)b.classList.add("no");document.getElementById("fb").textContent=l[3]+" starts with "+l[0];document.getElementById("qn").classList.remove("hidden");say(l[0]+". "+l[3])}});
+ document.getElementById("nx").onclick=function(){if(++Q.i<10)ask();else{try{localStorage.setItem("ac-abc",JSON.stringify({best:Math.max(Q.s,(JSON.parse(localStorage.getItem("ac-abc")||"{}").best||0))}))}catch(e){}out.innerHTML='<div class="card wc done"><h2>You got '+Q.s+' / 10</h2><p>'+(Q.s>=8?"Great! Move on to the 2800 words.":"Listen to the letters again and try once more.")+'</p><div class="acts"><button class="btn" id="ag">Try again</button><a class="btn pri" href="words.html">Learn words →</a></div></div>';document.getElementById("ag").onclick=quiz}}}
+document.getElementById("qzb").onclick=quiz;home();
+AC.wireBn&&AC.wireBn();})();
+</script>
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script>
+</body></html>
