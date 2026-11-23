@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accent Coach · Speak Clearer English</title>
-<meta name="description" content="A free, day-by-day English pronunciation coach. Listen, shadow and repeat for 40 minutes a day and speak with a clearer accent.">
-<meta property="og:title" content="Accent Coach · Speak Clearer English">
-<meta property="og:description" content="Free pronunciation plan: sounds, minimal pairs, tongue twisters and shadowing scripts.">
+<title>Accent Coach · Learn English Free, Step by Step</title>
+<meta name="description" content="Free English learning for Bangla speakers: level test, 12-week plan, 1000 words, everyday phrases, listening, grammar in Bangla and pronunciation.">
+<meta property="og:title" content="Accent Coach · Learn English Free, Step by Step">
+<meta property="og:description" content="Level test, 12-week plan, 1000 words, phrases, listening, grammar in Bangla and pronunciation. All free.">
 <meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
@@ -97,6 +97,14 @@ nav .btn{padding:11px 18px;font-size:15px}
 @media(max-width:560px){.float{display:none}}
 
 /* stats */
+.steps.s4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){.steps.s4{grid-template-columns:1fr 1fr}}
+a.fc{display:flex;flex-direction:column;color:inherit;text-decoration:none;transition:transform .2s,border-color .2s}
+a.fc:hover{transform:translateY(-3px);border-color:var(--ink)}
+.fc .go{margin-top:auto;padding-top:16px;font-weight:700;font-size:15px;color:var(--ink)}
+.fc.dark .go{color:var(--lime)}
+.fc .go small{display:block;font-weight:600;color:var(--muted);font-size:14px;margin-top:4px}
+.fc.dark .go small{color:#b9bbc2}
 .stats{padding:0 0 24px}
 .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border:1px solid var(--line);border-radius:24px}
 .stats .grid div{padding:28px 26px;border-right:1px solid var(--line)}
@@ -244,95 +252,97 @@ button.word.playing .play{transform:scale(1.08)}
 <nav>
   <div class="container">
     <a class="logo" href="#top"><img src="img/logo-icon.svg" alt="" width="34" height="34">Accent Coach</a>
-    <div class="links"><a href="#features">Features</a><a href="#routine">Routine</a><a href="#plan">Plan</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="learn.html">Learn</a><a href="level-test.html">Level test</a><a href="leaderboard.html">Leaderboard</a></div>
+    <div class="links"><a href="#features">Features</a><a href="#how">How it works</a><a href="#path">12-week plan</a><a href="learn.html">Learn</a><a href="level-test.html">Level test</a><a href="#about">About</a><a href="#faq">FAQ</a></div>
     <span id="navUser"></span>
-    <a class="btn btn-dark navcta" href="app.html">Start practicing →</a>
+    <a class="btn btn-dark navcta" href="path.html">Open my plan →</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
   </div>
-  <div class="mmenu" id="mmenu"><a href="#features">Features</a><a href="#routine">Daily routine</a><a href="#plan">Learning plan</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="learn.html">Learn English</a><a href="level-test.html">Level test</a><a href="words.html">1000 words</a><a href="leaderboard.html">Leaderboard</a><a class="btn btn-lime" href="app.html">Start practicing →</a></div>
+  <div class="mmenu" id="mmenu"><a href="#features">Features</a><a href="#how">How it works</a><a href="#path">12-week plan</a><a href="learn.html">All learning tools</a><a href="level-test.html">Level test</a><a href="words.html">1000 words</a><a href="phrases.html">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="app.html">Pronunciation</a><a href="leaderboard.html">Leaderboard</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="btn btn-lime" href="path.html">Open my plan →</a></div>
 </nav>
 
 <header class="hero" id="top">
   <div class="container">
     <div>
-      <span class="eyebrow"><i></i>Free English pronunciation coach</span>
-      <h1>Speak English with a <mark>clearer accent</mark></h1>
-      <p class="lead">A guided, day-by-day practice plan. Listen to a natural voice, shadow it, repeat it, and hear your own progress, in about 40 minutes a day.</p>
+      <span class="eyebrow"><i></i>Free English learning · A1 to C1</span>
+      <h1>Learn English, <mark>step by step</mark></h1>
+      <p class="lead">Find your level in 10 minutes, then follow a 12-week plan built for it. Every day: new words, everyday phrases, listening, grammar explained in Bangla, and pronunciation. All free.</p>
       <div class="cta-row">
-        <a class="btn btn-lime" id="heroCta" href="app.html">Start Day 1, free →</a>
-        <a class="btn btn-ghost" href="#plan">See the learning plan</a>
+        <a class="btn btn-lime" id="heroCta" href="level-test.html">Take the free level test →</a>
+        <a class="btn btn-ghost" id="heroCta2" href="#path">See the 12-week plan</a>
       </div>
       <div class="myprog" id="myprog" hidden><div class="mpb"><i id="mpbar"></i></div><span id="mptxt"></span></div>
-      <div class="trust"><span>No sign-up</span><span>Works on phone &amp; laptop</span><span>Progress saved automatically</span></div>
+      <div class="trust"><span>No payment, no ads</span><span>Works without login</span><span>Log in to save progress on every device</span></div>
     </div>
     <div class="mockwrap">
       <div class="float f2" id="fl2"><b>✓</b><span id="fl2t">Tap ▶ to hear it</span></div>
       <div class="mock">
-        <div class="mock-top"><b>Try a quick drill</b><span class="pill" id="mpill">Drill 1 / 3</span></div>
+        <div class="mock-top"><b>Hear it in a real voice</b><span class="pill" id="mpill">Drill 1 / 3</span></div>
         <div class="dstrip" role="tablist" aria-label="Demo drills">
           <button class="chip on" data-i="0" role="tab" aria-selected="true">v / w</button>
           <button class="chip" data-i="1" role="tab" aria-selected="false">th / t</button>
           <button class="chip" data-i="2" role="tab" aria-selected="false">ship / sheep</button>
         </div>
-        <div class="mhead"><small id="mtag">Week 1 · Consonants · Minimal pairs</small><h3 id="mtitle">/v/ vs /w/</h3></div>
+        <div class="mhead"><small id="mtag">Pronunciation · Minimal pairs</small><h3 id="mtitle">/v/ vs /w/</h3></div>
         <button class="word" id="w0" data-k="0"><span class="play" aria-hidden="true">▶</span><span class="wt"><b id="w0b">very</b><span id="w0h">Top teeth on lower lip</span></span><em id="w0e">/v/</em></button>
         <button class="word" id="w1" data-k="1"><span class="play" aria-hidden="true">▶</span><span class="wt"><b id="w1b">wary</b><span id="w1h">Round your lips, no teeth</span></span><em id="w1e">/w/</em></button>
         <div class="wave" id="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
         <button class="next" id="mnext">Next drill →</button>
       </div>
-      <div class="float f1"><b>🎧</b>Listen · Shadow · Repeat</div>
+      <div class="float f1"><b>🎧</b>Listen · Say it · Compare</div>
     </div>
   </div>
 </header>
 
 <div class="stats">
   <div class="container"><div class="grid">
-    <div class="rv"><b class="cnt" data-to="40">40</b><span>minutes a day</span></div>
-    <div class="rv"><b class="cnt" data-to="4">4</b><span>weekly focus areas</span></div>
-    <div class="rv"><b class="cnt" data-to="6">6</b><span>short steps a day</span></div>
+    <div class="rv"><b class="cnt" data-to="1000">1000</b><span>most-used words</span></div>
+    <div class="rv"><b class="cnt" data-to="150">150</b><span>everyday phrases</span></div>
+    <div class="rv"><b class="cnt" data-to="12">12</b><span>week plan for your level</span></div>
     <div class="rv"><b>$0</b><span>free, forever</span></div>
   </div></div>
 </div>
 
 <section id="features">
   <div class="container">
-    <div class="sec-head"><span class="eyebrow"><i></i>Features</span><h2>Everything you need to fix your pronunciation</h2><p>No theory overload. Every day tells you exactly what to practice, in what order, and for how long.</p></div>
+    <div class="sec-head"><span class="eyebrow"><i></i>Features</span><h2>Everything you need to learn English, in one place</h2><p>Each part is short, practical and made for Bangla speakers. Use them one by one, or let the 12-week plan tell you what to do each day.</p></div>
     <div class="feat">
-      <div class="rv fc"><div class="ic">🎧</div><h3>A natural voice to copy</h3><p>Every word and line is played in a clear, natural voice, so you can hear the sound before you say it.</p></div>
-      <div class="rv fc"><div class="ic">👂</div><h3>Minimal pairs</h3><p>Train your ear on the sounds that are easy to mix up, like very / wary, ship / sheep, think / sink.</p></div>
-      <div class="rv fc dark"><div class="ic">👅</div><h3>Tongue twisters</h3><p>Short, fun drills that make your mouth move the right way until the sound feels automatic.</p></div>
-      <div class="rv fc"><div class="ic">🗣️</div><h3>Shadowing scripts</h3><p>Speak along with real sentences to build rhythm, stress and natural flow, not just single words.</p></div>
-      <div class="rv fc"><div class="ic">🎙️</div><h3>Record &amp; compare</h3><p>Record yourself on Day 1, Day 15 and Day 30, then listen to them side by side to hear how far you've come.</p></div>
-      <div class="rv fc"><div class="ic">📈</div><h3>Progress that remembers</h3><p>Your finished days are saved in your browser, so you can pick up exactly where you left off.</p></div>
+      <a class="rv fc" href="level-test.html"><div class="ic">📊</div><h3>Level test</h3><p>30 questions on grammar, words, reading and listening. Find out where you are, from A1 to C1, in about 10 minutes.</p><span class="go" data-p="level">Take the test →</span></a>
+      <a class="rv fc dark" href="path.html"><div class="ic">🗺️</div><h3>12-week plan</h3><p>A daily to-do list for your level: 30–40 minutes of words, phrases, listening, grammar and pronunciation.</p><span class="go" data-p="path">Start the plan →</span></a>
+      <a class="rv fc" href="words.html"><div class="ic">📘</div><h3>1000 key words</h3><p>The most-used English words with Bangla meaning, an example sentence and audio. Smart revision brings them back before you forget.</p><span class="go" data-p="words">Learn words →</span></a>
+      <a class="rv fc" href="phrases.html"><div class="ic">💬</div><h3>Everyday phrases</h3><p>150 ready-to-use sentences for shops, travel, phone calls, the office, interviews and client meetings.</p><span class="go" data-p="phrases">Practice phrases →</span></a>
+      <a class="rv fc" href="listen.html"><div class="ic">🎧</div><h3>Listening practice</h3><p>12 short real-life conversations. Listen without reading, answer 3 questions, then check the transcript line by line.</p><span class="go" data-p="listen">Start listening →</span></a>
+      <a class="rv fc" href="grammar.html"><div class="ic">✏️</div><h3>Grammar in Bangla</h3><p>15 short lessons, from am / is / are to the passive voice. Simple Bangla explanations, examples and 5 practice questions each.</p><span class="go" data-p="grammar">Open lessons →</span></a>
+      <a class="rv fc" href="app.html"><div class="ic">🗣️</div><h3>30-day pronunciation</h3><p>Fix the sounds Bangla speakers mix up: v / w, th, ship / sheep, word endings, stress and rhythm.</p><span class="go" data-p="app">Start Day 1 →</span></a>
+      <a class="rv fc" href="phrases.html"><div class="ic">🎙️</div><h3>Speak and compare</h3><p>Say a word or sentence, record yourself, and play it next to the correct version. In supported browsers, it also checks the words you said.</p><span class="go">Try it →</span></a>
+      <a class="rv fc" href="leaderboard.html"><div class="ic">☁️</div><h3>Progress that follows you</h3><p>Use it without an account, or log in with Google to keep your progress on every device and join the leaderboard.</p><span class="go">See the leaderboard →</span></a>
     </div>
   </div>
 </section>
 
-<section class="routine" id="routine">
+<section class="routine" id="how">
   <div class="container">
-    <div class="sec-head"><span class="eyebrow"><i></i>Daily routine</span><h2>One clear routine, every day</h2><p>Open the app, press play and follow the six steps. The app moves you to the next step when you're ready.</p></div>
-    <div class="steps">
-      <div class="rv st"><span class="n">1</span><span class="min">5 min</span><h3>Warm-up</h3><p>Loosen your mouth and voice.</p></div>
-      <div class="rv st"><span class="n">2</span><span class="min">5 min</span><h3>Sound</h3><p>Learn today's target sound.</p></div>
-      <div class="rv st"><span class="n">3</span><span class="min">5 min</span><h3>Pairs</h3><p>Hear and say the difference.</p></div>
-      <div class="rv st"><span class="n">4</span><span class="min">5 min</span><h3>Twister</h3><p>Drill it until it's easy.</p></div>
-      <div class="rv st"><span class="n">5</span><span class="min">15 min</span><h3>Script</h3><p>Shadow full sentences.</p></div>
-      <div class="rv st"><span class="n">6</span><span class="min">5 min</span><h3>Record + check</h3><p>Say it, record it, compare.</p></div>
+    <div class="sec-head"><span class="eyebrow"><i></i>How it works</span><h2>Four simple steps</h2><p>No guessing what to study next. The site tells you what to do today, and you just tick it off.</p></div>
+    <div class="steps s4">
+      <div class="rv st"><span class="n">1</span><span class="min">10 min</span><h3>Find your level</h3><p>Take the free level test and see your result from A1 to C1.</p></div>
+      <div class="rv st"><span class="n">2</span><span class="min">1 click</span><h3>Get your track</h3><p>Beginner, middle or advanced: the 12-week plan is set for your level.</p></div>
+      <div class="rv st"><span class="n">3</span><span class="min">30–40 min</span><h3>Do today's tasks</h3><p>Words, phrases, listening, grammar and pronunciation, each one a tap away.</p></div>
+      <div class="rv st"><span class="n">4</span><span class="min">Week 6 · 12</span><h3>Check your progress</h3><p>Take the level test again halfway and at the end to see how far you've come.</p></div>
     </div>
-    <div class="total"><b>40 min</b>a day · one focused session · no guesswork</div>
+    <div class="total"><b>30–40 min</b>a day · one clear list · no guesswork</div>
   </div>
 </section>
 
-<section id="plan">
+<section id="path">
   <div class="container">
-    <div class="sec-head"><span class="eyebrow"><i></i>Learning plan</span><h2>Four weeks, from single sounds to full sentences</h2><p>Each week builds on the last, so by the end you're speaking whole sentences with clearer sounds and better rhythm.</p></div>
+    <div class="sec-head"><span class="eyebrow"><i></i>12-week plan</span><h2>Twelve weeks, from basics to confident speaking</h2><p>Every week has six learning days and one review day. Your track (beginner, middle or advanced) decides which phrases, grammar lessons and conversations come first.</p></div>
     <div class="weeks">
-      <div class="rv wk"><small>Week 1 · Days 1–7</small><h3>Consonants</h3><p>The tricky consonant sounds that change meaning when they're wrong.</p><ul><li>v / w</li><li>f / p</li><li>th</li><li>z / s</li><li>sh / s</li></ul><div class="rv wkp" data-a="1" data-b="7"><div class="mpb"><i></i></div><span>0 / 7 days done</span></div><a class="wklink" href="app.html#day=1">Start week 1 →</a></div>
-      <div class="rv wk"><small>Week 2 · Days 8–14</small><h3>Vowels</h3><p>Short and long vowels, so "ship" and "sheep" finally sound different.</p><ul><li>ship / sheep</li><li>cat / bed</li><li>cup / car</li><li>diphthongs</li><li>schwa</li></ul><div class="rv wkp" data-a="8" data-b="14"><div class="mpb"><i></i></div><span>0 / 7 days done</span></div><a class="wklink" href="app.html#day=8">Start week 2 →</a></div>
-      <div class="rv wk"><small>Week 3 · Days 15–21</small><h3>Endings &amp; tricky sounds</h3><p>Finish every word clearly and fix the sounds that trip most learners.</p><ul><li>-ed</li><li>-s / -es</li><li>clusters</li><li>R / L</li><li>silent letters</li></ul><div class="rv wkp" data-a="15" data-b="21"><div class="mpb"><i></i></div><span>0 / 7 days done</span></div><a class="wklink" href="app.html#day=15">Start week 3 →</a></div>
-      <div class="rv wk hl"><small>Week 4 · Days 22–30</small><h3>Full sentences</h3><p>Stress, linking and intonation, so you sound natural, not word-by-word.</p><ul><li>word stress</li><li>sentence stress</li><li>linking</li><li>intonation</li><li>pauses</li></ul><div class="rv wkp" data-a="22" data-b="30"><div class="mpb"><i></i></div><span>0 / 9 days done</span></div><a class="wklink" href="app.html#day=22">Start week 4 →</a></div>
+      <div class="rv wk"><small>Weeks 1–4</small><h3>Build the base</h3><p>20 new words a day, the 30-day pronunciation course, your first phrase topics and grammar lessons.</p><ul><li>words</li><li>sounds</li><li>phrases</li><li>grammar</li></ul></div>
+      <div class="rv wk"><small>Weeks 5–6</small><h3>Speak &amp; listen</h3><p>Finish all 10 phrase topics, work through the 12 conversations, and retake the level test.</p><ul><li>listening</li><li>phrases</li><li>level check</li></ul></div>
+      <div class="rv wk"><small>Weeks 7–9</small><h3>Make it stick</h3><p>Reach 1000 words, review phrases by topic, and go through the grammar lessons a second time.</p><ul><li>1000 words</li><li>revision</li><li>grammar</li></ul></div>
+      <div class="rv wk hl"><small>Weeks 10–12</small><h3>Speak with confidence</h3><p>Shadow full sentences, record yourself every week, and take the final level test.</p><ul><li>shadowing</li><li>recording</li><li>final test</li></ul></div>
     </div>
-    <div class="milestones"><span>🎙️ Day 1: first recording</span><span>🎙️ Day 15: halfway check</span><span>🏁 Day 30: compare all three</span></div>
+    <div class="milestones"><span>📊 Day 1: level test</span><span>📊 Week 6: halfway check</span><span>🏁 Week 12: final test</span></div>
+    <div class="cta-row" style="margin-top:26px"><a class="btn btn-dark" href="path.html">Open my 12-week plan →</a><a class="btn btn-ghost" href="learn.html">See all learning tools</a></div>
   </div>
 </section>
 
@@ -342,10 +352,10 @@ button.word.playing .play{transform:scale(1.08)}
     <div>
       <span class="eyebrow"><i></i>About</span>
       <h2>Built by a learner, for learners</h2>
-      <p>Hi, I'm Mamun, a WordPress and GoHighLevel developer from Bangladesh. I work with clients from around the world, and I built Accent Coach to sharpen my own spoken English, one sound at a time.</p>
-      <p>It's the exact plan I follow every day. I made it free and public so anyone working on their English can use it too.</p>
-      <div class="note"><b>🎧</b><div>The voice in the app is an AI clone of my own voice, created from my recordings.</div></div>
-      <div class="cta-row"><a class="btn btn-dark" href="app.html">Try it now →</a><a class="btn btn-ghost" href="https://devmamun.com" target="_blank" rel="noopener">Visit devmamun.com</a></div>
+      <p>Hi, I'm Mamun, a WordPress and GoHighLevel developer from Bangladesh. I work with clients from around the world, and I started Accent Coach to sharpen my own spoken English.</p>
+      <p>It has grown into a full, free English course for Bangla speakers: a level test, a 12-week plan, words, phrases, listening, grammar and pronunciation. I made it public so anyone working on their English can use it too.</p>
+      <div class="note"><b>🎧</b><div>The English voice on the site is an AI clone of my own voice, created from my recordings.</div></div>
+      <div class="cta-row"><a class="btn btn-dark" href="level-test.html">Start with the level test →</a><a class="btn btn-ghost" href="https://devmamun.com" target="_blank" rel="noopener">Visit devmamun.com</a></div>
     </div>
   </div>
 </section>
@@ -354,51 +364,62 @@ button.word.playing .play{transform:scale(1.08)}
   <div class="container">
     <div class="sec-head"><span class="eyebrow"><i></i>FAQ</span><h2>Questions</h2></div>
     <div class="faq">
-      <details class="rv" open><summary>Is it really free?</summary><p>Yes. There's no payment, no account and no ads. Just open the app and start.</p></details>
-      <details class="rv"><summary>Do I need to sign up?</summary><p>No. Your progress is saved in your own browser on the device you use.</p></details>
-      <details class="rv"><summary>Does it work on my phone?</summary><p>Yes. It works in any modern browser on phone, tablet or laptop. Use headphones for the best listening.</p></details>
-      <details class="rv"><summary>How much time do I need each day?</summary><p>About 40 minutes, split into six short steps. If you miss a day, just continue where you left off.</p></details>
-      <details class="rv"><summary>Will my progress be lost if I clear my browser?</summary><p>Clearing your browser data or switching devices resets your saved days. You can still jump to any day manually.</p></details>
+      <details class="rv" open><summary>Is it really free?</summary><p>Yes. Everything on the site is free, with no payment and no ads.</p></details>
+      <details class="rv"><summary>I'm a complete beginner. Can I use it?</summary><p>Yes. Take the level test first. If you're at Pre-A1 or A1, the plan starts with basic words, simple phrases and grammar from am / is / are.</p></details>
+      <details class="rv"><summary>Is everything explained in Bangla?</summary><p>Word meanings, phrase translations, grammar lessons and listening questions are in Bangla. The English you practice is played aloud so you can hear it.</p></details>
+      <details class="rv"><summary>Do I need to sign up?</summary><p>No. Your progress is saved in your browser. If you log in with Google, it's also saved to your account, so you can continue on another phone or laptop.</p></details>
+      <details class="rv"><summary>How much time do I need each day?</summary><p>About 30–40 minutes for the daily plan. If you miss a day, just continue where you stopped.</p></details>
+      <details class="rv"><summary>Does it work on my phone?</summary><p>Yes, in any modern browser. Use headphones for listening. The speaking check works best in Chrome.</p></details>
     </div>
   </div>
 </section>
 
 <div class="final">
   <div class="container"><div class="box">
-    <h2>Your clearer English starts with Day 1</h2>
-    <p>40 minutes a day. Free, forever.</p>
-    <a class="btn btn-dark" href="app.html">Start practicing now →</a>
+    <h2>Your English journey starts with one test</h2>
+    <p>10 minutes to find your level. Then 12 weeks, one day at a time. Free, forever.</p>
+    <a class="btn btn-dark" href="level-test.html">Take the free level test →</a>
   </div></div>
 </div>
 
 <footer>
   <div class="container">
     <span>© 2026 Accent Coach · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span>
-    <div class="fl"><a href="app.html">Open the app</a><a href="#plan">Learning plan</a><a href="learn.html">Learn English</a><a href="path.html">12-week path</a><a href="level-test.html">Level test</a><a href="words.html">1000 words</a><a href="phrases.html">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="leaderboard.html">Leaderboard</a><a href="https://github.com/md-al-mamun22/accent-coach" target="_blank" rel="noopener">GitHub</a></div>
+    <div class="fl"><a href="learn.html">Learn English</a><a href="path.html">12-week path</a><a href="level-test.html">Level test</a><a href="words.html">1000 words</a><a href="phrases.html">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="app.html">Pronunciation</a><a href="leaderboard.html">Leaderboard</a><a href="https://github.com/md-al-mamun22/accent-coach" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
 <script>
 (function(){
-  // ---- progress (local, then cloud when signed in) ----
+  // ---- personal progress (this browser; pronunciation also merges the cloud copy) ----
+  function bnum(n){return String(n)}
+  function setGo(k,t){var e=document.querySelector('.go[data-p="'+k+'"]');if(!e||!t)return;var sm=e.querySelector("small");if(!sm){sm=document.createElement("small");e.appendChild(sm)}sm.textContent=t}
+  function peek(k){try{return JSON.parse(localStorage.getItem(k)||"null")}catch(e){return null}}
   window.ACprog=function(st){
-    var done=st&&st.done?st.done:{};var nDone=Object.keys(done).filter(function(k){return done[k]}).length;
-    if(st&&(nDone>0||st.day>1)){
-      var day=st.day||1;document.getElementById("heroCta").textContent="Continue Day "+day+" →";
-      var mp=document.getElementById("myprog");mp.hidden=false;
-      document.getElementById("mptxt").textContent=nDone+" of 30 days done";
-      setTimeout(function(){document.getElementById("mpbar").style.width=(nDone/30*100)+"%"},300);
-    }
-    document.querySelectorAll(".wkp").forEach(function(el){var a=+el.dataset.a,b=+el.dataset.b,c=0;for(var i=a;i<=b;i++)if(done[i])c++;
-      el.querySelector("span").textContent=c+" / "+(b-a+1)+" days done";var bar=el.querySelector("i");setTimeout(function(){bar.style.width=(c/(b-a+1)*100)+"%"},400)});
+    var done=st&&st.done?st.done:{};var n=Object.keys(done).filter(function(k){return done[k]}).length;
+    if(st&&(n>0||st.day>1))setGo("app","You're on Day "+(st.day||1)+" · "+n+" of 30 days done");
   };
-  var st=null;try{st=JSON.parse(localStorage.getItem("accent-coach")||"null")}catch(e){}
-  window.ACprog(st);
+  window.ACprog(peek("accent-coach"));
+  (function(){
+    var lv=peek("ac-level"),path=peek("ac-prog-path")||{},w=peek("ac-words"),cta=document.getElementById("heroCta"),cta2=document.getElementById("heroCta2");
+    if(lv&&lv.level)setGo("level","Your last result: "+lv.level);
+    if(w&&w.w){var nw=Object.keys(w.w).length;if(nw)setGo("words",nw+" / 1000 words learned")}
+    var ph=peek("ac-prog-phrases")||{},np=Object.keys(ph).filter(function(k){return ph[k][0]>0}).length;if(np)setGo("phrases",np+" / 150 phrases learned");
+    var li=peek("ac-prog-listen")||{},nl=Object.keys(li).length;if(nl)setGo("listen",nl+" / 12 conversations done");
+    var gr=peek("ac-prog-grammar")||{},ng=Object.keys(gr).filter(function(k){return gr[k][0]>=4}).length;if(ng)setGo("grammar",ng+" / 15 lessons done");
+    if(path.track&&path.track[0]){var days={};for(var k in path){var m=k.match(/^d(\d+)_/);if(m&&path[k][0]>0)days[m[1]]=1}
+      var nd=Object.keys(days).length;cta.textContent="Continue my 12-week plan →";cta.href="path.html";
+      var mp=document.getElementById("myprog");mp.hidden=false;document.getElementById("mptxt").textContent="You've worked on "+nd+" of 84 days";
+      setTimeout(function(){document.getElementById("mpbar").style.width=(nd/84*100)+"%"},300);
+      setGo("path","Your plan is running · "+nd+" days so far");
+      if(lv&&lv.level){cta2.textContent="Your level: "+lv.level+" · retake test";cta2.href="level-test.html"}}
+    else if(lv&&lv.level){cta.textContent="Start my 12-week plan →";cta.href="path.html";cta2.textContent="Your level: "+lv.level+" · retake test";cta2.href="level-test.html"}
+  })();
 
   // ---- playable demo (real clips from the app, in Mamun's cloned voice) ----
   var DRILLS=[
-    {tag:"Week 1 · Consonants · Minimal pairs",title:"/v/ vs /w/",w:[["very","Top teeth on lower lip","/v/",0,0.66],["wary","Round your lips, no teeth","/w/",93.13,93.8]]},
-    {tag:"Week 1 · Consonants · Minimal pairs",title:"/θ/ vs /t/",w:[["three","Tongue between your teeth","/θ/",14.84,15.48],["tree","Tongue behind top teeth","/t/",98.91,99.6]]},
-    {tag:"Week 2 · Vowels · Minimal pairs",title:"/ɪ/ vs /iː/",w:[["ship","Short and relaxed","/ɪ/",32.78,33.47],["sheep","Long, smile a little","/iː/",33.36,34.03]]}
+    {tag:"Pronunciation · Minimal pairs",title:"/v/ vs /w/",w:[["very","Top teeth on lower lip","/v/",0,0.66],["wary","Round your lips, no teeth","/w/",93.13,93.8]]},
+    {tag:"Pronunciation · Minimal pairs",title:"/θ/ vs /t/",w:[["three","Tongue between your teeth","/θ/",14.84,15.48],["tree","Tongue behind top teeth","/t/",98.91,99.6]]},
+    {tag:"Pronunciation · Vowels",title:"/ɪ/ vs /iː/",w:[["ship","Short and relaxed","/ɪ/",32.78,33.47],["sheep","Long, smile a little","/iː/",33.36,34.03]]}
   ];
   var cur=0,au=null,stopT=null,wave=document.getElementById("wave");
   function audio(){if(!au){au=new Audio("audio/p1.mp3");au.preload="auto"}return au}
@@ -417,7 +438,7 @@ button.word.playing .play{transform:scale(1.08)}
       els.forEach(function(e){e.classList.remove("swap")});},180);
     document.querySelectorAll(".dstrip .chip").forEach(function(c,j){c.classList.toggle("on",j===i);c.setAttribute("aria-selected",j===i)});
     document.getElementById("mpill").textContent="Drill "+(i+1)+" / 3";
-    document.getElementById("mnext").textContent=i<2?"Next drill →":"Start the full plan →";
+    document.getElementById("mnext").textContent=i<2?"Next drill →":"Start the 30-day pronunciation course →";
     document.getElementById("fl2t").textContent="Tap ▶ to hear it";}
   document.querySelectorAll(".dstrip .chip").forEach(function(c){c.addEventListener("click",function(){show(+c.dataset.i)})});
   document.querySelectorAll("button.word").forEach(function(b){b.addEventListener("click",function(){play(+b.dataset.k)})});
