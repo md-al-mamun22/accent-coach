@@ -1,0 +1,60 @@
+body{font-family:"Figtree","Hind Siliguri",system-ui,sans-serif}
+.bn{font-family:"Hind Siliguri","Figtree",sans-serif}
+main{padding:36px 0 80px}
+.wrap{max-width:780px;margin:0 auto}
+.hero{padding:26px 26px 22px}
+.hero h1{font-size:clamp(28px,5vw,40px);font-weight:800;margin-top:10px}
+.hero h1 mark{background:var(--lime);color:#16171a;padding:0 10px;border-radius:10px}
+.hero p{color:var(--muted);margin-top:8px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stats div{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.stats b{display:block;font:800 24px var(--display)}
+.stats span{color:var(--muted);font-size:14px}
+.bigbar,.minibar{height:10px;border-radius:9px;background:var(--line);overflow:hidden;margin-top:14px}
+.minibar{height:6px;margin-top:10px}
+.bigbar i,.minibar i{display:block;height:100%;background:#9fbf1f;width:0;transition:width .4s}
+.pos{display:inline-block;background:var(--lav);color:var(--lav-ink);border-radius:999px;padding:3px 12px;font-weight:700;font-size:14px}
+.play{width:46px;height:46px;border-radius:50%;border:0;background:var(--lime);color:#16171a;font-size:18px;cursor:pointer;flex:none;display:grid;place-items:center}
+.play.sm{width:38px;height:38px;font-size:15px;background:var(--bg);border:1.5px solid var(--line);color:var(--ink)}
+.play.on{outline:3px solid #9fbf1f}
+.hidden{display:none!important}
+.acts{display:flex;justify-content:space-between;gap:10px;margin-top:22px;flex-wrap:wrap}
+.acts .btn{font:700 16px "Hind Siliguri",var(--body);padding:12px 18px}
+.done{padding:34px 26px;text-align:center}
+.done .em{font-size:52px}
+.done h2{font-size:26px;margin:8px 0}
+.done p{color:var(--muted)}
+.note{background:var(--lav);color:var(--lav-ink);border-radius:14px;padding:12px 16px;font-size:15px;margin-top:14px}
+.cloud{margin-top:14px;font-size:15px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.foot{color:var(--muted);font-size:13px;margin-top:22px;text-align:center}
+.spk{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.spk .btn{font:700 15px "Hind Siliguri",var(--body);padding:8px 13px}
+.spkres{font:600 15px "Hind Siliguri",var(--body);color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.spkres .btn{padding:7px 12px;font-size:14px}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{text-align:left;font:600 18px "Figtree","Hind Siliguri",sans-serif;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer}
+.opt:hover{border-color:var(--ink)}
+.opt.ok{background:var(--lime);border-color:#9fbf1f;color:#16171a}
+.opt.no{background:#ffe1dd;border-color:#ff5a4e;color:#7a1a12}
+.opt[disabled]{cursor:default}
+.wc{padding:26px}
+.wtop{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-weight:700;font-size:14px;flex-wrap:wrap}
+.back{border:0;background:none;color:var(--muted);font:700 15px "Hind Siliguri",var(--body);cursor:pointer;padding:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.tcard{text-align:left;cursor:pointer;padding:18px;border-radius:18px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.tcard:hover{border-color:var(--ink)}
+.tcard .ic{font-size:28px}
+.tcard b{display:block;font:700 18px "Hind Siliguri",var(--body);margin-top:6px}
+.tcard span{color:var(--muted);font-size:14px}
+.tcard .lv{float:right}
+.item{padding:16px 0;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.item .top{display:flex;gap:12px;align-items:flex-start}
+.item .en{font-size:19px;font-weight:700;line-height:1.4}
+.item .bnt{color:var(--muted);font:600 16px "Hind Siliguri",var(--body);margin-top:2px}
+.chk{margin-left:auto;flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:6px 12px;font:700 14px "Hind Siliguri",var(--body);cursor:pointer;white-space:nowrap}
+.chk.on{background:var(--lime);border-color:#9fbf1f;color:#16171a}
+.tag{font:700 13px "Hind Siliguri",var(--body);border-radius:999px;padding:3px 10px;background:var(--bg);color:var(--muted);white-space:nowrap}
+.tag.ok{background:var(--lime);color:#16171a}
+.qstem{font:700 clamp(22px,5vw,30px)/1.35 "Hind Siliguri",var(--body);margin:14px 0 4px}
+@media(max-width:600px){.grid{gap:8px}.tcard{padding:14px}.tcard b{font-size:16px}.tcard .lv{float:none;display:inline-block;margin-left:6px}.wc,.hero{padding:22px 18px}.stats b{font-size:20px}.item .en{font-size:17px}.acts .btn{flex:1;justify-content:center}}

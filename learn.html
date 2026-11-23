@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo-icon-512.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn English · Accent Coach</title>
+<meta name="description" content="লেভেল টেস্ট, ১২ সপ্তাহের প্ল্যান, ১০০০ শব্দ, কাজের বাক্য, শোনা, বাংলায় গ্রামার আর উচ্চারণ। সব এক জায়গায়, একদম ফ্রি।">
+<meta property="og:title" content="ইংরেজি শিখুন, শুরু থেকে · Accent Coach">
+<meta property="og:description" content="লেভেল টেস্ট, ১২ সপ্তাহের প্ল্যান, শব্দ, বাক্য, শোনা, গ্রামার আর উচ্চারণ। একদম ফ্রি।">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Hind+Siliguri:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="learn.css?v=1">
+<style>
+.tcard{display:block;text-decoration:none}
+.tcard.main{grid-column:1/-1;background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tcard.main span{color:inherit;opacity:.8}
+.tcard .pg{display:block;margin-top:8px;font:700 14px "Hind Siliguri",var(--body);color:var(--ink)}
+.tcard.main .pg{color:var(--lime);opacity:1}
+</style>
+</head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><a class="btn sp" href="app.html">Practice →</a></div></nav>
+<main><div class="container"><div class="wrap">
+  <div class="card hero">
+    <span class="pos">Learn</span>
+    <h1 class="bn">ইংরেজি শিখুন, <mark>শুরু থেকে</mark></h1>
+    <p class="bn">লেভেল টেস্ট দিয়ে শুরু করুন, তারপর ১২ সপ্তাহের প্ল্যান ধরে রোজ একটু একটু করে এগোন। সব কিছু ফ্রি, লগইন ছাড়াও চলে। লগইন করলে প্রগ্রেস সব ডিভাইসে থাকবে।</p>
+  </div>
+  <div class="grid bn" id="g">
+    <a class="tcard main" href="path.html"><span class="ic">🗺️</span><b>১২ সপ্তাহের প্ল্যান</b><span>লেভেল অনুযায়ী রোজকার ৩০–৪০ মিনিটের কাজ, একটার পর একটা।</span><em class="pg" data-p="path"></em></a>
+    <a class="tcard" href="level-test.html"><span class="ic">📊</span><b>লেভেল টেস্ট</b><span>১০ মিনিটে জানুন আপনি A1 থেকে C1-এর কোথায়।</span><em class="pg" data-p="level"></em></a>
+    <a class="tcard" href="words.html"><span class="ic">📘</span><b>জরুরি ১০০০ শব্দ</b><span>বাংলা অর্থ, উদাহরণ বাক্য আর রিভিশন।</span><em class="pg" data-p="words"></em></a>
+    <a class="tcard" href="phrases.html"><span class="ic">💬</span><b>রোজকার কাজের বাক্য</b><span>১০টা পরিস্থিতির ১৫০টা তৈরি বাক্য।</span><em class="pg" data-p="phrases"></em></a>
+    <a class="tcard" href="listen.html"><span class="ic">🎧</span><b>শোনার প্র্যাকটিস</b><span>১২টা বাস্তব কথোপকথন আর প্রশ্ন।</span><em class="pg" data-p="listen"></em></a>
+    <a class="tcard" href="grammar.html"><span class="ic">✏️</span><b>বাংলায় গ্রামার</b><span>১৫টা ছোট লেসন আর প্র্যাকটিস প্রশ্ন।</span><em class="pg" data-p="grammar"></em></a>
+    <a class="tcard" href="app.html"><span class="ic">🗣</span><b>৩০ দিনের উচ্চারণ</b><span>কঠিন সাউন্ড, শব্দের শেষ আর পুরো বাক্য।</span><em class="pg" data-p="app"></em></a>
+  </div>
+</div></div></main>
+<script src="kit.js?v=1"></script>
+<script>
+(function(){var bn=AC.bn;function set(k,t){var e=document.querySelector('[data-p="'+k+'"]');if(e&&t)e.textContent=t}
+function cnt(d,f){var n=0;for(var k in d)if(f(k,d[k][0]))n++;return n}
+var lv=null;try{lv=JSON.parse(localStorage.getItem("ac-level")||"null")}catch(e){}
+set("level",lv&&lv.level?"শেষ ফল: "+lv.level:"");
+try{var w=JSON.parse(localStorage.getItem("ac-words")||"null");if(w&&w.w){var n=Object.keys(w.w).length;if(n)set("words",bn(n)+"/১০০০ শব্দ শেখা")}}catch(e){}
+var ph=cnt(AC.peek("phrases"),function(k,v){return v>0});if(ph)set("phrases",bn(ph)+"/১৫০ বাক্য শেখা");
+var li=cnt(AC.peek("listen"),function(){return true});if(li)set("listen",bn(li)+"/১২ কথোপকথন শেষ");
+var gr=cnt(AC.peek("grammar"),function(k,v){return v>=4});if(gr)set("grammar",bn(gr)+"/১৫ লেসন শেষ");
+var p=AC.peek("path");if(p.track&&p.track[0]){var days={};for(var k in p){var m=k.match(/^d(\d+)_/);if(m&&p[k][0]>0)days[m[1]]=(days[m[1]]||0)+1}set("path","চলছে · "+bn(Object.keys(days).length)+" দিনে কাজ করেছেন")}else set("path","শুরু করুন →");
+try{var a=JSON.parse(localStorage.getItem("accent-coach")||"null");if(a&&a.day)set("app","চলছে Day "+bn(a.day))}catch(e){}
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

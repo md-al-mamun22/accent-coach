@@ -1,0 +1,1127 @@
+[
+{
+"id": "g01",
+"lv": "A1",
+"en": "am / is / are",
+"bn": "am, is, are: “হওয়া” বা “থাকা” বোঝাতে",
+"exp": [
+"কেউ কী, কে বা কেমন আছে বলতে am / is / are লাগে। বাংলায় অনেক সময় এই ক্রিয়াটা লুকানো থাকে (“আমি ছাত্র”), কিন্তু ইংরেজিতে বাদ দেওয়া যায় না।",
+"I এর সাথে am, he / she / it বা একজনের সাথে is, আর you / we / they বা অনেকের সাথে are।"
+],
+"rule": "I am · He / She / It is · You / We / They are",
+"ex": [
+{
+"en": "I am a student.",
+"bn": "আমি একজন ছাত্র।"
+},
+{
+"en": "She is my sister.",
+"bn": "সে আমার বোন।"
+},
+{
+"en": "They are at home.",
+"bn": "তারা বাসায় আছে।"
+},
+{
+"en": "It is very hot today.",
+"bn": "আজ খুব গরম।"
+},
+{
+"en": "Are you ready?",
+"bn": "তুমি কি তৈরি?"
+}
+],
+"q": [
+{
+"s": "My father ___ a doctor.",
+"o": [
+"is",
+"am",
+"are"
+]
+},
+{
+"s": "We ___ good friends.",
+"o": [
+"are",
+"is",
+"am"
+]
+},
+{
+"s": "I ___ from Bangladesh.",
+"o": [
+"am",
+"is",
+"are"
+]
+},
+{
+"s": "___ she your teacher?",
+"o": [
+"Is",
+"Are",
+"Am"
+]
+},
+{
+"s": "The books ___ on the table.",
+"o": [
+"are",
+"is",
+"am"
+]
+}
+]
+},
+{
+"id": "g02",
+"lv": "A1",
+"en": "a / an / the",
+"bn": "a, an, the: কখন কোনটা",
+"exp": [
+"একটা যেকোনো জিনিস বোঝাতে a বা an। শব্দের শুরুর উচ্চারণ স্বরধ্বনি (a, e, i, o, u-এর শব্দ) হলে an, না হলে a।",
+"নির্দিষ্ট, আগে বলা বা দুজনেই চেনে এমন জিনিস বোঝাতে the।"
+],
+"rule": "a + ব্যঞ্জনধ্বনি (a book) · an + স্বরধ্বনি (an apple) · the = নির্দিষ্টটা",
+"ex": [
+{
+"en": "I have a cat.",
+"bn": "আমার একটা বিড়াল আছে।"
+},
+{
+"en": "She eats an apple every day.",
+"bn": "সে প্রতিদিন একটা আপেল খায়।"
+},
+{
+"en": "The cat is sleeping.",
+"bn": "বিড়ালটা ঘুমাচ্ছে।"
+},
+{
+"en": "It takes an hour.",
+"bn": "এক ঘণ্টা লাগে।"
+},
+{
+"en": "Close the door, please.",
+"bn": "দয়া করে দরজাটা বন্ধ করো।"
+}
+],
+"q": [
+{
+"s": "I saw ___ elephant at the zoo.",
+"o": [
+"an",
+"a",
+"the"
+]
+},
+{
+"s": "He is ___ engineer.",
+"o": [
+"an",
+"a",
+"the"
+]
+},
+{
+"s": "Please open ___ window. It's hot.",
+"o": [
+"the",
+"a",
+"an"
+]
+},
+{
+"s": "She bought ___ new phone.",
+"o": [
+"a",
+"an",
+"the"
+]
+},
+{
+"s": "We waited for ___ hour.",
+"o": [
+"an",
+"a",
+"the"
+]
+}
+]
+},
+{
+"id": "g03",
+"lv": "A1",
+"en": "Simple present",
+"bn": "Simple present: অভ্যাস আর সাধারণ সত্য",
+"exp": [
+"যা নিয়মিত হয় বা সবসময় সত্য, তা বলতে simple present। যেমন রোজকার রুটিন।",
+"he / she / it হলে ক্রিয়ার শেষে s বা es যোগ হয়। না-বোধক করতে don't / doesn't।"
+],
+"rule": "I / You / We / They work · He / She / It works · doesn't work",
+"ex": [
+{
+"en": "I drink tea every morning.",
+"bn": "আমি প্রতিদিন সকালে চা খাই।"
+},
+{
+"en": "She works in a bank.",
+"bn": "সে একটা ব্যাংকে কাজ করে।"
+},
+{
+"en": "The sun rises in the east.",
+"bn": "সূর্য পূর্ব দিকে ওঠে।"
+},
+{
+"en": "He doesn't eat meat.",
+"bn": "সে মাংস খায় না।"
+},
+{
+"en": "We go to the gym on Sundays.",
+"bn": "আমরা রবিবারে জিমে যাই।"
+}
+],
+"q": [
+{
+"s": "My brother ___ football every evening.",
+"o": [
+"plays",
+"play",
+"playing"
+]
+},
+{
+"s": "They ___ in Chittagong.",
+"o": [
+"live",
+"lives",
+"living"
+]
+},
+{
+"s": "She ___ like spicy food.",
+"o": [
+"doesn't",
+"don't",
+"isn't"
+]
+},
+{
+"s": "Water ___ at 100 degrees.",
+"o": [
+"boils",
+"boil",
+"boiling"
+]
+},
+{
+"s": "I ___ coffee at night.",
+"o": [
+"don't drink",
+"doesn't drink",
+"not drink"
+]
+}
+]
+},
+{
+"id": "g04",
+"lv": "A1",
+"en": "Present continuous",
+"bn": "Present continuous: এখন যা চলছে",
+"exp": [
+"এই মুহূর্তে চলছে এমন কাজ বলতে am / is / are + ক্রিয়ার সাথে ing।",
+"Look!, now, right now, at the moment এই শব্দগুলো দেখলে সাধারণত এটাই বসে।"
+],
+"rule": "am / is / are + verb-ing",
+"ex": [
+{
+"en": "I am reading a book now.",
+"bn": "আমি এখন একটা বই পড়ছি।"
+},
+{
+"en": "She is cooking dinner.",
+"bn": "সে রাতের খাবার রান্না করছে।"
+},
+{
+"en": "They are playing outside.",
+"bn": "তারা বাইরে খেলছে।"
+},
+{
+"en": "It is raining.",
+"bn": "বৃষ্টি হচ্ছে।"
+},
+{
+"en": "What are you doing?",
+"bn": "তুমি কী করছ?"
+}
+],
+"q": [
+{
+"s": "Look! The baby ___.",
+"o": [
+"is sleeping",
+"sleeps",
+"sleep"
+]
+},
+{
+"s": "We ___ for the bus right now.",
+"o": [
+"are waiting",
+"wait",
+"is waiting"
+]
+},
+{
+"s": "I ___ to music at the moment.",
+"o": [
+"am listening",
+"listen",
+"listens"
+]
+},
+{
+"s": "Why ___ you laughing?",
+"o": [
+"are",
+"is",
+"do"
+]
+},
+{
+"s": "He ___ TV now. He is studying.",
+"o": [
+"isn't watching",
+"doesn't watch",
+"not watching"
+]
+}
+]
+},
+{
+"id": "g05",
+"lv": "A2",
+"en": "Simple past",
+"bn": "Simple past: অতীতে যা হয়েছিল",
+"exp": [
+"অতীতে শেষ হয়ে যাওয়া কাজ বলতে simple past। সাধারণ ক্রিয়ায় শেষে ed (work → worked)।",
+"অনেক ক্রিয়ার রূপ আলাদা, এগুলো মুখস্থ করতে হয়: go → went, see → saw, eat → ate। না-বোধক করতে didn't + মূল ক্রিয়া।"
+],
+"rule": "worked / went / saw · didn't + verb",
+"ex": [
+{
+"en": "I visited my aunt yesterday.",
+"bn": "গতকাল আমি খালার বাসায় গিয়েছিলাম।"
+},
+{
+"en": "She went to Sylhet last week.",
+"bn": "সে গত সপ্তাহে সিলেট গিয়েছিল।"
+},
+{
+"en": "We saw a good movie.",
+"bn": "আমরা একটা ভালো সিনেমা দেখেছি।"
+},
+{
+"en": "He didn't call me.",
+"bn": "সে আমাকে ফোন করেনি।"
+},
+{
+"en": "They ate rice for lunch.",
+"bn": "তারা দুপুরে ভাত খেয়েছিল।"
+}
+],
+"q": [
+{
+"s": "Yesterday I ___ to the market.",
+"o": [
+"went",
+"go",
+"goes"
+]
+},
+{
+"s": "She ___ the letter last night.",
+"o": [
+"wrote",
+"writes",
+"write"
+]
+},
+{
+"s": "We ___ go out because of the rain.",
+"o": [
+"didn't",
+"don't",
+"weren't"
+]
+},
+{
+"s": "He ___ his keys this morning.",
+"o": [
+"lost",
+"lose",
+"losing"
+]
+},
+{
+"s": "They ___ football two days ago.",
+"o": [
+"played",
+"play",
+"plays"
+]
+}
+]
+},
+{
+"id": "g06",
+"lv": "A2",
+"en": "Questions with do / does / did",
+"bn": "প্রশ্ন বানানো: do, does, did দিয়ে",
+"exp": [
+"সাধারণ ক্রিয়ার বাক্যকে প্রশ্ন বানাতে শুরুতে Do / Does / Did বসে, আর মূল ক্রিয়া আগের রূপে ফিরে যায় (s বা ed থাকে না)।",
+"he / she / it হলে Does, অতীত হলে সবার জন্য Did।"
+],
+"rule": "Do you…? · Does she…? · Did they…? + মূল ক্রিয়া",
+"ex": [
+{
+"en": "Do you speak English?",
+"bn": "আপনি কি ইংরেজি বলেন?"
+},
+{
+"en": "Does he live here?",
+"bn": "সে কি এখানে থাকে?"
+},
+{
+"en": "Did you eat breakfast?",
+"bn": "তুমি কি সকালের নাস্তা খেয়েছ?"
+},
+{
+"en": "Where do you work?",
+"bn": "তুমি কোথায় কাজ করো?"
+},
+{
+"en": "What did she say?",
+"bn": "সে কী বলল?"
+}
+],
+"q": [
+{
+"s": "___ your mother work?",
+"o": [
+"Does",
+"Do",
+"Is"
+]
+},
+{
+"s": "___ you see the match last night?",
+"o": [
+"Did",
+"Do",
+"Does"
+]
+},
+{
+"s": "Where ___ they live?",
+"o": [
+"do",
+"does",
+"did"
+]
+},
+{
+"s": "Does he ___ tea?",
+"o": [
+"like",
+"likes",
+"liked"
+]
+},
+{
+"s": "What time ___ the shop open?",
+"o": [
+"does",
+"do",
+"is"
+]
+}
+]
+},
+{
+"id": "g07",
+"lv": "A2",
+"en": "Future: will & going to",
+"bn": "ভবিষ্যৎ: will আর going to",
+"exp": [
+"এখনই নেওয়া সিদ্ধান্ত, প্রতিশ্রুতি বা অনুমান বোঝাতে will।",
+"আগে থেকে ঠিক করা পরিকল্পনা বোঝাতে am / is / are going to।"
+],
+"rule": "will + verb · am / is / are going to + verb",
+"ex": [
+{
+"en": "I will call you later.",
+"bn": "আমি পরে তোমাকে ফোন করব।"
+},
+{
+"en": "It will rain tomorrow.",
+"bn": "কাল বৃষ্টি হবে।"
+},
+{
+"en": "We are going to buy a new car.",
+"bn": "আমরা একটা নতুন গাড়ি কিনতে যাচ্ছি।"
+},
+{
+"en": "She is going to study abroad.",
+"bn": "সে বিদেশে পড়তে যাবে।"
+},
+{
+"en": "I won't be late.",
+"bn": "আমি দেরি করব না।"
+}
+],
+"q": [
+{
+"s": "The phone is ringing. I ___ answer it.",
+"o": [
+"will",
+"am going",
+"going to"
+]
+},
+{
+"s": "We ___ visit Cox's Bazar next month. We booked the hotel.",
+"o": [
+"are going to",
+"will be",
+"going"
+]
+},
+{
+"s": "I think it ___ be a good day.",
+"o": [
+"will",
+"is",
+"going"
+]
+},
+{
+"s": "She ___ to start a new job.",
+"o": [
+"is going",
+"will",
+"goes"
+]
+},
+{
+"s": "Don't worry, I ___ tell anyone.",
+"o": [
+"won't",
+"don't",
+"am not"
+]
+}
+]
+},
+{
+"id": "g08",
+"lv": "A2",
+"en": "can / could / should / must",
+"bn": "can, could, should, must: পারা, উচিত, বাধ্যতা",
+"exp": [
+"can = পারা (এখন), could = পারত (অতীত) বা ভদ্র অনুরোধ, should = উচিত (পরামর্শ), must = অবশ্যই করতে হবে।",
+"এদের পরে সবসময় ক্রিয়ার মূল রূপ বসে, কোনো to বা s লাগে না।"
+],
+"rule": "can / could / should / must + মূল ক্রিয়া",
+"ex": [
+{
+"en": "I can swim.",
+"bn": "আমি সাঁতার কাটতে পারি।"
+},
+{
+"en": "Could you help me?",
+"bn": "আপনি কি আমাকে সাহায্য করতে পারবেন?"
+},
+{
+"en": "You should drink more water.",
+"bn": "তোমার আরও পানি খাওয়া উচিত।"
+},
+{
+"en": "You must wear a seat belt.",
+"bn": "তোমাকে অবশ্যই সিট বেল্ট পরতে হবে।"
+},
+{
+"en": "She couldn't come yesterday.",
+"bn": "সে কাল আসতে পারেনি।"
+}
+],
+"q": [
+{
+"s": "You look tired. You ___ rest.",
+"o": [
+"should",
+"must not",
+"can't"
+]
+},
+{
+"s": "He ___ speak three languages.",
+"o": [
+"can",
+"cans",
+"can to"
+]
+},
+{
+"s": "___ you open the window, please?",
+"o": [
+"Could",
+"Should",
+"Must"
+]
+},
+{
+"s": "Students ___ cheat in the exam.",
+"o": [
+"must not",
+"must",
+"should"
+]
+},
+{
+"s": "I ___ ride a bike when I was five.",
+"o": [
+"could",
+"can",
+"should"
+]
+}
+]
+},
+{
+"id": "g09",
+"lv": "A2",
+"en": "in / on / at",
+"bn": "in, on, at: সময় আর জায়গা",
+"exp": [
+"সময়ে: at + নির্দিষ্ট সময় (at 5 o'clock), on + দিন বা তারিখ (on Monday), in + মাস, বছর, ঋতু (in May, in 2026)।",
+"জায়গায়: in = ভিতরে (in the room), on = উপরে (on the table), at = নির্দিষ্ট জায়গায় (at the bus stop)।"
+],
+"rule": "at 5 pm · on Friday · in July │ in the bag · on the wall · at the door",
+"ex": [
+{
+"en": "The class starts at nine.",
+"bn": "ক্লাস নয়টায় শুরু হয়।"
+},
+{
+"en": "My birthday is on Friday.",
+"bn": "আমার জন্মদিন শুক্রবারে।"
+},
+{
+"en": "I was born in 1998.",
+"bn": "আমি ১৯৯৮ সালে জন্মেছি।"
+},
+{
+"en": "The keys are on the table.",
+"bn": "চাবিগুলো টেবিলের উপরে।"
+},
+{
+"en": "I'll meet you at the station.",
+"bn": "আমি স্টেশনে তোমার সাথে দেখা করব।"
+}
+],
+"q": [
+{
+"s": "The meeting is ___ 3 pm.",
+"o": [
+"at",
+"on",
+"in"
+]
+},
+{
+"s": "We will travel ___ December.",
+"o": [
+"in",
+"on",
+"at"
+]
+},
+{
+"s": "The picture is ___ the wall.",
+"o": [
+"on",
+"in",
+"at"
+]
+},
+{
+"s": "I'll see you ___ Monday.",
+"o": [
+"on",
+"in",
+"at"
+]
+},
+{
+"s": "She is waiting ___ the bus stop.",
+"o": [
+"at",
+"on",
+"in"
+]
+}
+]
+},
+{
+"id": "g10",
+"lv": "A2",
+"en": "There is / There are",
+"bn": "There is / There are: কোথাও কিছু আছে বলতে",
+"exp": [
+"কোনো জায়গায় কিছু আছে বলতে there is (একটা) আর there are (অনেক)। প্রশ্নে Is there / Are there।",
+"বাংলায় যেমন বলি “টেবিলে একটা বই আছে”, ইংরেজিতে বলি There is a book on the table।"
+],
+"rule": "There is + একটা · There are + অনেক · Is there…? / Are there…?",
+"ex": [
+{
+"en": "There is a park near my house.",
+"bn": "আমার বাসার কাছে একটা পার্ক আছে।"
+},
+{
+"en": "There are five people in my family.",
+"bn": "আমার পরিবারে পাঁচজন মানুষ।"
+},
+{
+"en": "Is there a bank here?",
+"bn": "এখানে কি কোনো ব্যাংক আছে?"
+},
+{
+"en": "There aren't any eggs.",
+"bn": "কোনো ডিম নেই।"
+},
+{
+"en": "There was a problem yesterday.",
+"bn": "গতকাল একটা সমস্যা হয়েছিল।"
+}
+],
+"q": [
+{
+"s": "___ a cat under the bed.",
+"o": [
+"There is",
+"There are",
+"It is"
+]
+},
+{
+"s": "___ many shops in this street.",
+"o": [
+"There are",
+"There is",
+"They are"
+]
+},
+{
+"s": "___ a hospital near here?",
+"o": [
+"Is there",
+"Are there",
+"There is"
+]
+},
+{
+"s": "There ___ any milk in the fridge.",
+"o": [
+"isn't",
+"aren't",
+"not"
+]
+},
+{
+"s": "There ___ two students absent today.",
+"o": [
+"are",
+"is",
+"be"
+]
+}
+]
+},
+{
+"id": "g11",
+"lv": "A2",
+"en": "Comparatives & superlatives",
+"bn": "তুলনা: bigger, the biggest",
+"exp": [
+"দুটো জিনিসের তুলনায় ছোট বিশেষণের শেষে er + than (bigger than)। লম্বা বিশেষণের আগে more (more beautiful than)।",
+"সবার মধ্যে সেরা বোঝাতে the + est (the biggest) বা the most (the most beautiful)। ব্যতিক্রম: good → better → the best, bad → worse → the worst।"
+],
+"rule": "tall → taller → the tallest · expensive → more expensive → the most expensive",
+"ex": [
+{
+"en": "My brother is taller than me.",
+"bn": "আমার ভাই আমার চেয়ে লম্বা।"
+},
+{
+"en": "This phone is more expensive than that one.",
+"bn": "এই ফোনটা ওটার চেয়ে দামি।"
+},
+{
+"en": "Dhaka is the biggest city in Bangladesh.",
+"bn": "ঢাকা বাংলাদেশের সবচেয়ে বড় শহর।"
+},
+{
+"en": "She is the best student in the class.",
+"bn": "সে ক্লাসের সেরা ছাত্রী।"
+},
+{
+"en": "Today is worse than yesterday.",
+"bn": "আজকের অবস্থা গতকালের চেয়ে খারাপ।"
+}
+],
+"q": [
+{
+"s": "A car is ___ than a bike.",
+"o": [
+"faster",
+"fast",
+"fastest"
+]
+},
+{
+"s": "This is the ___ day of my life.",
+"o": [
+"happiest",
+"happier",
+"happy"
+]
+},
+{
+"s": "English is ___ than math for me.",
+"o": [
+"easier",
+"more easy",
+"easiest"
+]
+},
+{
+"s": "He is the ___ player in the team.",
+"o": [
+"best",
+"better",
+"goodest"
+]
+},
+{
+"s": "This hotel is ___ than the other one.",
+"o": [
+"more comfortable",
+"comfortabler",
+"most comfortable"
+]
+}
+]
+},
+{
+"id": "g12",
+"lv": "A2",
+"en": "much / many / some / any",
+"bn": "much, many, some, any: পরিমাণ বোঝাতে",
+"exp": [
+"যা গোনা যায় (books, people) তার সাথে many, যা গোনা যায় না (water, money, time) তার সাথে much।",
+"হ্যাঁ-বোধক বাক্যে some, প্রশ্ন আর না-বোধক বাক্যে সাধারণত any।"
+],
+"rule": "many books · much water │ I have some · Do you have any? · I don't have any",
+"ex": [
+{
+"en": "How many people came?",
+"bn": "কতজন এসেছিল?"
+},
+{
+"en": "How much money do you need?",
+"bn": "তোমার কত টাকা লাগবে?"
+},
+{
+"en": "I bought some vegetables.",
+"bn": "আমি কিছু সবজি কিনেছি।"
+},
+{
+"en": "Do you have any questions?",
+"bn": "আপনার কি কোনো প্রশ্ন আছে?"
+},
+{
+"en": "We don't have much time.",
+"bn": "আমাদের হাতে বেশি সময় নেই।"
+}
+],
+"q": [
+{
+"s": "How ___ brothers do you have?",
+"o": [
+"many",
+"much",
+"any"
+]
+},
+{
+"s": "How ___ sugar do you want?",
+"o": [
+"much",
+"many",
+"some"
+]
+},
+{
+"s": "I need ___ help, please.",
+"o": [
+"some",
+"any",
+"many"
+]
+},
+{
+"s": "Is there ___ rice left?",
+"o": [
+"any",
+"many",
+"a"
+]
+},
+{
+"s": "There aren't ___ chairs in the room.",
+"o": [
+"many",
+"much",
+"some"
+]
+}
+]
+},
+{
+"id": "g13",
+"lv": "B1",
+"en": "Present perfect",
+"bn": "Present perfect: অভিজ্ঞতা আর এখন পর্যন্ত",
+"exp": [
+"have / has + ক্রিয়ার তৃতীয় রূপ (done, seen, eaten)। অতীতে হয়েছে কিন্তু তার প্রভাব বা গুরুত্ব এখনো আছে, অথবা জীবনের অভিজ্ঞতা বোঝাতে।",
+"নির্দিষ্ট অতীত সময় (yesterday, last year) থাকলে present perfect না, simple past বসে। already, yet, ever, never, since, for এর সাথে প্রায়ই এটা আসে।"
+],
+"rule": "have / has + past participle (gone, seen, finished)",
+"ex": [
+{
+"en": "I have finished my work.",
+"bn": "আমি আমার কাজ শেষ করেছি।"
+},
+{
+"en": "She has never been to India.",
+"bn": "সে কখনো ভারতে যায়নি।"
+},
+{
+"en": "Have you eaten yet?",
+"bn": "তুমি কি খেয়ে নিয়েছ?"
+},
+{
+"en": "We have lived here since 2020.",
+"bn": "আমরা ২০২০ সাল থেকে এখানে থাকি।"
+},
+{
+"en": "He has just left.",
+"bn": "সে এইমাত্র বেরিয়ে গেল।"
+}
+],
+"q": [
+{
+"s": "I ___ this movie three times.",
+"o": [
+"have seen",
+"saw",
+"see"
+]
+},
+{
+"s": "She ___ her homework yet.",
+"o": [
+"hasn't finished",
+"didn't finished",
+"hasn't finish"
+]
+},
+{
+"s": "___ you ever ___ sushi?",
+"o": [
+"Have / eaten",
+"Did / ate",
+"Have / ate"
+]
+},
+{
+"s": "They have worked here ___ five years.",
+"o": [
+"for",
+"since",
+"from"
+]
+},
+{
+"s": "I ___ him yesterday.",
+"o": [
+"met",
+"have met",
+"has met"
+]
+}
+]
+},
+{
+"id": "g14",
+"lv": "B1",
+"en": "If… (first conditional)",
+"bn": "If দিয়ে শর্ত: যদি এটা হয়, তাহলে ওটা হবে",
+"exp": [
+"ভবিষ্যতে সম্ভব কোনো শর্ত বোঝাতে If + present, তারপর will + মূল ক্রিয়া।",
+"If-এর অংশে will বসে না। যেমন If it rains (ঠিক), If it will rain (ভুল)।"
+],
+"rule": "If + present, … will + verb",
+"ex": [
+{
+"en": "If it rains, we will stay home.",
+"bn": "বৃষ্টি হলে আমরা বাসায় থাকব।"
+},
+{
+"en": "If you study hard, you will pass.",
+"bn": "কষ্ট করে পড়লে তুমি পাস করবে।"
+},
+{
+"en": "I will call you if I need help.",
+"bn": "সাহায্য লাগলে আমি তোমাকে ফোন করব।"
+},
+{
+"en": "If she comes, I will tell her.",
+"bn": "সে এলে আমি তাকে বলব।"
+},
+{
+"en": "If we leave now, we won't be late.",
+"bn": "এখন বের হলে আমাদের দেরি হবে না।"
+}
+],
+"q": [
+{
+"s": "If you ___ early, you will catch the bus.",
+"o": [
+"leave",
+"will leave",
+"left"
+]
+},
+{
+"s": "If it is sunny, we ___ to the beach.",
+"o": [
+"will go",
+"go",
+"went"
+]
+},
+{
+"s": "I will be happy if you ___.",
+"o": [
+"come",
+"will come",
+"came"
+]
+},
+{
+"s": "If he ___ hurry, he will miss the train.",
+"o": [
+"doesn't",
+"won't",
+"didn't"
+]
+},
+{
+"s": "What ___ you do if you lose your job?",
+"o": [
+"will",
+"do",
+"are"
+]
+}
+]
+},
+{
+"id": "g15",
+"lv": "B1",
+"en": "Passive voice",
+"bn": "Passive voice: কাজটা কে করেছে তার চেয়ে কাজটাই জরুরি",
+"exp": [
+"কাজটা কে করেছে জানা নেই বা গুরুত্বপূর্ণ না হলে passive ব্যবহার হয়: be + ক্রিয়ার তৃতীয় রূপ।",
+"কে করেছে বলতে চাইলে শেষে by যোগ করা যায়: The book was written by Humayun Ahmed।"
+],
+"rule": "is / are / was / were + past participle (made, built, written)",
+"ex": [
+{
+"en": "This shirt is made in Bangladesh.",
+"bn": "এই শার্টটা বাংলাদেশে তৈরি।"
+},
+{
+"en": "The bridge was built in 2022.",
+"bn": "সেতুটা ২০২২ সালে বানানো হয়েছিল।"
+},
+{
+"en": "English is spoken in many countries.",
+"bn": "অনেক দেশে ইংরেজি বলা হয়।"
+},
+{
+"en": "My phone was stolen.",
+"bn": "আমার ফোনটা চুরি হয়ে গেছে।"
+},
+{
+"en": "The results will be announced tomorrow.",
+"bn": "কাল ফলাফল ঘোষণা করা হবে।"
+}
+],
+"q": [
+{
+"s": "Rice ___ in many parts of Asia.",
+"o": [
+"is grown",
+"grows",
+"is grow"
+]
+},
+{
+"s": "The window ___ by the children yesterday.",
+"o": [
+"was broken",
+"broke",
+"is broken"
+]
+},
+{
+"s": "These cars ___ in Japan.",
+"o": [
+"are made",
+"make",
+"is made"
+]
+},
+{
+"s": "The letter ___ last week.",
+"o": [
+"was sent",
+"sent",
+"is sending"
+]
+},
+{
+"s": "The meeting ___ next Monday.",
+"o": [
+"will be held",
+"will hold",
+"is hold"
+]
+}
+]
+}
+]

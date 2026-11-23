@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo-icon-512.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everyday Phrases · Accent Coach</title>
+<meta name="description" content="দোকান, অফিস, ফোন, ইন্টারভিউসহ ১০টা পরিস্থিতির ১৫০টা কাজের ইংরেজি বাক্য, বাংলা অর্থ আর উচ্চারণসহ। একদম ফ্রি।">
+<meta property="og:title" content="রোজকার ইংরেজি বাক্য · Accent Coach">
+<meta property="og:description" content="১০টা পরিস্থিতির ১৫০টা কাজের বাক্য: শুনুন, বলুন, মিলিয়ে দেখুন।">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Hind+Siliguri:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="learn.css?v=1">
+</head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><a class="btn sp" href="learn.html">Learn →</a></div></nav>
+<main><div class="container"><div class="wrap">
+  <div class="card hero">
+    <span class="pos">Phrases</span>
+    <h1 class="bn">রোজকার কাজের <mark>ইংরেজি বাক্য</mark></h1>
+    <p class="bn">দোকান, রাস্তা, ফোন, অফিস, ইন্টারভিউ। যেসব পরিস্থিতিতে আসলেই ইংরেজি বলতে হয়, সেখানকার ১৫০টা তৈরি বাক্য। শুনুন, জোরে বলুন, নিজের কণ্ঠ মিলিয়ে দেখুন।</p>
+    <div class="stats bn"><div><b id="sDone">০</b><span>বাক্য শেখা</span></div><div><b id="sTop">০</b><span>টপিক শেষ</span></div><div><b id="sAll">১৫০</b><span>মোট বাক্য</span></div></div>
+    <div class="bigbar"><i id="bar"></i></div>
+    <div class="cloud bn" id="cloud"></div>
+  </div>
+  <div id="out"></div>
+  <p class="foot bn">উচ্চারণ Md Al Mamun-এর কণ্ঠ থেকে AI দিয়ে তৈরি।</p>
+</div></div></main>
+<script src="kit.js?v=1"></script>
+<script>
+(function(){
+var T=[],ALL=[],S=AC.store("phrases"),out=document.getElementById("out"),cur=null,bn=AC.bn,esc=AC.esc;
+function done(id){return S.get(id)>0}
+function tDone(t){return t.items.filter(function(x){return done(x.id)}).length}
+function stats(){var n=ALL.filter(function(x){return done(x.id)}).length,tc=T.filter(function(t){return tDone(t)===t.items.length}).length;
+  document.getElementById("sDone").textContent=bn(n);document.getElementById("sTop").textContent=bn(tc)+"/"+bn(T.length);
+  document.getElementById("bar").style.width=(ALL.length?n/ALL.length*100:0)+"%";}
+function home(){cur=null;AC.stop();
+  out.innerHTML='<div class="grid">'+T.map(function(t,i){var d=tDone(t);
+    return '<button class="tcard" data-i="'+i+'"><span class="ic">'+t.ic+'</span>'+(d===t.items.length?'<span class="tag ok lv">✓ শেষ</span>':'')+'<b>'+esc(t.name)+'</b><span class="bn">'+bn(d)+'/'+bn(t.items.length)+' বাক্য শেখা</span><div class="minibar"><i style="width:'+(d/t.items.length*100)+'%"></i></div></button>'}).join("")+'</div>';
+  out.querySelectorAll(".tcard").forEach(function(b){b.onclick=function(){topic(T[+b.dataset.i]);scrollTo({top:out.offsetTop-80,behavior:"smooth"})}});}
+var playing=false;
+function topic(t){cur=t;playing=false;
+  out.innerHTML='<div class="card wc"><div class="wtop bn"><button class="back" id="bk">← সব টপিক</button><span>'+bn(tDone(t))+'/'+bn(t.items.length)+' শেখা</span></div>'+
+   '<h2 class="bn" style="font-size:26px;margin:12px 0 4px">'+t.ic+' '+esc(t.name)+'</h2>'+
+   '<div class="acts" style="margin-top:12px"><button class="btn bn" id="pa">▶ সবগুলো পরপর শুনুন</button><button class="btn lime bn" id="qz">🧠 এই টপিকের কুইজ</button></div>'+
+   '<div class="note bn">💡 প্রতিটা বাক্য শুনে ২–৩ বার জোরে বলুন। মুখস্থ হলে “শিখেছি” চাপুন।</div>'+
+   '<div id="items" style="margin-top:6px">'+t.items.map(function(x){return '<div class="item" data-id="'+x.id+'"><div class="top"><button class="play sm" data-p="'+x.id+'" aria-label="শুনুন">▶</button><div><div class="en">'+esc(x.en)+'</div><div class="bnt">'+esc(x.bn)+'</div></div><button class="chk'+(done(x.id)?' on':'')+'" data-c="'+x.id+'">'+(done(x.id)?'✓ শিখেছি':'শিখেছি?')+'</button></div><div class="spk"><button class="btn" data-s="'+x.id+'">🎙 বলে দেখুন</button><span class="spkres"></span></div></div>'}).join("")+'</div></div>';
+  var by={};t.items.forEach(function(x){by[x.id]=x});
+  document.getElementById("bk").onclick=home;
+  out.querySelectorAll("[data-p]").forEach(function(b){b.onclick=function(){playing=false;AC.say(by[b.dataset.p].en,b.dataset.p)}});
+  out.querySelectorAll("[data-c]").forEach(function(b){b.onclick=function(){var id=b.dataset.c,on=!done(id);S.set(id,on?1:0);b.classList.toggle("on",on);b.textContent=on?'✓ শিখেছি':'শিখেছি?';stats()}});
+  out.querySelectorAll("[data-s]").forEach(function(b){b.onclick=function(){var x=by[b.dataset.s];AC.speak(b,x.en,function(){AC.say(x.en,x.id)})}});
+  var pa=document.getElementById("pa");
+  pa.onclick=function(){if(playing){playing=false;AC.stop();pa.textContent="▶ সবগুলো পরপর শুনুন";return}
+    playing=true;pa.textContent="⏸ থামান";var i=0;
+    (function next(){out.querySelectorAll(".play.on").forEach(function(e){e.classList.remove("on")});
+      if(!playing||cur!==t||i>=t.items.length){playing=false;pa.textContent="▶ সবগুলো পরপর শুনুন";return}
+      var x=t.items[i++],b=out.querySelector('[data-p="'+x.id+'"]');b.classList.add("on");b.scrollIntoView({block:"center",behavior:"smooth"});
+      AC.say(x.en,x.id,function(){setTimeout(next,1400)})})();};
+  document.getElementById("qz").onclick=function(){quiz(t)};
+}
+function quiz(t){AC.stop();playing=false;
+  var qs=AC.shuffle(t.items).slice(0,8).map(function(x,i){var others=AC.shuffle(ALL.filter(function(y){return y.id!==x.id})).slice(0,3);
+    return {x:x,t:i%2?"listen":"bn2en",opts:AC.shuffle([x].concat(others))}}),Q={i:0,s:0,wrong:[]};
+  function show(){var q=qs[Q.i],x=q.x,h='<div class="card wc"><div class="wtop bn"><button class="back" id="bk">← টপিকে ফিরুন</button><span>প্রশ্ন '+bn(Q.i+1)+'/'+bn(qs.length)+' · স্কোর '+bn(Q.s)+'</span></div>';
+    if(q.t==="bn2en")h+='<div class="bn" style="color:var(--muted);margin-top:12px">ইংরেজিতে এটা কীভাবে বলবেন?</div><div class="qstem">'+esc(x.bn)+'</div>';
+    else h+='<div class="bn" style="color:var(--muted);margin-top:12px">শুনে বলুন, এর মানে কী?</div><div class="spk"><button class="play" id="rp" aria-label="আবার শুনুন">▶</button><span class="bn" style="color:var(--muted)">আবার শুনতে চাপুন</span></div>';
+    h+='<div class="opts">'+q.opts.map(function(o,i){return '<button class="opt'+(q.t==="listen"?' bn':'')+'" data-i="'+i+'">'+esc(q.t==="listen"?o.bn:o.en)+'</button>'}).join("")+'</div><div class="acts hidden" id="qn"><span></span><button class="btn pri bn" id="nx">'+(Q.i+1<qs.length?'পরের প্রশ্ন →':'ফলাফল দেখুন →')+'</button></div></div>';
+    out.innerHTML=h;document.getElementById("bk").onclick=function(){topic(t)};
+    if(q.t==="listen"){AC.say(x.en,x.id);document.getElementById("rp").onclick=function(){AC.say(x.en,x.id)}}
+    out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=q.opts[+b.dataset.i].id===x.id;
+      out.querySelectorAll(".opt").forEach(function(c){c.disabled=true;if(q.opts[+c.dataset.i].id===x.id)c.classList.add("ok")});
+      if(ok)Q.s++;else{b.classList.add("no");Q.wrong.push(x)}
+      if(q.t==="bn2en")AC.say(x.en,x.id);document.getElementById("qn").classList.remove("hidden")}});
+    document.getElementById("nx").onclick=function(){Q.i++;Q.i<qs.length?show():end()};}
+  function end(){var n=qs.length;
+    out.innerHTML='<div class="card done bn"><div class="em">'+(Q.s===n?'🏆':Q.s>=n*.7?'🎉':'💪')+'</div><h2>স্কোর '+bn(Q.s)+'/'+bn(n)+'</h2><p>'+(Q.wrong.length?'এই বাক্যগুলো আরেকবার দেখে নিন:':'দারুণ! সবগুলো ঠিক।')+'</p>'+
+     (Q.wrong.length?'<div style="text-align:left;margin-top:12px">'+Q.wrong.map(function(x){return '<div class="item"><div class="top"><button class="play sm" data-p="'+x.id+'">▶</button><div><div class="en">'+esc(x.en)+'</div><div class="bnt">'+esc(x.bn)+'</div></div></div></div>'}).join("")+'</div>':'')+
+     '<div class="acts" style="justify-content:center"><button class="btn pri" id="ag">আবার কুইজ</button><button class="btn" id="bt">টপিকে ফিরুন</button></div></div>';
+    out.querySelectorAll("[data-p]").forEach(function(b){var x=ALL.find(function(y){return y.id===b.dataset.p});b.onclick=function(){AC.say(x.en,x.id)}});
+    document.getElementById("ag").onclick=function(){quiz(t)};document.getElementById("bt").onclick=function(){topic(t)};}
+  show();
+}
+S.onSync(function(){stats();if(!cur)home()});
+Promise.all([fetch("data/phrases.json").then(function(r){return r.json()}),AC.voiceReady]).then(function(r){T=r[0];T.forEach(function(t){ALL=ALL.concat(t.items)});stats();
+  var k=location.hash.slice(1),t=T.find(function(x){return x.k===k});t?topic(t):home();})
+ .catch(function(){out.innerHTML='<div class="card done bn"><h2>লোড হয়নি</h2><p>ইন্টারনেট সংযোগ দেখে পেজটা আবার খুলুন।</p></div>'});
+})();
+</script>
+<script type="module" src="kit-cloud.js?v=1"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

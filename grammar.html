@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo-icon-512.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grammar in Bangla · Accent Coach</title>
+<meta name="description" content="বাংলায় ছোট ছোট ১৫টা ইংরেজি গ্রামার লেসন: সহজ ব্যাখ্যা, উদাহরণ আর প্র্যাকটিস প্রশ্ন। একদম ফ্রি।">
+<meta property="og:title" content="বাংলায় ইংরেজি গ্রামার · Accent Coach">
+<meta property="og:description" content="১৫টা ছোট লেসন: সহজ বাংলা ব্যাখ্যা, উদাহরণ আর ৫টা করে প্রশ্ন।">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Hind+Siliguri:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="learn.css?v=1">
+<style>
+.lvh{font:800 15px var(--display);color:var(--muted);margin:22px 0 -6px;letter-spacing:.04em}
+.exp p{font:600 17px/1.65 "Hind Siliguri",var(--body);margin-top:10px}
+.rule{background:var(--lime-soft);border-radius:14px;padding:14px 16px;font-weight:700;font-size:17px;margin-top:16px;color:#2c360b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rule{color:#e6f7a6}}
+.qsent{font:600 21px/1.5 var(--body);margin:14px 0 4px}
+.qsent u{text-decoration:none;border-bottom:3px solid var(--ink);padding:0 18px}
+</style>
+</head>
+<body>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><a class="btn sp" href="learn.html">Learn →</a></div></nav>
+<main><div class="container"><div class="wrap">
+  <div class="card hero">
+    <span class="pos">Grammar</span>
+    <h1 class="bn">বাংলায় <mark>ইংরেজি গ্রামার</mark></h1>
+    <p class="bn">লম্বা বই না, ছোট ছোট লেসন। প্রতিটায় সহজ বাংলা ব্যাখ্যা, ৫টা উদাহরণ আর ৫টা প্রশ্ন। ৪টা বা বেশি ঠিক হলে লেসনটা শেষ ধরা হবে।</p>
+    <div class="stats bn"><div><b id="sDone">০</b><span>লেসন শেষ</span></div><div><b id="sAvg">–</b><span>গড় স্কোর</span></div><div><b id="sAll">১৫</b><span>মোট লেসন</span></div></div>
+    <div class="bigbar"><i id="bar"></i></div>
+    <div class="cloud bn" id="cloud"></div>
+  </div>
+  <div id="out"></div>
+</div></div></main>
+<script src="kit.js?v=1"></script>
+<script>
+(function(){
+var L=[],S=AC.store("grammar"),out=document.getElementById("out"),cur=null,bn=AC.bn,esc=AC.esc;
+function best(id){return S.get(id)}
+function stats(){var d=L.filter(function(l){return best(l.id)>=4}).length,tried=L.filter(function(l){return S.d[l.id]}),avg=tried.length?tried.reduce(function(a,l){return a+best(l.id)},0)/tried.length:0;
+  document.getElementById("sDone").textContent=bn(d)+"/"+bn(L.length);document.getElementById("sAvg").textContent=tried.length?bn(avg.toFixed(1))+"/৫":"–";
+  document.getElementById("bar").style.width=(L.length?d/L.length*100:0)+"%";}
+function home(){cur=null;AC.stop();var h="",lv="";
+  L.forEach(function(l,i){if(l.lv!==lv){if(lv)h+='</div>';lv=l.lv;h+='<div class="lvh">LEVEL '+lv+'</div><div class="grid">'}
+    var b=best(l.id),st=b>=4?'<span class="tag ok lv">✓ '+bn(b)+'/৫</span>':S.d[l.id]?'<span class="tag lv">'+bn(b)+'/৫</span>':'';
+    h+='<button class="tcard" data-i="'+i+'">'+st+'<b style="margin-top:0">'+esc(l.en)+'</b><span class="bn">'+esc(l.bn)+'</span></button>'});
+  out.innerHTML=h+'</div>';
+  out.querySelectorAll(".tcard").forEach(function(b){b.onclick=function(){lesson(L[+b.dataset.i]);scrollTo({top:out.offsetTop-80,behavior:"smooth"})}});}
+function lesson(l){cur=l;var i=L.indexOf(l);
+  out.innerHTML='<div class="card wc"><div class="wtop bn"><button class="back" id="bk">← সব লেসন</button><span>লেসন '+bn(i+1)+'/'+bn(L.length)+' · '+l.lv+'</span></div>'+
+   '<h2 style="font-size:30px;margin:12px 0 2px">'+esc(l.en)+'</h2><div class="bn" style="color:var(--muted);font-weight:700">'+esc(l.bn)+'</div>'+
+   '<div class="exp">'+l.exp.map(function(p){return '<p>'+esc(p)+'</p>'}).join("")+'</div><div class="rule">'+esc(l.rule)+'</div>'+
+   '<h3 class="bn" style="margin-top:22px;font-size:18px">উদাহরণ</h3>'+
+   l.ex.map(function(x,k){return '<div class="item"><div class="top"><button class="play sm" data-k="'+k+'" aria-label="শুনুন">▶</button><div><div class="en">'+esc(x.en)+'</div><div class="bnt">'+esc(x.bn)+'</div></div></div></div>'}).join("")+
+   '<div class="acts"><span></span><button class="btn pri bn" id="go">৫টা প্রশ্নের উত্তর দিন →</button></div></div>';
+  out.querySelectorAll("[data-k]").forEach(function(b){b.onclick=function(){AC.say(l.ex[+b.dataset.k].en)}});
+  document.getElementById("bk").onclick=home;document.getElementById("go").onclick=function(){quiz(l)};}
+function quiz(l){var qs=l.q.map(function(q){return {s:q.s,a:q.o[0],o:AC.shuffle(q.o)}}),Q={i:0,s:0};
+  function show(){var q=qs[Q.i];
+    out.innerHTML='<div class="card wc"><div class="wtop bn"><button class="back" id="bk">← লেসনে ফিরুন</button><span>প্রশ্ন '+bn(Q.i+1)+'/৫ · স্কোর '+bn(Q.s)+'</span></div>'+
+     '<div class="bn" style="color:var(--muted);margin-top:12px">খালি জায়গায় কোনটা বসবে?</div><div class="qsent">'+esc(q.s).replace(/___/g,"<u></u>")+'</div>'+
+     '<div class="opts">'+q.o.map(function(o,i){return '<button class="opt" data-i="'+i+'">'+esc(o)+'</button>'}).join("")+'</div>'+
+     '<div class="acts hidden" id="qn"><button class="play sm" id="sy" aria-label="পুরো বাক্য শুনুন">▶</button><button class="btn pri bn" id="nx">'+(Q.i<4?'পরের প্রশ্ন →':'ফলাফল দেখুন →')+'</button></div></div>';
+    document.getElementById("bk").onclick=function(){lesson(l)};
+    var full=fill(q.s,q.a);
+    out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=q.o[+b.dataset.i]===q.a;
+      out.querySelectorAll(".opt").forEach(function(c){c.disabled=true;if(q.o[+c.dataset.i]===q.a)c.classList.add("ok")});
+      if(ok)Q.s++;else b.classList.add("no");AC.say(full);document.getElementById("qn").classList.remove("hidden")}});
+    document.getElementById("sy").onclick=function(){AC.say(full)};
+    document.getElementById("nx").onclick=function(){Q.i++;Q.i<5?show():end()};}
+  function fill(s,a){var p=a.split(" / ");if(p.length===2){var k=0;return s.replace(/___/g,function(){return p[k++]})}return s.replace("___",a)}
+  function end(){var prev=best(l.id);if(!S.d[l.id]||Q.s>prev)S.set(l.id,Q.s);stats();
+    var i=L.indexOf(l),nx=L[i+1];
+    out.innerHTML='<div class="card done bn"><div class="em">'+(Q.s===5?'🏆':Q.s>=4?'🎉':'💪')+'</div><h2>স্কোর '+bn(Q.s)+'/৫</h2><p>'+(Q.s>=4?'লেসনটা শেষ! পরের লেসনে যেতে পারেন।':'আরেকবার উদাহরণগুলো দেখে আবার চেষ্টা করুন। ৪টা ঠিক হলেই লেসন শেষ।')+'</p>'+
+     '<div class="acts" style="justify-content:center">'+(Q.s>=4&&nx?'<button class="btn pri" id="nl">পরের লেসন: '+esc(nx.en)+' →</button>':'<button class="btn pri" id="rl">লেসনটা আবার দেখুন</button>')+'<button class="btn" id="hm">সব লেসন</button></div></div>';
+    var a=document.getElementById("nl");if(a)a.onclick=function(){lesson(nx)};var b=document.getElementById("rl");if(b)b.onclick=function(){lesson(l)};document.getElementById("hm").onclick=home;}
+  show();}
+S.onSync(function(){stats();if(!cur)home()});
+fetch("data/grammar.json").then(function(r){return r.json()}).then(function(d){L=d;stats();var k=location.hash.slice(1),l=L.find(function(x){return x.id===k});l?lesson(l):home()})
+ .catch(function(){out.innerHTML='<div class="card done bn"><h2>লোড হয়নি</h2><p>ইন্টারনেট সংযোগ দেখে পেজটা আবার খুলুন।</p></div>'});
+})();
+</script>
+<script type="module" src="kit-cloud.js?v=1"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

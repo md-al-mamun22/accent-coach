@@ -293,7 +293,7 @@ Promise.all(FILES.map(function(f){return fetch(f).then(function(r){return r.json
 })();
 </script>
 <script type="module">
-import * as C from "./cloud.js?v=17";
+import * as C from "./cloud.js?v=18";
 const box=document.getElementById("cloud");
 let user=null,timer=null;
 function merge(a,b){const o=Object.assign({},a);for(const k in b){if(!o[k]||(b[k][2]||0)>(o[k][2]||0))o[k]=b[k]}return o}

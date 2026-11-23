@@ -1,0 +1,822 @@
+[
+{
+"k": "greet",
+"ic": "👋",
+"name": "পরিচয় ও শুভেচ্ছা",
+"items": [
+{
+"id": "p001",
+"en": "Hi, I'm Rahim. Nice to meet you.",
+"bn": "হাই, আমি রহিম। আপনার সাথে পরিচিত হয়ে ভালো লাগল।"
+},
+{
+"id": "p002",
+"en": "How are you doing?",
+"bn": "কেমন আছেন?"
+},
+{
+"id": "p003",
+"en": "I'm good, thanks. And you?",
+"bn": "ভালো আছি, ধন্যবাদ। আপনি?"
+},
+{
+"id": "p004",
+"en": "Where are you from?",
+"bn": "আপনি কোথা থেকে এসেছেন?"
+},
+{
+"id": "p005",
+"en": "I'm from Dhaka, Bangladesh.",
+"bn": "আমি বাংলাদেশের ঢাকা থেকে।"
+},
+{
+"id": "p006",
+"en": "What do you do?",
+"bn": "আপনি কী করেন?"
+},
+{
+"id": "p007",
+"en": "I work as a web developer.",
+"bn": "আমি ওয়েব ডেভেলপার হিসেবে কাজ করি।"
+},
+{
+"id": "p008",
+"en": "I'm a student at the university.",
+"bn": "আমি বিশ্ববিদ্যালয়ের ছাত্র।"
+},
+{
+"id": "p009",
+"en": "Long time no see!",
+"bn": "অনেক দিন পর দেখা!"
+},
+{
+"id": "p010",
+"en": "It was nice talking to you.",
+"bn": "আপনার সাথে কথা বলে ভালো লাগল।"
+},
+{
+"id": "p011",
+"en": "See you later.",
+"bn": "পরে দেখা হবে।"
+},
+{
+"id": "p012",
+"en": "Have a great day!",
+"bn": "আপনার দিনটা দারুণ কাটুক!"
+},
+{
+"id": "p013",
+"en": "Let me introduce my friend, Karim.",
+"bn": "আমার বন্ধু করিমের সাথে পরিচয় করিয়ে দিই।"
+},
+{
+"id": "p014",
+"en": "How was your weekend?",
+"bn": "আপনার ছুটির দিন কেমন কাটল?"
+},
+{
+"id": "p015",
+"en": "Take care!",
+"bn": "ভালো থাকবেন!"
+}
+]
+},
+{
+"k": "daily",
+"ic": "☀️",
+"name": "রোজকার কথা",
+"items": [
+{
+"id": "p016",
+"en": "What time is it?",
+"bn": "এখন কয়টা বাজে?"
+},
+{
+"id": "p017",
+"en": "I'm running late.",
+"bn": "আমার দেরি হয়ে যাচ্ছে।"
+},
+{
+"id": "p018",
+"en": "I'll be there in ten minutes.",
+"bn": "আমি দশ মিনিটের মধ্যে আসছি।"
+},
+{
+"id": "p019",
+"en": "I'm very tired today.",
+"bn": "আজ আমি খুব ক্লান্ত।"
+},
+{
+"id": "p020",
+"en": "Let's have lunch together.",
+"bn": "চলো একসাথে দুপুরের খাবার খাই।"
+},
+{
+"id": "p021",
+"en": "What are you doing this weekend?",
+"bn": "এই ছুটির দিনে তুমি কী করছ?"
+},
+{
+"id": "p022",
+"en": "I'm going to bed now.",
+"bn": "আমি এখন ঘুমাতে যাচ্ছি।"
+},
+{
+"id": "p023",
+"en": "It's really hot today.",
+"bn": "আজ সত্যিই অনেক গরম।"
+},
+{
+"id": "p024",
+"en": "Can you turn on the fan?",
+"bn": "পাখাটা একটু চালিয়ে দেবে?"
+},
+{
+"id": "p025",
+"en": "I forgot my phone at home.",
+"bn": "আমি ফোনটা বাসায় ফেলে এসেছি।"
+},
+{
+"id": "p026",
+"en": "Let me think about it.",
+"bn": "আমাকে একটু ভেবে দেখতে দাও।"
+},
+{
+"id": "p027",
+"en": "No problem.",
+"bn": "কোনো সমস্যা নেই।"
+},
+{
+"id": "p028",
+"en": "That sounds great!",
+"bn": "শুনে দারুণ লাগছে!"
+},
+{
+"id": "p029",
+"en": "I'm not sure.",
+"bn": "আমি নিশ্চিত না।"
+},
+{
+"id": "p030",
+"en": "It doesn't matter.",
+"bn": "এতে কিছু যায় আসে না।"
+}
+]
+},
+{
+"k": "shop",
+"ic": "🛒",
+"name": "দোকান ও বাজার",
+"items": [
+{
+"id": "p031",
+"en": "How much is this?",
+"bn": "এটার দাম কত?"
+},
+{
+"id": "p032",
+"en": "It's too expensive.",
+"bn": "এটা অনেক দামি।"
+},
+{
+"id": "p033",
+"en": "Can you give me a discount?",
+"bn": "একটু কম রাখা যাবে?"
+},
+{
+"id": "p034",
+"en": "Do you have this in a bigger size?",
+"bn": "এটা কি আরও বড় সাইজে আছে?"
+},
+{
+"id": "p035",
+"en": "Can I try this on?",
+"bn": "আমি কি এটা পরে দেখতে পারি?"
+},
+{
+"id": "p036",
+"en": "I'm just looking, thanks.",
+"bn": "আমি শুধু দেখছি, ধন্যবাদ।"
+},
+{
+"id": "p037",
+"en": "I'll take this one.",
+"bn": "আমি এটা নেব।"
+},
+{
+"id": "p038",
+"en": "Do you accept card payment?",
+"bn": "আপনারা কি কার্ডে পেমেন্ট নেন?"
+},
+{
+"id": "p039",
+"en": "Can I get a receipt, please?",
+"bn": "দয়া করে একটা রসিদ দেবেন?"
+},
+{
+"id": "p040",
+"en": "Where can I find the rice?",
+"bn": "চাল কোথায় পাব?"
+},
+{
+"id": "p041",
+"en": "Is this fresh?",
+"bn": "এটা কি তাজা?"
+},
+{
+"id": "p042",
+"en": "I'd like one kilo of potatoes.",
+"bn": "আমাকে এক কেজি আলু দিন।"
+},
+{
+"id": "p043",
+"en": "Can I return this if it doesn't fit?",
+"bn": "মাপে না হলে কি এটা ফেরত দেওয়া যাবে?"
+},
+{
+"id": "p044",
+"en": "Do you deliver to Mirpur?",
+"bn": "আপনারা কি মিরপুরে ডেলিভারি দেন?"
+},
+{
+"id": "p045",
+"en": "Keep the change.",
+"bn": "খুচরাটা রেখে দিন।"
+}
+]
+},
+{
+"k": "travel",
+"ic": "🚌",
+"name": "রাস্তা ও যাতায়াত",
+"items": [
+{
+"id": "p046",
+"en": "Excuse me, where is the bus stop?",
+"bn": "মাফ করবেন, বাস স্টপটা কোথায়?"
+},
+{
+"id": "p047",
+"en": "How do I get to the airport?",
+"bn": "এয়ারপোর্টে কীভাবে যাব?"
+},
+{
+"id": "p048",
+"en": "Is it far from here?",
+"bn": "এখান থেকে কি অনেক দূরে?"
+},
+{
+"id": "p049",
+"en": "Go straight and turn left.",
+"bn": "সোজা গিয়ে বাঁয়ে ঘুরুন।"
+},
+{
+"id": "p050",
+"en": "Please stop here.",
+"bn": "দয়া করে এখানে থামান।"
+},
+{
+"id": "p051",
+"en": "How long does it take?",
+"bn": "কত সময় লাগে?"
+},
+{
+"id": "p052",
+"en": "One ticket to Chittagong, please.",
+"bn": "চট্টগ্রামের একটা টিকিট দিন।"
+},
+{
+"id": "p053",
+"en": "What time does the train leave?",
+"bn": "ট্রেনটা কয়টায় ছাড়ে?"
+},
+{
+"id": "p054",
+"en": "Is this seat taken?",
+"bn": "এই সিটে কি কেউ বসেছে?"
+},
+{
+"id": "p055",
+"en": "I think I'm lost.",
+"bn": "মনে হয় আমি পথ হারিয়ে ফেলেছি।"
+},
+{
+"id": "p056",
+"en": "Can you show me on the map?",
+"bn": "ম্যাপে একটু দেখাতে পারবেন?"
+},
+{
+"id": "p057",
+"en": "The traffic is really bad today.",
+"bn": "আজ রাস্তায় অনেক জ্যাম।"
+},
+{
+"id": "p058",
+"en": "I'd like to book a hotel room.",
+"bn": "আমি একটা হোটেল রুম বুক করতে চাই।"
+},
+{
+"id": "p059",
+"en": "Where can I get a taxi?",
+"bn": "ট্যাক্সি কোথায় পাব?"
+},
+{
+"id": "p060",
+"en": "My flight is delayed.",
+"bn": "আমার ফ্লাইট দেরি হচ্ছে।"
+}
+]
+},
+{
+"k": "phone",
+"ic": "📞",
+"name": "ফোনে কথা",
+"items": [
+{
+"id": "p061",
+"en": "Hello, who is this?",
+"bn": "হ্যালো, কে বলছেন?"
+},
+{
+"id": "p062",
+"en": "This is Rahim speaking.",
+"bn": "আমি রহিম বলছি।"
+},
+{
+"id": "p063",
+"en": "Can I speak to Mr. Karim, please?",
+"bn": "আমি কি করিম সাহেবের সাথে কথা বলতে পারি?"
+},
+{
+"id": "p064",
+"en": "Please hold on a moment.",
+"bn": "দয়া করে এক মুহূর্ত অপেক্ষা করুন।"
+},
+{
+"id": "p065",
+"en": "Sorry, I can't hear you clearly.",
+"bn": "দুঃখিত, আপনার কথা পরিষ্কার শুনতে পাচ্ছি না।"
+},
+{
+"id": "p066",
+"en": "Could you speak a little slower?",
+"bn": "একটু আস্তে বলবেন?"
+},
+{
+"id": "p067",
+"en": "Can you repeat that, please?",
+"bn": "দয়া করে আবার বলবেন?"
+},
+{
+"id": "p068",
+"en": "I'll call you back later.",
+"bn": "আমি পরে আপনাকে ফোন করব।"
+},
+{
+"id": "p069",
+"en": "Sorry, I missed your call.",
+"bn": "দুঃখিত, আপনার কলটা ধরতে পারিনি।"
+},
+{
+"id": "p070",
+"en": "Can I leave a message?",
+"bn": "আমি কি একটা মেসেজ রেখে যেতে পারি?"
+},
+{
+"id": "p071",
+"en": "The line is busy.",
+"bn": "লাইন ব্যস্ত।"
+},
+{
+"id": "p072",
+"en": "My battery is about to die.",
+"bn": "আমার ফোনের চার্জ শেষ হয়ে যাচ্ছে।"
+},
+{
+"id": "p073",
+"en": "Let me check and get back to you.",
+"bn": "আমি দেখে আপনাকে জানাচ্ছি।"
+},
+{
+"id": "p074",
+"en": "Thanks for calling.",
+"bn": "ফোন করার জন্য ধন্যবাদ।"
+},
+{
+"id": "p075",
+"en": "Talk to you soon.",
+"bn": "শিগগিরই কথা হবে।"
+}
+]
+},
+{
+"k": "office",
+"ic": "💼",
+"name": "অফিস ও কাজ",
+"items": [
+{
+"id": "p076",
+"en": "I'm working on it right now.",
+"bn": "আমি এখনই এটার কাজ করছি।"
+},
+{
+"id": "p077",
+"en": "When is the deadline?",
+"bn": "ডেডলাইন কবে?"
+},
+{
+"id": "p078",
+"en": "I'll finish it by tomorrow.",
+"bn": "আমি কালকের মধ্যে এটা শেষ করব।"
+},
+{
+"id": "p079",
+"en": "Can we discuss this later?",
+"bn": "আমরা কি এটা নিয়ে পরে আলোচনা করতে পারি?"
+},
+{
+"id": "p080",
+"en": "Could you send me the file?",
+"bn": "আমাকে ফাইলটা পাঠাতে পারবেন?"
+},
+{
+"id": "p081",
+"en": "I've sent you an email.",
+"bn": "আমি আপনাকে একটা ইমেইল পাঠিয়েছি।"
+},
+{
+"id": "p082",
+"en": "I need a day off tomorrow.",
+"bn": "আমার কাল একদিনের ছুটি দরকার।"
+},
+{
+"id": "p083",
+"en": "Sorry, I made a mistake.",
+"bn": "দুঃখিত, আমার একটা ভুল হয়ে গেছে।"
+},
+{
+"id": "p084",
+"en": "Let me know if you need anything.",
+"bn": "কিছু লাগলে আমাকে জানাবেন।"
+},
+{
+"id": "p085",
+"en": "I'll take care of it.",
+"bn": "আমি এটা সামলে নেব।"
+},
+{
+"id": "p086",
+"en": "The meeting starts at ten.",
+"bn": "মিটিং দশটায় শুরু হবে।"
+},
+{
+"id": "p087",
+"en": "Can you help me with this task?",
+"bn": "এই কাজটায় আমাকে একটু সাহায্য করবেন?"
+},
+{
+"id": "p088",
+"en": "I'm stuck on this problem.",
+"bn": "এই সমস্যাটায় আমি আটকে আছি।"
+},
+{
+"id": "p089",
+"en": "Good job, everyone!",
+"bn": "সবাই খুব ভালো কাজ করেছেন!"
+},
+{
+"id": "p090",
+"en": "I'm leaving for the day.",
+"bn": "আজকের মতো আমি বের হচ্ছি।"
+}
+]
+},
+{
+"k": "interview",
+"ic": "🎯",
+"name": "চাকরির ইন্টারভিউ",
+"items": [
+{
+"id": "p091",
+"en": "Thank you for having me.",
+"bn": "আমাকে ডাকার জন্য ধন্যবাদ।"
+},
+{
+"id": "p092",
+"en": "Let me tell you a little about myself.",
+"bn": "আমার সম্পর্কে একটু বলি।"
+},
+{
+"id": "p093",
+"en": "I have three years of experience in this field.",
+"bn": "এই ক্ষেত্রে আমার তিন বছরের অভিজ্ঞতা আছে।"
+},
+{
+"id": "p094",
+"en": "My main strength is problem solving.",
+"bn": "আমার মূল শক্তি হলো সমস্যার সমাধান করা।"
+},
+{
+"id": "p095",
+"en": "I'm a quick learner.",
+"bn": "আমি দ্রুত শিখতে পারি।"
+},
+{
+"id": "p096",
+"en": "I work well in a team.",
+"bn": "আমি দলের সাথে ভালো কাজ করতে পারি।"
+},
+{
+"id": "p097",
+"en": "I'm looking for new challenges.",
+"bn": "আমি নতুন চ্যালেঞ্জ খুঁজছি।"
+},
+{
+"id": "p098",
+"en": "In my last job, I managed a small team.",
+"bn": "আমার আগের চাকরিতে আমি একটা ছোট দল সামলাতাম।"
+},
+{
+"id": "p099",
+"en": "I'm good at meeting deadlines.",
+"bn": "আমি সময়মতো কাজ শেষ করতে পারি।"
+},
+{
+"id": "p100",
+"en": "Could you tell me more about the role?",
+"bn": "পদটা সম্পর্কে আরও একটু বলবেন?"
+},
+{
+"id": "p101",
+"en": "What does a typical day look like?",
+"bn": "এখানে একটা সাধারণ দিন কেমন কাটে?"
+},
+{
+"id": "p102",
+"en": "I'm very interested in this position.",
+"bn": "এই পদটায় আমি খুবই আগ্রহী।"
+},
+{
+"id": "p103",
+"en": "I can start next month.",
+"bn": "আমি আগামী মাস থেকে শুরু করতে পারি।"
+},
+{
+"id": "p104",
+"en": "Do you have any questions for me?",
+"bn": "আমার কাছে আপনার কোনো প্রশ্ন আছে?"
+},
+{
+"id": "p105",
+"en": "When can I expect to hear from you?",
+"bn": "আপনাদের কাছ থেকে কবে খবর পেতে পারি?"
+}
+]
+},
+{
+"k": "client",
+"ic": "🤝",
+"name": "ক্লায়েন্ট ও মিটিং",
+"items": [
+{
+"id": "p106",
+"en": "Thanks for joining the call.",
+"bn": "কলে যোগ দেওয়ার জন্য ধন্যবাদ।"
+},
+{
+"id": "p107",
+"en": "Can you hear me clearly?",
+"bn": "আমার কথা কি পরিষ্কার শুনতে পাচ্ছেন?"
+},
+{
+"id": "p108",
+"en": "Could you share your screen?",
+"bn": "আপনার স্ক্রিনটা শেয়ার করবেন?"
+},
+{
+"id": "p109",
+"en": "Let me share my screen.",
+"bn": "আমি আমার স্ক্রিনটা শেয়ার করছি।"
+},
+{
+"id": "p110",
+"en": "What is your main goal for this project?",
+"bn": "এই প্রজেক্টে আপনার মূল লক্ষ্য কী?"
+},
+{
+"id": "p111",
+"en": "What's your budget for this?",
+"bn": "এটার জন্য আপনার বাজেট কত?"
+},
+{
+"id": "p112",
+"en": "Here is what I suggest.",
+"bn": "আমার পরামর্শ হলো এটা।"
+},
+{
+"id": "p113",
+"en": "I'll send you a proposal today.",
+"bn": "আমি আজই আপনাকে একটা প্রস্তাব পাঠাব।"
+},
+{
+"id": "p114",
+"en": "That makes sense.",
+"bn": "কথাটা বোঝা যাচ্ছে।"
+},
+{
+"id": "p115",
+"en": "Just to make sure I understand,",
+"bn": "আমি ঠিক বুঝেছি কি না নিশ্চিত হতে চাই,"
+},
+{
+"id": "p116",
+"en": "I'll update you by Friday.",
+"bn": "শুক্রবারের মধ্যে আমি আপনাকে আপডেট জানাব।"
+},
+{
+"id": "p117",
+"en": "Do you have any other questions?",
+"bn": "আপনার কি আর কোনো প্রশ্ন আছে?"
+},
+{
+"id": "p118",
+"en": "Let's schedule a follow-up call.",
+"bn": "চলুন পরের একটা কল ঠিক করি।"
+},
+{
+"id": "p119",
+"en": "I really appreciate your time.",
+"bn": "আপনার সময়ের জন্য সত্যিই কৃতজ্ঞ।"
+},
+{
+"id": "p120",
+"en": "Looking forward to working with you.",
+"bn": "আপনার সাথে কাজ করার অপেক্ষায় আছি।"
+}
+]
+},
+{
+"k": "help",
+"ic": "🙏",
+"name": "অনুরোধ ও সাহায্য",
+"items": [
+{
+"id": "p121",
+"en": "Could you help me, please?",
+"bn": "দয়া করে আমাকে একটু সাহায্য করবেন?"
+},
+{
+"id": "p122",
+"en": "Can I ask you something?",
+"bn": "আপনাকে একটা কথা জিজ্ঞেস করতে পারি?"
+},
+{
+"id": "p123",
+"en": "Would you mind opening the window?",
+"bn": "জানালাটা একটু খুলে দিলে কি কিছু মনে করবেন?"
+},
+{
+"id": "p124",
+"en": "Sorry to bother you.",
+"bn": "বিরক্ত করার জন্য দুঃখিত।"
+},
+{
+"id": "p125",
+"en": "I don't understand. Could you explain?",
+"bn": "আমি বুঝতে পারছি না। একটু বুঝিয়ে বলবেন?"
+},
+{
+"id": "p126",
+"en": "What does this word mean?",
+"bn": "এই শব্দটার মানে কী?"
+},
+{
+"id": "p127",
+"en": "How do you say this in English?",
+"bn": "এটা ইংরেজিতে কীভাবে বলে?"
+},
+{
+"id": "p128",
+"en": "Can you write it down for me?",
+"bn": "আমার জন্য একটু লিখে দেবেন?"
+},
+{
+"id": "p129",
+"en": "Thank you so much for your help.",
+"bn": "আপনার সাহায্যের জন্য অনেক ধন্যবাদ।"
+},
+{
+"id": "p130",
+"en": "You're welcome.",
+"bn": "স্বাগতম। / কোনো ব্যাপার না।"
+},
+{
+"id": "p131",
+"en": "I'm sorry, it was my fault.",
+"bn": "দুঃখিত, ভুলটা আমার।"
+},
+{
+"id": "p132",
+"en": "Don't worry about it.",
+"bn": "এ নিয়ে চিন্তা করবেন না।"
+},
+{
+"id": "p133",
+"en": "Is there anything I can do?",
+"bn": "আমি কি কিছু করতে পারি?"
+},
+{
+"id": "p134",
+"en": "Could you wait a minute?",
+"bn": "এক মিনিট অপেক্ষা করবেন?"
+},
+{
+"id": "p135",
+"en": "Please call me if you need anything.",
+"bn": "কিছু লাগলে আমাকে ফোন করবেন।"
+}
+]
+},
+{
+"k": "feel",
+"ic": "💬",
+"name": "মতামত ও অনুভূতি",
+"items": [
+{
+"id": "p136",
+"en": "I think so too.",
+"bn": "আমিও তাই মনে করি।"
+},
+{
+"id": "p137",
+"en": "I don't think so.",
+"bn": "আমার তা মনে হয় না।"
+},
+{
+"id": "p138",
+"en": "I totally agree with you.",
+"bn": "আমি আপনার সাথে পুরোপুরি একমত।"
+},
+{
+"id": "p139",
+"en": "I see your point, but...",
+"bn": "আপনার কথা বুঝতে পারছি, কিন্তু..."
+},
+{
+"id": "p140",
+"en": "In my opinion, this is better.",
+"bn": "আমার মতে এটা ভালো।"
+},
+{
+"id": "p141",
+"en": "I'm really happy for you.",
+"bn": "তোমার জন্য সত্যিই খুশি লাগছে।"
+},
+{
+"id": "p142",
+"en": "I'm a bit nervous.",
+"bn": "আমার একটু নার্ভাস লাগছে।"
+},
+{
+"id": "p143",
+"en": "That's amazing!",
+"bn": "দারুণ ব্যাপার!"
+},
+{
+"id": "p144",
+"en": "I'm so sorry to hear that.",
+"bn": "শুনে খুব খারাপ লাগল।"
+},
+{
+"id": "p145",
+"en": "I'm proud of you.",
+"bn": "তোমাকে নিয়ে আমি গর্বিত।"
+},
+{
+"id": "p146",
+"en": "It's not a big deal.",
+"bn": "এটা তেমন বড় কোনো ব্যাপার না।"
+},
+{
+"id": "p147",
+"en": "I'm looking forward to it.",
+"bn": "আমি এর অপেক্ষায় আছি।"
+},
+{
+"id": "p148",
+"en": "I can't believe it!",
+"bn": "আমি বিশ্বাসই করতে পারছি না!"
+},
+{
+"id": "p149",
+"en": "I prefer tea to coffee.",
+"bn": "আমি কফির চেয়ে চা বেশি পছন্দ করি।"
+},
+{
+"id": "p150",
+"en": "Either way is fine with me.",
+"bn": "যেকোনোটাতেই আমার আপত্তি নেই।"
+}
+]
+}
+]

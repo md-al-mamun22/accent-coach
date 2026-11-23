@@ -1,0 +1,812 @@
+[
+{
+"id": "d01",
+"lv": "A1",
+"ic": "☕",
+"bn": "ক্যাফেতে অর্ডার",
+"en": "At a café",
+"lines": [
+{
+"id": "d01_01",
+"s": "A",
+"t": "Hi! Can I get a cup of tea, please?"
+},
+{
+"id": "d01_02",
+"s": "B",
+"t": "Sure. Would you like milk and sugar?"
+},
+{
+"id": "d01_03",
+"s": "A",
+"t": "Milk, but no sugar, please."
+},
+{
+"id": "d01_04",
+"s": "B",
+"t": "Anything else?"
+},
+{
+"id": "d01_05",
+"s": "A",
+"t": "Yes, one chicken sandwich."
+},
+{
+"id": "d01_06",
+"s": "B",
+"t": "That's two hundred and fifty taka."
+},
+{
+"id": "d01_07",
+"s": "A",
+"t": "Here you go. Thank you!"
+}
+],
+"q": [
+{
+"s": "চায়ে সে কী নেবে?",
+"o": [
+"দুধ, চিনি ছাড়া",
+"দুধ আর চিনি দুটোই",
+"শুধু চিনি"
+]
+},
+{
+"s": "খাবার হিসেবে কী অর্ডার করল?",
+"o": [
+"চিকেন স্যান্ডউইচ",
+"কেক",
+"বার্গার"
+]
+},
+{
+"s": "মোট দাম কত?",
+"o": [
+"২৫০ টাকা",
+"২০০ টাকা",
+"১৫০ টাকা"
+]
+}
+]
+},
+{
+"id": "d02",
+"lv": "A1",
+"ic": "🏠",
+"bn": "নতুন প্রতিবেশী",
+"en": "A new neighbour",
+"lines": [
+{
+"id": "d02_01",
+"s": "B",
+"t": "Hello! Are you new here?"
+},
+{
+"id": "d02_02",
+"s": "A",
+"t": "Yes, I moved in last week. I'm Rahim."
+},
+{
+"id": "d02_03",
+"s": "B",
+"t": "Nice to meet you, Rahim. I'm Sara. I live on the third floor."
+},
+{
+"id": "d02_04",
+"s": "A",
+"t": "Nice to meet you too. Do you work nearby?"
+},
+{
+"id": "d02_05",
+"s": "B",
+"t": "Yes, I'm a teacher at the school across the road."
+},
+{
+"id": "d02_06",
+"s": "A",
+"t": "That's great. See you around!"
+}
+],
+"q": [
+{
+"s": "রহিম কবে এসেছে?",
+"o": [
+"গত সপ্তাহে",
+"গতকাল",
+"গত মাসে"
+]
+},
+{
+"s": "সারা কোন তলায় থাকে?",
+"o": [
+"তিন তলায়",
+"দুই তলায়",
+"পাঁচ তলায়"
+]
+},
+{
+"s": "সারা কী কাজ করে?",
+"o": [
+"শিক্ষকতা",
+"ডাক্তারি",
+"ইঞ্জিনিয়ারিং"
+]
+}
+]
+},
+{
+"id": "d03",
+"lv": "A1",
+"ic": "🗺️",
+"bn": "রাস্তা জিজ্ঞেস করা",
+"en": "Asking the way",
+"lines": [
+{
+"id": "d03_01",
+"s": "A",
+"t": "Excuse me, how do I get to the bus station?"
+},
+{
+"id": "d03_02",
+"s": "B",
+"t": "Go straight for about five minutes, then turn right."
+},
+{
+"id": "d03_03",
+"s": "A",
+"t": "Is it near the big mosque?"
+},
+{
+"id": "d03_04",
+"s": "B",
+"t": "Yes, it's just opposite the mosque."
+},
+{
+"id": "d03_05",
+"s": "A",
+"t": "Thank you so much!"
+},
+{
+"id": "d03_06",
+"s": "B",
+"t": "You're welcome."
+}
+],
+"q": [
+{
+"s": "প্রথমে কতক্ষণ সোজা যেতে হবে?",
+"o": [
+"প্রায় পাঁচ মিনিট",
+"দশ মিনিট",
+"দুই মিনিট"
+]
+},
+{
+"s": "তারপর কোন দিকে ঘুরতে হবে?",
+"o": [
+"ডানে",
+"বাঁয়ে",
+"পিছনে"
+]
+},
+{
+"s": "বাস স্টেশনটা কোথায়?",
+"o": [
+"মসজিদের ঠিক উল্টো দিকে",
+"মসজিদের পিছনে",
+"স্কুলের পাশে"
+]
+}
+]
+},
+{
+"id": "d04",
+"lv": "A2",
+"ic": "🩺",
+"bn": "ডাক্তারের অ্যাপয়েন্টমেন্ট",
+"en": "Booking an appointment",
+"lines": [
+{
+"id": "d04_01",
+"s": "B",
+"t": "Good morning, City Clinic. How can I help you?"
+},
+{
+"id": "d04_02",
+"s": "A",
+"t": "Hi, I'd like to book an appointment with Doctor Hasan."
+},
+{
+"id": "d04_03",
+"s": "B",
+"t": "Sure. Is Thursday at four o'clock okay?"
+},
+{
+"id": "d04_04",
+"s": "A",
+"t": "Sorry, I work until five on Thursday. Do you have anything on Saturday?"
+},
+{
+"id": "d04_05",
+"s": "B",
+"t": "Yes, Saturday at eleven in the morning."
+},
+{
+"id": "d04_06",
+"s": "A",
+"t": "Perfect. My name is Rahim Ahmed."
+},
+{
+"id": "d04_07",
+"s": "B",
+"t": "Thank you, Mr. Ahmed. See you on Saturday."
+}
+],
+"q": [
+{
+"s": "কোন ডাক্তারের কাছে যেতে চায়?",
+"o": [
+"ডা. হাসান",
+"ডা. করিম",
+"ডা. সারা"
+]
+},
+{
+"s": "বৃহস্পতিবার কেন হবে না?",
+"o": [
+"সে পাঁচটা পর্যন্ত কাজ করে",
+"সে ঢাকার বাইরে থাকবে",
+"ক্লিনিক বন্ধ থাকে"
+]
+},
+{
+"s": "শেষে কখন ঠিক হলো?",
+"o": [
+"শনিবার সকাল এগারোটা",
+"বৃহস্পতিবার চারটা",
+"শনিবার বিকেল চারটা"
+]
+}
+]
+},
+{
+"id": "d05",
+"lv": "A2",
+"ic": "👕",
+"bn": "শার্ট কেনা",
+"en": "Buying a shirt",
+"lines": [
+{
+"id": "d05_01",
+"s": "B",
+"t": "Can I help you?"
+},
+{
+"id": "d05_02",
+"s": "A",
+"t": "Yes, I'm looking for a blue shirt."
+},
+{
+"id": "d05_03",
+"s": "B",
+"t": "What size are you?"
+},
+{
+"id": "d05_04",
+"s": "A",
+"t": "Medium, I think."
+},
+{
+"id": "d05_05",
+"s": "B",
+"t": "Here's one. It's on sale today, only eight hundred taka."
+},
+{
+"id": "d05_06",
+"s": "A",
+"t": "Can I try it on?"
+},
+{
+"id": "d05_07",
+"s": "B",
+"t": "Of course. The changing room is over there."
+},
+{
+"id": "d05_08",
+"s": "A",
+"t": "It fits well. I'll take it."
+}
+],
+"q": [
+{
+"s": "সে কোন রঙের শার্ট খুঁজছে?",
+"o": [
+"নীল",
+"সাদা",
+"কালো"
+]
+},
+{
+"s": "শার্টের দাম কত?",
+"o": [
+"৮০০ টাকা",
+"১৮০০ টাকা",
+"৫০০ টাকা"
+]
+},
+{
+"s": "শেষে সে কী করল?",
+"o": [
+"শার্টটা কিনল",
+"ফেরত দিল",
+"অন্য রং চাইল"
+]
+}
+]
+},
+{
+"id": "d06",
+"lv": "A2",
+"ic": "🚆",
+"bn": "ছুটির পরিকল্পনা",
+"en": "Weekend plans",
+"lines": [
+{
+"id": "d06_01",
+"s": "A",
+"t": "What are you doing this weekend?"
+},
+{
+"id": "d06_02",
+"s": "B",
+"t": "I'm going to visit my grandparents in the village."
+},
+{
+"id": "d06_03",
+"s": "A",
+"t": "That sounds nice. How are you going there?"
+},
+{
+"id": "d06_04",
+"s": "B",
+"t": "By train. It takes about four hours."
+},
+{
+"id": "d06_05",
+"s": "A",
+"t": "When are you coming back?"
+},
+{
+"id": "d06_06",
+"s": "B",
+"t": "On Sunday evening. What about you?"
+},
+{
+"id": "d06_07",
+"s": "A",
+"t": "I'm going to stay home and study for my exam."
+}
+],
+"q": [
+{
+"s": "B কোথায় যাচ্ছে?",
+"o": [
+"গ্রামে দাদা-দাদির বাসায়",
+"কক্সবাজারে",
+"বন্ধুর বাসায়"
+]
+},
+{
+"s": "কীভাবে যাবে?",
+"o": [
+"ট্রেনে",
+"বাসে",
+"প্লেনে"
+]
+},
+{
+"s": "A নিজে ছুটিতে কী করবে?",
+"o": [
+"বাসায় থেকে পরীক্ষার পড়া",
+"সিনেমা দেখবে",
+"কাজে যাবে"
+]
+}
+]
+},
+{
+"id": "d07",
+"lv": "A2",
+"ic": "🍕",
+"bn": "ফোনে খাবার অর্ডার",
+"en": "Ordering food",
+"lines": [
+{
+"id": "d07_01",
+"s": "B",
+"t": "Hello, Pizza Corner. What would you like?"
+},
+{
+"id": "d07_02",
+"s": "A",
+"t": "I'd like one large chicken pizza, please."
+},
+{
+"id": "d07_03",
+"s": "B",
+"t": "Anything to drink?"
+},
+{
+"id": "d07_04",
+"s": "A",
+"t": "Two bottles of water."
+},
+{
+"id": "d07_05",
+"s": "B",
+"t": "Okay. What's your address?"
+},
+{
+"id": "d07_06",
+"s": "A",
+"t": "House twelve, Road five, Mirpur ten."
+},
+{
+"id": "d07_07",
+"s": "B",
+"t": "It will take about forty minutes."
+}
+],
+"q": [
+{
+"s": "কী অর্ডার করল?",
+"o": [
+"একটা বড় চিকেন পিৎজা",
+"দুটো ছোট পিৎজা",
+"বার্গার"
+]
+},
+{
+"s": "ঠিকানা কোথায়?",
+"o": [
+"মিরপুর ১০",
+"মিরপুর ১১",
+"উত্তরা"
+]
+},
+{
+"s": "খাবার আসতে কতক্ষণ লাগবে?",
+"o": [
+"প্রায় ৪০ মিনিট",
+"১৪ মিনিট",
+"এক ঘণ্টা"
+]
+}
+]
+},
+{
+"id": "d08",
+"lv": "A2",
+"ic": "🏨",
+"bn": "হোটেলে চেক-ইন",
+"en": "At the hotel",
+"lines": [
+{
+"id": "d08_01",
+"s": "A",
+"t": "Hello, I have a booking under the name Rahim."
+},
+{
+"id": "d08_02",
+"s": "B",
+"t": "Welcome, sir. Yes, a single room for two nights."
+},
+{
+"id": "d08_03",
+"s": "A",
+"t": "Is breakfast included?"
+},
+{
+"id": "d08_04",
+"s": "B",
+"t": "Yes, breakfast is from seven to ten in the restaurant."
+},
+{
+"id": "d08_05",
+"s": "A",
+"t": "Great. What's the Wi-Fi password?"
+},
+{
+"id": "d08_06",
+"s": "B",
+"t": "It's on your key card. Your room is three oh five, on the third floor."
+}
+],
+"q": [
+{
+"s": "কত রাতের বুকিং?",
+"o": [
+"দুই রাত",
+"এক রাত",
+"তিন রাত"
+]
+},
+{
+"s": "নাস্তা কখন দেওয়া হয়?",
+"o": [
+"সাতটা থেকে দশটা",
+"আটটা থেকে এগারোটা",
+"ছয়টা থেকে নয়টা"
+]
+},
+{
+"s": "রুম নম্বর কত?",
+"o": [
+"৩০৫",
+"৫০৩",
+"২০৫"
+]
+}
+]
+},
+{
+"id": "d09",
+"lv": "B1",
+"ic": "🎯",
+"bn": "চাকরির ইন্টারভিউ",
+"en": "Job interview",
+"lines": [
+{
+"id": "d09_01",
+"s": "B",
+"t": "So, tell me a little about yourself."
+},
+{
+"id": "d09_02",
+"s": "A",
+"t": "I'm a web developer with four years of experience. I mostly build websites for small businesses."
+},
+{
+"id": "d09_03",
+"s": "B",
+"t": "Why do you want to join our company?"
+},
+{
+"id": "d09_04",
+"s": "A",
+"t": "I like your projects, and I want to work in a bigger team and learn new skills."
+},
+{
+"id": "d09_05",
+"s": "B",
+"t": "What is your biggest strength?"
+},
+{
+"id": "d09_06",
+"s": "A",
+"t": "I'm good at solving problems, and I always try to finish my work on time."
+}
+],
+"q": [
+{
+"s": "তার কত বছরের অভিজ্ঞতা?",
+"o": [
+"চার বছর",
+"দুই বছর",
+"দশ বছর"
+]
+},
+{
+"s": "সে কেন এই কোম্পানিতে আসতে চায়?",
+"o": [
+"বড় দলে কাজ করে নতুন দক্ষতা শিখতে",
+"বেশি বেতনের জন্য",
+"অফিস বাসার কাছে বলে"
+]
+},
+{
+"s": "তার সবচেয়ে বড় শক্তি কী?",
+"o": [
+"সমস্যার সমাধান আর সময়মতো কাজ শেষ করা",
+"সুন্দর ডিজাইন করা",
+"অনেক ভাষা জানা"
+]
+}
+]
+},
+{
+"id": "d10",
+"lv": "B1",
+"ic": "💻",
+"bn": "ক্লায়েন্টের সাথে কল",
+"en": "A client call",
+"lines": [
+{
+"id": "d10_01",
+"s": "B",
+"t": "Hi, thanks for joining. Can you hear me?"
+},
+{
+"id": "d10_02",
+"s": "A",
+"t": "Yes, loud and clear. So, what do you need help with?"
+},
+{
+"id": "d10_03",
+"s": "B",
+"t": "Our website is very slow, and we are losing customers."
+},
+{
+"id": "d10_04",
+"s": "A",
+"t": "I see. I can check the speed and send you a report by tomorrow."
+},
+{
+"id": "d10_05",
+"s": "B",
+"t": "That would be great. How much will it cost?"
+},
+{
+"id": "d10_06",
+"s": "A",
+"t": "The report is free. If you want me to fix it, I'll send you a price after that."
+}
+],
+"q": [
+{
+"s": "ক্লায়েন্টের সমস্যা কী?",
+"o": [
+"ওয়েবসাইট খুব ধীর",
+"ওয়েবসাইট বন্ধ হয়ে আছে",
+"লোগো পছন্দ হচ্ছে না"
+]
+},
+{
+"s": "রিপোর্ট কবে পাঠাবে?",
+"o": [
+"কালকের মধ্যে",
+"আজই",
+"এক সপ্তাহ পর"
+]
+},
+{
+"s": "রিপোর্টের খরচ কত?",
+"o": [
+"ফ্রি",
+"১০০ ডলার",
+"পরে জানাবে"
+]
+}
+]
+},
+{
+"id": "d11",
+"lv": "B1",
+"ic": "⏰",
+"bn": "অফিসে দেরি",
+"en": "Late for work",
+"lines": [
+{
+"id": "d11_01",
+"s": "B",
+"t": "You're late again. Is everything okay?"
+},
+{
+"id": "d11_02",
+"s": "A",
+"t": "I'm really sorry. There was a huge traffic jam because of an accident."
+},
+{
+"id": "d11_03",
+"s": "B",
+"t": "I understand, but the client meeting started at nine."
+},
+{
+"id": "d11_04",
+"s": "A",
+"t": "I know. Can I join now, or should I wait?"
+},
+{
+"id": "d11_05",
+"s": "B",
+"t": "Join now. And next time, please send me a message if you're running late."
+},
+{
+"id": "d11_06",
+"s": "A",
+"t": "Of course. It won't happen again."
+}
+],
+"q": [
+{
+"s": "দেরির কারণ কী?",
+"o": [
+"দুর্ঘটনার কারণে বিশাল জ্যাম",
+"ঘুম থেকে দেরিতে উঠেছে",
+"অসুস্থ ছিল"
+]
+},
+{
+"s": "ক্লায়েন্ট মিটিং কয়টায় শুরু হয়েছে?",
+"o": [
+"নয়টায়",
+"দশটায়",
+"আটটায়"
+]
+},
+{
+"s": "পরের বার কী করতে বলা হলো?",
+"o": [
+"দেরি হলে মেসেজ দিতে",
+"আরও আগে বের হতে",
+"ছুটি নিতে"
+]
+}
+]
+},
+{
+"id": "d12",
+"lv": "B1",
+"ic": "🎧",
+"bn": "পণ্য ফেরত দেওয়া",
+"en": "Returning a product",
+"lines": [
+{
+"id": "d12_01",
+"s": "A",
+"t": "Hi, I bought these headphones last week, but the left side doesn't work."
+},
+{
+"id": "d12_02",
+"s": "B",
+"t": "I'm sorry to hear that. Do you have the receipt?"
+},
+{
+"id": "d12_03",
+"s": "A",
+"t": "Yes, here it is."
+},
+{
+"id": "d12_04",
+"s": "B",
+"t": "Thank you. Would you like a new pair or your money back?"
+},
+{
+"id": "d12_05",
+"s": "A",
+"t": "A new pair, please."
+},
+{
+"id": "d12_06",
+"s": "B",
+"t": "No problem. Let me check if we have them in stock."
+}
+],
+"q": [
+{
+"s": "হেডফোনে কী সমস্যা?",
+"o": [
+"বাঁ পাশ কাজ করে না",
+"ডান পাশ কাজ করে না",
+"চার্জ হয় না"
+]
+},
+{
+"s": "দোকানদার কী দেখতে চাইল?",
+"o": [
+"রসিদ",
+"ফোন নম্বর",
+"বাক্স"
+]
+},
+{
+"s": "সে শেষে কী চাইল?",
+"o": [
+"নতুন একজোড়া",
+"টাকা ফেরত",
+"অন্য মডেল"
+]
+}
+]
+}
+]

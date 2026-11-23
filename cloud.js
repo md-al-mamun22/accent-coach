@@ -160,6 +160,21 @@ export async function saveVocab(u, w, fav) {
 }
 
 // ---------- daily reminder (free: calendar event) ----------
+// generic progress docs: users/{uid}/prog/{phrases|path|grammar|listen} = {d:{key:[value,ts]}}
+export const PROG = ["phrases", "path", "grammar", "listen"];
+export async function loadProg(u, name) {
+  const f = await init(); if (!f || !u || !PROG.includes(name)) return null;
+  const s = await f.S.getDoc(f.S.doc(f.db, "users", u.uid, "prog", name));
+  return s.exists() ? (s.data().d || {}) : null;
+}
+export async function saveProg(u, name, d) {
+  const f = await init(); if (!f || !u || !PROG.includes(name)) return;
+  const S = f.S, clean = {};
+  Object.keys(d || {}).slice(0, 2000).forEach(k => { const e = d[k];
+    if (k.length <= 40 && Array.isArray(e) && e.length === 2) clean[k] = [Math.floor(+e[0] || 0), Math.floor(+e[1] || 0)]; });
+  await S.setDoc(S.doc(f.db, "users", u.uid, "prog", name), { d: clean, updatedAt: S.serverTimestamp() });
+}
+
 export function reminderLinks(hhmm) {
   const [h, m] = (hhmm || "20:00").split(":").map(Number);
   const d = new Date(); d.setHours(h, m, 0, 0); if (d < new Date()) d.setDate(d.getDate() + 1);

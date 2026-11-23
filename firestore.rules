@@ -45,6 +45,16 @@ service cloud.firestore {
       }
     }
 
+    // Phrases / grammar / listening / 12-week path progress: private per learner.
+    match /users/{uid}/prog/{doc} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && doc in ['phrases', 'path', 'grammar', 'listen']
+        && request.resource.data.keys().hasOnly(['d', 'updatedAt'])
+        && request.resource.data.d is map && request.resource.data.d.size() <= 2000
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if signedIn() && request.auth.uid == uid;
+    }
     // 1000-word vocabulary progress: one private document per learner.
     match /users/{uid}/vocab/{doc} {
       allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
