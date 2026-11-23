@@ -1,0 +1,35 @@
+/* Tiro Bangla (OFL), self-hosted for Bengali letters only, scaled to sit level with the Latin text. Latin falls through to Figtree. */
+@font-face{font-family:"Tiro Bangla";font-style:normal;font-weight:400;font-display:swap;size-adjust:118%;src:url(fonts/tiro-bangla-bengali-400-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+/* Shared look for the learning pages: nav, soft background, Bangla type scale. */
+:root{--bnf:"Tiro Bangla","Figtree",sans-serif}
+body{position:relative;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(120px);pointer-events:none}
+body::before{width:520px;height:520px;background:var(--lime);opacity:.32;left:-220px;top:120px}
+body::after{width:520px;height:520px;background:#c4c1ff;opacity:.38;right:-200px;top:-140px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body::before{opacity:.10}:root:not([data-theme="light"]) body::after{opacity:.14}}
+.bn,[lang="bn"] .bn{font-family:var(--bnf)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+nav .nl{display:flex;gap:4px;margin-left:auto}
+nav .nl a{font:600 15px var(--body);color:var(--muted);text-decoration:none;padding:8px 11px;border-radius:10px;white-space:nowrap}
+nav .nl a:hover{color:var(--ink);background:var(--card)}
+nav .nl a.on{color:var(--ink);background:var(--card);box-shadow:inset 0 0 0 1.5px var(--line)}
+nav .nl+.btn{margin-left:8px}
+@media(max-width:1020px){nav .nl{display:none}nav .nl+.btn{margin-left:auto}}
+
+/* page header card */
+main{padding:32px 0 80px}
+.hero,.intro{position:relative;overflow:hidden}
+.hero h1,.intro h1{font-family:var(--bnf);font-weight:400;font-size:clamp(27px,3.6vw,36px);line-height:1.25;letter-spacing:0;margin-top:12px}
+.hero h1 mark,.intro h1 mark{padding:0 10px 2px;border-radius:10px}
+.hero p,.intro p{font-size:17px;line-height:1.65}
+.hero>.pos,.intro>.pos,.eyb{display:inline-flex;align-items:center;gap:8px;background:none!important;color:var(--muted)!important;padding:0!important;font:700 13px var(--body)!important;letter-spacing:.1em;text-transform:uppercase}
+.hero>.pos::before,.intro>.pos::before,.eyb::before{content:"";width:8px;height:8px;border-radius:50%;background:#9fbf1f;box-shadow:0 0 0 4px var(--lime-soft)}
+.stats b{font-family:var(--bnf)!important;font-weight:400!important;font-size:26px!important}
+.card{box-shadow:0 1px 0 rgba(22,23,26,.03),0 12px 32px -18px rgba(22,23,26,.18)}
+h1.bn,h2.bn,h3.bn,.bn h1,.bn h2,.bn h3,.done h2,.tcard b,.qstem{font-weight:400!important;letter-spacing:0}
+.tcard b{font-size:19px!important}
+.wrap{max-width:860px}
+.tcard,.tr{transition:transform .2s,border-color .2s,box-shadow .2s}
+.tcard:hover,.tr:hover{transform:translateY(-2px);box-shadow:0 14px 30px -20px rgba(22,23,26,.35)}

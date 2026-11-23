@@ -9,40 +9,41 @@
 <meta property="og:description" content="লেভেল অনুযায়ী রোজকার কাজ: শব্দ, বাক্য, উচ্চারণ, গ্রামার আর শোনা।">
 <meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=Hind+Siliguri:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="site.css">
 <link rel="stylesheet" href="learn.css?v=1">
 <style>
 .weeks{display:flex;gap:6px;overflow-x:auto;padding:4px 0 8px;margin-top:18px;scrollbar-width:thin}
 .wk{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 12px;font:700 14px var(--body);cursor:pointer;text-align:center;min-width:64px}
-.wk small{display:block;color:var(--muted);font:600 12px "Hind Siliguri",var(--body)}
+.wk small{display:block;color:var(--muted);font:600 12px "Tiro Bangla",var(--body)}
 .wk.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.wk.on small{color:inherit;opacity:.75}
 .wk.full{border-color:#9fbf1f}
 .days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
 .dy{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 0;font:800 16px var(--display);cursor:pointer}
-.dy small{display:block;font:600 11px "Hind Siliguri",var(--body);color:var(--muted)}
+.dy small{display:block;font:600 11px "Tiro Bangla",var(--body);color:var(--muted)}
 .dy.on{outline:3px solid var(--ink)}
 .dy.ok{background:var(--lime);border-color:#9fbf1f;color:#16171a}.dy.ok small{color:#3d4a12}
 .task{display:flex;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
 .task:last-child{border-bottom:0}
 .task .ic{font-size:24px;flex:none;width:34px;text-align:center}
-.task b{display:block;font:700 17px "Hind Siliguri",var(--body)}
-.task span{color:var(--muted);font:600 14px "Hind Siliguri",var(--body)}
-.task .go{margin-left:auto;flex:none;font:700 14px "Hind Siliguri",var(--body);padding:8px 12px}
+.task b{display:block;font:700 17px "Tiro Bangla",var(--body)}
+.task span{color:var(--muted);font:600 14px "Tiro Bangla",var(--body)}
+.task .go{margin-left:auto;flex:none;font:700 14px "Tiro Bangla",var(--body);padding:8px 12px}
 .tick{flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--line);background:var(--card);cursor:pointer;font-size:15px;color:transparent;display:grid;place-items:center}
 .tick.on{background:var(--lime);border-color:#9fbf1f;color:#16171a}
 .task.done b{text-decoration:line-through;opacity:.6}
 .tracks{display:grid;gap:10px;margin-top:16px}
 .tr{text-align:left;cursor:pointer;padding:16px;border-radius:16px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
 .tr:hover,.tr.on{border-color:var(--ink)}
-.tr b{font:700 18px "Hind Siliguri",var(--body)}
-.tr span{display:block;color:var(--muted);font:600 15px "Hind Siliguri",var(--body);margin-top:2px}
+.tr b{font:700 18px "Tiro Bangla",var(--body)}
+.tr span{display:block;color:var(--muted);font:600 15px "Tiro Bangla",var(--body);margin-top:2px}
 .task>div{flex:1;min-width:0}
 @media(max-width:600px){.task{gap:9px}.task .ic{width:24px;font-size:20px}.task b{font-size:16px}.task .go{padding:7px 10px;font-size:13px}.dy{font-size:14px}}
 </style>
+<link rel="stylesheet" href="chrome.css?v=1">
 </head>
 <body>
-<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><a class="btn sp" href="learn.html">Learn →</a></div></nav>
+<nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><div class="nl"><a href="learn.html">Learn</a><a href="path.html" class="on">12-week plan</a><a href="level-test.html">Level test</a><a href="words.html">Words</a><a href="phrases.html">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="app.html">Pronunciation</a></div><a class="btn pri" href="learn.html">All tools →</a></div></nav>
 <main><div class="container"><div class="wrap">
   <div class="card hero">
     <span class="pos">12-week path</span>
