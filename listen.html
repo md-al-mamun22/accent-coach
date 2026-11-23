@@ -1,17 +1,26 @@
 <!doctype html>
-<html lang="bn"><head>
+<html lang="en"><head>
 <meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/logo-icon-512.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Listening Practice · Accent Coach</title>
-<meta name="description" content="ক্যাফে, ডাক্তার, ইন্টারভিউ, ক্লায়েন্ট কল। ১২টা ছোট ইংরেজি কথোপকথন শুনে বাংলায় প্রশ্নের উত্তর দিন। একদম ফ্রি।">
-<meta property="og:title" content="ইংরেজি শোনার প্র্যাকটিস · Accent Coach">
-<meta property="og:description" content="১২টা বাস্তব কথোপকথন শুনুন, তারপর ৩টা করে প্রশ্নের উত্তর দিন।">
-<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<title>English Listening Practice: 12 Conversations with Questions (A1–B1) | Accent Coach</title>
+<meta name="description" content="Free English listening practice with 12 short real-life conversations: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
+<link rel="canonical" href="https://accent-coach.devmamun.com/listen.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accent Coach">
+<meta property="og:url" content="https://accent-coach.devmamun.com/listen.html">
+<meta property="og:title" content="English Listening Practice: 12 Conversations with Questions (A1–B1) | Accent Coach">
+<meta property="og:description" content="Free English listening practice with 12 short real-life conversations: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="English Listening Practice: 12 Conversations with Questions (A1–B1) | Accent Coach">
+<meta name="twitter:description" content="Free English listening practice with 12 short real-life conversations: a café, a doctor&#x27;s appointment, a job interview, a client call and more. Listen, answer questions and read the transcript.">
+<meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="site.css">
-<link rel="stylesheet" href="learn.css?v=1">
+<link rel="stylesheet" href="learn.css?v=2">
 <style>
 .lvh{font:800 15px var(--display);color:var(--muted);margin:22px 0 -6px;letter-spacing:.04em}
 .big{display:flex;gap:14px;align-items:center;margin-top:18px;flex-wrap:wrap}
@@ -22,34 +31,36 @@
 .line p{font-size:18px;font-weight:600;line-height:1.45;flex:1}
 .line.on p{background:var(--lime-soft);border-radius:8px}
 .blur p{filter:blur(6px);user-select:none}
+.obn{display:block;font-size:15px;margin-top:2px}
 </style>
-<link rel="stylesheet" href="chrome.css?v=2">
+<link rel="stylesheet" href="chrome.css?v=5">
 </head>
 <body>
 <nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><div class="nl"><a href="level-test.html">Level test</a><a href="path.html">12-week plan</a><a href="words.html">Words</a><a href="phrases.html">Phrases</a><a href="listen.html" class="on">Listening</a><a href="grammar.html">Grammar</a><a href="app.html">Pronunciation</a></div><a class="btn pri" href="path.html">Open my plan →</a></div></nav>
 <main><div class="container"><div class="wrap">
   <div class="card hero">
-    <span class="pos">Listening</span>
-    <h1 class="bn">শুনে বোঝার <mark>প্র্যাকটিস</mark></h1>
-    <p class="bn">১২টা ছোট বাস্তব কথোপকথন। আগে লেখা না দেখে শুনুন, তারপর বাংলায় ৩টা প্রশ্নের উত্তর দিন। শেষে লেখা দেখে মিলিয়ে নিন আর লাইন ধরে আবার শুনুন।</p>
-    <div class="stats bn"><div><b id="sDone">০</b><span>কথোপকথন শেষ</span></div><div><b id="sOk">০</b><span>ঠিক উত্তর</span></div><div><b id="sAll">১২</b><span>মোট</span></div></div>
+    <div class="herotop"><span class="pos">Listening</span><button class="bnsw"></button></div>
+    <h1>English <mark>listening practice</mark></h1>
+    <p>12 short, real-life conversations from A1 to B1. Listen first without reading, answer 3 questions, then read the transcript and replay any line you missed.</p>
+    <div class="stats"><div><b id="sDone">0</b><span>conversations done</span></div><div><b id="sOk">0</b><span>correct answers</span></div><div><b id="sAll">12</b><span>conversations</span></div></div>
     <div class="bigbar"><i id="bar"></i></div>
-    <div class="cloud bn" id="cloud"></div>
+    <div class="cloud" id="cloud"></div>
   </div>
   <div id="out"></div>
-  <p class="foot bn">A-এর কণ্ঠ Md Al Mamun-এর কণ্ঠ থেকে AI দিয়ে তৈরি; B ব্রাউজারের কণ্ঠ।</p>
+  <p class="foot">Speaker A is an AI clone of Md Al Mamun's voice, made from his own recordings. Speaker B is your browser's voice.</p>
 </div></div></main>
-<script src="kit.js?v=1"></script>
+<footer class="sitefoot"><div class="container"><span>© 2026 Accent Coach · Free English learning · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span><div class="fl"><a href="index.html">Home</a><a href="learn.html">All tools</a><a href="level-test.html">English level test</a><a href="path.html">12-week plan</a><a href="words.html">1000 common words</a><a href="phrases.html">Everyday phrases</a><a href="listen.html">Listening practice</a><a href="grammar.html">Grammar lessons</a><a href="app.html">Pronunciation course</a></div></div></footer>
+<script src="kit.js?v=2"></script>
 <script>
 (function(){
-var D=[],S=AC.store("listen"),out=document.getElementById("out"),cur=null,bn=AC.bn,esc=AC.esc,run=0;
+var D=[],S=AC.store("listen"),out=document.getElementById("out"),cur=null,esc=AC.esc,run=0;
 function stats(){var d=D.filter(function(x){return S.d[x.id]}),ok=d.reduce(function(a,x){return a+S.get(x.id)},0);
-  document.getElementById("sDone").textContent=bn(d.length)+"/"+bn(D.length);document.getElementById("sOk").textContent=bn(ok)+"/"+bn(D.length*3);
+  document.getElementById("sDone").textContent=d.length+" / "+D.length;document.getElementById("sOk").textContent=ok+" / "+(D.length*3);
   document.getElementById("bar").style.width=(D.length?d.length/D.length*100:0)+"%";}
 function home(){cur=null;run++;AC.stop();var h="",lv="";
   D.forEach(function(d,i){if(d.lv!==lv){if(lv)h+='</div>';lv=d.lv;h+='<div class="lvh">LEVEL '+lv+'</div><div class="grid">'}
-    var s=S.d[d.id]?'<span class="tag'+(S.get(d.id)===3?' ok':'')+' lv">'+bn(S.get(d.id))+'/৩</span>':'';
-    h+='<button class="tcard" data-i="'+i+'"><span class="ic">'+d.ic+'</span>'+s+'<b>'+esc(d.bn)+'</b><span>'+esc(d.en)+'</span></button>'});
+    var s=S.d[d.id]?'<span class="tag'+(S.get(d.id)===3?' ok':'')+' lv">'+S.get(d.id)+' / 3</span>':'';
+    h+='<button class="tcard" data-i="'+i+'"><span class="ic">'+d.ic+'</span>'+s+'<b>'+esc(d.en)+'</b><div class="bnx" style="font-size:15px">'+esc(d.bn)+'</div></button>'});
   out.innerHTML=h+'</div>';
   out.querySelectorAll(".tcard").forEach(function(b){b.onclick=function(){dlg(D[+b.dataset.i]);scrollTo({top:out.offsetTop-80,behavior:"smooth"})}});}
 function sayLine(l,done){AC.say(l.t,l.s==="A"?l.id:null,done,l.s==="B"?{alt:true,tts:true,rate:.95}:{})}
@@ -58,43 +69,43 @@ function playAll(d,from,btn){var my=++run,i=from||0;if(btn)btn.textContent="⏸"
     if(my!==run||cur!==d||i>=d.lines.length){if(btn&&my===run)btn.textContent="▶";return}
     var l=d.lines[i++],el=out.querySelector('[data-l="'+l.id+'"]');if(el)el.classList.add("on");
     sayLine(l,function(){setTimeout(next,500)})})();}
-function transcript(d,blur){return '<div class="'+(blur?'blur':'')+'" id="tr">'+d.lines.map(function(l){return '<div class="line'+(l.s==="B"?' b':'')+'" data-l="'+l.id+'"><span class="who">'+l.s+'</span><p>'+esc(l.t)+'</p><button class="play sm" data-r="'+l.id+'" aria-label="এই লাইনটা শুনুন">▶</button></div>'}).join("")+'</div>'}
+function transcript(d,blur){return '<div class="'+(blur?'blur':'')+'" id="tr">'+d.lines.map(function(l){return '<div class="line'+(l.s==="B"?' b':'')+'" data-l="'+l.id+'"><span class="who">'+l.s+'</span><p>'+esc(l.t)+'</p><button class="play sm" data-r="'+l.id+'" aria-label="Play this line">▶</button></div>'}).join("")+'</div>'}
 function wireLines(d){var by={};d.lines.forEach(function(l){by[l.id]=l});
   out.querySelectorAll("[data-r]").forEach(function(b){b.onclick=function(){run++;sayLine(by[b.dataset.r])}})}
 function dlg(d){cur=d;run++;AC.stop();var i=D.indexOf(d);
-  out.innerHTML='<div class="card wc"><div class="wtop bn"><button class="back" id="bk">← সব কথোপকথন</button><span>'+bn(i+1)+'/'+bn(D.length)+' · '+d.lv+'</span></div>'+
-   '<h2 class="bn" style="font-size:26px;margin:12px 0 2px">'+d.ic+' '+esc(d.bn)+'</h2><div style="color:var(--muted);font-weight:700">'+esc(d.en)+'</div>'+
-   '<div class="note bn">🎧 প্রথমে লেখা না দেখে মন দিয়ে শুনুন। দরকার হলে ২ বার শুনুন, তারপর প্রশ্নে যান।</div>'+
-   '<div class="big"><button class="play" id="pl" aria-label="পুরো কথোপকথন শুনুন">▶</button><span class="bn" style="color:var(--muted);font-weight:700">পুরো কথোপকথন শুনুন</span></div>'+
+  out.innerHTML='<div class="card wc"><div class="wtop"><button class="back" id="bk">← All conversations</button><span>'+(i+1)+' of '+D.length+' · '+d.lv+'</span></div>'+
+   '<h2 style="font-size:28px;margin:12px 0 2px">'+d.ic+' '+esc(d.en)+'</h2><div class="bnx">'+esc(d.bn)+'</div>'+
+   '<div class="note">🎧 First, listen carefully without reading. Listen twice if you need to, then answer the questions.</div>'+
+   '<div class="big"><button class="play" id="pl" aria-label="Play the whole conversation">▶</button><span style="color:var(--muted);font-weight:700">Play the whole conversation</span></div>'+
    '<div style="margin-top:14px">'+transcript(d,true)+'</div>'+
-   '<div class="acts"><button class="btn bn" id="sh">👀 লেখা দেখুন</button><button class="btn pri bn" id="go">প্রশ্নের উত্তর দিন →</button></div></div>';
+   '<div class="acts"><button class="btn" id="sh">👀 Show transcript</button><button class="btn pri" id="go">Answer the questions →</button></div></div>';
   document.getElementById("bk").onclick=home;wireLines(d);
   var pl=document.getElementById("pl");pl.onclick=function(){if(pl.textContent==="⏸"){run++;AC.stop();pl.textContent="▶";return}playAll(d,0,pl)};
-  document.getElementById("sh").onclick=function(e){var t=document.getElementById("tr");t.classList.toggle("blur");e.target.textContent=t.classList.contains("blur")?"👀 লেখা দেখুন":"🙈 লেখা লুকান"};
+  document.getElementById("sh").onclick=function(e){var t=document.getElementById("tr");t.classList.toggle("blur");e.target.textContent=t.classList.contains("blur")?"👀 Show transcript":"🙈 Hide transcript"};
   document.getElementById("go").onclick=function(){quiz(d)};}
-function quiz(d){run++;AC.stop();var qs=d.q.map(function(q){return {s:q.s,a:q.o[0],o:AC.shuffle(q.o)}}),Q={i:0,s:0};
-  function show(){var q=qs[Q.i];
-    out.innerHTML='<div class="card wc"><div class="wtop bn"><button class="back" id="bk">← আবার শুনুন</button><span>প্রশ্ন '+bn(Q.i+1)+'/৩ · স্কোর '+bn(Q.s)+'</span></div>'+
-     '<div class="qstem">'+esc(q.s)+'</div><div class="opts">'+q.o.map(function(o,i){return '<button class="opt bn" data-i="'+i+'">'+esc(o)+'</button>'}).join("")+'</div>'+
-     '<div class="acts hidden" id="qn"><span></span><button class="btn pri bn" id="nx">'+(Q.i<2?'পরের প্রশ্ন →':'ফলাফল দেখুন →')+'</button></div></div>';
+function quiz(d){run++;AC.stop();var qs=d.q.map(function(q){return {q:q,order:AC.shuffle([0,1,2])}}),Q={i:0,s:0};
+  function show(){var it=qs[Q.i],q=it.q;
+    out.innerHTML='<div class="card wc"><div class="wtop"><button class="back" id="bk">← Listen again</button><span>Question '+(Q.i+1)+' of 3 · score '+Q.s+'</span></div>'+
+     '<div class="qstem">'+esc(q.s)+'</div><div class="bnx">'+esc(q.sbn)+'</div><div class="opts">'+it.order.map(function(k){return '<button class="opt" data-k="'+k+'">'+esc(q.o[k])+'<span class="bnx obn">'+esc(q.obn[k])+'</span></button>'}).join("")+'</div>'+
+     '<div class="acts hidden" id="qn"><span></span><button class="btn pri" id="nx">'+(Q.i<2?'Next question →':'See your score →')+'</button></div></div>';
     document.getElementById("bk").onclick=function(){dlg(d)};
-    out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=q.o[+b.dataset.i]===q.a;
-      out.querySelectorAll(".opt").forEach(function(c){c.disabled=true;if(q.o[+c.dataset.i]===q.a)c.classList.add("ok")});
+    out.querySelectorAll(".opt").forEach(function(b){b.onclick=function(){var ok=b.dataset.k==="0";
+      out.querySelectorAll(".opt").forEach(function(c){c.disabled=true;if(c.dataset.k==="0")c.classList.add("ok")});
       if(ok)Q.s++;else b.classList.add("no");document.getElementById("qn").classList.remove("hidden")}});
     document.getElementById("nx").onclick=function(){Q.i++;Q.i<3?show():end()};}
   function end(){if(!S.d[d.id]||Q.s>S.get(d.id))S.set(d.id,Q.s);stats();var nx=D[D.indexOf(d)+1];
-    out.innerHTML='<div class="card wc bn"><div style="text-align:center"><div style="font-size:48px">'+(Q.s===3?'🏆':Q.s===2?'🎉':'💪')+'</div><h2 style="font-size:26px;margin:6px 0">স্কোর '+bn(Q.s)+'/৩</h2>'+
-     '<p style="color:var(--muted)">এবার লেখা দেখে মিলিয়ে নিন। যে লাইন বুঝতে কষ্ট হয়েছে, পাশের ▶ চেপে আবার শুনুন আর জোরে বলুন।</p></div>'+
+    out.innerHTML='<div class="card wc"><div style="text-align:center"><div style="font-size:48px">'+(Q.s===3?'🏆':Q.s===2?'🎉':'💪')+'</div><h2 style="font-size:28px;margin:6px 0">Score '+Q.s+' / 3</h2>'+
+     '<p style="color:var(--muted)">Now read the transcript. If a line was hard to catch, press ▶ to hear it again and say it out loud.</p></div>'+
      '<div style="margin-top:12px">'+transcript(d,false)+'</div>'+
-     '<div class="acts"><button class="btn" id="rq">আবার উত্তর দিন</button>'+(nx?'<button class="btn pri" id="nd">পরের কথোপকথন →</button>':'<button class="btn pri" id="hm">সব কথোপকথন</button>')+'</div></div>';
+     '<div class="acts"><button class="btn" id="rq">Answer again</button>'+(nx?'<button class="btn pri" id="nd">Next conversation →</button>':'<button class="btn pri" id="hm">All conversations</button>')+'</div></div>';
     wireLines(d);document.getElementById("rq").onclick=function(){quiz(d)};
     var a=document.getElementById("nd");if(a)a.onclick=function(){dlg(nx)};var b=document.getElementById("hm");if(b)b.onclick=home;}
   show();}
 S.onSync(function(){stats();if(!cur)home()});
 Promise.all([fetch("data/listen.json").then(function(r){return r.json()}),AC.voiceReady]).then(function(r){D=r[0];stats();var k=location.hash.slice(1),d=D.find(function(x){return x.id===k});d?dlg(d):home()})
- .catch(function(){out.innerHTML='<div class="card done bn"><h2>লোড হয়নি</h2><p>ইন্টারনেট সংযোগ দেখে পেজটা আবার খুলুন।</p></div>'});
+ .catch(function(){out.innerHTML='<div class="card done"><h2>Didn\'t load</h2><p>Check your internet connection and open the page again.</p></div>'});
 })();
 </script>
-<script type="module" src="kit-cloud.js?v=1"></script>
+<script type="module" src="kit-cloud.js?v=2"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>

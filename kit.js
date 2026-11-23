@@ -1,11 +1,23 @@
 /* Accent Coach shared learning kit: audio, speaking check, local + cloud progress. */
 (function () {
   var AC = window.AC = window.AC || {};
-  AC.bn = function (n) { return String(n).replace(/\d/g, function (d) { return "০১২৩৪৫৬৭৮৯"[d]; }); };
+  AC.bn = function (n) { return String(n); };
   AC.esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   AC.dayNo = function () { var d = new Date(); return Math.floor(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 864e5); };
   AC.shuffle = function (a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; };
 
+
+  // ---------- "Bangla help": optional Bangla meanings for beginners, off by default ----------
+  AC.bnOn = function () { try { return localStorage.getItem("ac-bangla") === "1"; } catch (e) { return false; } };
+  function applyBn() { document.documentElement.classList.toggle("bn-on", AC.bnOn());
+    document.querySelectorAll(".bnsw").forEach(function (b) { b.setAttribute("aria-pressed", AC.bnOn()); var i = b.querySelector("i"); if (i) i.textContent = AC.bnOn() ? "On" : "Off"; }); }
+  AC.setBn = function (on) { try { localStorage.setItem("ac-bangla", on ? "1" : "0"); } catch (e) {} applyBn(); if (AC.onBn) AC.onBn(on); };
+  // A switch button; put <button class="bnsw"></button> anywhere and it wires itself up.
+  AC.wireBn = function () { document.querySelectorAll(".bnsw").forEach(function (b) { if (b.dataset.w) return; b.dataset.w = 1;
+    b.type = "button"; b.title = "Show Bangla meanings for learners from Bangladesh"; b.innerHTML = "Bangla help <i></i>";
+    b.onclick = function () { AC.setBn(!AC.bnOn()); }; }); applyBn(); };
+  applyBn();
+  document.addEventListener("DOMContentLoaded", AC.wireBn);
   // ---------- audio: Mamun's recorded voice when available, browser voice otherwise ----------
   var VOICE = {}, ready = fetch("audio/phr/index.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; })
     .then(function (l) { (l || []).forEach(function (f) { VOICE[f.replace(/\.mp3$/, "")] = f; }); });
@@ -40,7 +52,7 @@
   // speak(btn, target, playRef): btn sits inside .spk next to a .spkres span.
   AC.speak = function (btn, target, playRef, onOk) {
     var res = btn.parentNode.querySelector(".spkres");
-    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) { res.textContent = "এই ব্রাউজারে মাইক্রোফোন ব্যবহার করা যাচ্ছে না।"; return; }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) { res.textContent = "This browser can't use the microphone."; return; }
     AC.stop();
     navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
       var chunks = [], mr = new MediaRecorder(stream), heard = [], done = false, r = null;
@@ -48,23 +60,23 @@
       mr.ondataavailable = function (e) { if (e.data && e.data.size) chunks.push(e.data); };
       mr.onstop = function () { stream.getTracks().forEach(function (t) { t.stop(); });
         var url = URL.createObjectURL(new Blob(chunks, { type: mr.mimeType || "audio/webm" }));
-        var mine = document.createElement("button"); mine.className = "btn"; mine.textContent = "▶ আমার কণ্ঠ";
+        var mine = document.createElement("button"); mine.className = "btn"; mine.textContent = "▶ My voice";
         mine.onclick = function () { AC.stop(); audio.src = url; audio.play().catch(function () {}); };
-        var his = document.createElement("button"); his.className = "btn"; his.textContent = "▶ সঠিক উচ্চারণ"; his.onclick = playRef;
+        var his = document.createElement("button"); his.className = "btn"; his.textContent = "▶ Correct version"; his.onclick = playRef;
         res.appendChild(mine); res.appendChild(his); };
       function finish() { if (done) return; done = true; try { mr.stop(); } catch (e) {} try { r && r.stop(); } catch (e) {}
-        btn.disabled = false; btn.textContent = "🎙 আবার বলুন";
-        if (!REC) { res.textContent = "নিজের কণ্ঠ আর সঠিক উচ্চারণ শুনে মিলিয়ে দেখুন:"; return; }
+        btn.disabled = false; btn.textContent = "🎙 Say it again";
+        if (!REC) { res.textContent = "Play both and compare:"; return; }
         var best = 0, bestH = ""; heard.forEach(function (h) { var s = score(target, h); if (s > best) { best = s; bestH = h; } });
-        if (best >= 0.8) { res.textContent = "✅ চমৎকার! প্রায় পুরোটা ঠিকভাবে বোঝা গেছে।"; onOk && onOk(); }
-        else if (best >= 0.5) res.textContent = "👍 অনেকটা ঠিক। শোনা গেছে: “" + bestH + "”। আরেকবার চেষ্টা করুন।";
-        else res.textContent = heard.length ? "🤔 শোনা গেছে: “" + heard[0] + "”। ধীরে, স্পষ্ট করে আবার বলুন।" : "🤔 কিছু শোনা যায়নি। আবার একটু জোরে বলুন।"; }
-      mr.start(); btn.disabled = true; btn.textContent = "🔴 বলুন…"; res.textContent = "";
+        if (best >= 0.8) { res.textContent = "✅ Great! Almost every word came through clearly."; onOk && onOk(); }
+        else if (best >= 0.5) res.textContent = "👍 Close. We heard: “" + bestH + "”. Try once more.";
+        else res.textContent = heard.length ? "🤔 We heard: “" + heard[0] + "”. Say it slowly and clearly." : "🤔 We didn't hear anything. Try a little louder."; }
+      mr.start(); btn.disabled = true; btn.textContent = "🔴 Speak now…"; res.textContent = "";
       if (REC) { r = new REC(); r.lang = "en-US"; r.maxAlternatives = 5; r.interimResults = false;
         r.onresult = function (e) { for (var i = 0; i < e.results[0].length; i++) heard.push(e.results[0][i].transcript); };
         r.onend = finish; r.onerror = finish; try { r.start(); } catch (e) {} }
       setTimeout(finish, REC ? limit : Math.min(8000, 2000 + words * 450));
-    }).catch(function () { res.textContent = "মাইক্রোফোনের অনুমতি পাওয়া যায়নি।"; });
+    }).catch(function () { res.textContent = "Microphone permission was not given."; });
   };
 
   // ---------- progress store: {key: [value, changedAtMs]}, saved locally and synced to the account ----------

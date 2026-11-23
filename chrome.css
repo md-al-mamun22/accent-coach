@@ -1,13 +1,23 @@
-/* Tiro Bangla (OFL), self-hosted for Bengali letters only, scaled to sit level with the Latin text. Latin falls through to Figtree. */
+/* Tiro Bangla (OFL), self-hosted for Bengali letters only, scaled to sit level with the Latin text. Used only for the optional Bangla help. */
 @font-face{font-family:"Tiro Bangla";font-style:normal;font-weight:400;font-display:swap;size-adjust:118%;src:url(fonts/tiro-bangla-bengali-400-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
-/* Shared look for the learning pages: nav, soft background, Bangla type scale. */
+/* Shared look for the learning pages: nav, soft background, type scale. */
 :root{--bnf:"Tiro Bangla","Figtree",sans-serif}
-body{position:relative;overflow-x:hidden}
+body{position:relative;overflow-x:hidden;font-family:var(--body)}
 body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(120px);pointer-events:none}
 body::before{width:520px;height:520px;background:var(--lime);opacity:.32;left:-220px;top:120px}
 body::after{width:520px;height:520px;background:#c4c1ff;opacity:.38;right:-200px;top:-140px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) body::before{opacity:.10}:root:not([data-theme="light"]) body::after{opacity:.14}}
-.bn,[lang="bn"] .bn{font-family:var(--bnf)}
+
+/* optional Bangla help: hidden unless the learner switches it on */
+.bnx{display:none!important;font-family:var(--bnf)!important;font-weight:400!important;color:var(--muted)}
+html.bn-on .bnx{display:block!important}
+html.bn-on span.bnx,html.bn-on i.bnx{display:inline!important}
+.bnsw{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 8px 6px 14px;font:700 14px var(--body);cursor:pointer;white-space:nowrap}
+.bnsw i{font-style:normal;font-size:12px;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 9px;background:var(--bg);color:var(--muted)}
+.bnsw[aria-pressed="true"]{border-color:#9fbf1f}
+.bnsw[aria-pressed="true"] i{background:var(--lime);color:#16171a}
+.bnsw:hover{border-color:var(--ink)}
+.herotop{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 
 /* nav */
 nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
@@ -19,23 +29,29 @@ nav .nl+.btn{margin-left:8px}
 @media(max-width:1120px){nav .nl{display:none}nav .nl+.btn{margin-left:auto}}
 
 /* page header card */
-main{padding:32px 0 80px}
+main{padding:32px 0 60px}
 .hero,.intro{position:relative;overflow:hidden}
-.hero h1,.intro h1{font-family:var(--bnf);font-weight:400;font-size:clamp(27px,3.6vw,36px);line-height:1.25;letter-spacing:0;margin-top:12px}
+.hero h1,.intro h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.02em;margin-top:12px}
 .hero h1 mark,.intro h1 mark{padding:0 10px 2px;border-radius:10px}
-.hero p,.intro p{font-size:17px;line-height:1.65}
-.hero>.pos,.intro>.pos,.eyb{display:inline-flex;align-items:center;gap:8px;background:none!important;color:var(--muted)!important;padding:0!important;font:700 13px var(--body)!important;letter-spacing:.1em;text-transform:uppercase}
-.hero>.pos::before,.intro>.pos::before,.eyb::before{content:"";width:8px;height:8px;border-radius:50%;background:#9fbf1f;box-shadow:0 0 0 4px var(--lime-soft)}
-.stats b{font-family:var(--bnf)!important;font-weight:400!important;font-size:26px!important}
+.hero p,.intro p{font-size:17px;line-height:1.6;max-width:760px}
+.hero>.pos,.herotop>.pos,.intro>.pos,.eyb{display:inline-flex;align-items:center;gap:8px;background:none!important;color:var(--muted)!important;padding:0!important;font:700 13px var(--body)!important;letter-spacing:.1em;text-transform:uppercase}
+.hero>.pos::before,.herotop>.pos::before,.intro>.pos::before,.eyb::before{content:"";width:8px;height:8px;border-radius:50%;background:#9fbf1f;box-shadow:0 0 0 4px var(--lime-soft)}
+.stats b{font-family:var(--display)!important;font-weight:800!important;font-size:26px!important}
 .card{box-shadow:0 1px 0 rgba(22,23,26,.03),0 12px 32px -18px rgba(22,23,26,.18)}
-h1.bn,h2.bn,h3.bn,.bn h1,.bn h2,.bn h3,.done h2,.tcard b,.qstem{font-weight:400!important;letter-spacing:0}
-.tcard b{font-size:19px!important}
 .container{max-width:1160px}
 .wrap{max-width:none}
-.hero p,.intro p{max-width:780px}
 .grid{grid-template-columns:repeat(3,1fr)}
 .grid .tcard.main{grid-column:1/-1}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 .tcard,.tr{transition:transform .2s,border-color .2s,box-shadow .2s}
 .tcard:hover,.tr:hover{transform:translateY(-2px);box-shadow:0 14px 30px -20px rgba(22,23,26,.35)}
 .exp p,.wc .note{max-width:820px}
+
+/* footer on the learning pages */
+.sitefoot{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:14px}
+.sitefoot .container{display:flex;flex-wrap:wrap;gap:14px 22px;justify-content:space-between;align-items:center}
+.sitefoot .fl{display:flex;flex-wrap:wrap;gap:8px 16px}
+.sitefoot a{color:inherit;text-decoration:none;font-weight:600}
+.sitefoot a:hover{color:var(--ink)}
+html.bn-on span.bnx.obn{display:block!important}
+@media(max-width:600px){.stats b{font-size:20px!important}.stats span{font-size:13px}}

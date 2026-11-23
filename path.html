@@ -1,69 +1,79 @@
 <!doctype html>
-<html lang="bn"><head>
+<html lang="en"><head>
 <meta charset="utf-8"><link rel="icon" href="img/logo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/logo-icon-512.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>12-Week English Path · Accent Coach</title>
-<meta name="description" content="আপনার লেভেল অনুযায়ী ১২ সপ্তাহের ইংরেজি শেখার প্ল্যান: রোজ শব্দ, বাক্য, উচ্চারণ, গ্রামার আর শোনার ছোট ছোট কাজ। একদম ফ্রি।">
-<meta property="og:title" content="১২ সপ্তাহের ইংরেজি প্ল্যান · Accent Coach">
-<meta property="og:description" content="লেভেল অনুযায়ী রোজকার কাজ: শব্দ, বাক্য, উচ্চারণ, গ্রামার আর শোনা।">
-<meta property="og:image" content="https://accent-coach.devmamun.com/img/logo-icon-512.png">
+<title>12-Week English Learning Plan for Your Level (Free) | Accent Coach</title>
+<meta name="description" content="A free 12-week English study plan for beginners to advanced learners. 30–40 minutes a day of vocabulary, everyday phrases, listening, grammar and pronunciation, with progress tracking.">
+<link rel="canonical" href="https://accent-coach.devmamun.com/path.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accent Coach">
+<meta property="og:url" content="https://accent-coach.devmamun.com/path.html">
+<meta property="og:title" content="12-Week English Learning Plan for Your Level (Free) | Accent Coach">
+<meta property="og:description" content="A free 12-week English study plan for beginners to advanced learners. 30–40 minutes a day of vocabulary, everyday phrases, listening, grammar and pronunciation, with progress tracking.">
+<meta property="og:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="12-Week English Learning Plan for Your Level (Free) | Accent Coach">
+<meta name="twitter:description" content="A free 12-week English study plan for beginners to advanced learners. 30–40 minutes a day of vocabulary, everyday phrases, listening, grammar and pronunciation, with progress tracking.">
+<meta name="twitter:image" content="https://accent-coach.devmamun.com/img/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="site.css">
-<link rel="stylesheet" href="learn.css?v=1">
+<link rel="stylesheet" href="learn.css?v=2">
 <style>
 .weeks{display:flex;gap:6px;overflow-x:auto;padding:4px 0 8px;margin-top:18px;scrollbar-width:thin}
 .wk{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 12px;font:700 14px var(--body);cursor:pointer;text-align:center;min-width:64px}
-.wk small{display:block;color:var(--muted);font:600 12px "Tiro Bangla",var(--body)}
+.wk small{display:block;color:var(--muted);font:600 12px var(--body)}
 .wk.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.wk.on small{color:inherit;opacity:.75}
 .wk.full{border-color:#9fbf1f}
 .days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
 .dy{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:8px 0;font:800 16px var(--display);cursor:pointer}
-.dy small{display:block;font:600 11px "Tiro Bangla",var(--body);color:var(--muted)}
+.dy small{display:block;font:600 11px var(--body);color:var(--muted)}
 .dy.on{outline:3px solid var(--ink)}
 .dy.ok{background:var(--lime);border-color:#9fbf1f;color:#16171a}.dy.ok small{color:#3d4a12}
 .task{display:flex;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
 .task:last-child{border-bottom:0}
 .task .ic{font-size:24px;flex:none;width:34px;text-align:center}
-.task b{display:block;font:700 17px "Tiro Bangla",var(--body)}
-.task span{color:var(--muted);font:600 14px "Tiro Bangla",var(--body)}
-.task .go{margin-left:auto;flex:none;font:700 14px "Tiro Bangla",var(--body);padding:8px 12px}
+.task b{display:block;font:700 17px var(--body)}
+.task span{color:var(--muted);font:600 14px var(--body)}
+.task .go{margin-left:auto;flex:none;font:700 14px var(--body);padding:8px 12px}
 .tick{flex:none;width:30px;height:30px;border-radius:50%;border:2px solid var(--line);background:var(--card);cursor:pointer;font-size:15px;color:transparent;display:grid;place-items:center}
 .tick.on{background:var(--lime);border-color:#9fbf1f;color:#16171a}
 .task.done b{text-decoration:line-through;opacity:.6}
 .tracks{display:grid;gap:10px;margin-top:16px}
 .tr{text-align:left;cursor:pointer;padding:16px;border-radius:16px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
 .tr:hover,.tr.on{border-color:var(--ink)}
-.tr b{font:700 18px "Tiro Bangla",var(--body)}
-.tr span{display:block;color:var(--muted);font:600 15px "Tiro Bangla",var(--body);margin-top:2px}
+.tr b{font:700 18px var(--body)}
+.tr span{display:block;color:var(--muted);font:600 15px var(--body);margin-top:2px}
 .task>div{flex:1;min-width:0}
 @media(max-width:600px){.task{gap:9px}.task .ic{width:24px;font-size:20px}.task b{font-size:16px}.task .go{padding:7px 10px;font-size:13px}.dy{font-size:14px}}
 </style>
-<link rel="stylesheet" href="chrome.css?v=2">
+<link rel="stylesheet" href="chrome.css?v=5">
 </head>
 <body>
 <nav><div class="container"><a class="logo" href="index.html"><img src="img/logo-icon.svg" alt="" width="32" height="32">Accent Coach</a><div class="nl"><a href="level-test.html">Level test</a><a href="path.html" class="on">12-week plan</a><a href="words.html">Words</a><a href="phrases.html">Phrases</a><a href="listen.html">Listening</a><a href="grammar.html">Grammar</a><a href="app.html">Pronunciation</a></div><a class="btn pri" href="learn.html">All tools →</a></div></nav>
 <main><div class="container"><div class="wrap">
   <div class="card hero">
     <span class="pos">12-week path</span>
-    <h1 class="bn">১২ সপ্তাহের <mark>ইংরেজি প্ল্যান</mark></h1>
-    <p class="bn">কী শিখবেন, কোন দিন কী করবেন, আর ভাবতে হবে না। আপনার লেভেল অনুযায়ী রোজ ৩০–৪০ মিনিটের ছোট ছোট কাজ: শব্দ, কাজের বাক্য, উচ্চারণ, গ্রামার আর শোনা। একটা দিন শেষ হলেই পরের দিন খুলবে।</p>
-    <div class="stats bn"><div><b id="sDay">–</b><span>আজকের দিন</span></div><div><b id="sDays">০</b><span>দিন শেষ</span></div><div><b id="sTrack">–</b><span>আপনার ট্র্যাক</span></div></div>
+    <h1>Your <mark>12-week</mark> English plan</h1>
+    <p>No more wondering what to study. Every day you get a short list of tasks for your level, about 30–40 minutes in total: words, everyday phrases, pronunciation, grammar and listening. Finish a day and the next one opens.</p>
+    <div class="stats"><div><b id="sDay">–</b><span>today's day</span></div><div><b id="sDays">0</b><span>days completed</span></div><div><b id="sTrack">–</b><span>your track</span></div></div>
     <div class="bigbar"><i id="bar"></i></div>
     <div class="cloud bn" id="cloud"></div>
   </div>
   <div id="out"></div>
-  <p class="foot bn">৮৪ দিন × রোজ ৩০–৪০ মিনিট। প্রতিদিন না পারলে সমস্যা নেই, যেখানে থেমেছিলেন সেখান থেকেই আবার শুরু করুন।</p>
+  <p class="foot">84 days × 30–40 minutes a day. If you miss a day, no problem: just continue where you stopped.</p>
 </div></div></main>
-<script src="kit.js?v=1"></script>
+<footer class="sitefoot"><div class="container"><span>© 2026 Accent Coach · Free English learning · Made by <a href="https://devmamun.com" target="_blank" rel="noopener">Dev Mamun</a></span><div class="fl"><a href="index.html">Home</a><a href="learn.html">All tools</a><a href="level-test.html">English level test</a><a href="path.html">12-week plan</a><a href="words.html">1000 common words</a><a href="phrases.html">Everyday phrases</a><a href="listen.html">Listening practice</a><a href="grammar.html">Grammar lessons</a><a href="app.html">Pronunciation course</a></div></div></footer>
+<script src="kit.js?v=2"></script>
 <script>
 (function(){
 var S=AC.store("path"),out=document.getElementById("out"),bn=AC.bn,esc=AC.esc,PH=[],GR=[],LI=[],view=null;
 var TRACKS=[null,
- {name:"শুরু",lv:"Pre-A1 – A1",d:"একদম গোড়া থেকে: বেসিক শব্দ, সহজ বাক্য, am/is/are থেকে গ্রামার।",gr:0,ph:["greet","daily","shop","travel","help","phone","feel","office","client","interview"],li:"A1"},
- {name:"মাঝামাঝি",lv:"A2",d:"বেসিক জানেন, এবার আত্মবিশ্বাসের সাথে রোজকার কথা বলা আর অতীত-ভবিষ্যৎ ঠিকভাবে বলা।",gr:4,ph:["daily","shop","travel","phone","help","office","feel","greet","client","interview"],li:"A2"},
- {name:"এগিয়ে",lv:"B1 বা বেশি",d:"কাজ, ক্লায়েন্ট আর ইন্টারভিউর ইংরেজি; জটিল গ্রামার আর দ্রুত শুনে বোঝা।",gr:12,ph:["office","client","interview","phone","feel","help","daily","travel","shop","greet"],li:"B1"}];
+ {name:"Beginner",lv:"Pre-A1 – A1",d:"From the very start: basic words, simple phrases and grammar from am / is / are.",gr:0,ph:["greet","daily","shop","travel","help","phone","feel","office","client","interview"],li:"A1"},
+ {name:"Middle",lv:"A2",d:"You know the basics. Now: everyday conversations with confidence, and the past and future done right.",gr:4,ph:["daily","shop","travel","phone","help","office","feel","greet","client","interview"],li:"A2"},
+ {name:"Advanced",lv:"B1 and above",d:"English for work, clients and interviews; harder grammar and faster listening.",gr:12,ph:["office","client","interview","phone","feel","help","daily","travel","shop","greet"],li:"B1"}];
 function trackFromLevel(l){if(!l)return 0;return /^(Pre-A1|A1)$/.test(l)?1:l==="A2"?2:3}
 function level(){try{var v=JSON.parse(localStorage.getItem("ac-level")||"null");return v&&v.level}catch(e){return null}}
 function track(){return S.get("track")||0}
@@ -73,22 +83,22 @@ function liOrder(t){var lvs=t.li==="A1"?["A1","A2","B1"]:t.li==="A2"?["A2","B1",
 function plan(t){var T=TRACKS[t],days=[],g=order(GR,T.gr),li=liOrder(T),phs=T.ph.map(function(k){return PH.find(function(p){return p.k===k})}).filter(Boolean),gi=0;
   for(var d=1;d<=84;d++){var wk=Math.ceil(d/7),wd=(d-1)%7+1,tasks=[];
     if(wd===7){
-      tasks.push({ic:"🧠",b:"শব্দের কুইজ",s:"এই সপ্তাহের শেখা শব্দ দিয়ে ১০টা প্রশ্ন",u:"words.html"});
-      tasks.push({ic:"🔁",b:"শব্দ রিভিশন",s:"আজকের সব রিভিশন শেষ করুন",u:"words.html"});
-      var ph=phs[Math.floor((d-1)/21)%phs.length];if(ph)tasks.push({ic:"💬",b:"বাক্যের কুইজ: "+ph.name,s:"টপিকের কুইজ দিন, ভুলগুলো আবার বলুন",u:"phrases.html#"+ph.k});
-      tasks.push({ic:"🎙",b:"নিজের কণ্ঠ রেকর্ড করুন",s:"১ মিনিট ইংরেজিতে নিজের সপ্তাহ নিয়ে বলুন, রেকর্ড করে শুনুন",u:"app.html"});
-      if(wk===6||wk===12)tasks.push({ic:"📊",b:"লেভেল টেস্ট আবার দিন",s:wk===6?"মাঝপথে দেখুন কতটা এগোলেন":"১২ সপ্তাহ শেষ! নতুন লেভেল দেখুন",u:"level-test.html"});
+      tasks.push({ic:"🧠",b:"Word quiz",s:"10 questions on the words you learned this week",u:"words.html"});
+      tasks.push({ic:"🔁",b:"Word revision",s:"Finish all of today's revision",u:"words.html"});
+      var ph=phs[Math.floor((d-1)/21)%phs.length];if(ph)tasks.push({ic:"💬",b:"Phrase quiz: "+ph.en,s:"Take the topic quiz and say the ones you missed again",u:"phrases.html#"+ph.k});
+      tasks.push({ic:"🎙",b:"Record yourself",s:"Talk about your week in English for 1 minute, record it and listen back",u:"app.html"});
+      if(wk===6||wk===12)tasks.push({ic:"📊",b:"Retake the level test",s:wk===6?"Halfway: see how far you have come":"12 weeks done! See your new level",u:"level-test.html"});
     }else{
-      tasks.push({ic:"📘",b:"২০টা নতুন শব্দ",s:"শিখুন আর আজকের রিভিশন শেষ করুন",u:"words.html"});
+      tasks.push({ic:"📘",b:"20 new words",s:"Learn them and finish today's revision",u:"words.html"});
       if(d<=36){var pd=d-Math.floor(d/7),p=phs[Math.floor((pd-1)/3)%phs.length],part=(pd-1)%3;
-        if(p)tasks.push({ic:"💬",b:"কাজের বাক্য: "+p.name,s:"বাক্য "+bn(part*5+1)+"–"+bn(part*5+5)+": শুনুন, ৩ বার জোরে বলুন, “শিখেছি” চাপুন",u:"phrases.html#"+p.k});}
-      else{var p2=phs[(wd+wk)%phs.length];tasks.push({ic:"💬",b:"বাক্য রিভিশন: "+p2.name,s:"পুরো টপিক পরপর শুনুন আর সাথে সাথে বলুন",u:"phrases.html#"+p2.k});}
-      if(d<=30)tasks.push({ic:"🗣",b:"উচ্চারণ: Day "+d,s:"৩০ দিনের উচ্চারণ কোর্সের আজকের পাঠ",u:"app.html#day="+d});
-      else tasks.push({ic:"🗣",b:"উচ্চারণ রিভিশন",s:"যে সাউন্ডটা এখনো কঠিন লাগে, সেটার দিনটা আবার করুন",u:"app.html"});
-      if(wd===1||wd===3||wd===5){var gl=g[gi++%g.length];tasks.push({ic:"✏️",b:"গ্রামার: "+gl.en,s:gl.bn,u:"grammar.html#"+gl.id});}
-      if(wd===2||wd===4){var dl=li[(wk-1)*2+(wd===4?1:0)];if(dl)tasks.push({ic:"🎧",b:"শোনা: "+dl.bn,s:"শুনে ৩টা প্রশ্নের উত্তর দিন",u:"listen.html#"+dl.id});
-        else{var dr=li[((wk-1)*2+(wd===4?1:0))%li.length];tasks.push({ic:"🎧",b:"আবার শুনুন: "+dr.bn,s:"লেখা না দেখে শুনুন, তারপর লাইন ধরে বলুন",u:"listen.html#"+dr.id});}}
-      if(wd===6)tasks.push({ic:"🗨️",b:"শ্যাডোয়িং",s:"আজকের বাক্যগুলো অডিওর সাথে একসাথে বলুন, অন্তত ৩ বার",u:"phrases.html"});
+        if(p)tasks.push({ic:"💬",b:"Phrases: "+p.en,s:"Phrases "+(part*5+1)+"–"+(part*5+5)+": listen, say each one 3 times, tap “Learned”",u:"phrases.html#"+p.k});}
+      else{var p2=phs[(wd+wk)%phs.length];tasks.push({ic:"💬",b:"Phrase revision: "+p2.en,s:"Play the whole topic and speak along",u:"phrases.html#"+p2.k});}
+      if(d<=30)tasks.push({ic:"🗣",b:"Pronunciation: Day "+d,s:"Today's lesson from the 30-day pronunciation course",u:"app.html#day="+d});
+      else tasks.push({ic:"🗣",b:"Pronunciation revision",s:"Repeat the day for the sound you still find hard",u:"app.html"});
+      if(wd===1||wd===3||wd===5){var gl=g[gi++%g.length];tasks.push({ic:"✏️",b:"Grammar: "+gl.en,s:gl.sub,u:"grammar.html#"+gl.id});}
+      if(wd===2||wd===4){var dl=li[(wk-1)*2+(wd===4?1:0)];if(dl)tasks.push({ic:"🎧",b:"Listening: "+dl.en,s:"Listen and answer 3 questions",u:"listen.html#"+dl.id});
+        else{var dr=li[((wk-1)*2+(wd===4?1:0))%li.length];tasks.push({ic:"🎧",b:"Listen again: "+dr.en,s:"Listen without the text, then say it line by line",u:"listen.html#"+dr.id});}}
+      if(wd===6)tasks.push({ic:"🗨️",b:"Shadowing",s:"Say today's phrases together with the audio, at least 3 times",u:"phrases.html"});
     }
     days.push({d:d,wk:wk,wd:wd,tasks:tasks});}
   return days;}
@@ -97,28 +107,28 @@ function tk(d,i){return "d"+d+"_"+i}
 function dayDone(day){return day.tasks.every(function(t,i){return S.get(tk(day.d,i))>0})}
 function current(){for(var i=0;i<P.length;i++)if(!dayDone(P[i]))return P[i];return P[P.length-1]}
 function stats(){var t=track();document.getElementById("sTrack").textContent=t?TRACKS[t].name:"–";
-  if(!t||!P.length){document.getElementById("sDay").textContent="–";document.getElementById("sDays").textContent="০";return}
-  var n=P.filter(dayDone).length;document.getElementById("sDay").textContent=n>=84?"শেষ!":bn(current().d)+"/৮৪";
+  if(!t||!P.length){document.getElementById("sDay").textContent="–";document.getElementById("sDays").textContent="0";return}
+  var n=P.filter(dayDone).length;document.getElementById("sDay").textContent=n>=84?"Done!":current().d+" / 84";
   document.getElementById("sDays").textContent=bn(n);document.getElementById("bar").style.width=(n/84*100)+"%";}
 function choose(){var l=level(),sug=trackFromLevel(l);
-  out.innerHTML='<div class="card wc bn"><h2 style="font-size:24px">আপনার ট্র্যাক বেছে নিন</h2><p style="color:var(--muted);margin-top:6px">'+(l?'আপনার শেষ লেভেল টেস্টের ফল <b>'+esc(l)+'</b>, তাই নিচের হাইলাইট করা ট্র্যাকটা আপনার জন্য। চাইলে অন্যটাও নিতে পারেন।':'সঠিক ট্র্যাক পেতে আগে ১০ মিনিটের লেভেল টেস্ট দিন। অথবা নিজের আন্দাজে একটা বেছে নিন।')+'</p>'+
-   (l?'':'<div class="acts" style="margin-top:14px"><a class="btn pri" href="level-test.html">লেভেল টেস্ট দিন →</a></div>')+
+  out.innerHTML='<div class="card wc"><h2 style="font-size:26px">Choose your track</h2><p style="color:var(--muted);margin-top:6px">'+(l?'Your last level test result is <b>'+esc(l)+'</b>, so the highlighted track is the one for you. You can still pick another.':'To get the right track, take the 10-minute level test first. Or pick one yourself.')+'</p>'+
+   (l?'':'<div class="acts" style="margin-top:14px"><a class="btn pri" href="level-test.html">Take the level test →</a></div>')+
    '<div class="tracks">'+[1,2,3].map(function(i){var T=TRACKS[i];return '<button class="tr'+(i===sug?' on':'')+'" data-t="'+i+'"><b>'+(i===sug?'⭐ ':'')+T.name+' · '+T.lv+'</b><span>'+T.d+'</span></button>'}).join("")+'</div>'+
-   (track()?'<div class="acts"><button class="btn" id="cn">বাতিল</button><span></span></div>':'')+'</div>';
-  out.querySelectorAll(".tr").forEach(function(b){b.onclick=function(){var t=+b.dataset.t;if(track()&&t!==track()&&!confirm("ট্র্যাক বদলালে প্ল্যানের কাজগুলো নতুন করে সাজানো হবে, তবে শব্দ, বাক্য আর গ্রামারের প্রগ্রেস থেকে যাবে। বদলাবেন?"))return;
+   (track()?'<div class="acts"><button class="btn" id="cn">Cancel</button><span></span></div>':'')+'</div>';
+  out.querySelectorAll(".tr").forEach(function(b){b.onclick=function(){var t=+b.dataset.t;if(track()&&t!==track()&&!confirm("Changing your track resets the ticks in your plan. Your progress in words, phrases and grammar stays. Change track?"))return;
     if(t!==track()){Object.keys(S.d).forEach(function(k){if(/^d\d/.test(k))S.d[k]=[0,Date.now()]})}S.set("track",t);P=plan(t);view=null;stats();show()}});
   var c=document.getElementById("cn");if(c)c.onclick=show;}
 function show(){var t=track();if(!t){choose();return}if(!P.length)P=plan(t);
   var cur=current(),v=view||cur,wk=v.wk;
   var h='<div class="weeks">'+Array.from({length:12},function(_,i){var w=i+1,dd=P.filter(function(x){return x.wk===w}),n=dd.filter(dayDone).length;
-    return '<button class="wk'+(w===wk?' on':'')+(n===7?' full':'')+'" data-w="'+w+'">W'+w+'<small>'+bn(n)+'/৭</small></button>'}).join("")+'</div>';
-  h+='<div class="days">'+P.filter(function(x){return x.wk===wk}).map(function(x){return '<button class="dy'+(dayDone(x)?' ok':'')+(x===v?' on':'')+'" data-d="'+x.d+'">'+bn(x.d)+'<small>'+(x.wd===7?'রিভিশন':'দিন')+'</small></button>'}).join("")+'</div>';
+    return '<button class="wk'+(w===wk?' on':'')+(n===7?' full':'')+'" data-w="'+w+'">W'+w+'<small>'+n+'/7</small></button>'}).join("")+'</div>';
+  h+='<div class="days">'+P.filter(function(x){return x.wk===wk}).map(function(x){return '<button class="dy'+(dayDone(x)?' ok':'')+(x===v?' on':'')+'" data-d="'+x.d+'">'+x.d+'<small>'+(x.wd===7?'review':'day')+'</small></button>'}).join("")+'</div>';
   var nd=v.tasks.filter(function(_,i){return S.get(tk(v.d,i))>0}).length;
-  h+='<div class="card wc" style="margin-top:14px"><div class="wtop bn"><span>সপ্তাহ '+bn(v.wk)+' · দিন '+bn(v.d)+(v===cur?' · আজকের দিন':'')+'</span><span>'+bn(nd)+'/'+bn(v.tasks.length)+' কাজ শেষ</span></div>'+
-   '<h2 class="bn" style="font-size:24px;margin:10px 0 4px">'+(v.wd===7?'সাপ্তাহিক রিভিশন':'দিন '+bn(v.d)+'-এর কাজ')+'</h2>'+
-   v.tasks.map(function(x,i){var on=S.get(tk(v.d,i))>0;return '<div class="task'+(on?' done':'')+'"><button class="tick'+(on?' on':'')+'" data-k="'+i+'" aria-label="শেষ হয়েছে">✓</button><span class="ic">'+x.ic+'</span><div><b>'+esc(x.b)+'</b><span>'+esc(x.s)+'</span></div><a class="btn go" href="'+x.u+'">শুরু →</a></div>'}).join("")+
-   (dayDone(v)?'<div class="note bn">🎉 দিন '+bn(v.d)+' শেষ! '+(v.d<84?'কাল পরের দিনের কাজগুলো করুন।':'পুরো ১২ সপ্তাহ শেষ, দারুণ কাজ!')+'</div>':'<div class="note bn">💡 প্রতিটা কাজ শেষ হলে বাঁয়ের ✓ চাপুন। “শুরু” চাপলে সরাসরি সেই পেজে যাবেন।</div>')+
-   '<div class="acts"><button class="btn bn" id="ch">ট্র্যাক বদলান ('+TRACKS[t].name+')</button>'+(v!==cur?'<button class="btn pri bn" id="td">আজকের দিনে যান →</button>':'<span></span>')+'</div></div>';
+  h+='<div class="card wc" style="margin-top:14px"><div class="wtop"><span>Week '+v.wk+' · Day '+v.d+(v===cur?' · today':'')+'</span><span>'+nd+' of '+v.tasks.length+' tasks done</span></div>'+
+   '<h2 style="font-size:26px;margin:10px 0 4px">'+(v.wd===7?'Weekly review':'Day '+v.d+' tasks')+'</h2>'+
+   v.tasks.map(function(x,i){var on=S.get(tk(v.d,i))>0;return '<div class="task'+(on?' done':'')+'"><button class="tick'+(on?' on':'')+'" data-k="'+i+'" aria-label="Mark as done">✓</button><span class="ic">'+x.ic+'</span><div><b>'+esc(x.b)+'</b><span>'+esc(x.s)+'</span></div><a class="btn go" href="'+x.u+'">Start →</a></div>'}).join("")+
+   (dayDone(v)?'<div class="note">🎉 Day '+v.d+' done! '+(v.d<84?'Come back tomorrow for the next day.':'You finished all 12 weeks. Great work!')+'</div>':'<div class="note">💡 Tap ✓ when you finish a task. “Start” takes you straight to the right page.</div>')+
+   '<div class="acts"><button class="btn" id="ch">Change track ('+TRACKS[t].name+')</button>'+(v!==cur?'<button class="btn pri" id="td">Go to today →</button>':'<span></span>')+'</div></div>';
   out.innerHTML=h;
   out.querySelectorAll(".wk").forEach(function(b){b.onclick=function(){var w=+b.dataset.w;view=P.find(function(x){return x.wk===w&&!dayDone(x)})||P.find(function(x){return x.wk===w});show()}});
   out.querySelectorAll(".dy").forEach(function(b){b.onclick=function(){view=P[+b.dataset.d-1];show()}});
@@ -126,9 +136,9 @@ function show(){var t=track();if(!t){choose();return}if(!P.length)P=plan(t);
   document.getElementById("ch").onclick=choose;var td=document.getElementById("td");if(td)td.onclick=function(){view=null;show()};}
 S.onSync(function(){P=track()?plan(track()):[];stats();show()});
 Promise.all(["data/phrases.json","data/grammar.json","data/listen.json"].map(function(u){return fetch(u).then(function(r){return r.json()})})).then(function(r){PH=r[0];GR=r[1];LI=r[2];
-  if(track())P=plan(track());stats();show()}).catch(function(){out.innerHTML='<div class="card done bn"><h2>লোড হয়নি</h2><p>ইন্টারনেট সংযোগ দেখে পেজটা আবার খুলুন।</p></div>'});
+  if(track())P=plan(track());stats();show()}).catch(function(){out.innerHTML='<div class="card done"><h2>Didn\'t load</h2><p>Check your internet connection and open the page again.</p></div>'});
 })();
 </script>
-<script type="module" src="kit-cloud.js?v=1"></script>
+<script type="module" src="kit-cloud.js?v=2"></script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3a257cc30220492386dc6646cdfd8b75"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>

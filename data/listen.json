@@ -44,27 +44,45 @@
 ],
 "q": [
 {
-"s": "চায়ে সে কী নেবে?",
-"o": [
+"sbn": "চায়ে সে কী নেবে?",
+"obn": [
 "দুধ, চিনি ছাড়া",
 "দুধ আর চিনি দুটোই",
 "শুধু চিনি"
+],
+"s": "How does A want the tea?",
+"o": [
+"With milk, no sugar",
+"With milk and sugar",
+"With sugar only"
 ]
 },
 {
-"s": "খাবার হিসেবে কী অর্ডার করল?",
-"o": [
+"sbn": "খাবার হিসেবে কী অর্ডার করল?",
+"obn": [
 "চিকেন স্যান্ডউইচ",
 "কেক",
 "বার্গার"
+],
+"s": "What food does A order?",
+"o": [
+"A chicken sandwich",
+"A cake",
+"A burger"
 ]
 },
 {
-"s": "মোট দাম কত?",
-"o": [
+"sbn": "মোট দাম কত?",
+"obn": [
 "২৫০ টাকা",
 "২০০ টাকা",
 "১৫০ টাকা"
+],
+"s": "How much is it in total?",
+"o": [
+"250 taka",
+"200 taka",
+"150 taka"
 ]
 }
 ]
@@ -109,27 +127,45 @@
 ],
 "q": [
 {
-"s": "রহিম কবে এসেছে?",
-"o": [
+"sbn": "রহিম কবে এসেছে?",
+"obn": [
 "গত সপ্তাহে",
 "গতকাল",
 "গত মাসে"
+],
+"s": "When did Rahim move in?",
+"o": [
+"Last week",
+"Yesterday",
+"Last month"
 ]
 },
 {
-"s": "সারা কোন তলায় থাকে?",
-"o": [
+"sbn": "সারা কোন তলায় থাকে?",
+"obn": [
 "তিন তলায়",
 "দুই তলায়",
 "পাঁচ তলায়"
+],
+"s": "Which floor does Sara live on?",
+"o": [
+"The third floor",
+"The second floor",
+"The fifth floor"
 ]
 },
 {
-"s": "সারা কী কাজ করে?",
-"o": [
+"sbn": "সারা কী কাজ করে?",
+"obn": [
 "শিক্ষকতা",
 "ডাক্তারি",
 "ইঞ্জিনিয়ারিং"
+],
+"s": "What is Sara's job?",
+"o": [
+"Teacher",
+"Doctor",
+"Engineer"
 ]
 }
 ]
@@ -174,27 +210,45 @@
 ],
 "q": [
 {
-"s": "প্রথমে কতক্ষণ সোজা যেতে হবে?",
-"o": [
+"sbn": "প্রথমে কতক্ষণ সোজা যেতে হবে?",
+"obn": [
 "প্রায় পাঁচ মিনিট",
 "দশ মিনিট",
 "দুই মিনিট"
+],
+"s": "How long should A go straight at first?",
+"o": [
+"About five minutes",
+"Ten minutes",
+"Two minutes"
 ]
 },
 {
-"s": "তারপর কোন দিকে ঘুরতে হবে?",
-"o": [
+"sbn": "তারপর কোন দিকে ঘুরতে হবে?",
+"obn": [
 "ডানে",
 "বাঁয়ে",
 "পিছনে"
+],
+"s": "Which way should A turn after that?",
+"o": [
+"Right",
+"Left",
+"Back"
 ]
 },
 {
-"s": "বাস স্টেশনটা কোথায়?",
-"o": [
+"sbn": "বাস স্টেশনটা কোথায়?",
+"obn": [
 "মসজিদের ঠিক উল্টো দিকে",
 "মসজিদের পিছনে",
 "স্কুলের পাশে"
+],
+"s": "Where is the bus station?",
+"o": [
+"Opposite the mosque",
+"Behind the mosque",
+"Next to the school"
 ]
 }
 ]
@@ -244,27 +298,45 @@
 ],
 "q": [
 {
-"s": "কোন ডাক্তারের কাছে যেতে চায়?",
-"o": [
+"sbn": "কোন ডাক্তারের কাছে যেতে চায়?",
+"obn": [
 "ডা. হাসান",
 "ডা. করিম",
 "ডা. সারা"
+],
+"s": "Which doctor does A want to see?",
+"o": [
+"Doctor Hasan",
+"Doctor Karim",
+"Doctor Sara"
 ]
 },
 {
-"s": "বৃহস্পতিবার কেন হবে না?",
-"o": [
+"sbn": "বৃহস্পতিবার কেন হবে না?",
+"obn": [
 "সে পাঁচটা পর্যন্ত কাজ করে",
 "সে ঢাকার বাইরে থাকবে",
 "ক্লিনিক বন্ধ থাকে"
+],
+"s": "Why can't A come on Thursday?",
+"o": [
+"A works until five",
+"A will be out of Dhaka",
+"The clinic is closed"
 ]
 },
 {
-"s": "শেষে কখন ঠিক হলো?",
-"o": [
+"sbn": "শেষে কখন ঠিক হলো?",
+"obn": [
 "শনিবার সকাল এগারোটা",
 "বৃহস্পতিবার চারটা",
 "শনিবার বিকেল চারটা"
+],
+"s": "When is the appointment in the end?",
+"o": [
+"Saturday at 11 a.m.",
+"Thursday at 4 p.m.",
+"Saturday at 4 p.m."
 ]
 }
 ]
@@ -319,27 +391,45 @@
 ],
 "q": [
 {
-"s": "সে কোন রঙের শার্ট খুঁজছে?",
-"o": [
+"sbn": "সে কোন রঙের শার্ট খুঁজছে?",
+"obn": [
 "নীল",
 "সাদা",
 "কালো"
+],
+"s": "What color shirt is A looking for?",
+"o": [
+"Blue",
+"White",
+"Black"
 ]
 },
 {
-"s": "শার্টের দাম কত?",
-"o": [
+"sbn": "শার্টের দাম কত?",
+"obn": [
 "৮০০ টাকা",
 "১৮০০ টাকা",
 "৫০০ টাকা"
+],
+"s": "How much is the shirt?",
+"o": [
+"800 taka",
+"1,800 taka",
+"500 taka"
 ]
 },
 {
-"s": "শেষে সে কী করল?",
-"o": [
+"sbn": "শেষে সে কী করল?",
+"obn": [
 "শার্টটা কিনল",
 "ফেরত দিল",
 "অন্য রং চাইল"
+],
+"s": "What does A do in the end?",
+"o": [
+"Buys the shirt",
+"Gives it back",
+"Asks for another color"
 ]
 }
 ]
@@ -389,27 +479,45 @@
 ],
 "q": [
 {
-"s": "B কোথায় যাচ্ছে?",
-"o": [
+"sbn": "B কোথায় যাচ্ছে?",
+"obn": [
 "গ্রামে দাদা-দাদির বাসায়",
 "কক্সবাজারে",
 "বন্ধুর বাসায়"
+],
+"s": "Where is B going?",
+"o": [
+"To the grandparents' village",
+"To Cox's Bazar",
+"To a friend's house"
 ]
 },
 {
-"s": "কীভাবে যাবে?",
-"o": [
+"sbn": "কীভাবে যাবে?",
+"obn": [
 "ট্রেনে",
 "বাসে",
 "প্লেনে"
+],
+"s": "How is B travelling?",
+"o": [
+"By train",
+"By bus",
+"By plane"
 ]
 },
 {
-"s": "A নিজে ছুটিতে কী করবে?",
-"o": [
+"sbn": "A নিজে ছুটিতে কী করবে?",
+"obn": [
 "বাসায় থেকে পরীক্ষার পড়া",
 "সিনেমা দেখবে",
 "কাজে যাবে"
+],
+"s": "What will A do at the weekend?",
+"o": [
+"Stay home and study for an exam",
+"Watch a film",
+"Go to work"
 ]
 }
 ]
@@ -459,27 +567,45 @@
 ],
 "q": [
 {
-"s": "কী অর্ডার করল?",
-"o": [
+"sbn": "কী অর্ডার করল?",
+"obn": [
 "একটা বড় চিকেন পিৎজা",
 "দুটো ছোট পিৎজা",
 "বার্গার"
+],
+"s": "What does A order?",
+"o": [
+"One large chicken pizza",
+"Two small pizzas",
+"A burger"
 ]
 },
 {
-"s": "ঠিকানা কোথায়?",
-"o": [
+"sbn": "ঠিকানা কোথায়?",
+"obn": [
 "মিরপুর ১০",
 "মিরপুর ১১",
 "উত্তরা"
+],
+"s": "Where does A live?",
+"o": [
+"Mirpur 10",
+"Mirpur 11",
+"Uttara"
 ]
 },
 {
-"s": "খাবার আসতে কতক্ষণ লাগবে?",
-"o": [
+"sbn": "খাবার আসতে কতক্ষণ লাগবে?",
+"obn": [
 "প্রায় ৪০ মিনিট",
 "১৪ মিনিট",
 "এক ঘণ্টা"
+],
+"s": "How long will the food take?",
+"o": [
+"About 40 minutes",
+"14 minutes",
+"One hour"
 ]
 }
 ]
@@ -524,27 +650,45 @@
 ],
 "q": [
 {
-"s": "কত রাতের বুকিং?",
-"o": [
+"sbn": "কত রাতের বুকিং?",
+"obn": [
 "দুই রাত",
 "এক রাত",
 "তিন রাত"
+],
+"s": "How many nights is the booking for?",
+"o": [
+"Two nights",
+"One night",
+"Three nights"
 ]
 },
 {
-"s": "নাস্তা কখন দেওয়া হয়?",
-"o": [
+"sbn": "নাস্তা কখন দেওয়া হয়?",
+"obn": [
 "সাতটা থেকে দশটা",
 "আটটা থেকে এগারোটা",
 "ছয়টা থেকে নয়টা"
+],
+"s": "When is breakfast served?",
+"o": [
+"From 7 to 10",
+"From 8 to 11",
+"From 6 to 9"
 ]
 },
 {
-"s": "রুম নম্বর কত?",
-"o": [
+"sbn": "রুম নম্বর কত?",
+"obn": [
 "৩০৫",
 "৫০৩",
 "২০৫"
+],
+"s": "What is the room number?",
+"o": [
+"305",
+"503",
+"205"
 ]
 }
 ]
@@ -589,27 +733,45 @@
 ],
 "q": [
 {
-"s": "তার কত বছরের অভিজ্ঞতা?",
-"o": [
+"sbn": "তার কত বছরের অভিজ্ঞতা?",
+"obn": [
 "চার বছর",
 "দুই বছর",
 "দশ বছর"
+],
+"s": "How many years of experience does A have?",
+"o": [
+"Four years",
+"Two years",
+"Ten years"
 ]
 },
 {
-"s": "সে কেন এই কোম্পানিতে আসতে চায়?",
-"o": [
+"sbn": "সে কেন এই কোম্পানিতে আসতে চায়?",
+"obn": [
 "বড় দলে কাজ করে নতুন দক্ষতা শিখতে",
 "বেশি বেতনের জন্য",
 "অফিস বাসার কাছে বলে"
+],
+"s": "Why does A want to join the company?",
+"o": [
+"To work in a bigger team and learn new skills",
+"For a higher salary",
+"Because the office is near home"
 ]
 },
 {
-"s": "তার সবচেয়ে বড় শক্তি কী?",
-"o": [
+"sbn": "তার সবচেয়ে বড় শক্তি কী?",
+"obn": [
 "সমস্যার সমাধান আর সময়মতো কাজ শেষ করা",
 "সুন্দর ডিজাইন করা",
 "অনেক ভাষা জানা"
+],
+"s": "What is A's biggest strength?",
+"o": [
+"Solving problems and finishing work on time",
+"Making beautiful designs",
+"Speaking many languages"
 ]
 }
 ]
@@ -654,27 +816,45 @@
 ],
 "q": [
 {
-"s": "ক্লায়েন্টের সমস্যা কী?",
-"o": [
+"sbn": "ক্লায়েন্টের সমস্যা কী?",
+"obn": [
 "ওয়েবসাইট খুব ধীর",
 "ওয়েবসাইট বন্ধ হয়ে আছে",
 "লোগো পছন্দ হচ্ছে না"
+],
+"s": "What is the client's problem?",
+"o": [
+"The website is very slow",
+"The website is down",
+"They don't like the logo"
 ]
 },
 {
-"s": "রিপোর্ট কবে পাঠাবে?",
-"o": [
+"sbn": "রিপোর্ট কবে পাঠাবে?",
+"obn": [
 "কালকের মধ্যে",
 "আজই",
 "এক সপ্তাহ পর"
+],
+"s": "When will A send the report?",
+"o": [
+"By tomorrow",
+"Today",
+"In a week"
 ]
 },
 {
-"s": "রিপোর্টের খরচ কত?",
-"o": [
+"sbn": "রিপোর্টের খরচ কত?",
+"obn": [
 "ফ্রি",
 "১০০ ডলার",
 "পরে জানাবে"
+],
+"s": "How much does the report cost?",
+"o": [
+"It's free",
+"100 dollars",
+"A will tell them later"
 ]
 }
 ]
@@ -719,27 +899,45 @@
 ],
 "q": [
 {
-"s": "দেরির কারণ কী?",
-"o": [
+"sbn": "দেরির কারণ কী?",
+"obn": [
 "দুর্ঘটনার কারণে বিশাল জ্যাম",
 "ঘুম থেকে দেরিতে উঠেছে",
 "অসুস্থ ছিল"
+],
+"s": "Why was A late?",
+"o": [
+"A big traffic jam after an accident",
+"A woke up late",
+"A was sick"
 ]
 },
 {
-"s": "ক্লায়েন্ট মিটিং কয়টায় শুরু হয়েছে?",
-"o": [
+"sbn": "ক্লায়েন্ট মিটিং কয়টায় শুরু হয়েছে?",
+"obn": [
 "নয়টায়",
 "দশটায়",
 "আটটায়"
+],
+"s": "What time did the client meeting start?",
+"o": [
+"At nine",
+"At ten",
+"At eight"
 ]
 },
 {
-"s": "পরের বার কী করতে বলা হলো?",
-"o": [
+"sbn": "পরের বার কী করতে বলা হলো?",
+"obn": [
 "দেরি হলে মেসেজ দিতে",
 "আরও আগে বের হতে",
 "ছুটি নিতে"
+],
+"s": "What should A do next time?",
+"o": [
+"Send a message if running late",
+"Leave home earlier",
+"Take a day off"
 ]
 }
 ]
@@ -784,27 +982,45 @@
 ],
 "q": [
 {
-"s": "হেডফোনে কী সমস্যা?",
-"o": [
+"sbn": "হেডফোনে কী সমস্যা?",
+"obn": [
 "বাঁ পাশ কাজ করে না",
 "ডান পাশ কাজ করে না",
 "চার্জ হয় না"
+],
+"s": "What is wrong with the headphones?",
+"o": [
+"The left side doesn't work",
+"The right side doesn't work",
+"They don't charge"
 ]
 },
 {
-"s": "দোকানদার কী দেখতে চাইল?",
-"o": [
+"sbn": "দোকানদার কী দেখতে চাইল?",
+"obn": [
 "রসিদ",
 "ফোন নম্বর",
 "বাক্স"
+],
+"s": "What does the shop assistant ask for?",
+"o": [
+"The receipt",
+"A phone number",
+"The box"
 ]
 },
 {
-"s": "সে শেষে কী চাইল?",
-"o": [
+"sbn": "সে শেষে কী চাইল?",
+"obn": [
 "নতুন একজোড়া",
 "টাকা ফেরত",
 "অন্য মডেল"
+],
+"s": "What does A want in the end?",
+"o": [
+"A new pair",
+"The money back",
+"A different model"
 ]
 }
 ]

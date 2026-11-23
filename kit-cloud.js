@@ -4,12 +4,12 @@ const AC = window.AC, box = document.getElementById("cloud");
 let user = null; const timers = {};
 function merge(a, b) { const o = Object.assign({}, a); for (const k in b) { if (!o[k] || (b[k][1] || 0) > (o[k][1] || 0)) o[k] = b[k]; } return o; }
 function render(msg) { if (!box || !C.enabled) { if (box) box.innerHTML = ""; return; }
-  if (!user) { box.innerHTML = '☁️ প্রগ্রেস সব ডিভাইসে রাখতে <button class="btn" id="si">Google দিয়ে লগইন করুন</button>';
+  if (!user) { box.innerHTML = '☁️ Keep your progress on every device: <button class="btn" id="si">Sign in with Google</button>';
     document.getElementById("si").onclick = () => C.signIn().catch(() => {}); return; }
-  box.innerHTML = msg || "☁️ প্রগ্রেস আপনার অ্যাকাউন্টে সেভ হচ্ছে"; }
+  box.innerHTML = msg || "☁️ Your progress is saved to your account"; }
 AC.onStoreChange = s => { if (!user) return; clearTimeout(timers[s.name]);
   timers[s.name] = setTimeout(async () => { try { await C.saveProg(user, s.name, s.d); render(); }
-    catch (e) { console.warn(e); render("⚠️ ক্লাউডে সেভ হয়নি, এই ডিভাইসে আছে"); } }, 1500); };
+    catch (e) { console.warn(e); render("⚠️ Couldn't save online. It's saved on this device."); } }, 1500); };
 AC.cloud = C;
 render();
 if (C.enabled) C.onUser(async u => { if (u && u.cached) return; user = u || null; render(); AC.user = user;

@@ -2,7 +2,6 @@
 {
 "k": "greet",
 "ic": "👋",
-"name": "পরিচয় ও শুভেচ্ছা",
 "items": [
 {
 "id": "p001",
@@ -79,12 +78,13 @@
 "en": "Take care!",
 "bn": "ভালো থাকবেন!"
 }
-]
+],
+"en": "Greetings & introductions",
+"bn": "পরিচয় ও শুভেচ্ছা"
 },
 {
 "k": "daily",
 "ic": "☀️",
-"name": "রোজকার কথা",
 "items": [
 {
 "id": "p016",
@@ -161,12 +161,13 @@
 "en": "It doesn't matter.",
 "bn": "এতে কিছু যায় আসে না।"
 }
-]
+],
+"en": "Everyday life",
+"bn": "রোজকার কথা"
 },
 {
 "k": "shop",
 "ic": "🛒",
-"name": "দোকান ও বাজার",
 "items": [
 {
 "id": "p031",
@@ -243,12 +244,13 @@
 "en": "Keep the change.",
 "bn": "খুচরাটা রেখে দিন।"
 }
-]
+],
+"en": "Shopping & the market",
+"bn": "দোকান ও বাজার"
 },
 {
 "k": "travel",
 "ic": "🚌",
-"name": "রাস্তা ও যাতায়াত",
 "items": [
 {
 "id": "p046",
@@ -325,12 +327,13 @@
 "en": "My flight is delayed.",
 "bn": "আমার ফ্লাইট দেরি হচ্ছে।"
 }
-]
+],
+"en": "Getting around",
+"bn": "রাস্তা ও যাতায়াত"
 },
 {
 "k": "phone",
 "ic": "📞",
-"name": "ফোনে কথা",
 "items": [
 {
 "id": "p061",
@@ -407,12 +410,13 @@
 "en": "Talk to you soon.",
 "bn": "শিগগিরই কথা হবে।"
 }
-]
+],
+"en": "On the phone",
+"bn": "ফোনে কথা"
 },
 {
 "k": "office",
 "ic": "💼",
-"name": "অফিস ও কাজ",
 "items": [
 {
 "id": "p076",
@@ -489,12 +493,13 @@
 "en": "I'm leaving for the day.",
 "bn": "আজকের মতো আমি বের হচ্ছি।"
 }
-]
+],
+"en": "At work",
+"bn": "অফিস ও কাজ"
 },
 {
 "k": "interview",
 "ic": "🎯",
-"name": "চাকরির ইন্টারভিউ",
 "items": [
 {
 "id": "p091",
@@ -571,12 +576,13 @@
 "en": "When can I expect to hear from you?",
 "bn": "আপনাদের কাছ থেকে কবে খবর পেতে পারি?"
 }
-]
+],
+"en": "Job interviews",
+"bn": "চাকরির ইন্টারভিউ"
 },
 {
 "k": "client",
 "ic": "🤝",
-"name": "ক্লায়েন্ট ও মিটিং",
 "items": [
 {
 "id": "p106",
@@ -653,12 +659,13 @@
 "en": "Looking forward to working with you.",
 "bn": "আপনার সাথে কাজ করার অপেক্ষায় আছি।"
 }
-]
+],
+"en": "Clients & meetings",
+"bn": "ক্লায়েন্ট ও মিটিং"
 },
 {
 "k": "help",
 "ic": "🙏",
-"name": "অনুরোধ ও সাহায্য",
 "items": [
 {
 "id": "p121",
@@ -735,12 +742,13 @@
 "en": "Please call me if you need anything.",
 "bn": "কিছু লাগলে আমাকে ফোন করবেন।"
 }
-]
+],
+"en": "Asking for help",
+"bn": "অনুরোধ ও সাহায্য"
 },
 {
 "k": "feel",
 "ic": "💬",
-"name": "মতামত ও অনুভূতি",
 "items": [
 {
 "id": "p136",
@@ -817,6 +825,8 @@
 "en": "Either way is fine with me.",
 "bn": "যেকোনোটাতেই আমার আপত্তি নেই।"
 }
-]
+],
+"en": "Opinions & feelings",
+"bn": "মতামত ও অনুভূতি"
 }
 ]

@@ -3,11 +3,6 @@
 "id": "g01",
 "lv": "A1",
 "en": "am / is / are",
-"bn": "am, is, are: “হওয়া” বা “থাকা” বোঝাতে",
-"exp": [
-"কেউ কী, কে বা কেমন আছে বলতে am / is / are লাগে। বাংলায় অনেক সময় এই ক্রিয়াটা লুকানো থাকে (“আমি ছাত্র”), কিন্তু ইংরেজিতে বাদ দেওয়া যায় না।",
-"I এর সাথে am, he / she / it বা একজনের সাথে is, আর you / we / they বা অনেকের সাথে are।"
-],
 "rule": "I am · He / She / It is · You / We / They are",
 "ex": [
 {
@@ -72,18 +67,24 @@
 "am"
 ]
 }
+],
+"bnsub": "am, is, are: “হওয়া” বা “থাকা” বোঝাতে",
+"expbn": [
+"কেউ কী, কে বা কেমন আছে বলতে am / is / are লাগে। বাংলায় অনেক সময় এই ক্রিয়াটা লুকানো থাকে (“আমি ছাত্র”), কিন্তু ইংরেজিতে বাদ দেওয়া যায় না।",
+"I এর সাথে am, he / she / it বা একজনের সাথে is, আর you / we / they বা অনেকের সাথে are।"
+],
+"rulebn": "I am · He / She / It is · You / We / They are",
+"sub": "Saying what someone or something is",
+"exp": [
+"Use am, is or are to say who someone is, what something is, or how someone is. In Bangla this verb is often left out, but in English you always need it: I am a student.",
+"Use am with I. Use is with he, she, it or one person or thing. Use are with you, we, they or more than one."
 ]
 },
 {
 "id": "g02",
 "lv": "A1",
 "en": "a / an / the",
-"bn": "a, an, the: কখন কোনটা",
-"exp": [
-"একটা যেকোনো জিনিস বোঝাতে a বা an। শব্দের শুরুর উচ্চারণ স্বরধ্বনি (a, e, i, o, u-এর শব্দ) হলে an, না হলে a।",
-"নির্দিষ্ট, আগে বলা বা দুজনেই চেনে এমন জিনিস বোঝাতে the।"
-],
-"rule": "a + ব্যঞ্জনধ্বনি (a book) · an + স্বরধ্বনি (an apple) · the = নির্দিষ্টটা",
+"rule": "a + consonant sound (a book) · an + vowel sound (an apple) · the = the one we both know",
 "ex": [
 {
 "en": "I have a cat.",
@@ -147,17 +148,23 @@
 "the"
 ]
 }
+],
+"bnsub": "a, an, the: কখন কোনটা",
+"expbn": [
+"একটা যেকোনো জিনিস বোঝাতে a বা an। শব্দের শুরুর উচ্চারণ স্বরধ্বনি (a, e, i, o, u-এর শব্দ) হলে an, না হলে a।",
+"নির্দিষ্ট, আগে বলা বা দুজনেই চেনে এমন জিনিস বোঝাতে the।"
+],
+"rulebn": "a + ব্যঞ্জনধ্বনি (a book) · an + স্বরধ্বনি (an apple) · the = নির্দিষ্টটা",
+"sub": "Which one: a, an or the",
+"exp": [
+"Use a or an for one thing when it doesn't matter which one. Use an before a vowel sound (an apple, an hour) and a before other sounds (a book, a university).",
+"Use the when you and the listener know which one you mean: something you have already mentioned, or the only one there is."
 ]
 },
 {
 "id": "g03",
 "lv": "A1",
 "en": "Simple present",
-"bn": "Simple present: অভ্যাস আর সাধারণ সত্য",
-"exp": [
-"যা নিয়মিত হয় বা সবসময় সত্য, তা বলতে simple present। যেমন রোজকার রুটিন।",
-"he / she / it হলে ক্রিয়ার শেষে s বা es যোগ হয়। না-বোধক করতে don't / doesn't।"
-],
 "rule": "I / You / We / They work · He / She / It works · doesn't work",
 "ex": [
 {
@@ -222,17 +229,23 @@
 "not drink"
 ]
 }
+],
+"bnsub": "Simple present: অভ্যাস আর সাধারণ সত্য",
+"expbn": [
+"যা নিয়মিত হয় বা সবসময় সত্য, তা বলতে simple present। যেমন রোজকার রুটিন।",
+"he / she / it হলে ক্রিয়ার শেষে s বা es যোগ হয়। না-বোধক করতে don't / doesn't।"
+],
+"rulebn": "I / You / We / They work · He / She / It works · doesn't work",
+"sub": "Habits and things that are always true",
+"exp": [
+"Use the simple present for routines and habits (I drink tea every morning) and for facts that are always true (water boils at 100 degrees).",
+"With he, she or it, add -s or -es to the verb: she works, he watches. For negatives use don't or doesn't + the base verb."
 ]
 },
 {
 "id": "g04",
 "lv": "A1",
 "en": "Present continuous",
-"bn": "Present continuous: এখন যা চলছে",
-"exp": [
-"এই মুহূর্তে চলছে এমন কাজ বলতে am / is / are + ক্রিয়ার সাথে ing।",
-"Look!, now, right now, at the moment এই শব্দগুলো দেখলে সাধারণত এটাই বসে।"
-],
 "rule": "am / is / are + verb-ing",
 "ex": [
 {
@@ -297,17 +310,23 @@
 "not watching"
 ]
 }
+],
+"bnsub": "Present continuous: এখন যা চলছে",
+"expbn": [
+"এই মুহূর্তে চলছে এমন কাজ বলতে am / is / are + ক্রিয়ার সাথে ing।",
+"Look!, now, right now, at the moment এই শব্দগুলো দেখলে সাধারণত এটাই বসে।"
+],
+"rulebn": "am / is / are + verb-ing",
+"sub": "Actions happening right now",
+"exp": [
+"Use am, is or are + the verb with -ing for something happening at this moment: I am reading.",
+"Words like now, right now, at the moment and Look! often go with this tense."
 ]
 },
 {
 "id": "g05",
 "lv": "A2",
 "en": "Simple past",
-"bn": "Simple past: অতীতে যা হয়েছিল",
-"exp": [
-"অতীতে শেষ হয়ে যাওয়া কাজ বলতে simple past। সাধারণ ক্রিয়ায় শেষে ed (work → worked)।",
-"অনেক ক্রিয়ার রূপ আলাদা, এগুলো মুখস্থ করতে হয়: go → went, see → saw, eat → ate। না-বোধক করতে didn't + মূল ক্রিয়া।"
-],
 "rule": "worked / went / saw · didn't + verb",
 "ex": [
 {
@@ -372,18 +391,24 @@
 "plays"
 ]
 }
+],
+"bnsub": "Simple past: অতীতে যা হয়েছিল",
+"expbn": [
+"অতীতে শেষ হয়ে যাওয়া কাজ বলতে simple past। সাধারণ ক্রিয়ায় শেষে ed (work → worked)।",
+"অনেক ক্রিয়ার রূপ আলাদা, এগুলো মুখস্থ করতে হয়: go → went, see → saw, eat → ate। না-বোধক করতে didn't + মূল ক্রিয়া।"
+],
+"rulebn": "worked / went / saw · didn't + verb",
+"sub": "Finished actions in the past",
+"exp": [
+"Use the simple past for actions that started and finished in the past. Regular verbs add -ed: work → worked.",
+"Many common verbs are irregular and you need to learn them: go → went, see → saw, eat → ate. For negatives use didn't + the base verb: He didn't call."
 ]
 },
 {
 "id": "g06",
 "lv": "A2",
 "en": "Questions with do / does / did",
-"bn": "প্রশ্ন বানানো: do, does, did দিয়ে",
-"exp": [
-"সাধারণ ক্রিয়ার বাক্যকে প্রশ্ন বানাতে শুরুতে Do / Does / Did বসে, আর মূল ক্রিয়া আগের রূপে ফিরে যায় (s বা ed থাকে না)।",
-"he / she / it হলে Does, অতীত হলে সবার জন্য Did।"
-],
-"rule": "Do you…? · Does she…? · Did they…? + মূল ক্রিয়া",
+"rule": "Do you…? · Does she…? · Did they…? + base verb",
 "ex": [
 {
 "en": "Do you speak English?",
@@ -447,17 +472,23 @@
 "is"
 ]
 }
+],
+"bnsub": "প্রশ্ন বানানো: do, does, did দিয়ে",
+"expbn": [
+"সাধারণ ক্রিয়ার বাক্যকে প্রশ্ন বানাতে শুরুতে Do / Does / Did বসে, আর মূল ক্রিয়া আগের রূপে ফিরে যায় (s বা ed থাকে না)।",
+"he / she / it হলে Does, অতীত হলে সবার জন্য Did।"
+],
+"rulebn": "Do you…? · Does she…? · Did they…? + মূল ক্রিয়া",
+"sub": "Making questions with do, does and did",
+"exp": [
+"To make a question with an ordinary verb, put Do, Does or Did at the start. The main verb goes back to its base form (no -s, no -ed).",
+"Use Does with he, she or it. Use Did for the past with everyone: Did you see it?"
 ]
 },
 {
 "id": "g07",
 "lv": "A2",
 "en": "Future: will & going to",
-"bn": "ভবিষ্যৎ: will আর going to",
-"exp": [
-"এখনই নেওয়া সিদ্ধান্ত, প্রতিশ্রুতি বা অনুমান বোঝাতে will।",
-"আগে থেকে ঠিক করা পরিকল্পনা বোঝাতে am / is / are going to।"
-],
 "rule": "will + verb · am / is / are going to + verb",
 "ex": [
 {
@@ -522,18 +553,24 @@
 "am not"
 ]
 }
+],
+"bnsub": "ভবিষ্যৎ: will আর going to",
+"expbn": [
+"এখনই নেওয়া সিদ্ধান্ত, প্রতিশ্রুতি বা অনুমান বোঝাতে will।",
+"আগে থেকে ঠিক করা পরিকল্পনা বোঝাতে am / is / are going to।"
+],
+"rulebn": "will + verb · am / is / are going to + verb",
+"sub": "Talking about the future",
+"exp": [
+"Use will for decisions you make now, promises and predictions: I will call you later.",
+"Use am, is or are going to for plans you have already made: We are going to buy a car."
 ]
 },
 {
 "id": "g08",
 "lv": "A2",
 "en": "can / could / should / must",
-"bn": "can, could, should, must: পারা, উচিত, বাধ্যতা",
-"exp": [
-"can = পারা (এখন), could = পারত (অতীত) বা ভদ্র অনুরোধ, should = উচিত (পরামর্শ), must = অবশ্যই করতে হবে।",
-"এদের পরে সবসময় ক্রিয়ার মূল রূপ বসে, কোনো to বা s লাগে না।"
-],
-"rule": "can / could / should / must + মূল ক্রিয়া",
+"rule": "can / could / should / must + base verb",
 "ex": [
 {
 "en": "I can swim.",
@@ -597,17 +634,23 @@
 "should"
 ]
 }
+],
+"bnsub": "can, could, should, must: পারা, উচিত, বাধ্যতা",
+"expbn": [
+"can = পারা (এখন), could = পারত (অতীত) বা ভদ্র অনুরোধ, should = উচিত (পরামর্শ), must = অবশ্যই করতে হবে।",
+"এদের পরে সবসময় ক্রিয়ার মূল রূপ বসে, কোনো to বা s লাগে না।"
+],
+"rulebn": "can / could / should / must + মূল ক্রিয়া",
+"sub": "Ability, advice and rules",
+"exp": [
+"can = able to (now), could = was able to (past) or a polite request, should = advice, must = it is necessary or a rule.",
+"After these words, always use the base verb, with no to and no -s: She can swim. You should rest."
 ]
 },
 {
 "id": "g09",
 "lv": "A2",
 "en": "in / on / at",
-"bn": "in, on, at: সময় আর জায়গা",
-"exp": [
-"সময়ে: at + নির্দিষ্ট সময় (at 5 o'clock), on + দিন বা তারিখ (on Monday), in + মাস, বছর, ঋতু (in May, in 2026)।",
-"জায়গায়: in = ভিতরে (in the room), on = উপরে (on the table), at = নির্দিষ্ট জায়গায় (at the bus stop)।"
-],
 "rule": "at 5 pm · on Friday · in July │ in the bag · on the wall · at the door",
 "ex": [
 {
@@ -672,18 +715,24 @@
 "in"
 ]
 }
+],
+"bnsub": "in, on, at: সময় আর জায়গা",
+"expbn": [
+"সময়ে: at + নির্দিষ্ট সময় (at 5 o'clock), on + দিন বা তারিখ (on Monday), in + মাস, বছর, ঋতু (in May, in 2026)।",
+"জায়গায়: in = ভিতরে (in the room), on = উপরে (on the table), at = নির্দিষ্ট জায়গায় (at the bus stop)।"
+],
+"rulebn": "at 5 pm · on Friday · in July │ in the bag · on the wall · at the door",
+"sub": "Prepositions of time and place",
+"exp": [
+"Time: at for exact times (at 5 o'clock), on for days and dates (on Monday), in for months, years and seasons (in May, in 2026).",
+"Place: in = inside (in the room), on = on a surface (on the table), at = at a point or place (at the bus stop)."
 ]
 },
 {
 "id": "g10",
 "lv": "A2",
 "en": "There is / There are",
-"bn": "There is / There are: কোথাও কিছু আছে বলতে",
-"exp": [
-"কোনো জায়গায় কিছু আছে বলতে there is (একটা) আর there are (অনেক)। প্রশ্নে Is there / Are there।",
-"বাংলায় যেমন বলি “টেবিলে একটা বই আছে”, ইংরেজিতে বলি There is a book on the table।"
-],
-"rule": "There is + একটা · There are + অনেক · Is there…? / Are there…?",
+"rule": "There is + one · There are + more than one · Is there…? / Are there…?",
 "ex": [
 {
 "en": "There is a park near my house.",
@@ -747,17 +796,23 @@
 "be"
 ]
 }
+],
+"bnsub": "There is / There are: কোথাও কিছু আছে বলতে",
+"expbn": [
+"কোনো জায়গায় কিছু আছে বলতে there is (একটা) আর there are (অনেক)। প্রশ্নে Is there / Are there।",
+"বাংলায় যেমন বলি “টেবিলে একটা বই আছে”, ইংরেজিতে বলি There is a book on the table।"
+],
+"rulebn": "There is + একটা · There are + অনেক · Is there…? / Are there…?",
+"sub": "Saying that something exists",
+"exp": [
+"Use there is for one thing and there are for more than one. In questions: Is there…? / Are there…?",
+"Many languages start with the place (“On the table, a book is”). In English, start with there: There is a book on the table."
 ]
 },
 {
 "id": "g11",
 "lv": "A2",
 "en": "Comparatives & superlatives",
-"bn": "তুলনা: bigger, the biggest",
-"exp": [
-"দুটো জিনিসের তুলনায় ছোট বিশেষণের শেষে er + than (bigger than)। লম্বা বিশেষণের আগে more (more beautiful than)।",
-"সবার মধ্যে সেরা বোঝাতে the + est (the biggest) বা the most (the most beautiful)। ব্যতিক্রম: good → better → the best, bad → worse → the worst।"
-],
 "rule": "tall → taller → the tallest · expensive → more expensive → the most expensive",
 "ex": [
 {
@@ -822,17 +877,23 @@
 "most comfortable"
 ]
 }
+],
+"bnsub": "তুলনা: bigger, the biggest",
+"expbn": [
+"দুটো জিনিসের তুলনায় ছোট বিশেষণের শেষে er + than (bigger than)। লম্বা বিশেষণের আগে more (more beautiful than)।",
+"সবার মধ্যে সেরা বোঝাতে the + est (the biggest) বা the most (the most beautiful)। ব্যতিক্রম: good → better → the best, bad → worse → the worst।"
+],
+"rulebn": "tall → taller → the tallest · expensive → more expensive → the most expensive",
+"sub": "Comparing things",
+"exp": [
+"To compare two things, add -er + than to short adjectives (bigger than). Put more before long adjectives (more beautiful than).",
+"For the top one in a group, use the + -est or the most (the biggest, the most beautiful). Irregular: good → better → the best, bad → worse → the worst."
 ]
 },
 {
 "id": "g12",
 "lv": "A2",
 "en": "much / many / some / any",
-"bn": "much, many, some, any: পরিমাণ বোঝাতে",
-"exp": [
-"যা গোনা যায় (books, people) তার সাথে many, যা গোনা যায় না (water, money, time) তার সাথে much।",
-"হ্যাঁ-বোধক বাক্যে some, প্রশ্ন আর না-বোধক বাক্যে সাধারণত any।"
-],
 "rule": "many books · much water │ I have some · Do you have any? · I don't have any",
 "ex": [
 {
@@ -897,17 +958,23 @@
 "some"
 ]
 }
+],
+"bnsub": "much, many, some, any: পরিমাণ বোঝাতে",
+"expbn": [
+"যা গোনা যায় (books, people) তার সাথে many, যা গোনা যায় না (water, money, time) তার সাথে much।",
+"হ্যাঁ-বোধক বাক্যে some, প্রশ্ন আর না-বোধক বাক্যে সাধারণত any।"
+],
+"rulebn": "many books · much water │ I have some · Do you have any? · I don't have any",
+"sub": "Talking about quantity",
+"exp": [
+"Use many with things you can count (books, people) and much with things you can't count (water, money, time).",
+"Use some in positive sentences and any in questions and negatives: I bought some eggs. Do you have any questions?"
 ]
 },
 {
 "id": "g13",
 "lv": "B1",
 "en": "Present perfect",
-"bn": "Present perfect: অভিজ্ঞতা আর এখন পর্যন্ত",
-"exp": [
-"have / has + ক্রিয়ার তৃতীয় রূপ (done, seen, eaten)। অতীতে হয়েছে কিন্তু তার প্রভাব বা গুরুত্ব এখনো আছে, অথবা জীবনের অভিজ্ঞতা বোঝাতে।",
-"নির্দিষ্ট অতীত সময় (yesterday, last year) থাকলে present perfect না, simple past বসে। already, yet, ever, never, since, for এর সাথে প্রায়ই এটা আসে।"
-],
 "rule": "have / has + past participle (gone, seen, finished)",
 "ex": [
 {
@@ -972,17 +1039,23 @@
 "has met"
 ]
 }
+],
+"bnsub": "Present perfect: অভিজ্ঞতা আর এখন পর্যন্ত",
+"expbn": [
+"have / has + ক্রিয়ার তৃতীয় রূপ (done, seen, eaten)। অতীতে হয়েছে কিন্তু তার প্রভাব বা গুরুত্ব এখনো আছে, অথবা জীবনের অভিজ্ঞতা বোঝাতে।",
+"নির্দিষ্ট অতীত সময় (yesterday, last year) থাকলে present perfect না, simple past বসে। already, yet, ever, never, since, for এর সাথে প্রায়ই এটা আসে।"
+],
+"rulebn": "have / has + past participle (gone, seen, finished)",
+"sub": "Experiences and results up to now",
+"exp": [
+"Use have or has + the past participle (done, seen, eaten) for life experiences and past actions that matter now: I have finished my work.",
+"Don't use it with a finished time like yesterday or last year; use the simple past instead. It often goes with already, yet, ever, never, just, since and for."
 ]
 },
 {
 "id": "g14",
 "lv": "B1",
 "en": "If… (first conditional)",
-"bn": "If দিয়ে শর্ত: যদি এটা হয়, তাহলে ওটা হবে",
-"exp": [
-"ভবিষ্যতে সম্ভব কোনো শর্ত বোঝাতে If + present, তারপর will + মূল ক্রিয়া।",
-"If-এর অংশে will বসে না। যেমন If it rains (ঠিক), If it will rain (ভুল)।"
-],
 "rule": "If + present, … will + verb",
 "ex": [
 {
@@ -1047,17 +1120,23 @@
 "are"
 ]
 }
+],
+"bnsub": "If দিয়ে শর্ত: যদি এটা হয়, তাহলে ওটা হবে",
+"expbn": [
+"ভবিষ্যতে সম্ভব কোনো শর্ত বোঝাতে If + present, তারপর will + মূল ক্রিয়া।",
+"If-এর অংশে will বসে না। যেমন If it rains (ঠিক), If it will rain (ভুল)।"
+],
+"rulebn": "If + present, … will + verb",
+"sub": "If this happens, that will happen",
+"exp": [
+"Use If + present tense, then will + verb for a possible situation in the future: If it rains, we will stay home.",
+"Don't use will in the if part. Say If it rains, not If it will rain."
 ]
 },
 {
 "id": "g15",
 "lv": "B1",
 "en": "Passive voice",
-"bn": "Passive voice: কাজটা কে করেছে তার চেয়ে কাজটাই জরুরি",
-"exp": [
-"কাজটা কে করেছে জানা নেই বা গুরুত্বপূর্ণ না হলে passive ব্যবহার হয়: be + ক্রিয়ার তৃতীয় রূপ।",
-"কে করেছে বলতে চাইলে শেষে by যোগ করা যায়: The book was written by Humayun Ahmed।"
-],
 "rule": "is / are / was / were + past participle (made, built, written)",
 "ex": [
 {
@@ -1122,6 +1201,17 @@
 "is hold"
 ]
 }
+],
+"bnsub": "Passive voice: কাজটা কে করেছে তার চেয়ে কাজটাই জরুরি",
+"expbn": [
+"কাজটা কে করেছে জানা নেই বা গুরুত্বপূর্ণ না হলে passive ব্যবহার হয়: be + ক্রিয়ার তৃতীয় রূপ।",
+"কে করেছে বলতে চাইলে শেষে by যোগ করা যায়: The book was written by Humayun Ahmed।"
+],
+"rulebn": "is / are / was / were + past participle (made, built, written)",
+"sub": "When the action matters more than who did it",
+"exp": [
+"Use the passive when we don't know or don't care who did the action: be + the past participle (made, built, written).",
+"To say who did it, add by at the end: The book was written by Humayun Ahmed."
 ]
 }
 ]
